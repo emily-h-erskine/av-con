@@ -1,13 +1,29 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 0, 0, 0; /* Set the RGB value for black */
+  --background-end-rgb: 0, 0, 0; /* Set the RGB value for black */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0; /* Set the RGB value for black */
+    --background-end-rgb: 0, 0, 0; /* Set the RGB value for black */
+  }
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb)); /* Set the background color to black */
+}
+
+a {
+  color: #ffffff; /* Set the link color to white */
+}
+a:hover {
+  color: #ffffff; /* Set the link hover color to white */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Roboto', sans-serif;
 }
