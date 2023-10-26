@@ -9,9 +9,11 @@ export const Header = () => {
         </a>
       </div>
       <div style={{ textAlign: 'right', padding:'12% 0 0 0' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '50% 50%', gap: '2%', fontSize: '15px' }}>
-          <a href="./About">About</a>
-          <a href="./Contact">Contact</a>
+        <div style={{ display: 'grid', gridTemplateColumns: '25% 25% 25% 25%', gap: '2%'}}>
+          <a href="./Event">Event Info</a>
+          <a href="./About">About AVCon</a>
+          <a href="./Contact">Contact Us</a>
+          <a href="./Register">Register</a>
         </div>
       </div>
     </div>

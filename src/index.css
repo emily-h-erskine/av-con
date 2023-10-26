@@ -12,9 +12,16 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .container header .header-nav-area #nav_container  {
+    display:flex;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb)); /* Set the background color to black */
+  font-family: 'Inter', sans-serif; /* Set the font-family to Inter and fallback to sans-serif */
 }
 
 a {
@@ -22,8 +29,4 @@ a {
 }
 a:hover {
   color: #ffffff; /* Set the link hover color to white */
-}
-
-code {
-  font-family: 'Roboto', sans-serif;
 }

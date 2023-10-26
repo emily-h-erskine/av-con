@@ -6,6 +6,8 @@ import { Footer } from './CommonComponents/Footer/Footer';
 import About from './About/about';
 import Contact from './Contact/contact';
 import Home from './Home/home';
+import Event from './Event/event';
+import Register from './Register/register';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -15,8 +17,10 @@ export default function App() {
       <RootLayout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/event" element={<Event />} />
           <Route path="/about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </RootLayout>
       <Footer />
