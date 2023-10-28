@@ -32,6 +32,19 @@ a:hover {
   color: #ffffff; /* Set the link hover color to white */
 }
 
+p {
+  color: #ffffff; /* Set the link color to white */
+  text-decoration: none;
+  font-size: small;
+}
+
+button {
+  background-color: #07101D;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
 .AppHeader {
   background-color: #07101D;
   min-height: 100vh;
