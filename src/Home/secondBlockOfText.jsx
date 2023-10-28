@@ -34,8 +34,8 @@ export default function SecondImageAndText() {
           <Grid item xs={7}>
               <div style={{ textAlign: 'center' }}>
                 <img
-                  src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?cs=srgb&dl=pexels-pixabay-46148.jpg&fm=jpg"
-                  alt="Airplane"
+                  src="https://www.atlanticaviation.ie/wp-content/uploads/2023/03/Shane-and-girls-scaled.jpg"
+                  alt="Sample AirCraft Tech Photo"
                   style={{ width: '80%', mixBlendMode: 'luminosity' }}
                 />
               </div>

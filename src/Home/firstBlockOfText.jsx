@@ -9,8 +9,8 @@ export default function FirstImageAndText() {
           <Grid item xs={7}>
               <div style={{ textAlign: 'center' }}>
                 <img
-                  src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?cs=srgb&dl=pexels-pixabay-46148.jpg&fm=jpg"
-                  alt="Airplane"
+                  src="https://i.ytimg.com/vi/etSlzjGCiKg/maxresdefault.jpg"
+                  alt="Shannon Airport Image"
                   style={{ width: '80%', mixBlendMode: 'luminosity' }}
                 />
               </div>
