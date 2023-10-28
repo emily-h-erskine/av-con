@@ -19,23 +19,21 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   font-family: 'Inter', sans-serif;
-  background: rgb(var(--background-start-rgb)); /* Set the background color to black */
+  background: #07101D;
 }
 
 a {
   color: #ffffff; /* Set the link color to white */
   text-decoration: none;
-  font-size: medium;
-
+  font-size: small;
 }
 a:hover {
   color: #ffffff; /* Set the link hover color to white */
 }
 
 .AppHeader {
-  background-color: #000000;
+  background-color: #07101D;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

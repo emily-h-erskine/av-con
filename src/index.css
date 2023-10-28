@@ -1,14 +1,14 @@
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 0, 0, 0; /* Set the RGB value for black */
-  --background-end-rgb: 0, 0, 0; /* Set the RGB value for black */
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0; /* Set the RGB value for black */
-    --background-end-rgb: 0, 0, 0; /* Set the RGB value for black */
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
@@ -19,9 +19,42 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb)); /* Set the background color to black */
-  font-family: 'Inter', sans-serif; /* Set the font-family to Inter and fallback to sans-serif */
+  font-family: 'Inter', sans-serif;
+  background: #07101D;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff; /* Set the link color to white */
+  text-decoration: none;
+  font-size: small;
+}
+a:hover {
+  color: #ffffff; /* Set the link hover color to white */
+}
+
+.AppHeader {
+  background-color: #07101D;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 a {
