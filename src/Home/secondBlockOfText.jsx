@@ -9,7 +9,7 @@ export default function SecondImageAndText() {
           <Grid item xs={5}>
               <div>
                 <p>
-                Part 2 - 24-Hour Flight Sim Competition:
+                <b>Part 2 - 24-Hour Flight Sim Competition:</b>
                 <br /><br /><br />
                 Non-stop Action: Join us for a thrilling 24-hour flight simulation competition that kicks off at 12 pm on day 1 and concludes at 12 pm on day 2.
                 <br /><br />
@@ -21,7 +21,7 @@ export default function SecondImageAndText() {
                 <br /><br />
                 To Register a Team: Contact our flight sim team at flightsim@avcon.ie.
                 <br /><br /><br />
-                Exhibitor Inquiries:
+                <b>Exhibitor Inquiries:</b>
                 <br /><br />
                 If you are interested in showcasing your products or services at AvCon, please contact us at hello@avcon.ie.
                 <br /><br />

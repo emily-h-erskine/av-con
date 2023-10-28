@@ -20,7 +20,7 @@ export default function FirstImageAndText() {
                 <p>
                   Welcome to AvCon, your gateway to the future of aviation! This two-day event is your ticket to explore the world of aviation, from thrilling careers to cutting-edge technology. Here's what you can expect at AvCon:
                   <br /><br /><br />
-                  Part 1 - Aviation Convention:
+                  <b>Part 1 - Aviation Convention:</b>
                   <br /><br />
                   Discover Career Opportunities: AvCon brings together the best and brightest minds in aviation to shed light on the exciting careers this industry has to offer.
                   <br /><br />
@@ -29,9 +29,9 @@ export default function FirstImageAndText() {
                   Engaging Talks: Hear from industry experts and thought leaders who will share their insights and experiences.
                   <br /><br />
                   Exhibitors: Explore booths featuring the latest innovations, educational institutions, and career opportunities in aviation.
-                  <br /><br /><br />
-                  Pricing:
-                  <br />
+                  <br /><br />
+                  <b>Pricing:</b>
+                  <br /><br />
                   School Groups: Free admission.
                   <br />
                   Third-Level Students: Free with valid student cards.
