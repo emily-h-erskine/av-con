@@ -17,29 +17,14 @@ export default function FirstImageAndText() {
           </Grid>
           <Grid item xs={5}>
               <div>
-                <p>
-                  Welcome to AvCon, your gateway to the future of aviation! This two-day event is your ticket to explore the world of aviation, from thrilling careers to cutting-edge technology. Here's what you can expect at AvCon:
-                  <br /><br /><br />
-                  <b>Part 1 - Aviation Convention:</b>
+                <h1>
+                  See you at AvCon!!
                   <br /><br />
-                  Discover Career Opportunities: AvCon brings together the best and brightest minds in aviation to shed light on the exciting careers this industry has to offer.
-                  <br /><br />
-                  Tech Showcase: Get a glimpse into the future with presentations on the latest aviation technology.
-                  <br /><br />
-                  Engaging Talks: Hear from industry experts and thought leaders who will share their insights and experiences.
-                  <br /><br />
-                  Exhibitors: Explore booths featuring the latest innovations, educational institutions, and career opportunities in aviation.
-                  <br /><br />
-                  <b>Pricing:</b>
-                  <br /><br />
-                  School Groups: Free admission.
-                  <br />
-                  Third-Level Students: Free with valid student cards.
-                  <br />
-                  Individual Tickets: €10 per person.
-                  <br />
-                  To Register a School: Contact our dedicated school team at schools@avcon.ie.
-                </p>
+                  Where the future of aviation takes flight!
+                </h1>
+                <h3 style={{textAlign: 'right'}}>
+                  This two-day extravaganza opens the doors to a world of thrilling opportunities and cutting-edge technology in aviation. 
+                </h3>
               </div>
           </Grid>
         </Grid>
