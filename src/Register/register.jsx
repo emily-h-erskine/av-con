@@ -1,6 +1,7 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import RegistrationForm from "./registrationForm";
 
 export default function Register() {
   return (
@@ -18,7 +19,8 @@ export default function Register() {
             </Grid>
             <Grid item xs={4}>
               <div>
-                <p>Register for AVCon</p>
+                <h3>Register for AVCon</h3>
+                <RegistrationForm />
               </div>
             </Grid>
           </Grid>
