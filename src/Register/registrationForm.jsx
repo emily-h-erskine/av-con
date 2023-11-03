@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import emailjs from 'emailjs-com';
 import { Alert } from '@mui/material';
 
 export default function RegistrationForm() {
@@ -7,6 +6,8 @@ export default function RegistrationForm() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
+  const [alertMessage, setAlertMessage] = useState('');
+  const [alertType, setAlertType] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -20,16 +21,31 @@ export default function RegistrationForm() {
   };
 
   const sendEmail = (e) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
-
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-      .then((result) => {
-        console.log(result.text);
-        <Alert>Success You've Been Registered</Alert>
+    e.preventDefault();
+    const formData = new FormData(form.current);
+    fetch('https://formspree.io/[email here]', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+      },
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          setAlertMessage('Success You\'ve Been Registered');
+          setAlertType('success');
+          setFirstName('');
+          setLastName('');
+          setEmail('');
+        } else {
+          setAlertMessage('Ooops Something Went Wrong - Please Try Again');
+          setAlertType('error');
+        }
       })
       .catch((error) => {
-        console.log(error.text);
-        <Alert>Ooops Something Went Wrong - Please Try Again</Alert>
+        console.error('Error:', error);
+        setAlertMessage('Ooops Something Went Wrong - Please Try Again');
+        setAlertType('error');
       });
   };
 
@@ -91,6 +107,11 @@ export default function RegistrationForm() {
           <b>Register</b>
         </button>
       </div>
+      {alertMessage && (
+        <Alert severity={alertType} style={{ marginTop: '20px' }}>
+          {alertMessage}
+        </Alert>
+      )}
     </form>
   );
-};
+}
