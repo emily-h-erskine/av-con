@@ -124,7 +124,7 @@ const sendEmail = (e) => {
             padding: '20px 50px',
             position: 'absolute',
             right: '10%',
-            top: '70%',
+            top: '75%',
           }}
         >
           <b>Register</b>
