@@ -1,6 +1,7 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import ContactUsForm from "./contactForm";
 
 export default function Contact() {
   return (
@@ -18,7 +19,8 @@ export default function Contact() {
             </Grid>
             <Grid item xs={4}>
               <div>
-                <p>Contact Us</p>
+                <h1>Contact Us</h1>
+                <ContactUsForm />
               </div>
             </Grid>
           </Grid>

@@ -1,6 +1,6 @@
 {
   "name": "av-con",
-  "homepage": "www.avcon.ie",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,6 +27,8 @@
     "react-hook-form": "^7.47.0",
     "react-scripts": "5.0.1",
     "serve": "^14.2.1",
+    "survey-core": "^1.9.115",
+    "survey-react": "^1.9.115",
     "sweetalert2": "^11.9.0",
     "sweetalert2-react-content": "^5.0.7",
     "util": "^0.12.5",
