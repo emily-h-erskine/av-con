@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Alert } from '@mui/material';
+import { log } from 'util';
 
 export default function RegistrationForm() {
   const form = useRef();
@@ -123,7 +124,7 @@ const sendEmail = (e) => {
           style={{
             padding: '20px 50px',
             position: 'absolute',
-            right: '10%',
+            left: '25%',
             top: '75%',
           }}
         >
