@@ -20,35 +20,34 @@ export default function RegistrationForm() {
     }
   };
 
-const sendEmail = (e) => {
-  e.preventDefault();
-  const formData = {
-    firstName,
-    lastName,
-    email,
-  };
-
-  fetch('http://localhost:3001/send-email', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => response.text())
-    .then((data) => {
-      setAlertMessage('Success You\'ve Been Registered');
-      setAlertType('success');
-      setFirstName('');
-      setLastName('');
-      setEmail('');
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const formData = new FormData(form.current);
+    fetch('https://formspree.io/[email here]', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+      },
+      body: formData,
     })
-    .catch((error) => {
-      console.error('Error:', error);
-      setAlertMessage('Ooops Something Went Wrong - Please Try Again');
-      setAlertType('error');
-    });
-};
+      .then((response) => {
+        if (response.ok) {
+          setAlertMessage('Success You\'ve Been Registered');
+          setAlertType('success');
+          setFirstName('');
+          setLastName('');
+          setEmail('');
+        } else {
+          setAlertMessage('Ooops Something Went Wrong - Please Try Again');
+          setAlertType('error');
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        setAlertMessage('Ooops Something Went Wrong - Please Try Again');
+        setAlertType('error');
+      });
+  };
 
   return (
     <form ref={form} onSubmit={sendEmail}>
@@ -98,7 +97,6 @@ const sendEmail = (e) => {
         <button
           type="submit"
           name="Submit Registration Button"
-          onSubmit={sendEmail}
           style={{
             padding: '20px 50px',
             position: 'absolute',
