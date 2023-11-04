@@ -19,7 +19,7 @@ export default function Register() {
             </Grid>
             <Grid item xs={4}>
               <div>
-                <h3>Register for AVCon</h3>
+                <h1>Register for AVCon</h1>
                 <RegistrationForm />
               </div>
             </Grid>

@@ -6,6 +6,7 @@ export default function RegistrationForm() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
+  const [attendants, setAttendants] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
   const [alertType, setAlertType] = useState('');
 
@@ -17,6 +18,8 @@ export default function RegistrationForm() {
       setLastName(value);
     } else if (name === 'email') {
       setEmail(value);
+    } else if (name === 'attendants') {
+      setAttendants(value);
     }
   };
 
@@ -26,6 +29,7 @@ const sendEmail = (e) => {
     firstName,
     lastName,
     email,
+    attendants,
   };
 
   fetch('http://localhost:3001/send-email', {
@@ -66,6 +70,7 @@ const sendEmail = (e) => {
           placeholder="First Name"
         />
       </div>
+      <br/>
       <div className="lastname">
         <label className="form__label" htmlFor="lastName">
           Last Name:{' '}
@@ -80,6 +85,7 @@ const sendEmail = (e) => {
           placeholder="Last Name"
         />
       </div>
+      <br/>
       <div className="email">
         <label className="form__label" htmlFor="email">
           Email:{' '}
@@ -94,6 +100,21 @@ const sendEmail = (e) => {
           placeholder="Email"
         />
       </div>
+      <br />
+      <div className="attendants">
+        <label className="form__label" htmlFor="attendants">
+          Number of People Attending:{' '}
+        </label>
+        <input
+          type="number"
+          id="attendants"
+          className="form__input"
+          value={attendants}
+          onChange={(e) => handleInputChange(e)}
+          name="attendants"
+          placeholder="0"
+        />
+      </div>
       <div>
         <button
           type="submit"
@@ -103,7 +124,7 @@ const sendEmail = (e) => {
             padding: '20px 50px',
             position: 'absolute',
             right: '10%',
-            top: '60%',
+            top: '70%',
           }}
         >
           <b>Register</b>
