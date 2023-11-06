@@ -9,7 +9,7 @@ export default function EventFirstBlock() {
         <Grid item xs={6}>
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <img
-                  src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?cs=srgb&dl=pexels-pixabay-46148.jpg&fm=jpg"
+                  src="https://fullfatthings-keyaero.b-cdn.net/sites/keyaero/files/inline-images/Pilatus%20PC-9M%20%5B260%2C%20Irish%20Air%20Corps%20College%20-%20Flying%20Training%20School%2C%20Irish%20Air%20Corps%2C%20RAF%20Cosford%20Airshow%202016%5D%201.JPG"
                   alt="Airplane"
                   style={{ width: '80%', mixBlendMode: 'luminosity' }}
                 />

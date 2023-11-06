@@ -19,26 +19,27 @@ export default function EventSecondBlock() {
                 <br />
                 <b>Exhibitor Inquiries:</b>
                 <p>If you are interested in showcasing your products or services at AvCon, please contact us at hello@avcon.ie.</p>
-                <hr/>
-                <p>
-                  AvCon promises to be an event like no other, offering a unique blend of education, entertainment, and fundraising for a great cause. Join us on [event dates] and be a part of the aviation revolution!
-                  <br/><br/>
-                  For the latest updates and information, visit our website at www.avcon.ie 
-                  <br/>
-                  Don't miss your chance to be a part of the future of aviation at AvCon!
-                </p>
             </div>
+            <hr/>
             </Grid>
             <Grid item xs={7}>
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <img
-                  src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?cs=srgb&dl=pexels-pixabay-46148.jpg&fm=jpg"
+                  src="https://www.dublinaerospace.com/site/uploads/sys_articles/62/Dublin%20Aerospace%20Recruiting%20Drive%20.jpg"
                   alt="Airplane"
                   style={{ width: '80%', mixBlendMode: 'luminosity'}}
                 />
               </div>
             </Grid>
         </Grid>
+        <br/>
+        <p>
+          AvCon promises to be an event like no other, offering a unique blend of education, entertainment, and fundraising for a great cause. Join us on [event dates] and be a part of the aviation revolution!
+          <br/><br/>
+          For the latest updates and information, visit our website at www.avcon.ie 
+          <br/>
+          Don't miss your chance to be a part of the future of aviation at AvCon!
+        </p>
       </Box>
   );
 }
