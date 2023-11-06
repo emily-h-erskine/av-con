@@ -24,7 +24,9 @@ export default function SecondImageAndText() {
                     <li>Contact flightsim@avcon.ie to register your team.</li>
                   </ul>
                   <br/>
+                  <hr />
                   <h4 style={{ textAlign: 'center' }}>Join us for an extraordinary event fusing education, entertainment, and fundraising. Don't miss your chance to be part of the aviation revolution!</h4>
+                  <hr/>
               </div>
           </Grid>
           <Grid item xs={7}>

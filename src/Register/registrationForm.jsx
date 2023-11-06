@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { Alert } from '@mui/material';
-import { log } from 'util';
 
 export default function RegistrationForm() {
   const form = useRef();

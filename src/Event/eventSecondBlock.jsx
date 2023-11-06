@@ -16,8 +16,17 @@ export default function EventSecondBlock() {
                   <li><b>Fundraising Requirement:</b> Each team must raise a minimum of €3000 to enter.</li>
                   <li><b>To Register a Team:</b> Contact our flight sim team at flightsim@avcon.ie.</li>
                 </ul>
+                <br />
                 <b>Exhibitor Inquiries:</b>
                 <p>If you are interested in showcasing your products or services at AvCon, please contact us at hello@avcon.ie.</p>
+                <hr/>
+                <p>
+                  AvCon promises to be an event like no other, offering a unique blend of education, entertainment, and fundraising for a great cause. Join us on [event dates] and be a part of the aviation revolution!
+                  <br/><br/>
+                  For the latest updates and information, visit our website at www.avcon.ie 
+                  <br/>
+                  Don't miss your chance to be a part of the future of aviation at AvCon!
+                </p>
             </div>
             </Grid>
             <Grid item xs={7}>
