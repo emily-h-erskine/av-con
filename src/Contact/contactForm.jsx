@@ -1,86 +1,141 @@
-import React, { useCallback, useState } from 'react';
-import * as Survey from 'survey-react';
-import { Model } from 'survey-core';
-
-const SURVEY_ID = 1;
+import React, { useRef, useState } from 'react';
+import { Alert } from '@mui/material';
 
 export default function ContactUsForm() {
-  const surveyJson = {
-    elements: [
-      {
-        name: 'FirstName',
-        title: 'First Name:',
-        type: 'text',
-      },
-      {
-        name: 'LastName',
-        title: 'Last Name:',
-        type: 'text',
-      },
-      {
-        name: 'Email',
-        title: 'Email:',
-        type: 'text',
-      },
-      {
-        name: 'Message',
-        title: 'Message:',
-        type: 'text',
-      },
-    ],
-  };
-
+  const form = useRef();
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
   const [alertType, setAlertType] = useState('');
 
-  const saveSurveyResults = (url, json) => {
-    fetch('mailto:emilykarate1234@gmail.com', { 
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=UTF-8',
-      },
-      body: JSON.stringify({ surveyData: json }),
-    })
-      .then((response) => {
-        if (response.ok) {
-          setAlertMessage("Success! Your message has been sent!");
-          setAlertType('success');
-        } else {
-          console.error('Error:', response);
-          setAlertMessage('Oops! Something went wrong - please try again');
-          setAlertType('error');
-        }
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        setAlertMessage('Oops! Something went wrong - please try again');
-        setAlertType('error');
-      });
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    if (name === 'firstName') {
+      setFirstName(value);
+    } else if (name === 'lastName') {
+      setLastName(value);
+    } else if (name === 'email') {
+      setEmail(value);
+    } else if (name === 'message') {
+      setMessage(value);
+    }
   };
 
-  const survey = new Model(surveyJson);
-  const surveyComplete = useCallback(
-    (sender) => {
-      const email = 'emilykarate1234@gmail.com';
-      const subject = 'Survey Results';
-      const body = JSON.stringify(sender.data);
-      const mailtoString = `mailto:${email}?subject=${subject}&body=${body}`;
-  
-      window.location.href = mailtoString;
-  
-      setAlertMessage("Success! Your Message Sent!!");
-      setAlertType('success');
-    },
-    []
-  );
+const sendEmail = (e) => {
+  e.preventDefault();
+  const formData = {
+    firstName,
+    lastName,
+    email,
+    message,
+  };
 
-  survey.onComplete.add(surveyComplete);
+  fetch('http://localhost:3001/send-email', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formData),
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      setAlertMessage('Success You\'ve Been Registered');
+      setAlertType('success');
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setMessage('');
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      setAlertMessage('Ooops Something Went Wrong - Please Try Again');
+      setAlertType('error');
+    });
+};
 
   return (
-    <div>
-      <Survey.Survey model={survey} />
+    <form ref={form} onSubmit={sendEmail}>
+      <div className="username">
+        <label className="form__label" htmlFor="firstName">
+          First Name:{' '}
+        </label>
+        <input
+          className="form__input"
+          type="text"
+          value={firstName}
+          onChange={(e) => handleInputChange(e)}
+          name="firstName"
+          id="firstName"
+          placeholder="First Name"
+        />
+      </div>
       <br/>
-      {alertMessage && <div className={alertType}>{alertMessage}</div>}
-    </div>
+      <div className="lastname">
+        <label className="form__label" htmlFor="lastName">
+          Last Name:{' '}
+        </label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          value={lastName}
+          className="form__input"
+          onChange={(e) => handleInputChange(e)}
+          placeholder="Last Name"
+        />
+      </div>
+      <br/>
+      <div className="email">
+        <label className="form__label" htmlFor="email">
+          Email:{' '}
+        </label>
+        <input
+          type="email"
+          id="email"
+          className="form__input"
+          value={email}
+          onChange={(e) => handleInputChange(e)}
+          name="email"
+          placeholder="Email"
+        />
+      </div>
+      <br />
+      <div className="message">
+        <label className="form__label" htmlFor="message">
+          Message: {' '}
+        </label>
+        <input
+          type="text"
+          id="message"
+          className="form__input"
+          value={message}
+          onChange={(e) => handleInputChange(e)}
+          name="message"
+          placeholder="Write your message to us"
+        />
+      </div>
+      <div>
+        <button
+          type="submit"
+          name="Submit Registration Button"
+          onSubmit={sendEmail}
+          style={{
+            padding: '20px 50px',
+            position: 'absolute',
+            left: '80%',
+            top: '75%',
+          }}
+        >
+          <b>Register</b>
+        </button>
+      </div>
+      {alertMessage && (
+        <Alert severity={alertType} style={{ marginTop: '20px' }}>
+          {alertMessage}
+        </Alert>
+      )}
+    </form>
   );
 }
