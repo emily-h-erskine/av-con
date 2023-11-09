@@ -27,7 +27,7 @@ export default function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/eventSchedule" element={<EventSchedule />} />
           <Route path="/flightSim" element={<FlightSim />} />
-          <Route path="/newsUpdates" element={<News />} />
+          <Route path="/news" element={<News />} />
           <Route path="/speakersPresenters" element={<SpeakersPresenters />} />
         </Routes>
       </RootLayout>
