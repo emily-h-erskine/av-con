@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Dropdown from './Dropdown.svg';
 
 export const Header = () => {
   const [showEventDropdown, setShowEventDropdown] = useState(false);
@@ -13,7 +14,7 @@ export const Header = () => {
   };
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '50% 50%', padding: '0% 10% 0% 5%' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: '50% 50%', padding: '0% 10% 0% 5%'}}>
       <div style={{ textAlign: 'left' }}>
         <a href="/">
           <img src='./AVConLogoWhite.png' alt="AV Con" width={'40%'} />
@@ -27,15 +28,14 @@ export const Header = () => {
             onMouseLeave={handleEventDropdownToggle}
           >
             <a href="./Event">EVENT INFO</a>
+            <img src={Dropdown} alt="Dropdown" style={{ padding:'0 0 0 10px' }}/>
             {showEventDropdown && (
-              <div style={{ position: 'absolute', top: '100%', left: 0, backgroundColor: '#07101D', padding: '10px' }}>
-                <br/>
+              <div style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign:'left'}}>
                 <a href="./EventSchedule">EVENT SCHEDULE</a>
                 <br/><br/>
                 <a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a>
                 <br/><br/>
                 <a href="./FlightSim">24-HOUR FLIGHT SIM COMPETITION</a>
-                <br/>
               </div>
             )}
           </div>
@@ -45,11 +45,10 @@ export const Header = () => {
             onMouseLeave={handleAboutDropdownToggle}
           >
             <a href="./About">ABOUT AVCON</a>
+            <img src={Dropdown} alt="Dropdown" style={{ padding:'0 0 0 10px' }}/>
             {showAboutDropdown && (
-              <div style={{ position: 'absolute', top: '100%', left: 0, backgroundColor: '#07101D', padding: '10px' }}>
-                <br/>
+              <div style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign:'left'}}>
                 <a href="./News">NEWS &amp; UPDATES </a>
-                <br/>
               </div>
             )}
           </div>
