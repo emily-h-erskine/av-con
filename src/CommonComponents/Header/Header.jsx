@@ -29,11 +29,13 @@ export const Header = () => {
             <a href="./Event">EVENT INFO</a>
             {showEventDropdown && (
               <div style={{ position: 'absolute', top: '100%', left: 0, backgroundColor: '#07101D', padding: '10px' }}>
+                <br/>
                 <a href="./EventSchedule">EVENT SCHEDULE</a>
-                <br/>
+                <br/><br/>
                 <a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a>
-                <br/>
+                <br/><br/>
                 <a href="./FlightSim">24-HOUR FLIGHT SIM COMPETITION</a>
+                <br/>
               </div>
             )}
           </div>
@@ -45,7 +47,9 @@ export const Header = () => {
             <a href="./About">ABOUT AVCON</a>
             {showAboutDropdown && (
               <div style={{ position: 'absolute', top: '100%', left: 0, backgroundColor: '#07101D', padding: '10px' }}>
+                <br/>
                 <a href="./News">NEWS &amp; UPDATES </a>
+                <br/>
               </div>
             )}
           </div>
