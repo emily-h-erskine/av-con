@@ -23,40 +23,40 @@ export default function ContactUsForm() {
     }
   };
 
-const sendEmail = (e) => {
-  e.preventDefault();
-  const formData = {
-    firstName,
-    lastName,
-    email,
-    message,
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const formData = {
+      firstName,
+      lastName,
+      email,
+      message,
+    };
+
+    fetch('http://localhost:3001/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        setAlertMessage('Success You\'ve Been Registered');
+        setAlertType('success');
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        setAlertMessage('Ooops Something Went Wrong - Please Try Again');
+        setAlertType('error');
+      });
   };
 
-  fetch('http://localhost:3001/send-email', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => response.text())
-    .then((data) => {
-      setAlertMessage('Success You\'ve Been Registered');
-      setAlertType('success');
-      setFirstName('');
-      setLastName('');
-      setEmail('');
-      setMessage('');
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      setAlertMessage('Ooops Something Went Wrong - Please Try Again');
-      setAlertType('error');
-    });
-};
-
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail} style={{ maxWidth: '80%', margin: 'auto' }}>
       <div className="username">
         <label className="form__label" htmlFor="firstName">
           First Name:{' '}
@@ -69,9 +69,10 @@ const sendEmail = (e) => {
           name="firstName"
           id="firstName"
           placeholder="First Name"
+          style={{ width: '100%' }}
         />
       </div>
-      <br/>
+      <br />
       <div className="lastname">
         <label className="form__label" htmlFor="lastName">
           Last Name:{' '}
@@ -84,9 +85,10 @@ const sendEmail = (e) => {
           className="form__input"
           onChange={(e) => handleInputChange(e)}
           placeholder="Last Name"
+          style={{ width: '100%' }}
         />
       </div>
-      <br/>
+      <br />
       <div className="email">
         <label className="form__label" htmlFor="email">
           Email:{' '}
@@ -99,6 +101,7 @@ const sendEmail = (e) => {
           onChange={(e) => handleInputChange(e)}
           name="email"
           placeholder="Email"
+          style={{ width: '100%' }}
         />
       </div>
       <br />
@@ -114,19 +117,15 @@ const sendEmail = (e) => {
           onChange={(e) => handleInputChange(e)}
           name="message"
           placeholder="Write your message to us"
+          style={{ width: '100%' }}
         />
       </div>
-      <div>
+      <div style={{ marginTop: '20px' }}>
         <button
           type="submit"
           name="Submit Registration Button"
           onSubmit={sendEmail}
-          style={{
-            padding: '20px 50px',
-            position: 'absolute',
-            left: '80%',
-            top: '75%',
-          }}
+          style={{ padding: '10px', width: '100%' }}
         >
           <b>Register</b>
         </button>
