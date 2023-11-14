@@ -73,6 +73,8 @@ export const Header = () => {
               {showAboutDropdown && (
                 <div style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
                   <a href="./News">NEWS &amp; UPDATES </a>
+                  <br /><br />
+                  <a href="./SponsorsPartners">SPONSORS &amp; PARTNERS </a>
                 </div>
               )}
             </div>

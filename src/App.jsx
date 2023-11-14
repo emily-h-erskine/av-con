@@ -13,6 +13,7 @@ import EventSchedule from "./EventSchedule/eventSchedule";
 import FlightSim from "./FlightSim/flightSim";
 import News from "./News/newsUpdates";
 import SpeakersPresenters from "./SpeakersPresenters/speakersPresenters";
+import SponsorsPartners from './SponsorsPartners/sponsorsPartners';
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/flightSim" element={<FlightSim />} />
           <Route path="/news" element={<News />} />
           <Route path="/speakersPresenters" element={<SpeakersPresenters />} />
+          <Route path="/sponsorsPartners" element={<SponsorsPartners />} />
         </Routes>
       </RootLayout>
       <Footer />
