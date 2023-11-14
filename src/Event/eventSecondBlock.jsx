@@ -18,7 +18,7 @@ export default function EventSecondBlock() {
             </ul>
             <br />
             <b>Exhibitor Inquiries:</b>
-            <p>If you are interested in showcasing your products or services at AvCon, please contact us at hello@avcon.ie.</p>
+            <h5>If you are interested in showcasing your products or services at AvCon, please contact us at hello@avcon.ie.</h5>
             <hr />
           </div>
         </Grid>
@@ -33,13 +33,13 @@ export default function EventSecondBlock() {
         </Grid>
       </Grid>
       <br />
-      <p>
-        AvCon promises to be an event like no other, offering a unique blend of education, entertainment, and fundraising for a great cause. Join us on [event dates] and be a part of the aviation revolution!
+      <h5>
+        AvCon promises to be an event like no other, offering a unique blend of education, entertainment, and fundraising for a great cause. Join us on October 2024 and be a part of the aviation revolution!
         <br /><br />
         For the latest updates and information, visit our website at www.avcon.ie
         <br />
         Don't miss your chance to be a part of the future of aviation at AvCon!
-      </p>
+      </h5>
     </Box>
   );
 }
