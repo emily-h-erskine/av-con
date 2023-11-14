@@ -23,36 +23,36 @@ export default function RegistrationForm() {
     }
   };
 
-const sendEmail = (e) => {
-  e.preventDefault();
-  const formData = {
-    firstName,
-    lastName,
-    email,
-    attendants,
-  };
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const formData = {
+      firstName,
+      lastName,
+      email,
+      attendants,
+    };
 
-  fetch('http://localhost:3001/send-email', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => response.text())
-    .then((data) => {
-      setAlertMessage('Success You\'ve Been Registered');
-      setAlertType('success');
-      setFirstName('');
-      setLastName('');
-      setEmail('');
+    fetch('http://localhost:3001/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
     })
-    .catch((error) => {
-      console.error('Error:', error);
-      setAlertMessage('Ooops Something Went Wrong - Please Try Again');
-      setAlertType('error');
-    });
-};
+      .then((response) => response.text())
+      .then((data) => {
+        setAlertMessage('Success! You\'ve Been Registered');
+        setAlertType('success');
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        setAlertMessage('Oops! Something Went Wrong - Please Try Again');
+        setAlertType('error');
+      });
+  };
 
   return (
     <form ref={form} onSubmit={sendEmail}>
@@ -70,7 +70,7 @@ const sendEmail = (e) => {
           placeholder="First Name"
         />
       </div>
-      <br/>
+      <br />
       <div className="lastname">
         <label className="form__label" htmlFor="lastName">
           Last Name:{' '}
@@ -85,7 +85,7 @@ const sendEmail = (e) => {
           placeholder="Last Name"
         />
       </div>
-      <br/>
+      <br />
       <div className="email">
         <label className="form__label" htmlFor="email">
           Email:{' '}
@@ -121,10 +121,9 @@ const sendEmail = (e) => {
           name="Submit Registration Button"
           onSubmit={sendEmail}
           style={{
-            padding: '20px 50px',
-            position: 'absolute',
-            left: '25%',
-            top: '75%',
+            padding: '15px',
+            width: '100%',
+            marginTop: '20px',
           }}
         >
           <b>Register</b>
