@@ -77,7 +77,7 @@ export const Header = () => {
               )}
             </div>
             <a href="./Contact">CONTACT US</a>
-            <a href="./Register">REGISTER</a>
+            <a href="./Register">BOOK NOW</a>
           </div>
         )}
       </div>

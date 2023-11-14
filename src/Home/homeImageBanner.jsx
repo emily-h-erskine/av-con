@@ -36,7 +36,7 @@ export default function HomeImageBanner() {
         }}
       >
         <a href="./Register">
-          <b>Register Now</b>
+          <b>Book Now</b>
         </a>
       </button>
 

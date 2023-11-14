@@ -10,7 +10,7 @@ export default function Register() {
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <div style={{ padding: "0 15%" }}>
-              <h1>Register for AVCon</h1>
+              <h1>Book Tickets for AVCon</h1>
               <RegistrationForm />
             </div>
           </Grid>
