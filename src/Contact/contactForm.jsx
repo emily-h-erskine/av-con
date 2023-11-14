@@ -127,7 +127,7 @@ export default function ContactUsForm() {
           onSubmit={sendEmail}
           style={{ padding: '10px', width: '100%' }}
         >
-          <b>Register</b>
+          <b>Submit</b>
         </button>
       </div>
       {alertMessage && (

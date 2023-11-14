@@ -126,7 +126,7 @@ export default function RegistrationForm() {
             marginTop: '20px',
           }}
         >
-          <b>Register</b>
+          <b>Submit</b>
         </button>
       </div>
       {alertMessage && (
