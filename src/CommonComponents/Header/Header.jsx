@@ -39,12 +39,10 @@ export const Header = () => {
       </div>
       <div style={{ textAlign: 'right', padding: isMobile ? '15% 0 0 0' : '15% 0 0 0' }}>
         {isMobile ? (
-          // Hamburger menu for mobile
           <div style={{ cursor: 'pointer' }} onClick={handleMobileToggle}>
             ☰
           </div>
         ) : (
-          // Navigation bar for larger screens
           <div style={{ display: 'grid', gridTemplateColumns: '25% 25% 25% 25%', gap: '2%' }}>
             <div
               style={{ position: 'relative', display: 'inline-block' }}
@@ -79,7 +77,7 @@ export const Header = () => {
               )}
             </div>
             <a href="./Contact">CONTACT US</a>
-            <a href="./Register">BOOK NOW</a>
+            <a href="./Register">BOOK TICKETS</a>
           </div>
         )}
       </div>

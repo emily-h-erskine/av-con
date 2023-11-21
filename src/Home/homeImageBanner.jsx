@@ -25,20 +25,20 @@ export default function HomeImageBanner() {
             'linear-gradient(180deg, #07101D 0%, rgba(7, 16, 29, 0) 100%)'
         }}
       />
-      <button
-        type="button"
-        name="Register Button"
-        style={{
-          padding: '1.5vw 4vw',
-          position: 'absolute',
-          right: '10%',
-          top: '30%'
-        }}
-      >
-        <a href="./Register">
-          <b>Book Now</b>
-        </a>
-      </button>
+        <button
+          type="button"
+          name="Book Tickets Button"
+          style={{
+            padding: '1.5vw 4vw',
+            position: 'absolute',
+            right: '10%',
+            top: '30%'
+          }}
+        >
+          <a href="./Register" style={{ textDecoration: 'none' }}>
+            <b>Book Tickets</b>
+          </a>
+        </button>
 
       <div
         style={{
