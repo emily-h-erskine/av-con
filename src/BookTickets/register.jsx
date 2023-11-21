@@ -1,30 +1,38 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import RegistrationForm from "./registrationForm";
 
 export default function Register() {
   return (
-    <main className="flex min-h-screen flex-col justify-between p-24">
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
-            <div style={{ padding: "0 15%" }}>
-              <h1>Book Tickets for AVCon</h1>
-              <RegistrationForm />
-            </div>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img
-                src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?cs=srgb&dl=pexels-pixabay-46148.jpg&fm=jpg"
-                alt="Airplane"
-                style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
-              />
-            </div>
-          </Grid>
-        </Grid>
-      </Box>
-    </main>
+
+    <div style={{ position: 'relative', padding: '0% 2% 5% 2%' }}>
+    <div>
+    <div
+      style={{
+        width: '100%',
+        height: '50%',
+        left: 0,
+        top: 0,
+        position: 'absolute',
+        mixBlendMode: 'darken',
+        background:
+          'linear-gradient(180deg, #07101D 0%, rgba(7, 16, 29, 0) 100%)'
+      }}
+    />
+    <img
+      src="https://careers.ryanair.com/wp-content/uploads/2019/01/Engineering-Lead-Image.jpg"
+      alt="header image"
+      style={{
+        position: 'relative',
+        zIndex: '-1',
+        width: '100%',
+        mixBlendMode: 'luminosity'
+      }}
+    />
+    </div>
+    <div>
+      <h1 style={{textAlign: "center"}}>Book Tickets for AVCon</h1>
+      <RegistrationForm />
+    </div>
+  </div>
   );
 }

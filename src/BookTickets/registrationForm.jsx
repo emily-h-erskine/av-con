@@ -55,7 +55,7 @@ export default function RegistrationForm() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail} style={{ maxWidth: '80%', margin: 'auto' }}>
       <div className="username">
         <label className="form__label" htmlFor="firstName">
           First Name:{' '}
@@ -68,6 +68,7 @@ export default function RegistrationForm() {
           name="firstName"
           id="firstName"
           placeholder="First Name"
+          style={{ width: '100%' }}
         />
       </div>
       <br />
@@ -83,6 +84,7 @@ export default function RegistrationForm() {
           className="form__input"
           onChange={(e) => handleInputChange(e)}
           placeholder="Last Name"
+          style={{ width: '100%' }}
         />
       </div>
       <br />
@@ -98,6 +100,7 @@ export default function RegistrationForm() {
           onChange={(e) => handleInputChange(e)}
           name="email"
           placeholder="Email"
+          style={{ width: '100%' }}
         />
       </div>
       <br />
@@ -113,6 +116,7 @@ export default function RegistrationForm() {
           onChange={(e) => handleInputChange(e)}
           name="attendants"
           placeholder="0"
+          style={{ width: '100%' }}
         />
       </div>
       <div>
