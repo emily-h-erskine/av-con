@@ -2,7 +2,6 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import FacebookNews from "./facebookNews.jsx";
-import InstagramNews from "./instagramNews.jsx";
 
 export default function News() {
   return (
@@ -18,8 +17,7 @@ export default function News() {
           </Grid>
           <Grid item xs={12} md={6}>
             <div>
-              <h2 style={{ textAlign: 'center' }}>Instagram Live Feed</h2>
-              <InstagramNews />
+              <h2 style={{ textAlign: 'center' }}>Latest</h2>
             </div>
           </Grid>
         </Grid>
