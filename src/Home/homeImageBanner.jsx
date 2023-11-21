@@ -35,7 +35,7 @@ export default function HomeImageBanner() {
             top: '30%'
           }}
         >
-          <a href="./Register" style={{ textDecoration: 'none' }}>
+          <a href="./Register">
             <b>Book Tickets</b>
           </a>
         </button>
