@@ -86,12 +86,11 @@ a:hover {
 }
 
 .event-container {
-  padding: 1% 10%;
+  padding: 2% 5%;
 }
 
 .event-title {
   text-align: center;
-  padding: 0% 1%;
 }
 
 .timeline {
@@ -100,15 +99,16 @@ a:hover {
 
 .timeline-item {
   position: relative;
-  padding: 5%;
+  padding: 10%;
   border-left: 2px solid #98A1A6;
   margin-bottom: 20px;
 }
 
 .timeline-date {
   position: absolute;
-  top: 0;
-  left: -70px;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #041326;
   color: #FFFFFF;
   padding: 8px;
@@ -117,4 +117,21 @@ a:hover {
 
 .timeline-content {
   margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .event-container {
+    padding: 2% 3%;
+  }
+
+  .timeline-date {
+    left: 0;
+    top: 0;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content {
+    margin-left: 0;
+  }
 }
