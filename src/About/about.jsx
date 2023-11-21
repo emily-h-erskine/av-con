@@ -1,28 +1,30 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
+import AboutTimeline from './aboutTimeline.jsx';
 
 export default function About() {
+  const aboutAVCon = [
+    {
+      date: 'January 2023',
+      event: 'Event 1',
+      description: 'Description for Event 1',
+      imageSrc: 'https://www.atlanticaviation.ie/wp-content/uploads/2023/03/Shane-and-girls-scaled.jpg',
+      imageAlt: 'Image 1 Alt Text',
+    },
+    {
+      date: 'February 2023',
+      event: 'Event 2',
+      description: 'Description for Event 2',
+      imageSrc: 'https://www.atlanticaviation.ie/wp-content/uploads/2023/03/Shane-and-girls-scaled.jpg',
+      imageAlt: 'Image 2 Alt Text',
+    },
+  ];
+
   return (
-      <main className="flex min-h-screen flex-col justify-between p-24">
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={2}>
-            <Grid item xs={8}>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <img
-                  src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?cs=srgb&dl=pexels-pixabay-46148.jpg&fm=jpg"
-                  alt="Airplane"
-                  style={{ width: '80%', mixBlendMode: 'luminosity'}}
-                />
-              </div>
-            </Grid>
-            <Grid item xs={4}>
-              <div>
-                <p>This is the about page</p>
-              </div>
-            </Grid>
-          </Grid>
-        </Box>
-      </main>
+    <main className="flex min-h-screen flex-col p-24">
+      <div className="event-container">
+        <h1 className="event-title">About AVCon</h1>
+        <AboutTimeline aboutAVCon={aboutAVCon} />
+      </div>
+    </main>
   );
 }
