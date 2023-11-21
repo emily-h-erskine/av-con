@@ -1,28 +1,27 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
+import Timeline from './timeline.jsx';
+
 
 export default function EventSchedule() {
+  const eventsData = [
+    {
+      date: 'January 2023',
+      event: 'Event 1',
+      description: 'Description for Event 1',
+    },
+    {
+      date: 'February 2023',
+      event: 'Event 2',
+      description: 'Description for Event 2',
+    },
+  ];
+
   return (
-      <main className="flex min-h-screen flex-col justify-between p-24">
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={2}>
-            <Grid item xs={8}>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <img
-                  src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?cs=srgb&dl=pexels-pixabay-46148.jpg&fm=jpg"
-                  alt="Airplane"
-                  style={{ width: '80%', mixBlendMode: 'luminosity'}}
-                />
-              </div>
-            </Grid>
-            <Grid item xs={4}>
-              <div>
-                <p>Event Schedule</p>
-              </div>
-            </Grid>
-          </Grid>
-        </Box>
-      </main>
+    <main className="flex min-h-screen flex-col p-24">
+          <div className="event-container">
+            <h1 className="event-title">Event Schedule</h1>
+            <Timeline events={eventsData} />
+          </div>
+    </main>
   );
 }

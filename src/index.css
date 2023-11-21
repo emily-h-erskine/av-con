@@ -84,3 +84,37 @@ a:hover {
 .form_input{
   width: 60%;
 }
+
+.event-container {
+  padding: 1% 10%;
+}
+
+.event-title {
+  text-align: center;
+  padding: 0% 1%;
+}
+
+.timeline {
+  margin-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 5%;
+  border-left: 2px solid #98A1A6;
+  margin-bottom: 20px;
+}
+
+.timeline-date {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  background-color: #041326;
+  color: #FFFFFF;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.timeline-content {
+  margin-left: 20px;
+}
