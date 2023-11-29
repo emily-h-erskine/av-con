@@ -57,12 +57,80 @@ export default function ContactUsForm() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="your-form-class">
-      {/* Form fields */}
-      <button type="submit" style={{ padding: '10px', width: '100%' }}>
-        <b>Submit</b>
-      </button>
-      {/* Alert */}
+    <form ref={form} onSubmit={sendEmail} className="your-form-class" style={{ maxWidth: '80%', margin: 'auto' }}>
+      <div className="username">
+        <label className="form__label" htmlFor="firstName">
+          First Name:{' '}
+        </label>
+        <input
+          className="form__input"
+          type="text"
+          value={firstName}
+          onChange={(e) => handleInputChange(e)}
+          name="firstName"
+          id="firstName"
+          placeholder="First Name"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <br />
+      <div className="lastname">
+        <label className="form__label" htmlFor="lastName">
+          Last Name:{' '}
+        </label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          value={lastName}
+          className="form__input"
+          onChange={(e) => handleInputChange(e)}
+          placeholder="Last Name"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <br />
+      <div className="email">
+        <label className="form__label" htmlFor="email">
+          Email:{' '}
+        </label>
+        <input
+          type="email"
+          id="email"
+          className="form__input"
+          value={email}
+          onChange={(e) => handleInputChange(e)}
+          name="email"
+          placeholder="Email"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <br />
+      <div className="message">
+        <label className="form__label" htmlFor="message">
+          Message: {' '}
+        </label>
+        <input
+          type="text"
+          id="message"
+          className="form__input"
+          value={message}
+          onChange={(e) => handleInputChange(e)}
+          name="message"
+          placeholder="Write your message to us"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <div style={{ marginTop: '20px' }}>
+        <button
+          type="submit"
+          name="Submit Registration Button"
+          onSubmit={sendEmail}
+          style={{ padding: '10px', width: '100%' }}
+        >
+          <b>Submit</b>
+        </button>
+      </div>
       {alert.message && (
         <Alert severity={alert.type} style={{ marginTop: '20px' }}>
           {alert.message}
