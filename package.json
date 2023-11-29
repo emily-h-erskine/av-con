@@ -1,6 +1,6 @@
 {
   "name": "av-con",
-  "homepage": "/",
+  "homepage": "http:///",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,12 +15,15 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
     "env-cmd": "^10.1.0",
     "express": "^4.18.2",
     "gh-pages": "^6.0.0",
     "mkdir": "^0.0.2",
+    "mongoose": "^8.0.2",
     "nodemailer": "^6.9.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -65,5 +68,17 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.17.0"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emily-h-erskine/av-con.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emily-h-erskine/av-con/issues"
   }
 }

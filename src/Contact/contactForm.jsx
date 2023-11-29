@@ -7,8 +7,7 @@ export default function ContactUsForm() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [alertMessage, setAlertMessage] = useState('');
-  const [alertType, setAlertType] = useState('');
+  const [alert, setAlert] = useState({ message: '', type: '' });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +20,13 @@ export default function ContactUsForm() {
     } else if (name === 'message') {
       setMessage(value);
     }
+  };
+
+  const resetForm = () => {
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setMessage('');
   };
 
   const sendEmail = (e) => {
@@ -40,99 +46,26 @@ export default function ContactUsForm() {
       body: JSON.stringify(formData),
     })
       .then((response) => response.text())
-      .then((data) => {
-        setAlertMessage('Success You\'ve Been Registered');
-        setAlertType('success');
-        setFirstName('');
-        setLastName('');
-        setEmail('');
-        setMessage('');
+      .then(() => {
+        setAlert({ message: 'Success You\'ve Been Registered', type: 'success' });
+        resetForm();
       })
       .catch((error) => {
         console.error('Error:', error);
-        setAlertMessage('Ooops Something Went Wrong - Please Try Again');
-        setAlertType('error');
+        setAlert({ message: 'Ooops Something Went Wrong - Please Try Again', type: 'error' });
       });
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} style={{ maxWidth: '80%', margin: 'auto' }}>
-      <div className="username">
-        <label className="form__label" htmlFor="firstName">
-          First Name:{' '}
-        </label>
-        <input
-          className="form__input"
-          type="text"
-          value={firstName}
-          onChange={(e) => handleInputChange(e)}
-          name="firstName"
-          id="firstName"
-          placeholder="First Name"
-          style={{ width: '100%' }}
-        />
-      </div>
-      <br />
-      <div className="lastname">
-        <label className="form__label" htmlFor="lastName">
-          Last Name:{' '}
-        </label>
-        <input
-          type="text"
-          name="lastName"
-          id="lastName"
-          value={lastName}
-          className="form__input"
-          onChange={(e) => handleInputChange(e)}
-          placeholder="Last Name"
-          style={{ width: '100%' }}
-        />
-      </div>
-      <br />
-      <div className="email">
-        <label className="form__label" htmlFor="email">
-          Email:{' '}
-        </label>
-        <input
-          type="email"
-          id="email"
-          className="form__input"
-          value={email}
-          onChange={(e) => handleInputChange(e)}
-          name="email"
-          placeholder="Email"
-          style={{ width: '100%' }}
-        />
-      </div>
-      <br />
-      <div className="message">
-        <label className="form__label" htmlFor="message">
-          Message: {' '}
-        </label>
-        <input
-          type="text"
-          id="message"
-          className="form__input"
-          value={message}
-          onChange={(e) => handleInputChange(e)}
-          name="message"
-          placeholder="Write your message to us"
-          style={{ width: '100%' }}
-        />
-      </div>
-      <div style={{ marginTop: '20px' }}>
-        <button
-          type="submit"
-          name="Submit Registration Button"
-          onSubmit={sendEmail}
-          style={{ padding: '10px', width: '100%' }}
-        >
-          <b>Submit</b>
-        </button>
-      </div>
-      {alertMessage && (
-        <Alert severity={alertType} style={{ marginTop: '20px' }}>
-          {alertMessage}
+    <form ref={form} onSubmit={sendEmail} className="your-form-class">
+      {/* Form fields */}
+      <button type="submit" style={{ padding: '10px', width: '100%' }}>
+        <b>Submit</b>
+      </button>
+      {/* Alert */}
+      {alert.message && (
+        <Alert severity={alert.type} style={{ marginTop: '20px' }}>
+          {alert.message}
         </Alert>
       )}
     </form>
