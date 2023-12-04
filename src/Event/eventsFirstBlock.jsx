@@ -26,7 +26,7 @@ export default function EventFirstBlock() {
             </ul>
             <b>Pricing:</b>
             <ul>
-              <li>School Groups: Free</li>
+              <li>School Groups: Free with prior valid registration</li>
               <li>Third-Level Students: Free with a Valid Student ID</li>
               <li>Individual Tickets: €10 per person</li>
             </ul>
