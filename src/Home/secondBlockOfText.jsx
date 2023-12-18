@@ -20,7 +20,7 @@ export default function SecondImageAndText() {
               <li>Thrilling non-stop flight simulation from 12 pm to 12 pm.</li>
               <li>Support the Shannon Aviation Museum with your participation.</li>
               <li>Form a team of 4-8 for a round-the-world flight challenge.</li>
-              <li>Each team must raise €3000 to enter.</li>
+              <li>Each team must raise €xxxx to enter.</li>
               <li>Contact flightsim@avcon.ie to register your team.</li>
             </ul>
             <br />
