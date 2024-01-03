@@ -8,25 +8,26 @@ export default function SecondImageAndText() {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={5}>
           <div>
-            <b>Highlights:</b>
-            <ul>
-              <li>Explore exciting aviation careers with industry experts.</li>
-              <li>Get a glimpse of the latest aviation technology.</li>
-              <li>Listen to insightful talks from industry leaders.</li>
-              <li>Visit booths showcasing innovations and career opportunities.</li>
-            </ul>
-            <b>24-Hour Flight Sim Competition:</b>
-            <ul>
-              <li>Thrilling non-stop flight simulation from 12 pm to 12 pm.</li>
-              <li>Support the Shannon Aviation Museum with your participation.</li>
-              <li>Form a team of 4-8 for a round-the-world flight challenge.</li>
-              <li>Each team must raise €xxxx to enter.</li>
-              <li>Contact flightsim@avcon.ie to register your team.</li>
-            </ul>
-            <br />
-            <hr />
-            <h4 style={{ textAlign: 'center' }}>Join us for an extraordinary event fusing education, entertainment, and fundraising. Don't miss your chance to be part of the aviation revolution!</h4>
-            <hr />
+            <h3>
+              Secure your FREE tickets now for an unforgettable adventure at AvCon 2024 book/register here - an absolute must for anyone passionate about aviation!
+              <br/><br/>
+              <hr/>
+            </h3>
+            <h3>Highlights</h3>
+            <b>
+              <h5>
+                <ul>
+                  <li>AvCon 2024: A thrilling journey into the future of aviation for students and enthusiasts.</li>
+                  <li>Explore the wonders of aviation, from basics to cutting-edge technology.</li>
+                  <li>Hands-on learning for primary and secondary students on flight principles and aerodynamics.</li>
+                  <li>Career pathways for tertiary students and aviation enthusiasts, connecting with industry professionals.</li>
+                  <li>Inspirational speakers discussing the future of air travel, space exploration, and sustainable aviation.</li>
+                  <li>Flight simulators and virtual reality experiences for an immersive pilot experience.</li>
+                  <li>Global perspectives on aviation's role in connecting the world and addressing environmental challenges.</li>
+                  <li>Unleash creativity with aviation-themed workshops, design challenges, and competitions.</li>
+                </ul>
+              </h5>
+            </b>
           </div>
         </Grid>
         <Grid item xs={12} sm={7}>
