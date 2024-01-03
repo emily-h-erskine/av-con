@@ -40,8 +40,8 @@ export default function SecondImageAndText() {
           </div>
         </Grid>
       </Grid>
-      <hr/>
-      <div>
+      <div style={{ padding: "0 5% 0 0" }}>
+        <hr />
         <h3>AvCon Xtra: 12-Hour Flight Sim Competition:</h3>
 
         <h5>
