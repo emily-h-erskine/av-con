@@ -5,6 +5,12 @@ import Grid from '@mui/material/Grid';
 export default function EventFirstBlock() {
   return (
     <Box style={{ padding: "0 5% 0 0" }}>
+      <div style={{ textAlign: 'center', padding: '1%'}}>
+        🚀✈️ Welcome to AvCon 2024 - an exhilarating journey into the future of aviation! Calling all Primary, Secondary, and 3rd Level Students, as well as aviation enthusiasts, to join us for a thrilling adventure that will take you soaring through the skies of innovation and discovery.
+        <br/><br/>
+        <hr/>
+        <br/>
+      </div>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -17,20 +23,13 @@ export default function EventFirstBlock() {
         </Grid>
         <Grid item xs={12} md={6}>
           <div>
-            <b>Part 1 - Aviation Convention: </b>
-            <ul>
-              <li><b>Discover Career Opportunities:</b> AvCon brings together the best and brightest minds in aviation to shed light on the exciting careers this industry has to offer.</li>
-              <li><b>Tech Showcase:</b> Get a glimpse into the future with presentations on the latest aviation technology.</li>
-              <li><b>Engaging Talks:</b> Hear from industry experts and thought leaders who will share their insights and experiences.</li>
-              <li><b>Exhibitors:</b> Explore booths featuring the latest innovations, educational institutions, and career opportunities in aviation.</li>
-            </ul>
-            <b>Pricing:</b>
-            <ul>
-              <li>School Groups: Free with prior valid registration</li>
-              <li>Third-Level Students: Free with a Valid Student ID</li>
-              <li>Individual Tickets: €10 per person</li>
-            </ul>
-            <h5>To Register a School: Contact our dedicated school team at schools@avcon.ie.</h5>
+            🌐 Explore the Wonders of Aviation: AvCon is not just an event; it's a portal to the cutting edge of aviation technology and exploration. From the basics of flight to the latest advancements in aerospace engineering, there's something for everyone.
+            <br/><br/>
+            🔬 Hands-On Learning: Primary students will be captivated by interactive exhibits, showcasing the fundamental principles of flight in a fun and engaging way. Secondary students will delve deeper into the mechanics of aircraft design and aerodynamics, gaining insights that will fuel their curiosity for the skies.
+            <br/><br/>
+            🚁 Career Pathways: For tertiary students and young aviation enthusiasts, AvCon 2024 provides a unique opportunity to connect with industry professionals, explore career options, and gain valuable insights into the diverse and exciting world of aviation careers.
+            <br/><br/>
+            🚀 Inspirational Speakers: AvCon 2024 brings together visionaries, pioneers, and experts from the aviation industry. Get ready to be inspired by captivating talks and discussions on the future of air travel, space exploration, and sustainable aviation.
           </div>
         </Grid>
       </Grid>

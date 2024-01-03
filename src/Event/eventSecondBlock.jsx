@@ -8,18 +8,14 @@ export default function EventSecondBlock() {
       <Grid container spacing={2}>
         <Grid item xs={12} md={5}>
           <div>
-            <b>Part 2 - 24-Hour Flight Sim Competition: </b>
-            <ul>
-              <li><b>Non-stop Action:</b> Join us for a thrilling 24-hour flight simulation competition that kicks off at 12 pm on day 1 and concludes at 12 pm on day 2.</li>
-              <li><b>Support Shannon Aviation Museum:</b> All proceeds from this competition will go to the Shannon Aviation Museum.</li>
-              <li><b>Team Competition:</b> Teams of 4-8 participants will compete in 4 flight simulators, flying around the world without stopping.</li>
-              <li><b>Fundraising Requirement:</b> Each team must raise a minimum of €xxxx to enter.</li>
-              <li><b>To Register a Team:</b> Contact our flight sim team at flightsim@avcon.ie.</li>
-            </ul>
-            <br />
-            <b>Exhibitor Inquiries:</b>
-            <h5>If you are interested in showcasing your products or services at AvCon, please contact us at hello@avcon.ie.</h5>
-            <hr />
+            🎮 Flight Simulators and Virtual Reality: Experience the thrill of being a pilot without leaving the ground! AvCon 2024 offers state-of-the-art flight simulators and virtual reality experiences, allowing attendees to take control and navigate the skies like never before.
+            <br/><br/>
+            🌍 Global Perspectives: Understand how aviation connects the world. Learn about international collaborations, the impact of technology on global travel, and the role of aviation in addressing environmental challenges.
+            <br/><br/>
+            🛫 Unleash Your Imagination: AvCon 2024 encourages creativity and innovation. Engage in aviation-themed workshops, design challenges, and competitions that will spark your imagination and leave you with a newfound appreciation for the limitless possibilities of flight.
+            <br/><br/>
+            AvCon 2024 is not just an event; it's an expedition into the future of aviation. Embark on this thrilling journey with us and discover the endless horizons that await in the sky. The future is yours to explore! 🌟✈️ #AvCon2024 #FutureOfAviation #InnovationInTheSkies
+
           </div>
         </Grid>
         <Grid item xs={12} md={7}>
@@ -32,14 +28,6 @@ export default function EventSecondBlock() {
           </div>
         </Grid>
       </Grid>
-      <br />
-      <h5>
-        AvCon promises to be an event like no other, offering a unique blend of education, entertainment, and fundraising for a great cause. Join us on October 2024 and be a part of the aviation revolution!
-        <br /><br />
-        For the latest updates and information, visit our website at www.avcon.ie
-        <br />
-        Don't miss your chance to be a part of the future of aviation at AvCon!
-      </h5>
     </Box>
   );
 }
