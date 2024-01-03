@@ -40,6 +40,25 @@ export default function SecondImageAndText() {
           </div>
         </Grid>
       </Grid>
+      <hr/>
+      <div>
+        <h3>AvCon Xtra: 12-Hour Flight Sim Competition:</h3>
+
+        <h5>
+          <ul>
+            <li>Non-stop Action: Join us for a thrilling 12-hour Flight simulation competition that kicks off at X am and concludes at X pm.</li>
+            <li>Support Shannon Aviation Museum: All proceeds from this competition will go to the Shannon Aviation Museum.</li>
+            <li>Team Competition: Teams of 4-8 participants will compete in 4 flight simulators, flying around the world with stop offs and facing fun & extreme challenges along the way.</li>
+            <li>Fundraising Requirement: Each team must raise a minimum of €XXXX to enter.</li>
+            <li>To Register a Team: Contact our Aight sim team at fightsim@avcon.ie</li>
+          </ul>
+        </h5>
+        
+        <hr/>
+
+        <h3>Exhibitor Inquiries:</h3> 
+        <h5>If you are interested in showcasing your products or services at AvCon, please contact us at hello@avcon.ie.</h5>
+      </div>
     </Box>
   );
 }

@@ -57,7 +57,7 @@ export const Header = () => {
                   <br /><br />
                   <a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a>
                   <br /><br />
-                  <a href="./FlightSim">24-HOUR FLIGHT SIM COMPETITION</a>
+                  <a href="./FlightSim">AVCON XTRA: FLIGHT SIM COMPETITION</a>
                 </div>
               )}
             </div>
