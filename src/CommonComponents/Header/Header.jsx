@@ -41,6 +41,25 @@ export const Header = () => {
         {isMobile ? (
           <div style={{ cursor: 'pointer' }} onClick={handleMobileToggle}>
             ☰
+            {showEventDropdown && (
+              <div style={{ backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
+                <ul style={{ listStyleType: 'none', padding: 0 }}>
+                  <li><a href="./Event">EVENT INFO</a></li>
+                  <li><a href="./EventSchedule">EVENT SCHEDULE</a></li>
+                  <li><a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a></li>
+                  <li><a href="./FlightSim">AVCON XTRA: FLIGHT SIM COMPETITION</a></li>
+                </ul>
+              </div>
+            )}
+            {showAboutDropdown && (
+              <div style={{ backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
+                <ul style={{ listStyleType: 'none', padding: 0 }}>
+                  <li><a href="./About">ABOUT AVCON</a></li>
+                  <li><a href="./News">NEWS &amp; UPDATES</a></li>
+                  <li><a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a></li>
+                </ul>
+              </div>
+            )}
           </div>
         ) : (
           <div style={{ display: 'grid', gridTemplateColumns: '25% 25% 25% 25%', gap: '2%' }}>
@@ -70,9 +89,9 @@ export const Header = () => {
               <img src={Dropdown} alt="Dropdown" style={{ padding: '0 0 0 10px' }} />
               {showAboutDropdown && (
                 <div style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
-                  <a href="./News">NEWS &amp; UPDATES </a>
+                  <a href="./News">NEWS &amp; UPDATES</a>
                   <br /><br />
-                  <a href="./SponsorsPartners">SPONSORS &amp; PARTNERS </a>
+                  <a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a>
                 </div>
               )}
             </div>
