@@ -50,7 +50,7 @@ export default function SecondImageAndText() {
             <li>Support Shannon Aviation Museum: All proceeds from this competition will go to the Shannon Aviation Museum.</li>
             <li>Team Competition: Teams of 4-8 participants will compete in 4 flight simulators, flying around the world with stop offs and facing fun & extreme challenges along the way.</li>
             <li>Fundraising Requirement: Each team must raise a minimum of €XXXX to enter.</li>
-            <li>To Register a Team: Contact our Aight sim team at fightsim@avcon.ie</li>
+            <li>To Register a Team: Contact our Flight Sim Team at fightsim@avcon.ie</li>
           </ul>
         </h5>
         
