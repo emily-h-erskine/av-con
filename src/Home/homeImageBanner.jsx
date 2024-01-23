@@ -32,7 +32,7 @@ export default function HomeImageBanner() {
             padding: '1.5vw 4vw',
             position: 'absolute',
             right: '10%',
-            top: '30%'
+            top: '40%'
           }}
         >
           <a href="./BookTickets">

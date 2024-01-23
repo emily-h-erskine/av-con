@@ -49,7 +49,7 @@ export const Header = () => {
             ☰
             {showMobileMenu && (
               <div style={{ backgroundColor: '#07101D', position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 1000 }}>
-                <ul style={{ listStyleType: 'none', padding: 0 }}>
+                <ul style={{ listStyleType: 'none', padding: '1%' }}>
                   <li><a href="./Event">EVENT INFO</a></li>
                   <li><a href="./EventSchedule">EVENT SCHEDULE</a></li>
                   <li><a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a></li>
@@ -64,7 +64,7 @@ export const Header = () => {
             )}
           </div>
         ) : (
-          <div style={{ display: 'grid', gridTemplateColumns: '25% 25% 25% 25%', gap: '2%' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '24% 24% 24% 24%', gap: '4%', textAlign: 'center' }}>
             <div
               style={{ position: 'relative', display: 'inline-block' }}
               onMouseEnter={handleEventDropdownToggle}
