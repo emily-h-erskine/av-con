@@ -8,9 +8,9 @@ export default function FlightSim() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-4 md:p-8">
       <FlightSimImageBanner />
-      <Box sx={{ flexGrow: 1 }}>
+      <Box style={{ padding: "0 0 0 5%" }}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={7}>
+        <Grid item xs={12} md={7}>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <img
                 src={FlightSimImage}
