@@ -5,6 +5,7 @@ export const Header = () => {
   const [showEventDropdown, setShowEventDropdown] = useState(false);
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const handleEventDropdownToggle = () => {
     setShowEventDropdown(!showEventDropdown);
@@ -15,12 +16,17 @@ export const Header = () => {
   };
 
   const handleMobileToggle = () => {
-    setIsMobile(!isMobile);
+    setShowMobileMenu(!showMobileMenu);
+  };
+
+  const closeMobileMenu = () => {
+    setShowMobileMenu(false);
   };
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
+      closeMobileMenu();
     };
 
     window.addEventListener('resize', handleResize);
@@ -41,22 +47,18 @@ export const Header = () => {
         {isMobile ? (
           <div style={{ cursor: 'pointer' }} onClick={handleMobileToggle}>
             ☰
-            {showEventDropdown && (
-              <div style={{ backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
+            {showMobileMenu && (
+              <div style={{ backgroundColor: '#07101D', position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 1000 }}>
                 <ul style={{ listStyleType: 'none', padding: 0 }}>
                   <li><a href="./Event">EVENT INFO</a></li>
                   <li><a href="./EventSchedule">EVENT SCHEDULE</a></li>
                   <li><a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a></li>
                   <li><a href="./FlightSim">AVCON XTRA: FLIGHT SIM COMPETITION</a></li>
-                </ul>
-              </div>
-            )}
-            {showAboutDropdown && (
-              <div style={{ backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
-                <ul style={{ listStyleType: 'none', padding: 0 }}>
                   <li><a href="./About">ABOUT AVCON</a></li>
                   <li><a href="./News">NEWS &amp; UPDATES</a></li>
                   <li><a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a></li>
+                  <li><a href="./Contact">CONTACT US</a></li>
+                  <li><a href="./BookTickets">REGISTER FOR TICKETS</a></li>
                 </ul>
               </div>
             )}
