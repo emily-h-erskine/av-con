@@ -96,7 +96,7 @@ export const Header = () => {
               )}
             </div>
             <a href="./Contact">CONTACT US</a>
-            <a href="./BookTickets">BOOK TICKETS</a>
+            <a href="./BookTickets">REGISTER FOR TICKETS</a>
           </div>
         )}
       </div>
