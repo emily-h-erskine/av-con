@@ -1,22 +1,24 @@
 import React from "react";
 import Timeline from './timeline.jsx';
+import EventAVCon from "./EventAVCon.jpeg"; 
+import EventAVConXtra from "./EventAVConXtra.jpeg";
 
 
 export default function EventSchedule() {
   const eventsData = [
     {
-      date: 'January 2023',
-      event: 'Event 1',
+      date: '2024',
+      event: 'AVCon',
       description: 'Description for Event 1',
-      imageSrc: 'https://www.atlanticaviation.ie/wp-content/uploads/2023/03/Shane-and-girls-scaled.jpg',
-      imageAlt: 'Image 1 Alt Text',
+      imageSrc: EventAVCon,
+      imageAlt: 'AVCon Event',
     },
     {
-      date: 'February 2023',
-      event: 'Event 2',
+      date: '2024',
+      event: 'AVCon Xtra',
       description: 'Description for Event 2',
-      imageSrc: 'https://www.atlanticaviation.ie/wp-content/uploads/2023/03/Shane-and-girls-scaled.jpg',
-      imageAlt: 'Image 1 Alt Text',
+      imageSrc: EventAVConXtra,
+      imageAlt: 'AVCon Xtra',
     },
   ];
 
