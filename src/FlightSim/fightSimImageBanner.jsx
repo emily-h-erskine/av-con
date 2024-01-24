@@ -28,19 +28,18 @@ export default function FlightSimImageBanner() {
 
       <div
         style={{
-          width: '70%',
+          width: '80%',
           height: 'auto',
           left: '5%',
-          top: '2%',
+          top: '1%',
           position: 'absolute',
-          fontSize: '35px',
+          fontSize: '4vw',
           fontWeight: '800',
           textAlign: 'left',
           color: 'white',
         }}
       >
-        AvCon Xtra promises an unforgettable experience for aviation enthusiasts and competitive gamers alike. So, assemble your dream team, fundraise for a fantastic cause, and prepare for a
-        12-hour flight simulation adventure like no other!
+        AvCon Xtra promises an unforgettable experience for aviation enthusiasts and competitive gamers alike. 
       </div>
     </div>
   );

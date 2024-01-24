@@ -10,15 +10,6 @@ export default function FlightSim() {
       <FlightSimImageBanner />
       <Box style={{ padding: "0 0 0 5%" }}>
         <Grid container spacing={2}>
-        <Grid item xs={12} md={7}>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img
-                src={FlightSimImage}
-                alt="FlightSim"
-                style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
-              />
-            </div>
-          </Grid>
           <Grid item xs={12} md={5}>
             <div style={{ padding: '0 5% 0 0' }}>
               <h1>AvCon Xtra: 12-Hour Flight Sim Competition:</h1>
@@ -31,8 +22,27 @@ export default function FlightSim() {
               <h3>For More Information or To Register a Team: Contact our Flight Sim Team at fightsim@acon.ie</h3>
             </div>
           </Grid>
+          <Grid item xs={12} md={7}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img
+                src={FlightSimImage}
+                alt="FlightSim"
+                style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
+              />
+            </div>
+          </Grid>
         </Grid>
       </Box>
+      <div 
+      style={{
+          height: 'auto',
+          padding: '5%',
+          fontSize: '3vw',
+          fontWeight: '800',
+          textAlign: 'right',
+          color: 'white',
+        }}
+        >So, assemble your dream team, fundraise for a fantastic cause, and prepare for a 12-hour flight simulation adventure like no other!</div>
     </main>
   );
 }
