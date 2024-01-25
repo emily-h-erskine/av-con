@@ -24,14 +24,14 @@ export default function About() {
   return (
     <main className="flex min-h-screen flex-col p-4 md:p-8 lg:p-12">
       <div className="event-container">
-        <h1 className="event-title text-3xl md:text-4xl lg:text-5xl xl:text-6xl">About AVCon</h1>
+        <h1 className="event-title text-3xl md:text-4xl lg:text-5xl xl:text-6xl">About AvCon</h1>
         <div style={{ textAlign: "center", paddingTop: "2%" }}>
           <iframe
             className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2"
             height="630"
             width="100%"
             src={AVConPromoVideo}
-            title="AVCon Future of Aviation"
+            title="AvCon Future of Aviation"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
