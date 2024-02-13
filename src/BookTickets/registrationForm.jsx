@@ -7,19 +7,54 @@ export default function RegistrationForm() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [attendants, setAttendants] = useState('');
+  const [schoolBusiness, setSchoolBusiness] = useState('');
+  const [jobPosition, setJobPosition] = useState('');
+  const [location, setLocation] = useState('');
+  const [website, setWebsite] = useState('');
+  const [contactNumber, setContactNumber] = useState('');
+  const [numStudents, setNumStudents] = useState('');
+  const [numBuses, setNumBuses] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
   const [alertType, setAlertType] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    if (name === 'firstName') {
-      setFirstName(value);
-    } else if (name === 'lastName') {
-      setLastName(value);
-    } else if (name === 'email') {
-      setEmail(value);
-    } else if (name === 'attendants') {
-      setAttendants(value);
+    switch (name) {
+      case 'firstName':
+        setFirstName(value);
+        break;
+      case 'lastName':
+        setLastName(value);
+        break;
+      case 'email':
+        setEmail(value);
+        break;
+      case 'attendants':
+        setAttendants(value);
+        break;
+      case 'schoolBusiness':
+        setSchoolBusiness(value);
+        break;
+      case 'jobPosition':
+        setJobPosition(value);
+        break;
+      case 'location':
+        setLocation(value);
+        break;
+      case 'website':
+        setWebsite(value);
+        break;
+      case 'contactNumber':
+        setContactNumber(value);
+        break;
+      case 'numStudents':
+        setNumStudents(value);
+        break;
+      case 'numBuses':
+        setNumBuses(value);
+        break;
+      default:
+        break;
     }
   };
 
@@ -30,35 +65,35 @@ export default function RegistrationForm() {
       lastName,
       email,
       attendants,
+      schoolBusiness,
+      jobPosition,
+      location,
+      website,
+      contactNumber,
+      numStudents,
+      numBuses,
     };
 
-    fetch('http://localhost:3001/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.text())
-      .then((data) => {
-        setAlertMessage('Success! You\'ve Been Registered');
-        setAlertType('success');
-        setFirstName('');
-        setLastName('');
-        setEmail('');
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        setAlertMessage('Oops! Something Went Wrong - Please Try Again');
-        setAlertType('error');
-      });
+    setAlertMessage('Success! You\'ve Been Registered');
+    setAlertType('success');
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setAttendants('');
+    setSchoolBusiness('');
+    setJobPosition('');
+    setLocation('');
+    setWebsite('');
+    setContactNumber('');
+    setNumStudents('');
+    setNumBuses('');
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} style={{ maxWidth: '80%', margin: 'auto' }}>
+    <form ref={form} onSubmit={sendEmail} className="registration-form" style={{ maxWidth: '80%', margin: 'auto' }}>
       <div className="username">
         <label className="form__label" htmlFor="firstName">
-          First Name:{' '}
+          First Name:
         </label>
         <input
           className="form__input"
@@ -74,7 +109,7 @@ export default function RegistrationForm() {
       <br />
       <div className="lastname">
         <label className="form__label" htmlFor="lastName">
-          Last Name:{' '}
+          Last Name:
         </label>
         <input
           type="text"
@@ -90,7 +125,7 @@ export default function RegistrationForm() {
       <br />
       <div className="email">
         <label className="form__label" htmlFor="email">
-          Email:{' '}
+          Email:
         </label>
         <input
           type="email"
@@ -106,7 +141,7 @@ export default function RegistrationForm() {
       <br />
       <div className="attendants">
         <label className="form__label" htmlFor="attendants">
-          Number of People Attending:{' '}
+          Number of People Attending:
         </label>
         <input
           type="number"
@@ -119,11 +154,123 @@ export default function RegistrationForm() {
           style={{ width: '100%' }}
         />
       </div>
+      <br />
+      <div className="schoolBusiness">
+        <label className="form__label" htmlFor="schoolBusiness">
+          School/Business:
+        </label>
+        <input
+          type="text"
+          id="schoolBusiness"
+          className="form__input"
+          value={schoolBusiness}
+          onChange={(e) => handleInputChange(e)}
+          name="schoolBusiness"
+          placeholder="School/Business"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <br />
+      <div className="jobPosition">
+        <label className="form__label" htmlFor="jobPosition">
+          Job Position:
+        </label>
+        <input
+          type="text"
+          id="jobPosition"
+          className="form__input"
+          value={jobPosition}
+          onChange={(e) => handleInputChange(e)}
+          name="jobPosition"
+          placeholder="Job Position"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <br />
+      <div className="location">
+        <label className="form__label" htmlFor="location">
+          School/Business Location:
+        </label>
+        <input
+          type="text"
+          id="location"
+          className="form__input"
+          value={location}
+          onChange={(e) => handleInputChange(e)}
+          name="location"
+          placeholder="School/Business Location"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <br />
+      <div className="website">
+        <label className="form__label" htmlFor="website">
+          Website URL:
+        </label>
+        <input
+          type="url"
+          id="website"
+          className="form__input"
+          value={website}
+          onChange={(e) => handleInputChange(e)}
+          name="website"
+          placeholder="Website URL"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <br />
+      <div className="contactNumber">
+        <label className="form__label" htmlFor="contactNumber">
+          Contact Number:
+        </label>
+        <input
+          type="telephone"
+          id="contactNumber"
+          className="form__input"
+          value={contactNumber}
+          onChange={(e) => handleInputChange(e)}
+          name="contactNumber"
+          placeholder="Contact Number"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <br />
+      <div className="numStudents">
+        <label className="form__label" htmlFor="numStudents">
+          Number of Students:
+        </label>
+        <input
+          type="number"
+          id="numStudents"
+          className="form__input"
+          value={numStudents}
+          onChange={(e) => handleInputChange(e)}
+          name="numStudents"
+          placeholder="0"
+          style={{ width: '100%' }}
+        />
+      </div>
+      <br />
+      <div className="numBuses">
+        <label className="form__label" htmlFor="numBuses">
+          Number of Buses:
+        </label>
+        <input
+          type="number"
+          id="numBuses"
+          className="form__input"
+          value={numBuses}
+          onChange={(e) => handleInputChange(e)}
+          name="numBuses"
+          placeholder="0"
+          style={{ width: '100%' }}
+        />
+      </div>
       <div>
         <button
           type="submit"
           name="Submit Registration Button"
-          onSubmit={sendEmail}
+          className="submit-button"
           style={{
             padding: '15px',
             width: '100%',
@@ -134,10 +281,11 @@ export default function RegistrationForm() {
         </button>
       </div>
       {alertMessage && (
-        <Alert severity={alertType} style={{ marginTop: '20px' }}>
+        <Alert severity={alertType} className="alert-message" style={{ marginTop: '20px' }}>
           {alertMessage}
         </Alert>
       )}
     </form>
   );
 }
+

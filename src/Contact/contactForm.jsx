@@ -57,7 +57,7 @@ export default function ContactUsForm() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="your-form-class" style={{ maxWidth: '80%', margin: 'auto' }}>
+    <form ref={form} onSubmit={sendEmail} className="registration-form" style={{ maxWidth: '80%', margin: 'auto' }}>
       <div className="username">
         <label className="form__label" htmlFor="firstName">
           First Name:{' '}
@@ -121,18 +121,22 @@ export default function ContactUsForm() {
           style={{ width: '100%' }}
         />
       </div>
-      <div style={{ marginTop: '20px' }}>
+      <div>
         <button
           type="submit"
           name="Submit Registration Button"
-          onSubmit={sendEmail}
-          style={{ padding: '10px', width: '100%' }}
+          className="submit-button"
+          style={{
+            padding: '15px',
+            width: '100%',
+            marginTop: '20px',
+          }}
         >
           <b>Submit</b>
         </button>
       </div>
       {alert.message && (
-        <Alert severity={alert.type} style={{ marginTop: '20px' }}>
+        <Alert severity={alert.type} className="alert-message" style={{ marginTop: '20px' }}>
           {alert.message}
         </Alert>
       )}

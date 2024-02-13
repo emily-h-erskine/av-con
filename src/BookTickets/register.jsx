@@ -9,7 +9,7 @@ export default function Register() {
     <div
       style={{
         width: '100%',
-        height: '50%',
+        height: '30%',
         left: 0,
         top: 0,
         position: 'absolute',
