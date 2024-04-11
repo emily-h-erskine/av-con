@@ -22,7 +22,9 @@ export default function FirstImageAndText() {
               Calling all primary, secondary, and 3rd level students, as well as aviation enthusiasts, to experience an electrifying journey through the skies of innovation. 
               <br/><br/>
               Join us for an exhilarating event where you'll explore cutting-edge technology, witness thrilling demonstrations, and engage with industry experts shaping the future of flight.
+              <br/><br/>
             </h4> 
+            <h3 style={{textAlign:'center'}}>Location: Irish Air Corps,  Casement Aerodrome,  Baldonnel,  County Dublin <br/> Date: November 7th, 2024</h3>
           </div>
         </Grid>
       </Grid>
