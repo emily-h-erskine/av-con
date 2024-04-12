@@ -23,22 +23,6 @@ export default function ContactUsForm() {
     };
   }, []);
 
-  useEffect(() => {
-    const style = document.createElement('style');
-    style.innerHTML = `
-      .hs-form {
-        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-        color: #ffffff; /* Text color */
-        /* Add any other custom styles as needed */
-      }
-    `;
-    document.head.appendChild(style);
-
-    return () => {
-      document.head.removeChild(style);
-    };
-  }, []);
-
   return null;
   
 };
