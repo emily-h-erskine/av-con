@@ -51,8 +51,8 @@ export default function SecondImageAndText() {
         
         <hr/>
 
-        <h3>Exhibitor Inquiries:</h3> 
-        <h5>If you are interested in showcasing your products or services at AvCon, please <a href="./ExhibitorRegistration">click here</a></h5>
+        <h2>Exhibitor Inquiries:</h2> 
+        <h4>If you are interested in showcasing your products or services at AvCon: <u><a href="./ExhibitorRegistration">click here</a></u></h4>
       </div>
     </Box>
   );
