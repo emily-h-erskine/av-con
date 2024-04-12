@@ -32,7 +32,7 @@ export default function App() {
           <Route path="/news" element={<News />} />
           <Route path="/speakersPresenters" element={<SpeakersPresenters />} />
           <Route path="/sponsorsPartners" element={<SponsorsPartners />} />
-          <Route path="/exhibitor" element={<ExhibitorRegistration />} />
+          <Route path="/exhibitorRegistration" element={<ExhibitorRegistration />} />
         </Routes>
       </RootLayout>
       <Footer />
