@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import ContactUsForm from "./contactForm";
 
 export default function Contact() {
   return (
     <div style={{ position: 'relative', padding: '0% 2% 5% 2%' }}>
-      <div>
       <div
         style={{
           width: '100%',
@@ -27,9 +26,8 @@ export default function Contact() {
           mixBlendMode: 'luminosity'
         }}
       />
-      </div>
-      <div>
-        <h1 style={{textAlign: "center"}}>Contact Us</h1>
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <h1 style={{ textAlign: 'center', color: 'white' }}>Contact Us</h1>
         <ContactUsForm />
       </div>
     </div>

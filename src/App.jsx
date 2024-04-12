@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.module.css';
 import RootLayout from './RootLayout';
-import { Header } from './CommonComponents/Header/Header';
-import { Footer } from './CommonComponents/Footer/Footer';
 import About from './About/about';
 import Contact from './Contact/contact';
 import Home from './Home/home';
@@ -19,7 +17,6 @@ import ExhibitorRegistration from './ExhibitorRegistration/exhibitor'
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
       <RootLayout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -35,7 +32,6 @@ export default function App() {
           <Route path="/exhibitorRegistration" element={<ExhibitorRegistration />} />
         </Routes>
       </RootLayout>
-      <Footer />
     </BrowserRouter>
   );
 };
