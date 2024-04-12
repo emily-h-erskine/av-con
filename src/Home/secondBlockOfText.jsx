@@ -8,11 +8,6 @@ export default function SecondImageAndText() {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={5}>
           <div>
-            <h3>
-              Secure your FREE tickets now for an unforgettable adventure at AvCon 2024 book/register here - an absolute must for anyone passionate about aviation!
-              <br/><br/>
-              <hr/>
-            </h3>
             <h3>Highlights</h3>
             <b>
               <h5>
@@ -41,7 +36,7 @@ export default function SecondImageAndText() {
         </Grid>
       </Grid>
       <div style={{ padding: "0 5% 0 0" }}>
-        <hr />
+        {/* <hr />
         <h3>AvCon Xtra: 12-Hour Flight Sim Competition:</h3>
 
         <h5>
@@ -52,7 +47,7 @@ export default function SecondImageAndText() {
             <li>Fundraising Requirement: Each team must raise a minimum of €XXXX to enter.</li>
             <li>To Register a Team: Contact our Flight Sim Team at fightsim@avcon.ie</li>
           </ul>
-        </h5>
+        </h5> */}
         
         <hr/>
 
