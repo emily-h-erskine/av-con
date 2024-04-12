@@ -57,7 +57,7 @@ export default function SecondImageAndText() {
         <hr/>
 
         <h3>Exhibitor Inquiries:</h3> 
-        <h5>If you are interested in showcasing your products or services at AvCon, please contact us at hello@avcon.ie.</h5>
+        <h5>If you are interested in showcasing your products or services at AvCon, please <a href="./ExhibitorRegistration">click here</a></h5>
       </div>
     </Box>
   );

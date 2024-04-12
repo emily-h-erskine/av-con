@@ -14,6 +14,7 @@ import FlightSim from "./FlightSim/flightSim";
 import News from "./News/newsUpdates";
 import SpeakersPresenters from "./SpeakersPresenters/speakersPresenters";
 import SponsorsPartners from './SponsorsPartners/sponsorsPartners';
+import ExhibitorRegistration from './ExhibitorRegistration/exhibitor'
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/news" element={<News />} />
           <Route path="/speakersPresenters" element={<SpeakersPresenters />} />
           <Route path="/sponsorsPartners" element={<SponsorsPartners />} />
+          <Route path="/exhibitor" element={<ExhibitorRegistration />} />
         </Routes>
       </RootLayout>
       <Footer />
