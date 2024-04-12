@@ -26,7 +26,7 @@ export default function Contact() {
           mixBlendMode: 'luminosity'
         }}
       />
-      <div style={{ position: 'relative', zIndex: 1 }}>
+      <div style={{padding:'5%'}}>
         <h1 style={{ textAlign: 'center', color: 'white' }}>Contact Us</h1>
         <ContactUsForm />
       </div>

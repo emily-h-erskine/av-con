@@ -29,7 +29,7 @@ export default function Register() {
       }}
     />
     </div>
-    <div>
+    <div style={{padding:'5%'}}>
       <h1 style={{textAlign: "center"}}>Register for AvCon Tickets</h1>
       <RegistrationForm />
     </div>
