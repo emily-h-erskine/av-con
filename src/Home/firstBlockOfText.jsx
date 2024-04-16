@@ -9,8 +9,8 @@ export default function FirstImageAndText() {
         <Grid item xs={12} sm={7}>
           <div style={{ textAlign: 'center' }}>
             <img
-              src="https://i.ytimg.com/vi/etSlzjGCiKg/maxresdefault.jpg"
-              alt="Shannon Airport Image"
+              src="https://cdn.flightsim.to/images/12/30Rxf6wG.jpg?width=1400&auto_optimize=medium"
+              alt="Baldonnel Aerial Image"
               style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
             />
           </div>

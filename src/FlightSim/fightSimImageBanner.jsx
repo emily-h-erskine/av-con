@@ -4,7 +4,7 @@ export default function FlightSimImageBanner() {
   return (
     <div style={{ position: 'relative', padding: '0% 2% 5% 2%' }}>
       <img
-        src="https://careers.ryanair.com/wp-content/uploads/2019/01/Engineering-Lead-Image.jpg"
+        src="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg"
         alt="header image"
         style={{
           position: 'relative',
