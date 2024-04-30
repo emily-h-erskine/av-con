@@ -37,7 +37,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '50% 50%', padding: '0% 10% 0% 5%' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: '50% 50%', padding: '3% 10% 0% 5%' }}>
       <div style={{ textAlign: 'left' }}>
         <a href="/">
           <img src='./AVConLogoWhite.png' alt="AV Con" width={isMobile ? '80%' : '40%'} />
