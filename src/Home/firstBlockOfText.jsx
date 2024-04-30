@@ -1,6 +1,7 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import BalSkyShot from './HomePageImages/BalSkyShot.webp'
 
 export default function FirstImageAndText() {
   return (
@@ -9,7 +10,7 @@ export default function FirstImageAndText() {
         <Grid item xs={12} sm={7}>
           <div style={{ textAlign: 'center' }}>
             <img
-              src="https://cdn.flightsim.to/images/12/30Rxf6wG.jpg?width=1400&auto_optimize=medium"
+              src={BalSkyShot}
               alt="Baldonnel Aerial Image"
               style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
             />
