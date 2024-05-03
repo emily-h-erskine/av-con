@@ -26,6 +26,8 @@ export default function EventSchedule() {
     <main className="flex min-h-screen flex-col p-24">
           <div className="event-container">
             <h1 className="event-title">Event Schedule</h1>
+            <h2>To be announced soon... </h2>
+            <br/>
             <Timeline events={eventsData} />
           </div>
     </main>
