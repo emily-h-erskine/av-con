@@ -15,45 +15,62 @@ export default function SponsorsPartners() {
       <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         Thank you to All Our Sponsors and Partners
       </h1>
-      <br /><br />
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={3}>
-            <Sponsor
-              logoUrl={AirCorpLogo}
-              sponsorName="Irish Air Corps"
-            />
+
+      <div style={{padding: '2%', textAlign: 'center' }}>
+        <h2>AvCon in collaboration with:</h2>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={3}>
+              <Sponsor
+                logoUrl={AirCorpLogo}
+                sponsorName="Irish Air Corps"
+              />
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <Sponsor
+                logoUrl={TYHubLogo}
+                sponsorName="TY Hub"
+              />
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={3}>
-            <Sponsor
-              logoUrl={HireUpLogo}
-              sponsorName="Hire Up"
-            />
+        </Box>
+        <br /><br />
+        <h2>AvCon proudly supported by:</h2>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={3}>
+              <Sponsor
+                logoUrl={HireUpLogo}
+                sponsorName="Hire Up"
+              />
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <Sponsor
+                logoUrl={ShannonAirportLogo}
+                sponsorName="Shannon Airport"
+              />
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <Sponsor
+                logoUrl={AvationSkillnet}
+                sponsorName="Avation Skillnet"
+              />
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={3}>
-            <Sponsor
-              logoUrl={ShannonAirportLogo}
-              sponsorName="Shannon Airport"
-            />
+        </Box>
+        <h2>AvCon Media Partner:</h2>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={3}>
+              <Sponsor
+                logoUrl={ODohertysLogo}
+                sponsorName="O'Doherty Media Group"
+              />
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={3}>
-            <Sponsor
-              logoUrl={TYHubLogo}
-              sponsorName="TY Hub"
-            />
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <Sponsor
-              logoUrl={AvationSkillnet}
-              sponsorName="Avation Skillnet"
-            />
-          </Grid>
-        </Grid>
-      </Box>
-      <Sponsor
-        logoUrl={ODohertysLogo}
-        sponsorName="O'Doherty Media Group"
-      />
+        </Box>
+      </div>
+
     </main>
   );
 }
