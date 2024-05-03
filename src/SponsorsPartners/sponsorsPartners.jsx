@@ -7,6 +7,7 @@ import HireUpLogo from './SponsorImages/HireUpLogo.jpg';
 import ShannonAirportLogo from './SponsorImages/ShannonAirportLogo.jpg';
 import TYHubLogo from './SponsorImages/TYHubLogo.jpg';
 import ODohertysLogo from './SponsorImages/ODohertysLogo.jpg';
+import AvationSkillnet from './SponsorImages/AviationSkillnetLogo.png';
 
 export default function SponsorsPartners() {
   return (
@@ -39,6 +40,12 @@ export default function SponsorsPartners() {
             <Sponsor
               logoUrl={TYHubLogo}
               sponsorName="TY Hub"
+            />
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Sponsor
+              logoUrl={AvationSkillnet}
+              sponsorName="Avation Skillnet"
             />
           </Grid>
         </Grid>
