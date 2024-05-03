@@ -49,7 +49,7 @@ export const Header = () => {
             ☰
             {showMobileMenu && (
               <div style={{ backgroundColor: '#07101D', position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 1000 }}>
-                <ul style={{ listStyleType: 'none', padding: '5%' }}>
+                <ul style={{ listStyleType: 'none', padding: '10%' }}>
                   <li><a href="./Event">EVENT INFO</a></li>
                   <li><a href="./EventSchedule">EVENT SCHEDULE</a></li>
                   <li><a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a></li>
