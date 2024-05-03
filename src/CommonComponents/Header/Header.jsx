@@ -49,16 +49,16 @@ export const Header = () => {
             ☰
             {showMobileMenu && (
               <div style={{ backgroundColor: '#07101D', position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 1000 }}>
-                <ul style={{ listStyleType: 'none', padding: '10%' }}>
-                  <li><a href="./Event">EVENT INFO</a></li>
-                  <li><a href="./EventSchedule">EVENT SCHEDULE</a></li>
-                  <li><a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a></li>
-                  <li><a href="./FlightSim">AVCON XTRA: FLIGHT SIM COMPETITION</a></li>
-                  <li><a href="./About">ABOUT AVCON</a></li>
-                  <li><a href="./News">NEWS &amp; UPDATES</a></li>
-                  <li><a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a></li>
-                  <li><a href="./Contact">CONTACT US</a></li>
-                  <li><a href="./BookTickets">REGISTER FOR TICKETS</a></li>
+                <ul style={{ listStyleType: 'none'}}>
+                  <li style={{ padding: '2% 10%'}}><a href="./Event">EVENT INFO</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./EventSchedule">EVENT SCHEDULE</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./FlightSim">AVCON XTRA: FLIGHT SIM COMPETITION</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./About">ABOUT AVCON</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./News">NEWS &amp; UPDATES</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./Contact">CONTACT US</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./BookTickets">REGISTER FOR TICKETS</a></li>
                 </ul>
               </div>
             )}
