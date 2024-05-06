@@ -2,7 +2,7 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Sponsor from "./sponsor";
-import AirCorpLogo from './SponsorImages/AirCorpLogo.jpg';
+import AirCorpLogo from './SponsorImages/AirCorpsLogo.jpeg';
 import HireUpLogo from './SponsorImages/HireUpLogo.jpg';
 import ShannonAirportLogo from './SponsorImages/ShannonAirportLogo.jpg';
 import TYHubLogo from './SponsorImages/TYHubLogo.jpg';

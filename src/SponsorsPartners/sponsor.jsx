@@ -6,7 +6,7 @@ export default function Sponsor({ logoUrl, sponsorName }) {
       <img
         src={logoUrl}
         alt="Sponsor Logo"
-        style={{ width: '80%'}}
+        style={{ width: '90%'}}
       />
       <h5>{sponsorName}</h5>
     </div>
