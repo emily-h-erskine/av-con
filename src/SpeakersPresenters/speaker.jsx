@@ -9,7 +9,7 @@ export default function Speaker({ SpeakerImage, SpeakerName, SpeakerBio }) {
         style={{ width: '60%'}}
       />
       <h3>{SpeakerName}</h3>
-      <p>{SpeakerBio}</p>
+      <h5>{SpeakerBio}</h5>
     </div>
   );
 }
