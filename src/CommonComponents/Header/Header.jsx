@@ -59,12 +59,13 @@ export const Header = () => {
                   <li style={{ padding: '2% 10%'}}><a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a></li>
                   <li style={{ padding: '2% 10%'}}><a href="./Contact">CONTACT US</a></li>
                   <li style={{ padding: '2% 10%'}}><a href="./BookTickets">REGISTER FOR TICKETS</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./ExhibitorRegistration">REGISTER TO BE AN EXHIBITOR</a></li>
                 </ul>
               </div>
             )}
           </div>
         ) : (
-          <div style={{ display: 'grid', gridTemplateColumns: '24% 24% 24% 24%', gap: '4%', textAlign: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '20% 20% 20% 20% 20%', gap: '4%', textAlign: 'center' }}>
             <div
               style={{ position: 'relative', display: 'inline-block' }}
               onMouseEnter={handleEventDropdownToggle}
@@ -99,6 +100,7 @@ export const Header = () => {
             </div>
             <a href="./Contact">CONTACT US</a>
             <a href="./BookTickets">REGISTER FOR TICKETS</a>
+            <a href="./ExhibitorRegistration">REGISTER TO BE AN EXHIBITOR</a>
           </div>
         )}
       </div>
