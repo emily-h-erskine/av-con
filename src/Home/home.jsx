@@ -3,6 +3,7 @@ import HomeImageBanner from "./homeImageBanner";
 import FirstImageAndText from "./firstBlockOfText";
 import SecondImageAndText from "./secondBlockOfText";
 import MiddleBlockOfText from "./middleBlock";
+import MailchimpScript from "./mailChimpPopup";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <MiddleBlockOfText />
       <br /><br />
       <SecondImageAndText />
+      <MailchimpScript />
     </main>
   );
 }
