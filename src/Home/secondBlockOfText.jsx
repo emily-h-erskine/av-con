@@ -12,10 +12,10 @@ export default function SecondImageAndText() {
             <b>
               <h5>
                 <ul>
-                  <li>AvCon 2024: A thrilling journey into the future of aviation for students and enthusiasts.</li>
+                  <li>AvCon 2024: A thrilling journey into the future of aviation for students.</li>
                   <li>Explore the wonders of aviation, from basics to cutting-edge technology.</li>
                   <li>Hands-on learning for primary and secondary students on flight principles and aerodynamics.</li>
-                  <li>Career pathways for tertiary students and aviation enthusiasts, connecting with industry professionals.</li>
+                  <li>Career pathways for tertiary students, TY, LCA, LCVP and LC, connecting with industry professionals.</li>
                   <li>Inspirational speakers discussing the future of air travel, space exploration, and sustainable aviation.</li>
                   <li>Flight simulators and virtual reality experiences for an immersive pilot experience.</li>
                   <li>Global perspectives on aviation's role in connecting the world and addressing environmental challenges.</li>

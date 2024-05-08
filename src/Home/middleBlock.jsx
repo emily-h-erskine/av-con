@@ -9,7 +9,7 @@ export default function MiddleBlockOfText() {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <h2>
-              Secure your FREE tickets now for an unforgettable adventure at AvCon 2024 book/register here - an absolute must for anyone passionate about aviation!
+              Secure your FREE tickets now for an unforgettable adventure at AvCon 2024 book/register here - an absolute must for any school/group passionate about aviation!
             </h2>
         </Grid>
         <Grid item xs={12} sm={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
