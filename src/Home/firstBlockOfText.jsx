@@ -1,7 +1,7 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import BalSkyShot from './HomePageImages/BalSkyShot.webp'
+import ApprenticePhoto from './HomePageImages/apprentices.jpg'
 
 export default function FirstImageAndText() {
   return (
@@ -10,8 +10,8 @@ export default function FirstImageAndText() {
         <Grid item xs={12} sm={7}>
           <div style={{ textAlign: 'center' }}>
             <img
-              src={BalSkyShot}
-              alt="Baldonnel Aerial Image"
+              src={ApprenticePhoto}
+              alt="Apprentice Photo"
               style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
             />
           </div>
