@@ -1,6 +1,7 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import AircorpsImage from './HomePageImages/AirCorpsImage.jpg';
 
 export default function SecondImageAndText() {
   return (
@@ -28,8 +29,8 @@ export default function SecondImageAndText() {
         <Grid item xs={12} sm={7}>
           <div style={{ textAlign: 'center' }}>
             <img
-              src="https://www.atlanticaviation.ie/wp-content/uploads/2023/03/Shane-and-girls-scaled.jpg"
-              alt="Sample AirCraft Tech Photo"
+              src={AircorpsImage}
+              alt="Air Corps Helli Image"
               style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
             />
           </div>
