@@ -4,21 +4,22 @@ import ContactUsForm from "./contactForm";
 export default function Contact() {
   return (
 
-    <div style={{ padding: '0% 2% 5% 2%' }}>
-    <div>
-      <img
-        src="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg"
-        alt="header image"
-        style={{
-          width: '100%',
-          mixBlendMode: 'luminosity'
-        }}
-      />
+    <main className="flex min-h-screen flex-col p-4 md:p-8 lg:p-12">
+    <div className="event-container">
+
+        <h1 className="event-title text-3xl md:text-4xl lg:text-5xl xl:text-6xl">Contact Us</h1>
+        <div>
+          <img
+            src="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg"
+            alt="header image"
+            style={{
+              width: '100%',
+              mixBlendMode: 'luminosity'
+            }}
+          />
+        </div>
+        <ContactUsForm />
     </div>
-    <div style={{ padding: '2% 0%' }}>
-      <h1 style={{ textAlign: "center" }}>Contact Us</h1>
-      <ContactUsForm />
-    </div>
-  </div>
+  </main>
   );
 }
