@@ -11,22 +11,22 @@ import AvationSkillnet from './SponsorImages/AviationSkillnetLogo.png';
 
 export default function SponsorsPartners() {
   return (
-    <main className="flex min-h-screen flex-col justify-between p-4 md:p-24">
-      <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        Thank you to All Our Sponsors and Partners
+    <main className="flex min-h-screen flex-col justify-between p-4 md:p-24" style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '2.5rem', marginBottom: '2rem' }}>
+        Our Sponsors and Partners
       </h1>
 
-      <div style={{padding: '2%', textAlign: 'center' }}>
-        <h2>AvCon in collaboration with:</h2>
+      <div style={{padding: '2%', textAlign: 'center'}}>
+        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Collaboration with:</h2>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={6}>
               <Sponsor
                 logoUrl={AirCorpLogo}
                 sponsorName="Irish Air Corps"
               />
             </Grid>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={6}>
               <Sponsor
                 logoUrl={TYHubLogo}
                 sponsorName="TY Hub"
@@ -35,33 +35,33 @@ export default function SponsorsPartners() {
           </Grid>
         </Box>
         <br /><br />
-        <h2>AvCon proudly supported by:</h2>
+        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Proudly supported by:</h2>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={4}>
               <Sponsor
                 logoUrl={HireUpLogo}
                 sponsorName="Hire Up"
               />
             </Grid>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={4}>
               <Sponsor
                 logoUrl={ShannonAirportLogo}
                 sponsorName="Shannon Airport"
               />
             </Grid>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={4}>
               <Sponsor
                 logoUrl={AvationSkillnet}
-                sponsorName="Avation Skillnet"
+                sponsorName="Aviation Skillnet"
               />
             </Grid>
           </Grid>
         </Box>
-        <h2>AvCon Media Partner:</h2>
+        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Media Partner:</h2>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={12}>
               <Sponsor
                 logoUrl={ODohertysLogo}
                 sponsorName="O'Doherty Media Group"
