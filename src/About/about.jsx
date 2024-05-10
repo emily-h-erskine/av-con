@@ -28,7 +28,7 @@ export default function About() {
         <div style={{ textAlign: "center", padding: "2%" }}>
         Welcome to AvCon - The Future of Aviation! Taking place on November 7th at The Irish Air Corps, Casement Aerodrome, Baldonnel, Co. Dublin, AvCon is thrilled to present its signature event dedicated to all things aviation.
         Designed to ignite the imaginations of students from primary to tertiary education levels, AvCon offers a dynamic platform to explore career opportunities and delve into the exciting world of flight. Whether you're a curious primary schooler, a discerning secondary school student, especially in Transition Year, or a tertiary education enthusiast, AvCon promises an immersive experience like no other.
-        <br/>
+        <br/><br/>
         Dubbed as the Comic Con of Aviation, AvCon brings together aviation enthusiasts, industry experts, and educational institutions to showcase the cutting-edge advancements and endless possibilities within the aviation sector. Join us at AvCon and let your dreams take flight!
         <br/><br/>
 
