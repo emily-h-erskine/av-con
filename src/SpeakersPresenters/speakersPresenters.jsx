@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import Speaker from "./speaker";
 import KarlBoweImage from './PresenterSpeakerImages/KarlBowe.jpeg';
 import AllyGarvey from './PresenterSpeakerImages/Ally.JPG';
+import JulieGarland from './PresenterSpeakerImages/JudieGarland.png'
 
 export default function SpeakersPresentors() {
   return (
@@ -43,7 +44,19 @@ export default function SpeakersPresentors() {
       </Box>
       <div style={{textAlign: 'center'}}>
         <h2>AvCon Speakers</h2>
-        <h4>To be announced...</h4>
+        <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6} style={{ padding: '5%' }}>
+            <Speaker 
+              SpeakerImage={JulieGarland}
+              SpeakerName="Julie Garland - Founder and CEO of Avtrain."
+              SpeakerBio="Julie is the Founder and CEO of Avtrain - one of Europe's leading drone training and consultancy organisations setting the standards for others to follow. She is a former Airline Training Captain, Aircraft Maintenance Engineer, Barrister at Law and Fellow of the Chartered Institute of Arbitrators and President of JEDA- Joint European Drone Associations; prior to undertaking her position as CEO of Avtrain she was the Director Compliance for Norwegian Air International . She is the founding and current Vice-Chair of the Unmanned Aircraft Association of Ireland and sits on the Board of Directors of JEDA as the Irish representative and is the JEDA representative on JARUS – the Joint Authorities for Rulemaking on Unmanned Systems where she is Vice-Chair of the JARUS Industry Stakeholder's Body Steering Committee. She also a member of the Board of Advisors for the Estonian Aviation Academy (EAVA), the Ireland Liaison for the Advanced Air Mobility Institute and is a Royal Aeronautical Society Mentor for aspiring aviators. Julie has been the recipient of many awards and accolades including being listed in the 2023 eVTOL Insights Powerbook and winning Airwards Training & Certification Organisation along with multiple podcasts such a Jarlath Regan, The Flying Irishman and Jo Moses, Formidable Females of Future Flight.
+              Avtrain's mission is to encourage prolific drone operations and keep the skies safe through the highest standards of training and certification. They hold an approval as Recognised Entity issued by the Irish Aviation Authority for the grant of EASA Open A2 and STS-01/02 Theoretical Knowledge Examinations and Practical Skill Training and Assessments for STS-01/02. We also work with clients for all Specific Category Authorisations, Declarations & Light UAS operator Certificate (LUC) and third party independent verification of compliance with Operational Safety Objectives.
+              Avtrain live by the 3D's - If it is Dull, Dirty or Dangerous then a drone should be doing it. Avtrain is a consortium member of Future Mobility Campus Ireland Air with Shannon Airport Group where they are pushing the boundaries in autonomy, Advanced Air Mobility and eVTOL Pilot Training."
+            />
+          </Grid>
+        </Grid>
+      </Box>
       </div>
       <br/>
       <h4 style={{padding: '0 5%', textAlign: 'center'}}>Calling all educators! Secure your school's free tickets now, as individual tickets are not available at this time.
