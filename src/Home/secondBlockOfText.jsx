@@ -5,9 +5,9 @@ import AircorpsImage from './HomePageImages/AirCorpsImage.jpg';
 
 export default function SecondImageAndText() {
   return (
-    <Box style={{ padding: "0 0 0 5%" }}>
+    <Box style={{ padding: "0 5%" }}>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={5}>
+        <Grid item xs={12} sm={6}>
           <div>
             <h3>Highlights</h3>
             <b>
@@ -26,32 +26,18 @@ export default function SecondImageAndText() {
             </b>
           </div>
         </Grid>
-        <Grid item xs={12} sm={7}>
+        <Grid item xs={12} sm={6}>
           <div style={{ textAlign: 'center' }}>
             <img
               src={AircorpsImage}
               alt="Air Corps Helli Image"
-              style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
+              style={{ width: '100%', maxWidth: '100%', mixBlendMode: 'luminosity' }}
             />
           </div>
         </Grid>
       </Grid>
-      <div style={{ padding: "0 5% 0 0" }}>
-        {/* <hr />
-        <h3>AvCon Xtra: 12-Hour Flight Sim Competition:</h3>
-
-        <h5>
-          <ul>
-            <li>Non-stop Action: Join us for a thrilling 12-hour Flight simulation competition that kicks off at X am and concludes at X pm.</li>
-            <li>Support Shannon Aviation Museum: All proceeds from this competition will go to the Shannon Aviation Museum.</li>
-            <li>Team Competition: Teams of 4-8 participants will compete in 4 flight simulators, flying around the world with stop offs and facing fun & extreme challenges along the way.</li>
-            <li>Fundraising Requirement: Each team must raise a minimum of €XXXX to enter.</li>
-            <li>To Register a Team: Contact our Flight Sim Team at fightsim@avcon.ie</li>
-          </ul>
-        </h5> */}
-        
-        <hr/>
-
+      <hr />
+      <div style={{ padding: "0 5%" }}>
         <h2>Exhibitor Inquiries:</h2> 
         <h4>If you are interested in showcasing your products or services at AvCon: <u><a href="./ExhibitorRegistration">click here</a></u></h4>
       </div>

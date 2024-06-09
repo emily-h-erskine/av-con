@@ -20,7 +20,7 @@ export default function News() {
             <div style={{textAlign: 'center'}}>
               <h2>Latest</h2>
               <h5>-------- May 7th 2024 --------</h5>
-              <iframe src={PressRelease} width="80%" height="500px" />
+              <iframe src={PressRelease} width="100%" height="500px" style={{ maxWidth: '100%' }} />
             </div>
           </Grid>
         </Grid>

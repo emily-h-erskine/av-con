@@ -20,7 +20,7 @@ export default function SpeakersPresentors() {
       <h2 style={{textAlign: 'center'}}>AvCon Presenters</h2>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} style={{ padding: '5%' }}>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '5%' }}>
             <Speaker 
               SpeakerImage={KarlBoweImage}
               SpeakerName="Karl Bowe"
@@ -32,7 +32,7 @@ export default function SpeakersPresentors() {
               Karl recently featured as the electrician in the “Giggly Bit” commercial for Eir broadband and is currently playing the role of “Andy” the barman in RTE's Fair City. He also does voice over work and provides the announcements on Dublin City FM."
             />
           </Grid>
-          <Grid item xs={12} md={6} style={{ padding: '5%' }}>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '5%' }}>
             <Speaker 
                 SpeakerImage={AllyGarvey}
                 SpeakerName="Ally Garvey"
@@ -47,7 +47,7 @@ export default function SpeakersPresentors() {
         <h2>AvCon Speakers</h2>
         <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} style={{ padding: '5%' }}>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '5%' }}>
             <Speaker 
               SpeakerImage={JulieGarland}
               SpeakerName="Julie Garland - Founder and CEO of Avtrain."
@@ -56,20 +56,21 @@ export default function SpeakersPresentors() {
               Avtrain live by the 3D's - If it is Dull, Dirty or Dangerous then a drone should be doing it. Avtrain is a consortium member of Future Mobility Campus Ireland Air with Shannon Airport Group where they are pushing the boundaries in autonomy, Advanced Air Mobility and eVTOL Pilot Training."
             />
           </Grid>
-          <Grid item xs={12} md={6} style={{ padding: '5%' }}>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '5%' }}>
             <Speaker 
               SpeakerImage={JohnDrysdale}
               SpeakerName="John Drysdale"
               SpeakerBio="John joined the Shannon Airport Group in 2017 as Business Development Manager heading up Shannon’s Aviation Services Cluster. He is the industry mentor on the Industry Advisory Committee for the Irish Aviation Students Association (IASA) and also sits on the Aviation Industry Advisory board at Dublin City University (DCU). He has been a long-standing member of the industry steering committee for the ICBE Aviation Skillnet and was recently appointed the Chairperson of the Unmanned Aircraft Association of Ireland, the UAAI. John has a passion for aviation and is an EASA Part 66 licensed Aircraft Engineer. and recently graduated from Dublin City University with a Master’s degree in Aviation Leadership. He is an active IAA-approved drone pilot and represents the Shannon Airport Group on the SESAR Joint Undertaking EALU-AER project, a digital sky demonstrator with Future Mobility Campus Ireland. In his spare time, John flies high-performance radio-controlled helicopters and aircraft; he is an active scout leader with Shannon Scouts and loves sharing aviation with young people when and wherever he can."
-            />
+              />
+            </Grid>
           </Grid>
-        </Grid>
-      </Box>
-      </div>
-      <br/>
-      <h4 style={{padding: '0 5%', textAlign: 'center'}}>Calling all educators! Secure your school's free tickets now, as individual tickets are not available at this time.
-        <br/> Register your education group <a href="/BookTickets"><u>HERE</u></a> and get ready for a flight of inspiration and innovation on November 7th at Casement Aerodrome, Baldonnel, co. Dublin.
-      </h4>
-    </main>
-  );
-}
+        </Box>
+        </div>
+        <br/>
+        <h4 style={{padding: '0 5%', textAlign: 'center'}}>Calling all educators! Secure your school's free tickets now, as individual tickets are not available at this time.
+          <br/> Register your education group <a href="/BookTickets"><u>HERE</u></a> and get ready for a flight of inspiration and innovation on November 7th at Casement Aerodrome, Baldonnel, co. Dublin.
+        </h4>
+      </main>
+    );
+  }
+  
