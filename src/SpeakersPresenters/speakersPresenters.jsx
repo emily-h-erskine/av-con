@@ -68,7 +68,7 @@ export default function SpeakersPresentors() {
           <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '3%' }}>
             <Speaker 
               SpeakerImage={Bobby}
-              SpeakerName="Bobby"
+              SpeakerName="Bobby Healy"
               SpeakerBio="Bobby began his career building video games for Nintendo. He then founded Eland (an airline tech company) which he sold to SITA. He then built CarTrawler over 15 years and led two successful LBOs for the business. For the last 4 years, he’s been building ‘Manna Drone Delivery’ – a business whose mission is to improve the world by making lightning-fast suburban deliveries affordable, green and safe. He is also a founder of Meili Technology with a mission to end the fiasco of care hire brokering."
               />
           </Grid>

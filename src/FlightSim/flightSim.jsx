@@ -26,13 +26,13 @@ export default function FlightSim() {
               <img
                 src={FlightSimImage}
                 alt="FlightSim"
-                style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
+                style={{ width: '100%', maxWidth: '100%', mixBlendMode: 'luminosity' }}
               />
             </Box>
           </Grid>
         </Grid>
       </Box>
-      <br/>
+      <br/><br/>
       <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={7}>
@@ -40,7 +40,7 @@ export default function FlightSim() {
               <img
                 src={InsideAirplaneImage}
                 alt="Inside Airplane Image"
-                style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
+                style={{ width: '100%', maxWidth: '100%', mixBlendMode: 'luminosity' }}
               />
             </Box>
           </Grid>

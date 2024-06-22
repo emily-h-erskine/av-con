@@ -4,20 +4,20 @@ import Grid from '@mui/material/Grid';
 
 export default function EventFirstBlock() {
   return (
-    <Box sx={{ padding: { xs: '0 5%', md: '0 10%' }, textAlign: 'center' }}>
+    <Box sx={{ padding: { xs: '0 2%', md: '0 5%' }, textAlign: 'center' }}>
       <Box sx={{ textAlign: 'center', padding: '1%' }}>
         Welcome to AvCon 2024 - an exhilarating journey into the future of aviation! Calling all Primary, Secondary, and 3rd Level Students, as well as aviation enthusiasts, to join us for a thrilling adventure that will take you soaring through the skies of innovation and discovery.
         <br/><br/>
         <hr/>
         <br/>
       </Box>
-      <Grid container spacing={2}>
+      <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <img
               src="https://fullfatthings-keyaero.b-cdn.net/sites/keyaero/files/inline-images/Pilatus%20PC-9M%20%5B260%2C%20Irish%20Air%20Corps%20College%20-%20Flying%20Training%20School%2C%20Irish%20Air%20Corps%2C%20RAF%20Cosford%20Airshow%202016%5D%201.JPG"
               alt="Airplane"
-              style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
+              style={{ width: '100%', maxWidth: '100%', mixBlendMode: 'luminosity' }}
             />
           </Box>
         </Grid>

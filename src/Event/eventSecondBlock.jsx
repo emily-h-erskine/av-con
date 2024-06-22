@@ -4,8 +4,8 @@ import Grid from '@mui/material/Grid';
 
 export default function EventSecondBlock() {
   return (
-    <Box sx={{ padding: { xs: '0 5%', md: '0 10%' }, textAlign: 'center' }}>
-      <Grid container spacing={2}>
+    <Box sx={{ padding: { xs: '0 2%', md: '0 5%' }, textAlign: 'center' }}>
+      <Grid container spacing={4}>
         <Grid item xs={12} md={5}>
           <div style={{ textAlign: 'left' }}>
             Flight Simulators and Virtual Reality: Experience the thrill of being a pilot without leaving the ground! AvCon 2024 offers state-of-the-art flight simulators and virtual reality experiences, allowing attendees to take control and navigate the skies like never before.
@@ -22,7 +22,7 @@ export default function EventSecondBlock() {
             <img
               src="https://www.dublinaerospace.com/site/uploads/sys_articles/62/Dublin%20Aerospace%20Recruiting%20Drive%20.jpg"
               alt="Airplane"
-              style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }}
+              style={{ width: '100%', maxWidth: '100%', mixBlendMode: 'luminosity' }}
             />
           </div>
         </Grid>
