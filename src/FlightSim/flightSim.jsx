@@ -9,7 +9,7 @@ export default function FlightSim() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-4 md:p-8">
       <FlightSimImageBanner />
-      <Box sx={{ padding: { xs: '0 5%', md: '0 10%' } }}>
+      <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={5}>
             <Box sx={{ paddingRight: { xs: '0', md: '5%' } }}>
@@ -32,7 +32,8 @@ export default function FlightSim() {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ padding: { xs: '0 5%', md: '0 10%' } }}>
+      <br/>
+      <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={7}>
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -64,7 +65,6 @@ export default function FlightSim() {
           fontWeight: '800',
           textAlign: 'center',
           color: 'white',
-          backgroundColor: 'black',
         }}
       >
         Ready to take flight and join the adventure? For more information or to register your team, reach out to our Flight Sim Team at flightsim@avcon.ie. Don't miss your chance to be part of AvCon Xtra: The Flight Sim Challenge—where the sky is the limit!

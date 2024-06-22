@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 
 export default function MiddleBlockOfText() {
   return (
-    <Box sx={{ padding: { xs: '0 5%', md: '0' } }}>
+    <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
       <hr/>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

@@ -6,6 +6,8 @@ import KarlBoweImage from './PresenterSpeakerImages/KarlBowe.jpeg';
 import AllyGarvey from './PresenterSpeakerImages/Ally.JPG';
 import JulieGarland from './PresenterSpeakerImages/JudieGarland.png';
 import JohnDrysdale from './PresenterSpeakerImages/JohnDrysdale.jpg';
+import Bobby from './PresenterSpeakerImages/Bobby.png';
+import KimMackenzieDoyle from './PresenterSpeakerImages/KimMackenzieDoyle.png';
 
 export default function SpeakersPresentors() {
   return (
@@ -46,8 +48,8 @@ export default function SpeakersPresentors() {
       <div style={{textAlign: 'center'}}>
         <h2>AvCon Speakers</h2>
         <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '5%' }}>
+        <Grid container spacing={1}>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '3%' }}>
             <Speaker 
               SpeakerImage={JulieGarland}
               SpeakerName="Julie Garland - Founder and CEO of Avtrain."
@@ -56,14 +58,34 @@ export default function SpeakersPresentors() {
               Avtrain live by the 3D's - If it is Dull, Dirty or Dangerous then a drone should be doing it. Avtrain is a consortium member of Future Mobility Campus Ireland Air with Shannon Airport Group where they are pushing the boundaries in autonomy, Advanced Air Mobility and eVTOL Pilot Training."
             />
           </Grid>
-          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '5%' }}>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '3%' }}>
             <Speaker 
               SpeakerImage={JohnDrysdale}
               SpeakerName="John Drysdale"
               SpeakerBio="John joined the Shannon Airport Group in 2017 as Business Development Manager heading up Shannon’s Aviation Services Cluster. He is the industry mentor on the Industry Advisory Committee for the Irish Aviation Students Association (IASA) and also sits on the Aviation Industry Advisory board at Dublin City University (DCU). He has been a long-standing member of the industry steering committee for the ICBE Aviation Skillnet and was recently appointed the Chairperson of the Unmanned Aircraft Association of Ireland, the UAAI. John has a passion for aviation and is an EASA Part 66 licensed Aircraft Engineer. and recently graduated from Dublin City University with a Master’s degree in Aviation Leadership. He is an active IAA-approved drone pilot and represents the Shannon Airport Group on the SESAR Joint Undertaking EALU-AER project, a digital sky demonstrator with Future Mobility Campus Ireland. In his spare time, John flies high-performance radio-controlled helicopters and aircraft; he is an active scout leader with Shannon Scouts and loves sharing aviation with young people when and wherever he can."
               />
-            </Grid>
           </Grid>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '3%' }}>
+            <Speaker 
+              SpeakerImage={Bobby}
+              SpeakerName="Bobby"
+              SpeakerBio="Bobby began his career building video games for Nintendo. He then founded Eland (an airline tech company) which he sold to SITA. He then built CarTrawler over 15 years and led two successful LBOs for the business. For the last 4 years, he’s been building ‘Manna Drone Delivery’ – a business whose mission is to improve the world by making lightning-fast suburban deliveries affordable, green and safe. He is also a founder of Meili Technology with a mission to end the fiasco of care hire brokering."
+              />
+          </Grid>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '3%' }}>
+            <Speaker 
+              SpeakerImage={KimMackenzieDoyle}
+              SpeakerName="Kim Mackenzie-Doyle"
+              SpeakerBio="Kim Mackenzie-Doyle is the CEO and Founder of The B!G Idea, a pioneering non-profit organisation dedicated to empowering young people to tackle local and global challenges. With a passion for bridging the gap between industry and education, she has led a diverse team to successfully created an innovative ed tech platform that enables professionals from various fields to support and mentor students online.
+
+              Kim's career is marked by a relentless drive for social impact and educational reform. Prior to founding The B!G Idea, she held significant roles in the creative sector, where she honed her skills in product development, leadership, strategic planning, and community engagement. Her visionary approach has been instrumental in forging strong partnerships across borders, ensuring that young people on the island of Ireland receive the support and resources they need to thrive.
+              
+              Under her leadership, The B!G Idea has garnered international recognition for its unique approach to education, focusing not just on academic success but also on real-world problem-solving and creativity. Kim’s dedication to fostering a generation of socially conscious and empowered individuals is evident in every aspect of her work.
+              
+              She is not only a leader but also an advocate for change, tirelessly working to create a more inclusive and innovative educational landscape. Her efforts have inspired countless young people to dream big and pursue their goals with confidence and resilience."
+              />
+          </Grid>
+        </Grid>
         </Box>
         </div>
         <br/>

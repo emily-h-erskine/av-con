@@ -5,7 +5,7 @@ import AircorpsImage from './HomePageImages/AirCorpsImage.jpg';
 
 export default function SecondImageAndText() {
   return (
-    <Box style={{ padding: "0 5%" }}>
+    <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
           <div>

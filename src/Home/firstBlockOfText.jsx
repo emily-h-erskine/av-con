@@ -5,7 +5,7 @@ import ApprenticePhoto from './HomePageImages/apprentices.jpg';
 
 export default function FirstImageAndText() {
   return (
-    <Box sx={{ padding: { xs: '0 5%', md: '0' } }}>
+    <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={7}>
           <div style={{ textAlign: 'center' }}>
