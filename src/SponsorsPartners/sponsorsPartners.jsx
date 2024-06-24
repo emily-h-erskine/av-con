@@ -8,7 +8,9 @@ import S3 from './SponsorImages/3.png';
 import S4 from './SponsorImages/4.png';
 import S5 from './SponsorImages/5.png';
 import S6 from './SponsorImages/6.png';
-import AvationSkillnet from './SponsorImages/AviationSkillnetLogo.png';
+import AirCorpLogo from './SponsorImages/AirCorpsLogo.jpeg';
+import TYHubLogo from './SponsorImages/TYHubLogo.jpg';
+import ODohertysLogo from './SponsorImages/ODohertysLogo.jpg';
 
 export default function SponsorsPartners() {
   return (
@@ -49,6 +51,39 @@ export default function SponsorsPartners() {
           src={S6}
           alt="Sponsors Display"
           style={{ width: '100%'}}
+        />
+        
+      </div>
+
+      <h6 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '2.5rem', marginBottom: '2rem' }}>
+        AvCon In Collaboration with:
+      </h6>
+
+      <div>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <Sponsor
+              logoUrl={AirCorpLogo}
+              sponsorName="Irish Air Corps"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Sponsor
+              logoUrl={TYHubLogo}
+              sponsorName="TY Hub"
+            />
+          </Grid>
+        </Grid>
+      </div>
+
+      <div>
+
+        <h6 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '2.5rem', marginBottom: '2rem' }}>
+          AvCon Media Partner:
+        </h6>
+        <Sponsor
+          logoUrl={ODohertysLogo}
+          sponsorName="O'Doherty Media Group"
         />
         
       </div>
