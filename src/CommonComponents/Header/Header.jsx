@@ -65,43 +65,43 @@ export const Header = () => {
             )}
           </div>
         ) : (
-          <div style={{ display: 'grid', gridTemplateColumns: '20% 20% 20% 20% 20%', gap: '4%', textAlign: 'center' }}>
-            <div
-              style={{ position: 'relative', display: 'inline-block' }}
-              onMouseEnter={handleEventDropdownToggle}
-              onMouseLeave={handleEventDropdownToggle}
-            >
-              <a href="./Event">EVENT INFO</a>
-              <img src={Dropdown} alt="Dropdown" style={{ padding: '0 0 0 10px' }} />
-              {showEventDropdown && (
-                <p style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
-                  <a href="./EventSchedule">EVENT SCHEDULE</a>
-                  <br /><br />
-                  <a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a>
-                  <br /><br />
-                  <a href="./FlightSim">AVCON XTRA: THE FLIGHT SIM CHALLENGE</a>
-                </p>
-              )}
-            </div>
-            <div
-              style={{ position: 'relative', display: 'inline-block' }}
-              onMouseEnter={handleAboutDropdownToggle}
-              onMouseLeave={handleAboutDropdownToggle}
-            >
-              <a href="./About">ABOUT AVCON</a>
-              <img src={Dropdown} alt="Dropdown" style={{ padding: '0 0 0 10px' }} />
-              {showAboutDropdown && (
-                <div style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
-                  <a href="./News">NEWS &amp; UPDATES</a>
-                  <br /><br />
-                  <a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a>
-                </div>
-              )}
-            </div>
-            <a href="./Contact">CONTACT US</a>
-            <a href="./BookTickets">REGISTER FOR TICKETS</a>
-            <a href="./ExhibitorRegistration">REGISTER TO BE AN EXHIBITOR</a>
-          </div>
+          <h6 style={{ display: 'grid', gridTemplateColumns: '20% 20% 20% 20% 20%', gap: '4%', textAlign: 'center', alignItems:'baseline' }}>
+              <div
+                style={{ position: 'relative', display: 'inline-block' }}
+                onMouseEnter={handleEventDropdownToggle}
+                onMouseLeave={handleEventDropdownToggle}
+              >
+                <a href="./Event">EVENT INFO</a>
+                <img src={Dropdown} alt="Dropdown" style={{ padding: '0 0 0 10px' }} />
+                {showEventDropdown && (
+                  <p style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '10px', border: '2px white solid', textAlign: 'left' }}>
+                    <a href="./EventSchedule">EVENT SCHEDULE</a>
+                    <br /><br />
+                    <a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a>
+                    <br /><br />
+                    <a href="./FlightSim">AVCON XTRA: THE FLIGHT SIM CHALLENGE</a>
+                  </p>
+                )}
+              </div>
+              <div
+                style={{ position: 'relative', display: 'inline-block' }}
+                onMouseEnter={handleAboutDropdownToggle}
+                onMouseLeave={handleAboutDropdownToggle}
+              >
+                <a href="./About">ABOUT AVCON</a>
+                <img src={Dropdown} alt="Dropdown" style={{ padding: '0 0 0 10px' }} />
+                {showAboutDropdown && (
+                  <p style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '10px', border: '2px white solid', textAlign: 'left' }}>
+                    <a href="./News">NEWS &amp; UPDATES</a>
+                    <br /><br />
+                    <a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a>
+                  </p>
+                )}
+              </div>
+              <a href="./Contact">CONTACT US</a>
+              <a href="./BookTickets">REGISTER FOR TICKETS</a>
+              <a href="./ExhibitorRegistration">REGISTER TO BE AN EXHIBITOR</a>
+          </h6>
         )}
       </div>
     </div>
