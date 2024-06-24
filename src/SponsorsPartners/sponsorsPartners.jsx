@@ -15,7 +15,7 @@ import ODohertysLogo from './SponsorImages/ODohertysLogo.jpg';
 export default function SponsorsPartners() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-4 md:p-24" style={{ justifyContent: 'center', alignItems: 'center' }}>
-      <h3 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '2.5rem', marginBottom: '2rem' }}>
+      <h3 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem' }}>
         Our Sponsors and Partners
       </h3>
 
@@ -55,7 +55,7 @@ export default function SponsorsPartners() {
         
       </div>
 
-      <h6 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '2.5rem', marginBottom: '2rem' }}>
+      <h6 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem' }}>
         AvCon In Collaboration with:
       </h6>
 
@@ -78,7 +78,7 @@ export default function SponsorsPartners() {
 
       <div>
 
-        <h6 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '2.5rem', marginBottom: '2rem' }}>
+        <h6 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem' }}>
           AvCon Media Partner:
         </h6>
         <Sponsor
