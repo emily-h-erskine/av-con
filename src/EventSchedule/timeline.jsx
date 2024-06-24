@@ -12,7 +12,7 @@ const Timeline = ({ events }) => {
               <div className="timeline-date">{events.date}</div>
               <div className="timeline-content">
                 <img src={events.imageSrc} alt={events.imageAlt} style={{ width: '100%', maxWidth: '600px', mixBlendMode: 'luminosity' }} />
-                <h3>{events.event}</h3>
+                <h6>{events.event}</h6>
                 <p>{events.description}</p>
               </div>
             </div>

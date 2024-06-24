@@ -8,7 +8,7 @@ export default function Sponsor({ logoUrl, sponsorName }) {
         alt="Sponsor Logo"
         style={{ width: '90%'}}
       />
-      <h5>{sponsorName}</h5>
+      <p>{sponsorName}</p>
     </div>
   );
 }

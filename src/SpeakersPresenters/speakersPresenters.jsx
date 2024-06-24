@@ -12,14 +12,14 @@ import KimMackenzieDoyle from './PresenterSpeakerImages/KimMackenzieDoyle.png';
 export default function SpeakersPresentors() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-4 md:p-24">
-      <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <h3 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         Speakers and Presenters
-      </h1>
+      </h3>
       <br /><br />
-      <h5 style={{padding: '0 5%'}}>Get ready to soar into the future of aviation at AvCon 2024! We're thrilled to introduce our dynamic duo of presenters, Ally Garvey and Karl Bowe, who will be your guides through this exhilarating journey. From the warm welcome to riveting interviews and captivating talks with esteemed guests from the aviation world, Ally and Karl will ensure an unforgettable experience. Stay tuned for announcements on our line-up of guests and talks that will keep you at the edge of your seat. Trust us, you won't want to miss the electrifying show we have in store for you.
+      <p style={{padding: '0 5%'}}>Get ready to soar into the future of aviation at AvCon 2024! We're thrilled to introduce our dynamic duo of presenters, Ally Garvey and Karl Bowe, who will be your guides through this exhilarating journey. From the warm welcome to riveting interviews and captivating talks with esteemed guests from the aviation world, Ally and Karl will ensure an unforgettable experience. Stay tuned for announcements on our line-up of guests and talks that will keep you at the edge of your seat. Trust us, you won't want to miss the electrifying show we have in store for you.
         <br /><br />
-      </h5>
-      <h2 style={{textAlign: 'center'}}>AvCon Presenters</h2>
+      </p>
+      <h5 style={{textAlign: 'center'}}>AvCon Presenters</h5>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '5%' }}>
@@ -46,7 +46,7 @@ export default function SpeakersPresentors() {
         </Grid>
       </Box>
       <div style={{textAlign: 'center'}}>
-        <h2>AvCon Speakers</h2>
+        <h5>AvCon Speakers</h5>
         <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={1}>
           <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '3%' }}>
@@ -89,9 +89,9 @@ export default function SpeakersPresentors() {
         </Box>
         </div>
         <br/>
-        <h4 style={{padding: '0 5%', textAlign: 'center'}}>Calling all educators! Secure your school's free tickets now, as individual tickets are not available at this time.
+        <p style={{padding: '0 5%', textAlign: 'center'}}>Calling all educators! Secure your school's free tickets now, as individual tickets are not available at this time.
           <br/> Register your education group <a href="/BookTickets"><u>HERE</u></a> and get ready for a flight of inspiration and innovation on November 7th at Casement Aerodrome, Baldonnel, co. Dublin.
-        </h4>
+        </p>
       </main>
     );
   }

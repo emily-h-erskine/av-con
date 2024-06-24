@@ -8,10 +8,8 @@ export default function SecondImageAndText() {
     <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
-          <div>
-            <h3>Highlights</h3>
-            <b>
-              <h5>
+            <h6>Highlights</h6>
+              <p>
                 <ul>
                   <li>AvCon 2024: A thrilling journey into the future of aviation for students.</li>
                   <li>Explore the wonders of aviation, from basics to cutting-edge technology.</li>
@@ -22,9 +20,7 @@ export default function SecondImageAndText() {
                   <li>Global perspectives on aviation's role in connecting the world and addressing environmental challenges.</li>
                   <li>Unleash creativity with aviation-themed workshops, design challenges, and competitions.</li>
                 </ul>
-              </h5>
-            </b>
-          </div>
+              </p>
         </Grid>
         <Grid item xs={12} sm={6}>
           <div style={{ textAlign: 'center' }}>
@@ -38,8 +34,8 @@ export default function SecondImageAndText() {
       </Grid>
       <hr />
       <div style={{ padding: "0 5%" }}>
-        <h2>Exhibitor Inquiries:</h2> 
-        <h4>If you are interested in showcasing your products or services at AvCon: <u><a href="./ExhibitorRegistration">click here</a></u></h4>
+        <h6>Exhibitor Inquiries:</h6> 
+        <p>If you are interested in showcasing your products or services at AvCon: <u><a href="./ExhibitorRegistration">click here</a></u></p>
       </div>
     </Box>
   );

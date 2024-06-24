@@ -26,7 +26,7 @@ export default function About() {
     <main className="flex min-h-screen flex-col p-4 md:p-8 lg:p-12">
         <div className="event-container text-center">
 
-        <h1 className="event-title text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4">About AvCon</h1>
+        <h3 style={{textAlign: 'center'}}>About AvCon</h3>
 
         {/* Uncomment this when AboutTimeline is ready */}
         {/* <AboutTimeline aboutAVCon={aboutAVCon} /> */}
@@ -48,7 +48,7 @@ export default function About() {
                 />
               </Grid>
               <Grid item xs={12} md={5}>
-                <div className="text-lg md:text-xl lg:text-2xl xl:text-3xl mt-6 px-2 md:px-4 lg:px-6">
+                <p>
                     Welcome to AvCon - The Future of Aviation! Taking place on November 7th at The Irish Air Corps, Casement Aerodrome, Baldonnel, Co. Dublin, AvCon is thrilled to present its signature event dedicated to all things aviation.
                     Designed to ignite the imaginations of students from primary to tertiary education levels, AvCon offers a dynamic platform to explore career opportunities and delve into the exciting world of flight. Whether you're a curious primary schooler, a discerning secondary school student, especially in Transition Year, or a tertiary education enthusiast, AvCon promises an immersive experience like no other.
                     <br/><br/>
@@ -59,7 +59,7 @@ export default function About() {
                     <a href="/BookTickets">Register through our registration and ticket page.</a>
                     <br/><br/>
                     For all other queries please contact us at <a href="mailto:hello@avcon.ie">hello@avcon.ie</a>
-                </div>
+                </p>
               </Grid>
             </Grid>
           </Box>
