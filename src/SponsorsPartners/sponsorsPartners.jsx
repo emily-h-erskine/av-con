@@ -16,6 +16,8 @@ export default function SponsorsPartners() {
         Our Sponsors and Partners
       </h1>
 
+      <h4 style={{ textAlign:'center', padding:'2%' }}>AvCon - The Future of Aviation is an unparalleled event made possible through the generous support of our sponsors, exhibitors, and partners. This collaboration, including a key partnership with The Irish Air Corps, brings together leading aviation professionals, innovative companies, and educational institutions to create an inspiring experience. AvCon offers school and college groups free access to explore the cutting-edge advancements in aviation, meet industry experts, and engage with interactive exhibits, fostering the next generation of aviation enthusiasts and professionals. Join us in celebrating the future of flight and the minds shaping it.</h4>
+
       <div style={{padding: '2%', textAlign: 'center'}}>
         <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Collaboration with:</h2>
         <Box sx={{ flexGrow: 1 }}>
