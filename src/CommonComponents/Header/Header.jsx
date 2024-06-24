@@ -48,7 +48,7 @@ export const Header = () => {
           <div style={{ cursor: 'pointer' }} onClick={handleMobileToggle}>
             ☰
             {showMobileMenu && (
-              <div style={{ backgroundColor: '#07101D', position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 1000 }}>
+              <p style={{ backgroundColor: '#07101D', position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 1000 }}>
                 <ul style={{ listStyleType: 'none'}}>
                   <li style={{ padding: '2% 10%'}}><a href="./Event">EVENT INFO</a></li>
                   <li style={{ padding: '2% 10%'}}><a href="./EventSchedule">EVENT SCHEDULE</a></li>
@@ -61,7 +61,7 @@ export const Header = () => {
                   <li style={{ padding: '2% 10%'}}><a href="./BookTickets">REGISTER FOR TICKETS</a></li>
                   <li style={{ padding: '2% 10%'}}><a href="./ExhibitorRegistration">REGISTER TO BE AN EXHIBITOR</a></li>
                 </ul>
-              </div>
+              </p>
             )}
           </div>
         ) : (
@@ -74,13 +74,13 @@ export const Header = () => {
               <a href="./Event">EVENT INFO</a>
               <img src={Dropdown} alt="Dropdown" style={{ padding: '0 0 0 10px' }} />
               {showEventDropdown && (
-                <div style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
+                <p style={{ top: '100%', left: 0, backgroundColor: '#07101D', padding: '15px', border: '2px white solid', textAlign: 'left' }}>
                   <a href="./EventSchedule">EVENT SCHEDULE</a>
                   <br /><br />
                   <a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a>
                   <br /><br />
                   <a href="./FlightSim">AVCON XTRA: THE FLIGHT SIM CHALLENGE</a>
-                </div>
+                </p>
               )}
             </div>
             <div

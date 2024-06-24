@@ -18,7 +18,7 @@ export default function FirstImageAndText() {
         </Grid>
         <Grid item xs={12} md={5}>
           <div>
-            <h3 style={{ textAlign: 'center' }}>Get ready to soar into the future of aviation at AvCon 2024!</h3>
+            <h3 style={{ textAlign: 'left' }}>Get ready to soar into the future of aviation at AvCon 2024!</h3>
             <br/><br/>
             <p style={{ textAlign: 'right' }}>
               Calling all primary, secondary, and 3rd level students, to experience an electrifying journey through the skies of innovation. 
