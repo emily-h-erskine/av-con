@@ -8,6 +8,7 @@ import JulieGarland from './PresenterSpeakerImages/JudieGarland.png';
 import JohnDrysdale from './PresenterSpeakerImages/JohnDrysdale.jpg';
 import Bobby from './PresenterSpeakerImages/Bobby.png';
 import KimMackenzieDoyle from './PresenterSpeakerImages/KimMackenzieDoyle.png';
+import IanKiely from './PresenterSpeakerImages/IanKiely.JPG';
 
 export default function SpeakersPresentors() {
   return (
@@ -83,6 +84,17 @@ export default function SpeakersPresentors() {
               Under her leadership, The B!G Idea has garnered international recognition for its unique approach to education, focusing not just on academic success but also on real-world problem-solving and creativity. Kim’s dedication to fostering a generation of socially conscious and empowered individuals is evident in every aspect of her work.
               
               She is not only a leader but also an advocate for change, tirelessly working to create a more inclusive and innovative educational landscape. Her efforts have inspired countless young people to dream big and pursue their goals with confidence and resilience."
+              />
+          </Grid>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '3%' }}>
+            <Speaker 
+              SpeakerImage={IanKiely}
+              SpeakerName="Ian Kiely"
+              SpeakerBio="Ian is CEO of Drone Space Ltd (Formerly Drone Consultants Ireland), a full time drone specialist with thousands of hours flying experience, developing new concepts and sensor applications.
+
+              Ian and his colleagues have won many awards including The European Space Masters, received substantial research grants while working with emergency services, military organisations, government entities and The European Space Agency.
+              
+              Ian has been providing advice and mentoring for many years, he loves weird and wonderful ideas that challenge the norm and is a staunch advocate of protecting the planet."
               />
           </Grid>
         </Grid>
