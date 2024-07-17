@@ -62,16 +62,16 @@ export default function SpeakersPresentors() {
             <Grid container spacing={1}>
               <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
                 <Speaker 
-                  SpeakerImage={JulieGarland}
-                  SpeakerName="Julie Garland"
-                  SpeakerBio="Julie, Founder and CEO of Avtrain, leads Europe's top drone training and consultancy firm, setting industry standards. With a diverse background including roles as an Airline Training Captain and Barrister, she is deeply involved in drone regulation and safety, serving on boards like JEDA and JARUS. Julie's accolades include recognition in the 2023 eVTOL Insights Powerbook and awards for training excellence. Avtrain specialises in drone operations, emphasizing safety and innovation, and holds approvals from the Irish Aviation Authority for comprehensive training and certifications."
+                  SpeakerImage={JohnDrysdale}
+                  SpeakerName="John Drysdale"
+                  SpeakerBio="John, Business Development Manager at Shannon Airport Group since 2017, oversees Shannon’s Aviation Services Cluster. He mentors at IASA and advises at DCU's Aviation Industry Advisory board. As Chairperson of the UAAI, he advocates for unmanned aircraft. A licensed Aircraft Engineer with a Master’s in Aviation Leadership from DCU, John is also an IAA-approved drone pilot. He represents Shannon Airport Group on the SESAR Joint Undertaking EALU-AER project and enjoys mentoring young aviators through scouting."
                 />
               </Grid>
               <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
                 <Speaker 
-                  SpeakerImage={JohnDrysdale}
-                  SpeakerName="John Drysdale"
-                  SpeakerBio="John, Business Development Manager at Shannon Airport Group since 2017, oversees Shannon’s Aviation Services Cluster. He mentors at IASA and advises at DCU's Aviation Industry Advisory board. As Chairperson of the UAAI, he advocates for unmanned aircraft. A licensed Aircraft Engineer with a Master’s in Aviation Leadership from DCU, John is also an IAA-approved drone pilot. He represents Shannon Airport Group on the SESAR Joint Undertaking EALU-AER project and enjoys mentoring young aviators through scouting."
+                  SpeakerImage={JulieGarland}
+                  SpeakerName="Julie Garland"
+                  SpeakerBio="Julie, Founder and CEO of Avtrain, leads Europe's top drone training and consultancy firm, setting industry standards. With a diverse background including roles as an Airline Training Captain and Barrister, she is deeply involved in drone regulation and safety, serving on boards like JEDA and JARUS. Julie's accolades include recognition in the 2023 eVTOL Insights Powerbook and awards for training excellence. Avtrain specialises in drone operations, emphasizing safety and innovation, and holds approvals from the Irish Aviation Authority for comprehensive training and certifications."
                 />
               </Grid>
               <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
