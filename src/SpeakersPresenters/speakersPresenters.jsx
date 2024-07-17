@@ -9,6 +9,7 @@ import JohnDrysdale from './PresenterSpeakerImages/JohnDrysdale.jpg';
 import Bobby from './PresenterSpeakerImages/Bobby.png';
 import KimMackenzieDoyle from './PresenterSpeakerImages/KimMackenzieDoyle.png';
 import IanKiely from './PresenterSpeakerImages/IanKiely.JPG';
+import ValentinaFitzpatrick from './PresenterSpeakerImages/ValentinaFitzpatrick.png';
 
 export default function SpeakersPresentors() {
   return (
@@ -104,6 +105,19 @@ export default function SpeakersPresentors() {
               Ian and his colleagues have won many awards including The European Space Masters, received substantial research grants while working with emergency services, military organisations, government entities and The European Space Agency.
               
               Ian has been providing advice and mentoring for many years, he loves weird and wonderful ideas that challenge the norm and is a staunch advocate of protecting the planet."
+              />
+          </Grid>
+          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '3%' }}>
+            <Speaker 
+              SpeakerImage={ValentinaFitzpatrick}
+              SpeakerName="Valentina Fitzpatrick"
+              SpeakerBio="Valentina commenced her aviation career in 2007 as a flight attendant with a leading European airline. Evolving her interests, she transitioned to Ramp Operations in 2018, uncovering a deep-seated passion for ground handling. Valentina thrives in the dynamic aviation environment, engaging with global handlers and overseeing diverse international clients and aircraft.
+ 
+              Specialising in safety-critical operations and proficient in aircraft pushback—from propeller-driven planes to Boeing 777—Valentina's career underscores her dedication to excellence in ramp operations. Her keen focus on human factors, safety, and wellbeing motivated her to establish the first EU volunteer organisation devoted to mental health among frontline aviation personnel.
+               
+              As founder of The European Aviation Wellbeing Alliance, Valentina plays a pivotal role in fostering international relationships with regulators, stakeholders, and industry professionals. Her approach is guided by principles of integrity, transparency, and honesty.
+               
+              Valentina  continues to lead innovation and promote collaboration in the aviation sector, advocating safety and wellbeing as fundamental pillars of operational excellence."
               />
           </Grid>
         </Grid>
