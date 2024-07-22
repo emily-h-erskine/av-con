@@ -10,6 +10,8 @@ import Bobby from './PresenterSpeakerImages/Bobby.png';
 import KimMackenzieDoyle from './PresenterSpeakerImages/KimMackenzieDoyle.png';
 import IanKiely from './PresenterSpeakerImages/IanKiely.JPG';
 import ValentinaFitzpatrick from './PresenterSpeakerImages/ValentinaFitzpatrick.png';
+import GOC from './PresenterSpeakerImages/GOC.jpg'
+import GOCHighlight from "./GOCHighlight";
 
 export default function SpeakersPresentors() {
   return (
@@ -59,6 +61,31 @@ export default function SpeakersPresentors() {
         <div style={{textAlign: 'center'}}>
           <h5>AvCon Speakers</h5>
           <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={1} style={{ padding: '3%' }}>
+              <GOCHighlight 
+                SpeakerImage={GOC}
+                SpeakerName="GOC Rory O'Connor"
+                SpeakerBio='"Ladies and Gentlemen,
+
+                Good afternoon, as the General Officer Commanding the Air Corps I want to welcome you to this momentous occasion, the hosting of the Aviation Convention by the Irish Air Corps this November. It is an honor and a privilege to celebrate and explore the dynamic world of aviation and for the Irish Air Corps to welcome everyone to our base and home. This convention represents a significant milestone, not only for the Irish Air Corps but also for the students, schools, and the wider community involved.
+                
+                The Irish Air Corps has a long-standing tradition of excellence, courage, and innovation. As we host this prestigious event, we are reminded of our rich history and our commitment to fostering the future of aviation. This convention is more than just a gathering of aviation professionals; it is a beacon of inspiration for the next generation of aviators, engineers, and innovators.
+                
+                We are incredibly fortunate to have a stellar lineup of guest speakers who will share their invaluable insights and experiences with us. Among them are aero engineers, pilots, technicians and Air Traffic Controllers to name few from the Air Corps who will share their exciting career stories. Their presence here today underscores the importance of collaboration, knowledge-sharing, and mentorship in our industry. They bring with them a wealth of experience, stories of perseverance, and a vision for the future of the States new Air Force that will undoubtedly leave a lasting impact on all of us.
+                
+                For the students and schools participating in this convention, this is an unparalleled opportunity. It is a chance to learn from the best, to engage with cutting-edge technology, and to envision a future where their dreams take flight. The hands-on workshops, interactive exhibits, and panel discussions have been designed to ignite curiosity and foster a deep-seated passion for aviation.
+                
+                Students will have the chance to explore various aspects of aviation, from piloting and navigation to aerospace engineering and air traffic control. They will witness firsthand the dedication and precision required in this field, and they will be encouraged to pursue their aspirations with determination and confidence.
+                
+                Schools participating in this convention are providing their students with a unique platform to expand their horizons and to connect with industry leaders. This engagement not only enhances their educational experience but also opens doors to future career opportunities. By immersing themselves in this environment, students will develop a greater understanding of the diverse career paths available in aviation and the importance of STEM (Science, Technology, Engineering, and Mathematics) education in achieving their goals.
+                
+                In closing, I would like to express my heartfelt gratitude to the organisers, sponsors, guest speakers, and all the participants who have made this convention possible. Your dedication and support are instrumental in making this event a success. To the students and schools, I encourage you to make the most of this opportunity, to ask questions, to explore, and to dream big.
+                
+                I began my aviation career in 1982 as an apprentice here in Baldonnel and now as Brigadier General I am the General Officer Commanding the Air Corps; the sky is not the limit; it is just the beginning. Let this convention be the launchpad for your future in aviation. Thank you, and enjoy the convention!" - Rory OConnor'
+              />
+            </Grid>
+          </Box>
+          <Box sx={{ flexGrow: 1 }}> 
             <Grid container spacing={1}>
               <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
                 <Speaker 
