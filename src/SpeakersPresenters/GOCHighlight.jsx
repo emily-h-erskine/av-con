@@ -25,7 +25,6 @@ const styles = {
   },
   name: {
     marginTop: '15px',
-    fontSize: '1.2em',
     fontWeight: 'bold',
     color: '#333',
   },
@@ -35,8 +34,6 @@ const styles = {
     padding: '20px',
   },
   bio: {
-    fontSize: '1em',
-    lineHeight: '1.6',
     color: '#555',
   },
 };
