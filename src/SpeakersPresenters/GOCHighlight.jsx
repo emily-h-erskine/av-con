@@ -3,38 +3,35 @@ import React from "react";
 const styles = {
   container: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
     width: '100%',
     padding: '20px',
     boxSizing: 'border-box',
-    backgroundColor: '#f9f9f9',
     borderRadius: '10px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    margin: '0 auto',
   },
   imageContainer: {
-    flex: 1,
     display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    textAlign: 'center',
-    padding: '20px',
-  },
-  image: {
+    justifyContent: 'center',
     width: '100%',
   },
-  name: {
-    marginTop: '15px',
-    fontWeight: 'bold',
-    color: '#333',
+  image: {
+    width: '50%',
+    maxWidth: '100%',
+    border: '1px solid #ddd',
+    display: 'block',
+    margin: '0 auto',
   },
   bioContainer: {
-    flex: 1,
-    textAlign: 'left',
-    padding: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
   },
   bio: {
-    color: '#555',
+    columnCount: 2,
+    columnGap: '5%',
+    margin: 0,
   },
 };
 
@@ -47,7 +44,9 @@ export default function GOCHighlight({ SpeakerImage, SpeakerName, SpeakerBio }) 
           alt="Speaker"
           style={styles.image}
         />
-        <h6 style={styles.name}>{SpeakerName}</h6>
+      </div>
+      <div>
+        <h6>{SpeakerName}</h6>
       </div>
       <div style={styles.bioContainer}>
         <p style={styles.bio}>{SpeakerBio}</p>
