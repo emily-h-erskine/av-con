@@ -12,6 +12,7 @@ import IanKiely from './PresenterSpeakerImages/IanKiely.JPG';
 import ValentinaFitzpatrick from './PresenterSpeakerImages/ValentinaFitzpatrick.png';
 import GOC from './PresenterSpeakerImages/GOC.jpg'
 import GOCHighlight from "./GOCHighlight";
+import LorcanGeraghty from "./PresenterSpeakerImages/LorcanGeraghty.jpeg"
 
 export default function SpeakersPresentors() {
   return (
@@ -68,7 +69,7 @@ export default function SpeakersPresentors() {
                 SpeakerBio='"Ladies and Gentlemen,
 
                 Good afternoon, as the General Officer Commanding the Air Corps I want to welcome you to this momentous occasion, the hosting of the Aviation Convention by the Irish Air Corps this November. It is an honor and a privilege to celebrate and explore the dynamic world of aviation and for the Irish Air Corps to welcome everyone to our base and home. This convention represents a significant milestone, not only for the Irish Air Corps but also for the students, schools, and the wider community involved.
-                
+
                 The Irish Air Corps has a long-standing tradition of excellence, courage, and innovation. As we host this prestigious event, we are reminded of our rich history and our commitment to fostering the future of aviation. This convention is more than just a gathering of aviation professionals; it is a beacon of inspiration for the next generation of aviators, engineers, and innovators.
                 
                 We are incredibly fortunate to have a stellar lineup of guest speakers who will share their invaluable insights and experiences with us. Among them are aero engineers, pilots, technicians and Air Traffic Controllers to name few from the Air Corps who will share their exciting career stories. Their presence here today underscores the importance of collaboration, knowledge-sharing, and mentorship in our industry. They bring with them a wealth of experience, stories of perseverance, and a vision for the future of the States new Air Force that will undoubtedly leave a lasting impact on all of us.
@@ -127,6 +128,13 @@ export default function SpeakersPresentors() {
                   SpeakerImage={ValentinaFitzpatrick}
                   SpeakerName="Valentina Fitzpatrick"
                   SpeakerBio="Valentina began her aviation career in 2007 as a flight attendant, later transitioning to Ramp Operations in 2018, where she found a passion for ground handling. Specializing in safety-critical operations, she manages international clients and diverse aircraft, from propeller-driven planes to Boeing 777s. Valentina founded The European Aviation Wellbeing Alliance, focusing on mental health among aviation personnel, and collaborates globally to promote safety and operational excellence. Her leadership emphasizes integrity, transparency, and wellbeing in aviation."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={LorcanGeraghty}
+                  SpeakerName="Lorcan Geraghty"
+                  SpeakerBio="Lorcan Geraghty is a Mechanical Engineering student at Trinity College Dublin and the founder of EirSpace, Ireland's first college-level student rocket team. EirSpace is set to represent Ireland in international competitions with projects ranging from solid-propelled rockets to bi-liquid engine rockets. Lorcan advocates for increased support for student led engineering teams across Ireland where students can get real engineering experience."
                 />
               </Grid>
             </Grid>
