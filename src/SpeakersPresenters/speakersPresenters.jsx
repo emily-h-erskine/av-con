@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Speaker from "./speaker";
 import KarlBoweImage from './PresenterSpeakerImages/KarlBowe.jpeg';
 import AllyGarvey from './PresenterSpeakerImages/Ally.JPG';
-import JulieGarland from './PresenterSpeakerImages/JudieGarland.png';
+import JulieGarland from './PresenterSpeakerImages/JudieGarland.jpeg';
 import JohnDrysdale from './PresenterSpeakerImages/JohnDrysdale.jpg';
 import Bobby from './PresenterSpeakerImages/Bobby.png';
 import KimMackenzieDoyle from './PresenterSpeakerImages/KimMackenzieDoyle.png';
