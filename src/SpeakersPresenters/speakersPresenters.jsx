@@ -12,7 +12,9 @@ import IanKiely from './PresenterSpeakerImages/IanKiely.JPG';
 import ValentinaFitzpatrick from './PresenterSpeakerImages/ValentinaFitzpatrick.png';
 import GOC from './PresenterSpeakerImages/GOC.jpg'
 import GOCHighlight from "./GOCHighlight";
-import LorcanGeraghty from "./PresenterSpeakerImages/LorcanGeraghty.jpeg"
+import LorcanGeraghty from "./PresenterSpeakerImages/LorcanGeraghty.jpeg";
+import NicolaNiRiada from "./PresenterSpeakerImages/NicolaNiRiada.jpg";
+import JaneMagill from "./PresenterSpeakerImages/JM.jpg";
 
 export default function SpeakersPresentors() {
   return (
@@ -127,6 +129,20 @@ export default function SpeakersPresentors() {
                   SpeakerImage={LorcanGeraghty}
                   SpeakerName="Lorcan Geraghty"
                   SpeakerBio="Lorcan Geraghty is a Mechanical Engineering student at Trinity College Dublin and the founder of EirSpace, Ireland's first college-level student rocket team. EirSpace is set to represent Ireland in international competitions with projects ranging from solid-propelled rockets to bi-liquid engine rockets. Lorcan advocates for increased support for student led engineering teams across Ireland where students can get real engineering experience."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={NicolaNiRiada}
+                  SpeakerName="Nicola NiRiada"
+                  SpeakerBio="Nicola joined the Irish Aviation Authority (now AirNav Ireland) in 1994 and has over 30 years of operational experience. She works in Shannon as an area controller and is also an OJTI, instructor, and human factors actor. Nicola serves as the IFATCA liaison officer on the IATCA Ireland board and became the IFATCA Communications Coordinator in 2023. She is part of IFATCA's Equality, Diversity and Integration Task Force and the IFATCA 2030+ TF. Nicola focuses on recruitment and promoting the ATCO career in Ireland. She holds multiple qualifications, including diplomas, degrees, and certifications in aviation, education, literature, organisational behavior, and women's studies. "
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={JaneMagill}
+                  SpeakerName="Jane Magill"
+                  SpeakerBio="Jane is the co-founder and Chair of Shannon Aviation Museum, established in 2008. She is passionate about preserving aviation heritage and creating an accessible facility for youth education. Jane is also the CEO of AAV Aviation Technical Services Training, developing courses with TUS Technological University and the aviation industry. She is President of Women in Aviation International - Ireland Chapter, focusing on encouraging girls and supporting women. Jane holds an EASA Private Pilot's licence and is an active member of Limerick Flying Club."
                 />
               </Grid>
             </Grid>
