@@ -15,6 +15,8 @@ import GOCHighlight from "./GOCHighlight";
 import LorcanGeraghty from "./PresenterSpeakerImages/LorcanGeraghty.jpeg";
 import NicolaNiRiada from "./PresenterSpeakerImages/NicolaNiRiada.jpg";
 import JaneMagill from "./PresenterSpeakerImages/JM.jpg";
+import JasonPhelan from "./PresenterSpeakerImages/JasonPhelan.jpg";
+import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddy&Lucky.jpg";
 
 export default function SpeakersPresentors() {
   return (
@@ -143,6 +145,20 @@ export default function SpeakersPresentors() {
                   SpeakerImage={JaneMagill}
                   SpeakerName="Jane Magill"
                   SpeakerBio="Jane is the co-founder and Chair of Shannon Aviation Museum, established in 2008. She is passionate about preserving aviation heritage and creating an accessible facility for youth education. Jane is also the CEO of AAV Aviation Technical Services Training, developing courses with TUS Technological University and the aviation industry. She is President of Women in Aviation International - Ireland Chapter, focusing on encouraging girls and supporting women. Jane holds an EASA Private Pilot's licence and is an active member of Limerick Flying Club."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={JasonPhelan}
+                  SpeakerName="Jason Phelan"
+                  SpeakerBio="Jason's love for aviation ignited when he experienced his first Airshow at Biggin Hill, London at the tender age of 3. Beginning a career in aviation in 2004 with the UK Civil Aviation Authority (CAA) as an aircraft registration administrator, he transitioned to the Flight Operations General Aviation division. Relocating to Ireland in 2012, his background paved the way for a career at the Irish Aviation Authority, specializing first in Licensing and presently as an administrator within Flight Operations Administration. In December 2022 he created The Adventures of Capt Paddy & Lucky. This initiative involves two teddy bears embarking on flying adventures across Ireland and beyond to support two prominent Irish charities, LauraLynn  Ireland's Children's Hospice and Dogs Trust Ireland."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={CaptPaddyLucky}
+                  SpeakerName="Capt Paddy & Lucky"
+                  SpeakerBio="The Adventures of Capt Paddy & Lucky's mission is to spearhead initiatives to support LauraLynn Children's Hospice and Dogs Trust Ireland. Through these adventures, we not only raise awareness and funds for two vital causes, but also bring joy and inspiration to the aviation community. The team commitment to these values is at the core of every flight and every event that we organise, reflecting a passion for aviation both in the skies and on the ground. These adventures have lead our duo becoming ambassadors for Irish Aviation."
                 />
               </Grid>
             </Grid>
