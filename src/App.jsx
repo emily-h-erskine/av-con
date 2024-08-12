@@ -12,7 +12,8 @@ import FlightSim from "./FlightSim/flightSim";
 import News from "./News/newsUpdates";
 import SpeakersPresenters from "./SpeakersPresenters/speakersPresenters";
 import SponsorsPartners from './SponsorsPartners/sponsorsPartners';
-import ExhibitorRegistration from './ExhibitorRegistration/exhibitor'
+import ExhibitorRegistration from './ExhibitorRegistration/exhibitor';
+import AvconPathwayPortal from './AvconPathwayPortal/pathwayPortal';
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/speakersPresenters" element={<SpeakersPresenters />} />
           <Route path="/sponsorsPartners" element={<SponsorsPartners />} />
           <Route path="/exhibitorRegistration" element={<ExhibitorRegistration />} />
+          <Route path="/avconPathwayPortal" element={<AvconPathwayPortal />} />
         </Routes>
       </RootLayout>
     </BrowserRouter>

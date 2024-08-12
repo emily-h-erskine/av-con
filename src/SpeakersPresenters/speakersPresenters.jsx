@@ -67,20 +67,30 @@ export default function SpeakersPresentors() {
         <div style={{textAlign: 'center'}}>
           <h5>AvCon Speakers</h5>
           <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={1} style={{ padding: '3%' }}>
-              <GOCHighlight 
-                SpeakerImage={GOC}
-                SpeakerName="GOC, Brigadier General Rory O'Connor"
-                SpeakerBio={`"A Welcome Note to AvCon - the Future of Aviation from the Air Corps
-                As we look ahead to the upcoming Aviation Convention hosted by the Irish Air Corps this November, we envision a groundbreaking event that celebrates the dynamic world of aviation. This convention is a milestone for the Irish Air Corps, students, schools, and the wider community.
-                The Irish Air Corps, with its tradition of excellence, courage, and innovation, is excited to welcome everyone to our base. This event is more than a gathering; it's an inspiration for the next generation of aviators, engineers, and innovators.
-                We have a stellar lineup of guest speakers, including aero engineers, pilots, technicians, and Air Traffic Controllers from the Air Corps. Their insights and experiences highlight the importance of collaboration and mentorship in aviation.
-                For students and schools, this convention offers an unparalleled opportunity to learn from the best, engage with cutting-edge technology, and envision a future where their dreams take flight. Hands-on workshops, interactive exhibits, and panel discussions are designed to ignite curiosity and foster a passion for aviation.
-                Participants will explore various aspects of aviation, from piloting and navigation to aerospace engineering and air traffic control, gaining firsthand experience and inspiration. This event also underscores the importance of STEM education in achieving their goals.
-                We extend our heartfelt gratitude to the organisers, sponsors, guest speakers, and participants. Your support makes this event possible. To the students, seize this opportunity to ask questions, explore, and dream big.
-                The sky is not the limit; it is just the beginning. Let this convention be the launchpad for your future in aviation.
-                Thank you, and enjoy the convention!" - GOC, Brigadier General Rory O'Connor`}
-              />
+            <Grid 
+              style={{ padding: '3%' }}
+            >
+              <Grid 
+                item 
+                xs={12} // Full-width on extra-small screens (mobile)
+                sm={12} // Full-width on small screens (tablet)
+                md={6}  // Half-width on medium screens (laptops)
+                lg={6}  // Half-width on large screens (desktops)
+              >
+                <GOCHighlight 
+                  SpeakerImage={GOC}
+                  SpeakerName="GOC, Brigadier General Rory O'Connor"
+                  SpeakerBio={`"A Welcome Note to AvCon - the Future of Aviation from the Air Corps
+                  As we look ahead to the upcoming Aviation Convention hosted by the Irish Air Corps this November, we envision a groundbreaking event that celebrates the dynamic world of aviation. This convention is a milestone for the Irish Air Corps, students, schools, and the wider community.
+                  The Irish Air Corps, with its tradition of excellence, courage, and innovation, is excited to welcome everyone to our base. This event is more than a gathering; it's an inspiration for the next generation of aviators, engineers, and innovators.
+                  We have a stellar lineup of guest speakers, including aero engineers, pilots, technicians, and Air Traffic Controllers from the Air Corps. Their insights and experiences highlight the importance of collaboration and mentorship in aviation.
+                  For students and schools, this convention offers an unparalleled opportunity to learn from the best, engage with cutting-edge technology, and envision a future where their dreams take flight. Hands-on workshops, interactive exhibits, and panel discussions are designed to ignite curiosity and foster a passion for aviation.
+                  Participants will explore various aspects of aviation, from piloting and navigation to aerospace engineering and air traffic control, gaining firsthand experience and inspiration. This event also underscores the importance of STEM education in achieving their goals.
+                  We extend our heartfelt gratitude to the organisers, sponsors, guest speakers, and participants. Your support makes this event possible. To the students, seize this opportunity to ask questions, explore, and dream big.
+                  The sky is not the limit; it is just the beginning. Let this convention be the launchpad for your future in aviation.
+                  Thank you, and enjoy the convention!" - GOC, Brigadier General Rory O'Connor`}
+                />
+              </Grid>
             </Grid>
           </Box>
           <Box sx={{ flexGrow: 1 }}> 
