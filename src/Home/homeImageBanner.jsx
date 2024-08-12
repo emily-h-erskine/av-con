@@ -24,15 +24,16 @@ export default function HomeImageBanner() {
         }}
       />
       <button
-          type="button"
-          name="Book Tickets Button"
-          style={{
-            padding: '1.5vw 4vw',
-            position: 'absolute',
-            right: '10%',
-            top: '40%'
-          }}
-        >
+        type="button"
+        name="Book Tickets Button"
+        style={{
+          padding: '3%',
+          position: 'absolute',
+          right: '10%',
+          top: '50%',
+          backgroundColor: '#07101D',
+        }}
+      >
         <a href="./BookTickets" style={{ textDecoration: 'none', color: 'inherit' }}>
           Register for Tickets
         </a>
