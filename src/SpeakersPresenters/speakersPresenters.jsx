@@ -17,6 +17,7 @@ import NicolaNiRiada from "./PresenterSpeakerImages/NicolaNiRiada.jpg";
 import JaneMagill from "./PresenterSpeakerImages/JM.jpg";
 import JasonPhelan from "./PresenterSpeakerImages/JasonPhelan.jpg";
 import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddy&Lucky.jpg";
+import ElaineHarding from "./PresenterSpeakerImages/ElaineHarding.jpg";
 
 export default function SpeakersPresentors() {
   return (
@@ -159,6 +160,15 @@ export default function SpeakersPresentors() {
                   SpeakerImage={CaptPaddyLucky}
                   SpeakerName="Capt Paddy & Lucky"
                   SpeakerBio="The Adventures of Capt Paddy & Lucky's mission is to spearhead initiatives to support LauraLynn Children's Hospice and Dogs Trust Ireland. Through these adventures, we not only raise awareness and funds for two vital causes, but also bring joy and inspiration to the aviation community. The team commitment to these values is at the core of every flight and every event that we organise, reflecting a passion for aviation both in the skies and on the ground. These adventures have lead our duo becoming ambassadors for Irish Aviation."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={ElaineHarding}
+                  SpeakerName="Elaine Harding"
+                  SpeakerBio="Elaine Harding is a trailblazing tech founder in the aerospace industry. As the Founder and CEO of AugmentAero, she has led the company to the forefront of aviation innovation by integrating augmented reality (AR) and artificial intelligence (AI) into aircraft maintenance processes. AugmentAero is revolutionising the aerospace sector by improving safety, efficiency, and profitability with cutting-edge technology.
+                  Elaine's journey in the aerospace industry is marked by her commitment to addressing the challenges of safety, time pressures, and the growing demand for skilled engineers. Her work is supported by a strong network of industry and academic partners, including collaborations with the University of Southampton, which further enhances the impact of her innovations.
+                  With a reputation as an innovator and disruptor, Elaine Harding's leadership at AugmentAero is making a significant impact within the aviation industry, helping to shape the future of aircraft maintenance through technology."
                 />
               </Grid>
             </Grid>

@@ -1,56 +1,33 @@
 import React from "react";
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    width: '100%',
-    padding: '20px',
-    boxSizing: 'border-box',
-    borderRadius: '10px',
-    margin: '0 auto',
-  },
-  imageContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    width: '100%',
-  },
-  image: {
-    width: '50%',
-    maxWidth: '100%',
-    border: '1px solid #ddd',
-    display: 'block',
-    margin: '0 auto',
-  },
-  bioContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    width: '100%',
-  },
-  bio: {
-    columnCount: 2,
-    columnGap: '5%',
-    margin: 0,
-  },
-};
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
 export default function GOCHighlight({ SpeakerImage, SpeakerName, SpeakerBio }) {
   return (
-    <div style={styles.container}>
-      <div style={styles.imageContainer}>
-        <img
-          src={SpeakerImage}
-          alt="Speaker"
-          style={styles.image}
-        />
-      </div>
-      <div>
-        <h6>{SpeakerName}</h6>
-      </div>
-      <div style={styles.bioContainer}>
-        <p style={styles.bio}>{SpeakerBio}</p>
-      </div>
+
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+    <div style={{
+      width: '500px', // Set a fixed width
+      height: '500px', // Set a fixed height
+      overflow: 'hidden', // Hide any overflow
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginBottom: '1rem'
+    }}>
+      <img
+        src={SpeakerImage}
+        alt="Speaker Image"
+        style={{
+          width: '100%', // Ensure the image covers the width of the container
+          height: '100%', // Ensure the image covers the height of the container
+          objectFit: 'cover', // Crop the image to cover the container
+          objectPosition: 'top' // Crop the image from the top
+        }}
+      />
     </div>
+    <h6>{SpeakerName}</h6>
+    <p>{SpeakerBio}</p>
+  </div>
   );
 }
