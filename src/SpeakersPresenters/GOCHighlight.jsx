@@ -7,8 +7,8 @@ export default function GOCHighlight({ SpeakerImage, SpeakerName, SpeakerBio }) 
 
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
       <div style={{
-        width: '500px', // Set a fixed width
-        height: '500px', // Set a fixed height
+        width: '350px', // Set a fixed width
+        height: '350px', // Set a fixed height
         overflow: 'hidden', // Hide any overflow
         display: 'flex',
         alignItems: 'center',
