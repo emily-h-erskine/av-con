@@ -18,7 +18,7 @@
     }
 
     .custom-form-container {
-        width: 75%; /* Set width to 50% */
+        width: 95%; /* Set width to 50% */
         margin: 0 auto; /* Center the form */
         margin-top: 6rem;
     }
@@ -154,7 +154,7 @@ a:hover {
 }
 
 .registration-form {
-    max-width: 80%;
+    max-width: 95%;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -347,7 +347,7 @@ p {
     }
 
     .custom-form-container {
-        width: 75%; /* Set width to 50% */
+        width: 95%;
         margin: 0 auto; /* Center the form */
         margin-top: 6rem;
     }
