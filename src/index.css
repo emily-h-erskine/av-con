@@ -1,320 +1,329 @@
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-  .container header .header-nav-area #nav_container  {
-    display:flex;
-  }
+    .container header .header-nav-area #nav_container {
+        display: flex;
+    }
+
+    .custom-form-container {
+        width: 50%; /* Set width to 50% */
+        margin: 0 auto; /* Center the form */
+    }
+
+    /* Target the actual injected form */
+    .custom-form-container form {
+        width: 100%; /* Make sure the form inside takes the full width of the container */
+    }
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #07101D;
-  color: #ffffff;
+    font-family: "Inter", sans-serif;
+    background: #07101d;
+    color: #ffffff;
 }
 
 a {
-  color: #ffffff; /* Set the link color to white */
-  text-decoration: none;
-  font-size: small;
+    color: #ffffff; /* Set the link color to white */
+    text-decoration: none;
+    font-size: small;
 }
 a:hover {
-  color: #ffffff; /* Set the link hover color to white */
+    color: #ffffff; /* Set the link hover color to white */
 }
 
 .AppHeader {
-  background-color: #07101D;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(5px + 2vmin);
-  color: white;
+    background-color: #07101d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 a {
-  color: #ffffff; /* Set the link color to white */
+    color: #ffffff; /* Set the link color to white */
 }
 a:hover {
-  color: #ffffff; /* Set the link hover color to white */
+    color: #ffffff; /* Set the link hover color to white */
 }
 
-.form{
-  padding: 20px;
+.form {
+    padding: 20px;
 }
 
-.form-body{
-  text-align: left;
-  padding: 20px 10px;
+.form-body {
+    text-align: left;
+    padding: 20px 10px;
 }
 
-.form-body > *{
-  padding: 5px;
-}
-
-.form__label{
-  width: 40%;
-}
-
-.form_input{
-  width: 60%;
-}
-
-.event-container {
-  padding: 2% 5%;
-}
-
-.event-title {
-  text-align: center;
-}
-
-.timeline {
-  margin-top: 20px;
-}
-
-.timeline-item {
-  position: relative;
-  padding: 10%;
-  border-left: 2px solid #98A1A6;
-  margin-bottom: 20px;
-}
-
-.timeline-date {
-  position: absolute;
-  left: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #041326;
-  color: #FFFFFF;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-.timeline-content {
-  margin-left: 20px;
-}
-
-@media (max-width: 768px) {
-  .event-container {
-    padding: 2% 3%;
-  }
-
-  .timeline-date {
-    left: 0;
-    top: 0;
-    transform: none;
-    margin-bottom: 10px;
-  }
-
-  .timeline-content {
-    margin-left: 0;
-  }
-}
-
-.registration-form {
-  max-width: 80%;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.form-body > * {
+    padding: 5px;
 }
 
 .form__label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
+    width: 40%;
+}
+
+.form_input {
+    width: 60%;
+}
+
+.event-container {
+    padding: 2% 5%;
+}
+
+.event-title {
+    text-align: center;
+}
+
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 10%;
+    border-left: 2px solid #98a1a6;
+    margin-bottom: 20px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #041326;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.timeline-content {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .event-container {
+        padding: 2% 3%;
+    }
+
+    .timeline-date {
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .timeline-content {
+        margin-left: 0;
+    }
+}
+
+.registration-form {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .form__input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .form__textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
 .submit-button {
-  padding: 15px;
-  width: 100%;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .submit-button:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 .alert-message {
-  margin-top: 20px;
+    margin-top: 20px;
 }
-
 
 /* Default styles */
 h1 {
-  font-size: 2rem; /* Default font size for h1 */
-  line-height: 1.2; /* Adjust line height for better readability */
+    font-size: 2rem; /* Default font size for h1 */
+    line-height: 1.2; /* Adjust line height for better readability */
 }
 
 h2 {
-  font-size: 1.75rem; /* Default font size for h2 */
-  line-height: 1.3; /* Adjust line height for better readability */
+    font-size: 1.75rem; /* Default font size for h2 */
+    line-height: 1.3; /* Adjust line height for better readability */
 }
 
 h3 {
-  font-size: 1.5rem; /* Default font size for h3 */
-  line-height: 1.4; /* Adjust line height for better readability */
+    font-size: 1.5rem; /* Default font size for h3 */
+    line-height: 1.4; /* Adjust line height for better readability */
 }
 
 h4 {
-  font-size: 1.25rem; /* Default font size for h4 */
-  line-height: 1.5; /* Adjust line height for better readability */
+    font-size: 1.25rem; /* Default font size for h4 */
+    line-height: 1.5; /* Adjust line height for better readability */
 }
 
 h5 {
-  font-size: 1.1rem; /* Default font size for h5 */
-  line-height: 1.6; /* Adjust line height for better readability */
+    font-size: 1.1rem; /* Default font size for h5 */
+    line-height: 1.6; /* Adjust line height for better readability */
 }
 
 h6 {
-  font-size: 1rem; /* Default font size for h6 */
-  line-height: 1.7; /* Adjust line height for better readability */
+    font-size: 1rem; /* Default font size for h6 */
+    line-height: 1.7; /* Adjust line height for better readability */
 }
 
 p {
-  font-size: 1rem; /* Default font size for paragraph */
-  line-height: 1.6; /* Adjust line height for better readability */
+    font-size: 1rem; /* Default font size for paragraph */
+    line-height: 1.6; /* Adjust line height for better readability */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
+    h1 {
+        font-size: 2.5rem;
+    }
 
-  h2 {
-    font-size: 2.25rem;
-  }
+    h2 {
+        font-size: 2.25rem;
+    }
 
-  h3 {
-    font-size: 2rem;
-  }
+    h3 {
+        font-size: 2rem;
+    }
 
-  h4 {
-    font-size: 1.75rem;
-  }
+    h4 {
+        font-size: 1.75rem;
+    }
 
-  h5 {
-    font-size: 1.5rem;
-  }
+    h5 {
+        font-size: 1.5rem;
+    }
 
-  h6 {
-    font-size: 1.25rem;
-  }
+    h6 {
+        font-size: 1.25rem;
+    }
 
-  p {
-    font-size: 1.125rem;
-  }
+    p {
+        font-size: 1.125rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  h1 {
-    font-size: 3rem;
-  }
+    h1 {
+        font-size: 3rem;
+    }
 
-  h2 {
-    font-size: 2.75rem;
-  }
+    h2 {
+        font-size: 2.75rem;
+    }
 
-  h3 {
-    font-size: 2.5rem;
-  }
+    h3 {
+        font-size: 2.5rem;
+    }
 
-  h4 {
-    font-size: 2rem;
-  }
+    h4 {
+        font-size: 2rem;
+    }
 
-  h5 {
-    font-size: 1.75rem;
-  }
+    h5 {
+        font-size: 1.75rem;
+    }
 
-  h6 {
-    font-size: 1.5rem;
-  }
+    h6 {
+        font-size: 1.5rem;
+    }
 
-  p {
-    font-size: 1.25rem;
-  }
+    p {
+        font-size: 1.25rem;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  h1 {
-    font-size: 3.5rem;
-  }
+    h1 {
+        font-size: 3.5rem;
+    }
 
-  h2 {
-    font-size: 3.25rem;
-  }
+    h2 {
+        font-size: 3.25rem;
+    }
 
-  h3 {
-    font-size: 3rem;
-  }
+    h3 {
+        font-size: 3rem;
+    }
 
-  h4 {
-    font-size: 2.25rem;
-  }
+    h4 {
+        font-size: 2.25rem;
+    }
 
-  h5 {
-    font-size: 2rem;
-  }
+    h5 {
+        font-size: 2rem;
+    }
 
-  h6 {
-    font-size: 1.75rem;
-  }
+    h6 {
+        font-size: 1.75rem;
+    }
 
-  p {
-    font-size: 1.375rem;
-  }
+    p {
+        font-size: 1.375rem;
+    }
 }
