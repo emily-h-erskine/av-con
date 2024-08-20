@@ -17,8 +17,14 @@
         display: flex;
     }
 
-    .w-50 {
-        width: 50%;
+    .custom-form-container {
+        width: 50%; /* Set width to 50% */
+        margin: 0 auto; /* Center the form */
+    }
+
+    /* Target the actual injected form */
+    .custom-form-container form {
+        width: 100%; /* Make sure the form inside takes the full width of the container */
     }
 }
 

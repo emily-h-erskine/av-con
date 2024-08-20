@@ -11,7 +11,7 @@ export default function ExhibitorRegistration() {
                 <div className="flex justify-center mb-8">
                     <img
                         src="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg"
-                        alt="header image"
+                        alt="two grey aeroplanes in a hanger"
                         style={{
                             position: "relative",
                             zIndex: "-1",
@@ -21,8 +21,10 @@ export default function ExhibitorRegistration() {
                     />
                 </div>
                 <div className="flex justify-center">
-                    <div className=" md:w-3/4 lg:w-2/3 xl:w-1/2">
-                        <ExhibitorRegistrationForm />
+                    <div className="custom-form-container">
+                        <div className=" md:w-3/4 lg:w-2/3 xl:w-1/2">
+                            <ExhibitorRegistrationForm />
+                        </div>
                     </div>
                 </div>
             </div>
