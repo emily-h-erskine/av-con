@@ -30,7 +30,7 @@
 }
 
 .custom-form-container {
-    width: 95%; /* Set width to 50% */
+    width: 100%; /* Set width to 50% */
     margin: 0 auto; /* Center the form */
     margin-top: 3rem;
 }
@@ -310,7 +310,7 @@ p {
     }
 
     .custom-form-container {
-        width: 100%; /* Set width to 50% */
+        width: 85%; /* Set width to 50% */
         margin: 0 auto; /* Center the form */
         margin-top: 5rem;
     }
@@ -345,10 +345,9 @@ p {
     p {
         font-size: 1.375rem;
     }
-
     .custom-form-container {
         width: 95%;
-        margin: 0 auto; /* Center the form */
+        margin: 0 auto;
         margin-top: 6rem;
     }
 }
