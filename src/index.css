@@ -18,8 +18,9 @@
     }
 
     .custom-form-container {
-        width: 50%; /* Set width to 50% */
+        width: 75%; /* Set width to 50% */
         margin: 0 auto; /* Center the form */
+        margin-top: 4rem;
     }
 
     /* Target the actual injected form */
@@ -95,6 +96,19 @@ a:hover {
     width: 60%;
 }
 
+/*  ========== NEW FORM STYLES ========== */
+.custom-form-container {
+    width: 100%; /* Set width to 50% */
+    margin: 0 auto; /* Center the form */
+    margin-top: 4rem;
+}
+
+/* Target the actual injected form */
+.custom-form-container form {
+    width: 100%; /* Make sure the form inside takes the full width of the container */
+}
+/* ============================= */
+
 .event-container {
     padding: 2% 5%;
 }
@@ -143,6 +157,17 @@ a:hover {
 
     .timeline-content {
         margin-left: 0;
+    }
+
+    .custom-form-container {
+        width: 75%; /* Set width to 50% */
+        margin: 0 auto; /* Center the form */
+        margin-top: 4rem;
+    }
+
+    /* Target the actual injected form */
+    .custom-form-container form {
+        width: 100%; /* Make sure the form inside takes the full width of the container */
     }
 }
 
