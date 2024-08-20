@@ -18,14 +18,21 @@
     }
 
     .custom-form-container {
-        width: 50%; /* Set width to 50% */
+        width: 75%; /* Set width to 50% */
         margin: 0 auto; /* Center the form */
+        margin-top: 6rem;
     }
 
     /* Target the actual injected form */
     .custom-form-container form {
         width: 100%; /* Make sure the form inside takes the full width of the container */
     }
+}
+
+.custom-form-container {
+    width: 95%; /* Set width to 50% */
+    margin: 0 auto; /* Center the form */
+    margin-top: 3rem;
 }
 
 body {
@@ -264,6 +271,12 @@ p {
     p {
         font-size: 1.125rem;
     }
+
+    .custom-form-container {
+        width: 100%; /* Set width to 50% */
+        margin: 0 auto; /* Center the form */
+        margin-top: 5rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -295,6 +308,12 @@ p {
     p {
         font-size: 1.25rem;
     }
+
+    .custom-form-container {
+        width: 100%; /* Set width to 50% */
+        margin: 0 auto; /* Center the form */
+        margin-top: 5rem;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -325,5 +344,11 @@ p {
 
     p {
         font-size: 1.375rem;
+    }
+
+    .custom-form-container {
+        width: 75%; /* Set width to 50% */
+        margin: 0 auto; /* Center the form */
+        margin-top: 6rem;
     }
 }

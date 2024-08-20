@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 export default function ExhibitorRegistrationForm() {
     useEffect(() => {
@@ -13,6 +13,7 @@ export default function ExhibitorRegistrationForm() {
                     region: "eu1",
                     portalId: "144491033",
                     formId: "ac7944b8-efc5-4a72-acc1-c40d66167fea",
+                    target: "#exhibitor-form", // Target the specific div by ID
                 });
             }
         };
@@ -21,5 +22,6 @@ export default function ExhibitorRegistrationForm() {
             document.body.removeChild(script);
         };
     }, []);
-    return null;
+
+    return <div id="exhibitor-form" className="custom-form-container"></div>;
 }

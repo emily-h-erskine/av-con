@@ -16,6 +16,7 @@ export default function RegistrationForm() {
                         region: "eu1",
                         portalId: "144491033",
                         formId: "46e6c0f8-c6ce-415f-93df-2d524ed3f4c3",
+                        target: "#registration-form", // Target the specific div by ID
                     });
                     setScriptLoaded(true);
                 }
@@ -27,5 +28,5 @@ export default function RegistrationForm() {
         }
     }, [scriptLoaded]);
 
-    return null;
+    return <div id="registration-form" className="custom-form-container"></div>;
 }
