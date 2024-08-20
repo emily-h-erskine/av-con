@@ -19,8 +19,10 @@ export default function Contact() {
                     />
                 </div>
                 <div className="flex justify-center">
-                    <div className="w-1/2 md:w-3/4 lg:w-2/3 xl:w-1/2">
-                        <ContactUsForm />
+                    <div className="w-50">
+                        <div className="w-1/2 md:w-3/4 lg:w-2/3 xl:w-1/2">
+                            <ContactUsForm />
+                        </div>
                     </div>
                 </div>
             </div>

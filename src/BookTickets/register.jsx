@@ -21,8 +21,10 @@ export default function Register() {
                     />
                 </div>
                 <div className="flex justify-center">
-                    <div className=" md:w-3/4 lg:w-2/3 xl:w-1/2">
-                        <RegistrationForm />
+                    <div className="w-50">
+                        <div className=" md:w-3/4 lg:w-2/3 xl:w-1/2">
+                            <RegistrationForm />
+                        </div>
                     </div>
                 </div>
             </div>
