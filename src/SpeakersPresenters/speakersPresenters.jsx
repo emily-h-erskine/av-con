@@ -18,6 +18,7 @@ import JaneMagill from "./PresenterSpeakerImages/JM.jpg";
 import JasonPhelan from "./PresenterSpeakerImages/JasonPhelan.jpg";
 import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddy&Lucky.jpg";
 import ElaineHarding from "./PresenterSpeakerImages/ElaineHarding.jpg";
+import WayneDenner from "./PresenterSpeakerImages/WayneDenner.png";
 
 export default function SpeakersPresentors() {
   return (
@@ -176,9 +177,14 @@ export default function SpeakersPresentors() {
                 <Speaker 
                   SpeakerImage={ElaineHarding}
                   SpeakerName="Elaine Harding"
-                  SpeakerBio="Elaine Harding is a trailblazing tech founder in the aerospace industry. As the Founder and CEO of AugmentAero, she has led the company to the forefront of aviation innovation by integrating augmented reality (AR) and artificial intelligence (AI) into aircraft maintenance processes. AugmentAero is revolutionising the aerospace sector by improving safety, efficiency, and profitability with cutting-edge technology.
-                  Elaine's journey in the aerospace industry is marked by her commitment to addressing the challenges of safety, time pressures, and the growing demand for skilled engineers. Her work is supported by a strong network of industry and academic partners, including collaborations with the University of Southampton, which further enhances the impact of her innovations.
-                  With a reputation as an innovator and disruptor, Elaine Harding's leadership at AugmentAero is making a significant impact within the aviation industry, helping to shape the future of aircraft maintenance through technology."
+                  SpeakerBio="Elaine Harding is a pioneering tech leader in aerospace, serving as Founder and CEO of AugmentAero. She has propelled the company to the forefront of aviation innovation by integrating augmented reality (AR) and artificial intelligence (AI) into aircraft maintenance. AugmentAero enhances safety, efficiency, and profitability with advanced technology, addressing key industry challenges like safety and the need for skilled engineers. Elaine's impact is amplified by collaborations with academic and industry partners, including the University of Southampton. As an innovator and disruptor, her leadership is shaping the future of aircraft maintenance and making a significant mark on the aviation industry."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={WayneDenner}
+                  SpeakerName="Wayne Denner"
+                  SpeakerBio="Wayne Denner is an expert in Online Safety, Cybersecurity, Marketing, and Communications, with 20+ years of global experience. He specialises in large-scale programs that help individuals and organisations protect their reputations and digital assets. Wayne has trained businesses across Ireland, the UK, Europe, and the Middle East, both in-person and remotely. As the author of 'The Student's Guide to an Epic Online Reputation...and Parents Too.' and the creator of Ireland's first social network, Wayne is a leading voice in online safeguarding. Through impactful training and events, his work influences thousands yearly, including students, parents, educators, and professionals."
                 />
               </Grid>
             </Grid>
