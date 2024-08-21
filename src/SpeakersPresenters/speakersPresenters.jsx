@@ -19,6 +19,7 @@ import JasonPhelan from "./PresenterSpeakerImages/JasonPhelan.jpg";
 import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddy&Lucky.jpg";
 import ElaineHarding from "./PresenterSpeakerImages/ElaineHarding.jpg";
 import WayneDenner from "./PresenterSpeakerImages/WayneDenner.png";
+import NealSkelton from "./PresenterSpeakerImages/NealSkelton.JPG";
 
 export default function SpeakersPresentors() {
   return (
@@ -185,6 +186,13 @@ export default function SpeakersPresentors() {
                   SpeakerImage={WayneDenner}
                   SpeakerName="Wayne Denner"
                   SpeakerBio="Wayne Denner is a seasoned expert in Online Safety, Cybersecurity, Marketing, and Communications, with over 20 years of international experience. He is a respected trainer and coach, specialising in large-scale development programs that empower individuals and organisations to protect their reputations and digital assets. Wayne has collaborated with businesses across Ireland, the UK, Europe, and the Middle East, delivering in-person and remote training. As the author of 'The Student's Guide to an Epic Online Reputation...and parents too.' and a pioneer of Ireland's first social network, Wayne is a recognized thought leader in online safeguarding and youth engagement. His insights are frequently sought by media outlets and organisations, including BBC, RTE, and the Canadian Senate. Wayne's work impacts thousands annually, including 60,000 students, along with parents, educators, and professionals. He partners with a diverse range of organisations, delivering events and training that inspire responsible online behaviour and maximize digital potential."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={NealSkelton}
+                  SpeakerName="Neal Skelton"
+                  SpeakerBio="Neal has been at Belfast City Airport since 2002 in various roles from Ramp Operative, Catering, working with Persons with Restricted Mobility before moving into Airfield Operations. In 2014 with several other Airports, he helped develop the National Certificate Airside Operations of which we have over 500 candidates going through the system or successfully having completed the NCAO. As chair of the Aviation Special Interest Group, Neal is passionate about training and all aspects of Airside Operations in particular the safety of employees and passengers. He's looking forward to presenting at the forthcoming Avcon event and passing on any experience he has gained in this exciting industry."
                 />
               </Grid>
             </Grid>
