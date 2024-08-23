@@ -20,6 +20,7 @@ import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddy&Lucky.jpg";
 import ElaineHarding from "./PresenterSpeakerImages/ElaineHarding.jpg";
 import WayneDenner from "./PresenterSpeakerImages/WayneDenner.png";
 import NealSkelton from "./PresenterSpeakerImages/NealSkelton.JPG";
+import AnthonyAttoumani from "./PresenterSpeakerImages/Anthony Attoumani .jpg";
 
 export default function SpeakersPresentors() {
   return (
@@ -164,7 +165,7 @@ export default function SpeakersPresentors() {
                 <Speaker 
                   SpeakerImage={JasonPhelan}
                   SpeakerName="Jason Phelan"
-                  SpeakerBio="Jason's love for aviation ignited when he experienced his first Airshow at Biggin Hill, London at the tender age of 3. Beginning a career in aviation in 2004 with the UK Civil Aviation Authority (CAA) as an aircraft registration administrator, he transitioned to the Flight Operations General Aviation division. Relocating to Ireland in 2012, his background paved the way for a career at the Irish Aviation Authority, specializing first in Licensing and presently as an administrator within Flight Operations Administration. In December 2022 he created The Adventures of Capt Paddy & Lucky. This initiative involves two teddy bears embarking on flying adventures across Ireland and beyond to support two prominent Irish charities, LauraLynn  Ireland's Children's Hospice and Dogs Trust Ireland."
+                  SpeakerBio="Jason's love for aviation ignited when he experienced his first Airshow at Biggin Hill, London at the tender age of 3. Beginning a career in aviation in 2004 with the UK Civil Aviation Authority (CAA) as an aircraft registration administrator, he transitioned to the Flight Operations General Aviation division. Relocating to Ireland in 2012, his background paved the way for a career in aviation in Ireland and he continues to be aligned with the industry professionally and passionately as a hobby. In December 2022 he created The Adventures of Capt Paddy & Lucky. This initiative involves two teddy bears embarking on flying adventures across Ireland and beyond to support two prominent Irish charities, LauraLynn  Ireland's Children's Hospice and Dogs Trust Ireland"
                 />
               </Grid>
               <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
@@ -193,6 +194,13 @@ export default function SpeakersPresentors() {
                   SpeakerImage={NealSkelton}
                   SpeakerName="Neal Skelton"
                   SpeakerBio="Neal has been at Belfast City Airport since 2002 in various roles from Ramp Operative, Catering, working with Persons with Restricted Mobility before moving into Airfield Operations. In 2014 with several other Airports, he helped develop the National Certificate Airside Operations of which we have over 500 candidates going through the system or successfully having completed the NCAO. As chair of the Aviation Special Interest Group, Neal is passionate about training and all aspects of Airside Operations in particular the safety of employees and passengers. He's looking forward to presenting at the forthcoming Avcon event and passing on any experience he has gained in this exciting industry."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={AnthonyAttoumani}
+                  SpeakerName="Anthony Attoumani"
+                  SpeakerBio="Anthony is a passionate and senior aeronautical engineer with over 15 years of experience in the design, development, qualification and certification of aeronautical engineering solutions. After graduating a Master Degree in Aerospace Engineering, option Avionics and Mechatronics, he commenced his career in Airbus Group as Reliability Availability Maintainability and Safety Engineer. Subsequently, Anthony progressed to management roles including Head of Design Process, and Overall Cabin Design Chief Engineer in ATR. Also, he worked on a large number of Supplemental Type Certificates going from basic cabin reconfigurations for Airlines, to complex conversions into Maritime Patrol Aircraft for MoD's. Currently, he holds the Head of the Design Organisation position at Atlantic Aviation Group (EASA.21J.540)."
                 />
               </Grid>
             </Grid>
