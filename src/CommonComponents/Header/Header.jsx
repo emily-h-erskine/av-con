@@ -97,7 +97,7 @@ export const Header = () => {
                     <br /><br />
                     <a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a>
                     <br /><br />
-                    <a href="./AvconPathwayPortal">AVCON PATHWAY PORTAL</a>
+                    <a href="./AviationPathwayPortal">AVIATION PATHWAY PORTAL</a>
                   </p>
                 )}
               </div>

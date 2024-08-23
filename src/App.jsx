@@ -13,7 +13,7 @@ import News from "./News/newsUpdates";
 import SpeakersPresenters from "./SpeakersPresenters/speakersPresenters";
 import SponsorsPartners from './SponsorsPartners/sponsorsPartners';
 import ExhibitorRegistration from './ExhibitorRegistration/exhibitor';
-import AvconPathwayPortal from './AvconPathwayPortal/pathwayPortal';
+import AviationPathwayPortal from './AvconPathwayPortal/pathwayPortal';
 
 export default function App() {
   return (
@@ -31,7 +31,7 @@ export default function App() {
           <Route path="/speakersPresenters" element={<SpeakersPresenters />} />
           <Route path="/sponsorsPartners" element={<SponsorsPartners />} />
           <Route path="/exhibitorRegistration" element={<ExhibitorRegistration />} />
-          <Route path="/avconPathwayPortal" element={<AvconPathwayPortal />} />
+          <Route path="/aviationPathwayPortal" element={<AviationPathwayPortal />} />
         </Routes>
       </RootLayout>
     </BrowserRouter>
