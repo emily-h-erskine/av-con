@@ -18,7 +18,7 @@ export default function FirstImageAndText() {
         </Grid>
         <Grid item xs={12} md={5}>
           <div>
-            <p style={{ textAlign: 'left' }}>Welcome to the Aviation Pathways Portal ((A.P.P)), AvCon's innovative platform designed to connect aspiring professionals with exciting opportunities in the aviation, aerospace, and space industries. At AvCon, we recognize the growing skills gap in these dynamic fields, and A.P.P is our solution to bridge that divide. Whether you're a student exploring your career options or a seasoned professional looking to advance your skills, A.P.P offers a comprehensive range of resources, including work experience placements, student programs, internships, graduate opportunities, and courses spanning from foundational to advanced levels.</p>
+            <p style={{ textAlign: 'left' }}>Welcome to the Aviation Pathways Portal (A.P.P), AvCon's innovative platform designed to connect aspiring professionals with exciting opportunities in the aviation, aerospace, and space industries. At AvCon, we recognize the growing skills gap in these dynamic fields, and A.P.P is our solution to bridge that divide. Whether you're a student exploring your career options or a seasoned professional looking to advance your skills, A.P.P offers a comprehensive range of resources, including work experience placements, student programs, internships, graduate opportunities, and courses spanning from foundational to advanced levels.</p>
           </div>
         </Grid>
         <p style={{ textAlign: 'left' }}>
