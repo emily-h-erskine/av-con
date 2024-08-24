@@ -1,4 +1,5 @@
 import React from "react";
+import FirstImageAndText from "./firstBlockOfText";
 
 
 export default function AvconPathwayPortal() {
@@ -8,6 +9,7 @@ export default function AvconPathwayPortal() {
             <h3 style={{textAlign: "center"}}>
                 Aviation Pathway Portal ((A.P.P.))
             </h3>
+            <FirstImageAndText />
       </div>
     </main>
   );
