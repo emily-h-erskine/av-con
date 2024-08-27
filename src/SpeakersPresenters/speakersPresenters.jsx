@@ -222,13 +222,6 @@ export default function SpeakersPresentors() {
               </Grid>
               <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
                 <Speaker 
-                  SpeakerImage={PaulKennedy}
-                  SpeakerName="Paul Kennedy"
-                  SpeakerBio="Paul Kennedy is the Head of Aviation Infrastructure for the Irish Aviation Authority, with 30 years of aviation experience. He holds an air traffic controller's license, commercial pilot's license, and an MSc in Human Factors and Safety Assessment in Aeronautics from Cranfield University. Starting with the Irish Aviation Authority in 1994, Paul gained extensive expertise in Air Traffic Control (ATC), serving as an officer, instructor, and investigator. In 2009, he transitioned to regulation, becoming an air traffic services inspector and later managing the Air Navigation Services Division. In 2023, he was appointed Head of Aviation Infrastructure, overseeing the regulation of Air Traffic Management, Air Navigation Services, and Aerodromes. Paul chairs the ICAO European Region Aerodrome Operations Working Group and the EU National Supervisor Committee Coordination Platform. He is also Vice Chair of the ICAO North Atlantic Safety Oversight Group and has participated in EASA ATM/ANS Standardisation Inspections since 2012."
-                />
-              </Grid>
-              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
-                <Speaker 
                   SpeakerImage={RuthBagnell}
                   SpeakerName="Ruth Bagnell"
                   SpeakerBio="Ruth Bagnell is a key figure in Irish aviation, serving as an Airworthiness Inspector with the Irish Aviation Authority. With over two decades of experience, she began her career as an aeronautical engineer from the University of Limerick, contributing significantly to aviation engineering. Ruth's passion for aviation is evident in her obtaining a Private Pilot's License, offering her valuable insights into flight operations that enhance her role in aircraft safety and compliance. As an Airworthiness Inspector, she ensures that aircraft meet strict safety standards, a responsibility she approaches with the perspective of a pilot. In addition to her technical expertise, Ruth is skilled in Compliance and Safety Management Systems, ensuring that aviation operations adhere to rigorous regulations. Her deep knowledge of International Aviation Regulation is vital in a globally connected industry. Ruth remains active in the General Aviation community, promoting knowledge exchange and fostering industry relationships, solidifying her as a respected leader in Irish aviation."
