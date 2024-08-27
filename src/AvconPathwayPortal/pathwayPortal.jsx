@@ -1,5 +1,6 @@
 import React from "react";
 import FirstImageAndText from "./firstBlockOfText";
+import AdvertData from "./AdvertData";
 
 
 export default function AvconPathwayPortal() {
@@ -10,6 +11,7 @@ export default function AvconPathwayPortal() {
                 Aviation Pathway Portal (A.P.P.)
             </h3>
             <FirstImageAndText />
+            <AdvertData />
       </div>
     </main>
   );

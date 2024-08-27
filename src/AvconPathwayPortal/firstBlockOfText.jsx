@@ -14,6 +14,8 @@ export default function FirstImageAndText() {
         />
       </div>
       <br/><br/>
+      <hr />
+      <br/><br/>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <div>
@@ -25,11 +27,12 @@ export default function FirstImageAndText() {
             Our platform is your gateway to building a successful career in these industries. Explore bridging courses, college programs, and upskilling courses tailored to meet the demands of the evolving job market.
             <br/><br/>
             If you're an industry professional with a program, course, or opportunity to share, we invite you to contribute. Simply email us at hello@avcon.ie to add your listing for free. Together, we're shaping the future of aviation, aerospace, and space—one pathway at a time.
-            <br/><br/>
           </p> 
         </Grid>
       </Grid>
+      <br/><br/>
       <hr />
+      <br/><br/>
     </Box>
   );
 }
