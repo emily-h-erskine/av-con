@@ -52,11 +52,13 @@ export default function ImageInfoCard({
         fontSize: "1.25rem",
         fontWeight: "bold",
         marginBottom: "0.5rem",
+        color: "#07101d",
     };
 
     const textStyle = {
         fontSize: "1rem",
         marginBottom: "1rem",
+        color: "#07101d",
     };
 
     return (
