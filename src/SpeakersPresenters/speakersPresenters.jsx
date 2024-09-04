@@ -19,6 +19,11 @@ import JasonPhelan from "./PresenterSpeakerImages/JasonPhelan.jpg";
 import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddy&Lucky.jpg";
 import ElaineHarding from "./PresenterSpeakerImages/ElaineHarding.jpg";
 import WayneDenner from "./PresenterSpeakerImages/WayneDenner.png";
+import NealSkelton from "./PresenterSpeakerImages/NealSkelton.JPG";
+import AnthonyAttoumani from "./PresenterSpeakerImages/Anthony Attoumani .jpg";
+import GerryHumphreys from "./PresenterSpeakerImages/GerryHumphreys.jpg";
+import PaulKennedy from "./PresenterSpeakerImages/PaulKennedy.jpg";
+import RuthBagnell from "./PresenterSpeakerImages/RuthBagnell.jpg";
 
 export default function SpeakersPresentors() {
   return (
@@ -163,7 +168,7 @@ export default function SpeakersPresentors() {
                 <Speaker 
                   SpeakerImage={JasonPhelan}
                   SpeakerName="Jason Phelan"
-                  SpeakerBio="Jason's love for aviation ignited when he experienced his first Airshow at Biggin Hill, London at the tender age of 3. Beginning a career in aviation in 2004 with the UK Civil Aviation Authority (CAA) as an aircraft registration administrator, he transitioned to the Flight Operations General Aviation division. Relocating to Ireland in 2012, his background paved the way for a career at the Irish Aviation Authority, specializing first in Licensing and presently as an administrator within Flight Operations Administration. In December 2022 he created The Adventures of Capt Paddy & Lucky. This initiative involves two teddy bears embarking on flying adventures across Ireland and beyond to support two prominent Irish charities, LauraLynn  Ireland's Children's Hospice and Dogs Trust Ireland."
+                  SpeakerBio="Jason's love for aviation ignited when he experienced his first Airshow at Biggin Hill, London at the tender age of 3. Beginning a career in aviation in 2004 with the UK Civil Aviation Authority (CAA) as an aircraft registration administrator, he transitioned to the Flight Operations General Aviation division. Relocating to Ireland in 2012, his background paved the way for a career in aviation in Ireland and he continues to be aligned with the industry professionally and passionately as a hobby. In December 2022 he created The Adventures of Capt Paddy & Lucky. This initiative involves two teddy bears embarking on flying adventures across Ireland and beyond to support two prominent Irish charities, LauraLynn  Ireland's Children's Hospice and Dogs Trust Ireland"
                 />
               </Grid>
               <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
@@ -185,6 +190,41 @@ export default function SpeakersPresentors() {
                   SpeakerImage={WayneDenner}
                   SpeakerName="Wayne Denner"
                   SpeakerBio="Wayne Denner is a seasoned expert in Online Safety, Cybersecurity, Marketing, and Communications, with over 20 years of international experience. He is a respected trainer and coach, specialising in large-scale development programs that empower individuals and organisations to protect their reputations and digital assets. Wayne has collaborated with businesses across Ireland, the UK, Europe, and the Middle East, delivering in-person and remote training. As the author of 'The Student's Guide to an Epic Online Reputation...and parents too.' and a pioneer of Ireland's first social network, Wayne is a recognized thought leader in online safeguarding and youth engagement. His insights are frequently sought by media outlets and organisations, including BBC, RTE, and the Canadian Senate. Wayne's work impacts thousands annually, including 60,000 students, along with parents, educators, and professionals. He partners with a diverse range of organisations, delivering events and training that inspire responsible online behaviour and maximize digital potential."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={NealSkelton}
+                  SpeakerName="Neal Skelton"
+                  SpeakerBio="Neal has been at Belfast City Airport since 2002 in various roles from Ramp Operative, Catering, working with Persons with Restricted Mobility before moving into Airfield Operations. In 2014 with several other Airports, he helped develop the National Certificate Airside Operations of which we have over 500 candidates going through the system or successfully having completed the NCAO. As chair of the Aviation Special Interest Group, Neal is passionate about training and all aspects of Airside Operations in particular the safety of employees and passengers. He's looking forward to presenting at the forthcoming Avcon event and passing on any experience he has gained in this exciting industry."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={AnthonyAttoumani}
+                  SpeakerName="Anthony Attoumani"
+                  SpeakerBio="Anthony is a passionate and senior aeronautical engineer with over 15 years of experience in the design, development, qualification and certification of aeronautical engineering solutions. After graduating a Master Degree in Aerospace Engineering, option Avionics and Mechatronics, he commenced his career in Airbus Group as Reliability Availability Maintainability and Safety Engineer. Subsequently, Anthony progressed to management roles including Head of Design Process, and Overall Cabin Design Chief Engineer in ATR. Also, he worked on a large number of Supplemental Type Certificates going from basic cabin reconfigurations for Airlines, to complex conversions into Maritime Patrol Aircraft for MoD's. Currently, he holds the Head of the Design Organisation position at Atlantic Aviation Group (EASA.21J.540)."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={GerryHumphreys}
+                  SpeakerName="Gerry Humphreys"
+                  SpeakerBio="Gerry is an accomplished aviator with over 40 years of experience, 14,000 flying hours logged on more than 120 different aircraft types. After completing a degree in Aeronautical Engineering at Queen's University Gerry spent 20 years in the RAF, where he primarily flew single-seat fast jets such as the Hunter, Hawk, and Harrier. After leaving the RAF, Gerry transitioned to corporate aviation for 10 years, during which time he also constructed a runway at his home, built an aircraft, performed in air displays, and became a certified flying instructor. Currently, Gerry serves as the Deputy Head of Training, where he is responsible for upholding the highest standards in all aspects of pilot training. He also leads instruction in aerobatics, tailwheel conversions, and Upset Recovery and is an EASA flight examiner. Additionally, Gerry is a board member of the Foynes Flying Boat and Maritime Museum and serves as the Chairman of the General Aviation Safety Council of Ireland."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={PaulKennedy}
+                  SpeakerName="Paul Kennedy"
+                  SpeakerBio="Paul Kennedy is the Head of Aviation Infrastructure for the Irish Aviation Authority, with 30 years of aviation experience. He holds an air traffic controller's license, commercial pilot's license, and an MSc in Human Factors and Safety Assessment in Aeronautics from Cranfield University. Starting with the Irish Aviation Authority in 1994, Paul gained extensive expertise in Air Traffic Control (ATC), serving as an officer, instructor, and investigator. In 2009, he transitioned to regulation, becoming an air traffic services inspector and later managing the Air Navigation Services Division. In 2023, he was appointed Head of Aviation Infrastructure, overseeing the regulation of Air Traffic Management, Air Navigation Services, and Aerodromes. Paul chairs the ICAO European Region Aerodrome Operations Working Group and the EU National Supervisor Committee Coordination Platform. He is also Vice Chair of the ICAO North Atlantic Safety Oversight Group and has participated in EASA ATM/ANS Standardisation Inspections since 2012."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={RuthBagnell}
+                  SpeakerName="Ruth Bagnell"
+                  SpeakerBio="Ruth Bagnell is a key figure in Irish aviation, serving as an Airworthiness Inspector with the Irish Aviation Authority. With over two decades of experience, she began her career as an aeronautical engineer from the University of Limerick, contributing significantly to aviation engineering. Ruth's passion for aviation is evident in her obtaining a Private Pilot's License, offering her valuable insights into flight operations that enhance her role in aircraft safety and compliance. As an Airworthiness Inspector, she ensures that aircraft meet strict safety standards, a responsibility she approaches with the perspective of a pilot. In addition to her technical expertise, Ruth is skilled in Compliance and Safety Management Systems, ensuring that aviation operations adhere to rigorous regulations. Her deep knowledge of International Aviation Regulation is vital in a globally connected industry. Ruth remains active in the General Aviation community, promoting knowledge exchange and fostering industry relationships, solidifying her as a respected leader in Irish aviation."
                 />
               </Grid>
             </Grid>

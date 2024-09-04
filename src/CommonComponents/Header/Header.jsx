@@ -55,7 +55,7 @@ export const Header = () => {
                   <li style={{ padding: '2% 10%'}}><a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a></li>
                   <li style={{ padding: '2% 10%'}}><a href="./FlightSim">AVCON XTRA: THE FLIGHT SIM CHALLENGE</a></li>
                   <li style={{ padding: '2% 10%'}}><a href="./About">ABOUT AVCON</a></li>
-                  <li style={{ padding: '2% 10%'}}><a href="./AvconPathwayPortal">AVCON PATHWAY PORTAL</a></li>
+                  <li style={{ padding: '2% 10%'}}><a href="./AviationPathwayPortal">AVIATION PATHWAY PORTAL</a></li>
                   <li style={{ padding: '2% 10%'}}><a href="./News">NEWS &amp; UPDATES</a></li>
                   <li style={{ padding: '2% 10%'}}><a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a></li>
                   <li style={{ padding: '2% 10%'}}><a href="./Contact">CONTACT US</a></li>
@@ -97,7 +97,7 @@ export const Header = () => {
                     <br /><br />
                     <a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a>
                     <br /><br />
-                    <a href="./AvconPathwayPortal">AVCON PATHWAY PORTAL</a>
+                    <a href="./AviationPathwayPortal">AVIATION PATHWAY PORTAL</a>
                   </p>
                 )}
               </div>

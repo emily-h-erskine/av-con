@@ -8,6 +8,11 @@ import S3 from './SponsorImages/3.png';
 import S4 from './SponsorImages/4.png';
 import S5 from './SponsorImages/5.png';
 import S6 from './SponsorImages/6.png';
+import S7 from './SponsorImages/AvCon Supported By Banners -2.png';
+import S8 from './SponsorImages/AvCon Supported By Banners -3.png';
+import S9 from './SponsorImages/AvCon Supported By Banners -4.png';
+import S10 from './SponsorImages/AvCon Supported By Banners -5.png';
+import S11 from './SponsorImages/AvCon Supported By Banners -6.png';
 import AirCorpLogo from './SponsorImages/AirCorpsLogo.jpeg';
 import TYHubLogo from './SponsorImages/TYHubLogo.jpg';
 import ODohertysLogo from './SponsorImages/ODohertysLogo.jpg';
@@ -28,7 +33,7 @@ export default function SponsorsPartners() {
           style={{ width: '100%'}}
         />
         <img
-          src={S2}
+          src={S7}
           alt="Sponsors Display"
           style={{ width: '100%'}}
         />
@@ -52,7 +57,26 @@ export default function SponsorsPartners() {
           alt="Sponsors Display"
           style={{ width: '100%'}}
         />
-        
+        <img
+          src={S8}
+          alt="Sponsors Display"
+          style={{ width: '100%'}}
+        />
+        <img
+          src={S9}
+          alt="Sponsors Display"
+          style={{ width: '100%'}}
+        />
+        <img
+          src={S10}
+          alt="Sponsors Display"
+          style={{ width: '100%'}}
+        />
+        <img
+          src={S11}
+          alt="Sponsors Display"
+          style={{ width: '100%'}}
+        />
       </div>
 
       <h6 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem' }}>
