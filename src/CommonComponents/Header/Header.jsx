@@ -37,12 +37,12 @@ export const Header = () => {
     }, []);
 
     return (
-        <div
+        <header
             style={{
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center", // align vertically
-                padding: "0% 2.5% 0%",
+                padding: "0% 2.5%", // top&bottom, right&left
             }}>
             <div
                 style={{
@@ -77,7 +77,7 @@ export const Header = () => {
                                     right: 0,
                                     bottom: 0,
                                     left: 0,
-                                    zIndex: 1000,
+                                    zIndex: 100,
                                 }}>
                                 <ul style={{ listStyleType: "none" }}>
                                     {/* Links inside the menu */}
@@ -132,10 +132,11 @@ export const Header = () => {
                                 <p
                                     style={{
                                         position: "absolute", // ensures the dropdown does not affect page layout
-                                        zIndex: "1000", // ensures dorpdown appears on top of other page elements
+                                        zIndex: "100", // ensures dorpdown appears on top of other page elements
                                         top: "100%",
                                         left: 0,
-                                        backgroundColor: "#07101D",
+                                        backgroundColor:
+                                            "var(--background-dark",
                                         padding: "10px",
                                         border: "1px white solid",
                                         textAlign: "left",
@@ -231,6 +232,6 @@ export const Header = () => {
                     </h6>
                 )}
             </div>
-        </div>
+        </header>
     );
 };

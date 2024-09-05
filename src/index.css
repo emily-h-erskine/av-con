@@ -5,6 +5,7 @@
 
     /* color palette */
     --background-dark: #041326;
+    --cta-background-dark: #041326b3; /* bg-dark with 70% opacity */
     --text-light: #ffffff;
     --text-dark: #041326;
     /* the following should be renamed semantically when purpose of color is defined */
@@ -31,7 +32,7 @@
     }
 
     .custom-form-container {
-        width: 95%; /* Set width to 50% */
+        width: 95%; /* Set width to 95 of viewport% */
         margin: 0 auto; /* Center the form */
         margin-top: 6rem;
     }
@@ -43,9 +44,13 @@
 }
 
 .custom-form-container {
-    width: 100%; /* Set width to 50% */
+    width: 100%; /* Set width to fill viewport width on mobile */
     margin: 0 auto; /* Center the form */
     margin-top: 3rem;
+}
+
+header {
+    background-color: none;
 }
 
 body {
@@ -58,13 +63,23 @@ a {
     color: #ee0606; /* Set the link color to white */
     text-decoration: none;
     font-size: small;
+    text-transform: uppercase;
 }
+
 a:hover {
-    color: #ffffff; /* Set the link hover color to white */
+    color: var(--text-light); /* Set the link hover color to white */
+}
+
+/* select all links contained in buttons */
+.btn-cta {
+    font-weight: 800; /* extra bold */
+    border: 1px solid var(--text-light);
+    border-radius: 2px;
+    background-color: var(--cta-background-dark);
 }
 
 .AppHeader {
-    background-color: #07101d;
+    background-color: var(--background-dark);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
