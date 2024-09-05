@@ -2,16 +2,17 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import ApprenticePhoto from "./HomePageImages/apprentices.jpg";
+import "../index.css";
 
 export default function FirstImageAndText() {
     return (
-        <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
+        <Box sx={{ padding: { xs: "0 2%", md: "7.5% 5%" } }}>
             <Grid container spacing={4}>
                 <Grid item xs={12} md={7}>
-                    <div style={{ textAlign: "center" }}>
+                    <div>
                         <img
                             src={ApprenticePhoto}
-                            alt="An Apprentice"
+                            alt="Aviation apprentices learning about an aircraft engine"
                             style={{
                                 width: "100%",
                                 maxWidth: "100%",
@@ -21,26 +22,23 @@ export default function FirstImageAndText() {
                     </div>
                 </Grid>
                 <Grid item xs={12} md={5}>
-                    <div>
-                        <h3 style={{ textAlign: "left" }}>
-                            Get ready to soar into the future of aviation at
-                            AvCon 2024!
+                    <div className="flex-container-col space-between px-3">
+                        <h3 className="py-3">
+                            Soar into the future of aviation at AvCon 2024!
                         </h3>
-                        <br />
-                        <br />
-                        <p style={{ textAlign: "right" }}>
-                            Calling all primary, secondary, and 3rd level
-                            students, to experience an electrifying journey
-                            through the skies of innovation.
-                            <br />
-                            <br />
-                            Join us for an exhilarating event where you'll
-                            explore cutting-edge technology, witness thrilling
-                            demonstrations, and engage with industry experts
-                            shaping the future of flight.
-                            <br />
-                            <br />
-                        </p>
+                        <div className="flex-container-col space-between">
+                            <p className="text-right py-">
+                                Calling all primary, secondary, and 3rd level
+                                students, to experience an electrifying journey
+                                through the skies of innovation.
+                            </p>
+                            <p className="text-right">
+                                Join us for an exhilarating event where you'll
+                                explore cutting-edge technology, witness
+                                thrilling demonstrations, and engage with
+                                industry experts shaping the future of flight.
+                            </p>
+                        </div>
                     </div>
                 </Grid>
             </Grid>
