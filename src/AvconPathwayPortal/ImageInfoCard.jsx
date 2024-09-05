@@ -58,7 +58,7 @@ export default function ImageInfoCard({
     const textStyle = {
         fontSize: "1rem",
         marginBottom: "1rem",
-        color: "#07101d",
+        color: "var(--text-dark",
     };
 
     return (

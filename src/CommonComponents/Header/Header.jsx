@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Dropdown from "./Dropdown.svg";
-import zIndex from "@mui/material/styles/zIndex";
 
 export const Header = () => {
     const [showEventDropdown, setShowEventDropdown] = useState(false);
@@ -43,21 +42,19 @@ export const Header = () => {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center", // align vertically
-                padding: "0% 5% 0%",
+                padding: "0% 2.5% 0%",
             }}>
             <div
                 style={{
                     display: "flex",
                     justifyContent: "space-between",
-                    alignContent: "center",
-                    alignItems: "center",
-                    // textAlign: "left",
+                    alignItems: "center", // vertical alignment
                 }}>
                 <a href="/">
                     <img
                         src="./AVConLogoWhite.png"
                         alt="AV Con"
-                        width={isMobile ? "20%" : "20%"}
+                        width={isMobile ? "20%" : "30%"}
                     />
                 </a>
             </div>
@@ -116,7 +113,6 @@ export const Header = () => {
                                 display: "flex",
                                 alignItems: "center",
                                 position: "relative",
-                                display: "inline-block",
                                 whiteSpace: "nowrap", // Prevent text wrapping
                                 minWidth: "max-content", // Ensure min width matches content
                             }}
@@ -128,8 +124,8 @@ export const Header = () => {
                                 alt="Dropdown"
                                 style={{
                                     padding: "0 0 0 10px",
-                                    width: "14px", // Set the width of the icon
-                                    height: "14px", // Set the height of the icon
+                                    width: "14px", // Set the width of the dropdown icon
+                                    height: "14px", // Set the height of the dropdown icon
                                 }}
                             />
                             {showEventDropdown && (
@@ -160,8 +156,9 @@ export const Header = () => {
                         </div>
                         <div
                             style={{
+                                display: "flex",
+                                alignItems: "center",
                                 position: "relative",
-                                display: "inline-block",
                                 whiteSpace: "nowrap", // Prevent text wrapping
                                 minWidth: "max-content", // Ensure min width matches content
                             }}

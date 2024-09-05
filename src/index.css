@@ -2,6 +2,19 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
+
+    /* color palette */
+    --background-dark: #041326;
+    --text-light: #ffffff;
+    --text-dark: #041326;
+    /* the following should be renamed semantically when purpose of color is defined */
+    --light-grey: #b3b9bd;
+    --mid-grey: #98a1a6;
+    --mid-blue: #0c2840;
+
+    /* font sizes - mobile */
+
+    /* Spacing */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,8 +50,8 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background: #07101d;
-    color: #ffffff;
+    background: var(--background-dark);
+    color: var(--text-light);
 }
 
 a {
