@@ -37,6 +37,57 @@
     }
 }
 
+/* ------ FONT STYLES ------ */
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--background-dark);
+    color: var(--text-light);
+}
+
+p,
+.link-text {
+    font-size: 1.125rem;
+}
+s .text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+
+p > .text-large {
+    font-size: 1.7rem;
+}
+.copyright {
+    font-size: 1.4rem;
+    color: var(--mid-grey);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* ------ BUTTON STYLES ------ */
+.btn-primary {
+    font-weight: 800; /* extra bold */
+    /* border: 1px solid var(--text-light); */
+    border-radius: 2px;
+    background-color: var(--background-dark-75);
+}
+.btn-secondary {
+    padding: 15px;
+    border-radius: 2px;
+    background-color: var(--light-grey);
+    width: fit-content;
+}
+.btn-tertiary {
+    padding: 15px;
+    border: 1px solid var(--mid-grey);
+    border-radius: 2px;
+    background-color: var(--background-dark);
+    width: fit-content;
+}
+
 /* ======== Spacing ======== */
 
 .pt-1 {
@@ -182,17 +233,44 @@
     margin: 10rem 0;
 }
 
+/* margins on x-axis (left and right)
+    - use to seperate sections and containers within a section*/
+.mx-1 {
+    margin: 0 1rem;
+}
+.mx-2 {
+    margin: 0 2.5rem;
+}
+.mx-3 {
+    margin: 0 5rem;
+}
+.mx-4 {
+    margin: 0 7.5rem;
+}
+.mx-5 {
+    margin: 0 10rem;
+}
+
 /* ========= FLEX CLASSES ========= */
 .flex-container {
     display: flex;
 }
+.flex-col {
+    flex-direction: column;
+}
 .flex-col-center {
-    display: "flex";
-    flex-direction: "column";
-    align-items: "center";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.align-center {
+    align-content: center;
 }
 .align-vertical-middle {
     align-items: center;
+}
+.align-vertical-btm {
+    align-items: end;
 }
 .space-between {
     align-content: space-between;
@@ -205,6 +283,11 @@
 .text-dark {
     color: var(--text-dark);
 }
+
+/* ------- CUSTOM ELEMENT STYLES ------ */
+
+/* ------------- END CUSTOM ELEMENT STYLES ------------- */
+
 @media (prefers-color-scheme: dark) {
     :root {
         --foreground-rgb: 255, 255, 255;
@@ -235,45 +318,6 @@
 
 header {
     background-color: none;
-}
-
-/* ------ TEXT STYLES ------ */
-body {
-    font-family: "Inter", sans-serif;
-    background: var(--background-dark);
-    color: var(--text-light);
-}
-
-.text-right {
-    text-align: right;
-}
-.text-left {
-    text-align: left;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-/* ------ BUTTON STYLES ------ */
-.btn-primary {
-    font-weight: 800; /* extra bold */
-    /* border: 1px solid var(--text-light); */
-    border-radius: 2px;
-    background-color: var(--background-dark-75);
-}
-.btn-secondary {
-    padding: 15px;
-    border-radius: 2px;
-    background-color: var(--light-grey);
-    width: fit-content;
-}
-.btn-tertiary {
-    padding: 15px;
-    border: 1px solid var(--mid-grey);
-    border-radius: 2px;
-    background-color: var(--background-dark);
-    width: fit-content;
 }
 
 /* ------  ------ */
