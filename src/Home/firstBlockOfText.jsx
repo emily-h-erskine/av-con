@@ -27,16 +27,19 @@ export default function FirstImageAndText() {
                             Soar into the future of aviation at AvCon 2024!
                         </h3>
                         <div className="flex-container-col space-between">
-                            <p className="text-right py-">
+                            <p className="text-right mt-4 mb-1">
                                 Calling all primary, secondary, and 3rd level
                                 students, to experience an electrifying journey
                                 through the skies of innovation.
                             </p>
                             <p className="text-right">
-                                Join us for an exhilarating event where you'll
-                                explore cutting-edge technology, witness
-                                thrilling demonstrations, and engage with
-                                industry experts shaping the future of flight.
+                                <a href="./BookTickets" className="link-text">
+                                    Join us
+                                </a>{" "}
+                                for an exhilarating event where you'll explore
+                                cutting-edge technology, witness thrilling
+                                demonstrations, and engage with industry experts
+                                shaping the future of flight.
                             </p>
                         </div>
                     </div>
