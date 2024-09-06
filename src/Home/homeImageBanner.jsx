@@ -31,12 +31,16 @@ export default function HomeImageBanner() {
                     padding: "1.5% 3%",
                     position: "absolute",
                     right: "10%",
-                    top: "50%",
+                    top: "65%",
                 }}
-                className="btn-cta">
+                className="btn-primary">
                 <a
                     href="./BookTickets"
-                    style={{ textDecoration: "none", color: "inherit" }}>
+                    className="uppercase"
+                    style={{
+                        textDecoration: "none",
+                        color: "inherit",
+                    }}>
                     Get Tickets
                 </a>
             </button>

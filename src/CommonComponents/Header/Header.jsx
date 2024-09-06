@@ -141,15 +141,21 @@ export const Header = () => {
                                         border: "1px white solid",
                                         textAlign: "left",
                                     }}>
-                                    <a href="./EventSchedule">EVENT SCHEDULE</a>
+                                    <a
+                                        className="uppercase"
+                                        href="./EventSchedule">
+                                        EVENT SCHEDULE
+                                    </a>
                                     <br />
                                     <br />
-                                    <a href="./SpeakersPresenters">
+                                    <a
+                                        className="uppercase"
+                                        href="./SpeakersPresenters">
                                         SPEAKERS &amp; PRESENTERS
                                     </a>
                                     <br />
                                     <br />
-                                    <a href="./FlightSim">
+                                    <a className="uppercase" href="./FlightSim">
                                         AVCON XTRA: THE FLIGHT SIM CHALLENGE
                                     </a>
                                 </p>
@@ -165,7 +171,9 @@ export const Header = () => {
                             }}
                             onMouseEnter={handleAboutDropdownToggle}
                             onMouseLeave={handleAboutDropdownToggle}>
-                            <a href="./About">ABOUT AVCON</a>
+                            <a className="uppercase" href="./About">
+                                ABOUT AVCON
+                            </a>
                             <img
                                 src={Dropdown}
                                 alt="Dropdown"
@@ -182,20 +190,27 @@ export const Header = () => {
                                         zIndex: "1000", // ensures dorpdown appears on top of other page elements
                                         top: "100%",
                                         left: 0,
-                                        backgroundColor: "#07101D",
+                                        backgroundColor:
+                                            "var(--background-dark-75)",
                                         padding: "10px",
                                         border: "1px white solid",
                                         textAlign: "left",
                                     }}>
-                                    <a href="./News">NEWS &amp; UPDATES</a>
+                                    <a className="uppercase" href="./News">
+                                        NEWS &amp; UPDATES
+                                    </a>
                                     <br />
                                     <br />
-                                    <a href="./SponsorsPartners">
+                                    <a
+                                        className="uppercase"
+                                        href="./SponsorsPartners">
                                         SPONSORS &amp; PARTNERS
                                     </a>
                                     <br />
                                     <br />
-                                    <a href="./AviationPathwayPortal">
+                                    <a
+                                        className="uppercase"
+                                        href="./AviationPathwayPortal">
                                         AVIATION PATHWAY PORTAL
                                     </a>
                                 </p>
@@ -221,7 +236,7 @@ export const Header = () => {
                             role="button"
                             style={{
                                 padding: "0.75rem",
-                                border: "1px solid #ffffff",
+                                // border: "1px solid var(--background-light",
                                 borderRadius: "4px",
                                 whiteSpace: "nowrap",
                                 minWidth: "max-content",

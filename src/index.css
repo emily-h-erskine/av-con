@@ -11,7 +11,7 @@
 
     /* color palette */
     --background-dark: #041326;
-    --cta-background-dark: #041225d9; /* bg-dark with 85% opacity */
+    --background-dark-75: rgba(4, 19, 38, 0.75); /* bg-dark with 85% opacity */
     --background-light: #ffffff;
     --text-light: #ffffff;
     --text-dark: #041326;
@@ -21,13 +21,13 @@
     --mid-blue: #0c2840;
 
     /* font sizes - mobile */
-    .text-medium {
+    .fs-medium {
         font-size: 2rem;
     }
     .text-large {
         font-size: 3rem;
     }
-    .text-link {
+    .underline-link {
         text-decoration: underline;
     }
 
@@ -42,9 +42,46 @@
 .pt-1 {
     padding-top: 0.05rem;
 }
+
+.pt-5 {
+    padding-top: 1.5rem;
+}
 .pb-1 {
     padding-bottom: 0.05rem;
 }
+
+.pl-1 {
+    padding-left: 0.1rem;
+}
+.pl-2 {
+    padding-left: 0.3rem;
+}
+.pl-3 {
+    padding-left: 1rem;
+}
+.pl-4 {
+    padding-left: 1.5rem;
+}
+.pl-5 {
+    padding-left: 2.5rem;
+}
+
+.pr-1 {
+    padding-right: 0.1rem;
+}
+.pr-2 {
+    padding-right: 0.3rem;
+}
+.pr-3 {
+    padding-right: 1rem;
+}
+.pr-4 {
+    padding-right: 1.5rem;
+}
+.pr-5 {
+    padding-right: 2.5rem;
+}
+
 /* py: padding on the y-axis  
     -  use to give padding inside of an element/container */
 .py-1 {
@@ -72,7 +109,7 @@
     padding-bottom: 4rem;
 }
 
-/* px: padding on x-axis  
+/* px: padding on x-axis (left and right)
     -  use to give padding inside of an element/container*/
 .px-1 {
     padding-left: 0.1rem;
@@ -101,7 +138,33 @@
 .mb-2 {
     margin-bottom: 2.5rem;
 }
-/* margins on y-axis 
+.mb-3 {
+    margin-bottom: 5rem;
+}
+.mb-4 {
+    margin-bottom: 7.5rem;
+}
+.mb-5 {
+    margin-bottom: 10rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2.5rem;
+}
+.mt-3 {
+    margin-top: 5rem;
+}
+.mt-4 {
+    margin-top: 7.5rem;
+}
+.mt-5 {
+    margin-top: 10rem;
+}
+
+/* margins on y-axis (top and btm)
     - use to seperate sections and containers within a section*/
 .my-1 {
     margin: 1rem 0;
@@ -123,14 +186,16 @@
 .flex-container {
     display: flex;
 }
-.flex-container-col {
-    flex-direction: column;
+.flex-col-center {
+    display: "flex";
+    flex-direction: "column";
+    align-items: "center";
+}
+.align-vertical-middle {
+    align-items: center;
 }
 .space-between {
     align-content: space-between;
-}
-.vertical-align {
-    align-items: center;
 }
 
 .bg-light {
@@ -146,14 +211,6 @@
         --background-start-rgb: 0, 0, 0;
         --background-end-rgb: 0, 0, 0;
     }
-}
-
-/* ========= BUTTONS ========= */
-.btn-secondary {
-    padding: 15px;
-    border: 1px solid var(--background-dark);
-    border-radius: 2px;
-    background-color: var(--background-light);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -180,6 +237,7 @@ header {
     background-color: none;
 }
 
+/* ------ TEXT STYLES ------ */
 body {
     font-family: "Inter", sans-serif;
     background: var(--background-dark);
@@ -193,25 +251,32 @@ body {
     text-align: left;
 }
 
-a {
-    color: #ee0606; /* Set the link color to white */
-    text-decoration: none;
-    font-size: small;
+.uppercase {
     text-transform: uppercase;
 }
 
-a:hover {
-    color: var(--text-light); /* Set the link hover color to white */
-}
-
-/* select all links contained in buttons */
-.btn-cta {
+/* ------ BUTTON STYLES ------ */
+.btn-primary {
     font-weight: 800; /* extra bold */
-    border: 1px solid var(--text-light);
+    /* border: 1px solid var(--text-light); */
     border-radius: 2px;
-    background-color: var(--cta-background-dark);
+    background-color: var(--background-dark-75);
+}
+.btn-secondary {
+    padding: 15px;
+    border-radius: 2px;
+    background-color: var(--light-grey);
+    width: fit-content;
+}
+.btn-tertiary {
+    padding: 15px;
+    border: 1px solid var(--mid-grey);
+    border-radius: 2px;
+    background-color: var(--background-dark);
+    width: fit-content;
 }
 
+/* ------  ------ */
 .AppHeader {
     background-color: var(--background-dark);
     min-height: 100vh;
@@ -237,12 +302,13 @@ a:hover {
 }
 
 a {
-    color: #ffffff; /* Set the link color to white */
+    color: var(--text-light); /* Set the link color to white */
 }
 a:hover {
-    color: #ffffff; /* Set the link hover color to white */
+    color: var(--text-light); /* Set the link hover color to white */
 }
 
+/* ------ FORM STYLES ------ */
 .form {
     padding: 20px;
 }
@@ -263,6 +329,61 @@ a:hover {
 .form_input {
     width: 60%;
 }
+
+.form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 15px;
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.alert-message {
+    margin-top: 20px;
+}
+
+.registration-form {
+    max-width: 95%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------ END OF FROM STYLES  ------ */
 
 .event-container {
     padding: 2% 5%;
@@ -315,59 +436,6 @@ a:hover {
     }
 }
 
-.registration-form {
-    max-width: 95%;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form__label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.form__input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.form__textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-}
-
-.submit-button {
-    padding: 15px;
-    width: 100%;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.submit-button:hover {
-    background-color: #45a049;
-}
-
-.alert-message {
-    margin-top: 20px;
-}
-
 /* Default styles */
 h1 {
     font-size: 2rem; /* Default font size for h1 */
@@ -399,9 +467,13 @@ h6 {
     line-height: 1.7; /* Adjust line height for better readability */
 }
 
-p {
+p,
+.link-text {
     font-size: 1rem; /* Default font size for paragraph */
     line-height: 1.6; /* Adjust line height for better readability */
+}
+.underline-text {
+    text-decoration: underline;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -430,10 +502,13 @@ p {
         font-size: 1.25rem;
     }
 
-    p {
+    p,
+    .link-text {
         font-size: 1.125rem;
     }
-
+    .underline-text {
+        text-decoration: underline;
+    }
     .custom-form-container {
         width: 100%; /* Set width to 50% */
         margin: 0 auto; /* Center the form */
@@ -467,10 +542,13 @@ p {
         font-size: 1.5rem;
     }
 
-    p {
+    p,
+    .link-text {
         font-size: 1.25rem;
     }
-
+    .underline-text {
+        text-decoration: underline;
+    }
     .custom-form-container {
         width: 85%; /* Set width to 50% */
         margin: 0 auto; /* Center the form */
@@ -504,8 +582,12 @@ p {
         font-size: 1.75rem;
     }
 
-    p {
+    p,
+    .link-text {
         font-size: 1.375rem;
+    }
+    .underline-text {
+        text-decoration: underline;
     }
     .custom-form-container {
         width: 95%;
