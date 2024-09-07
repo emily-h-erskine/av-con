@@ -264,6 +264,8 @@ p > .text-large {
     flex-direction: column;
     align-items: center;
 }
+
+/* NOTE: following alignment classes to be applied to children of display:flex containers*/
 .align-center {
     align-content: center;
 }
@@ -276,15 +278,16 @@ p > .text-large {
 .space-between {
     align-content: space-between;
 }
-
+.flex-1 {
+    flex-grow: 1;
+}
 .width-30 {
     flex-basis: 30%;
 }
 
-.flex-1 {
-    flex-grow: 1;
-}
+/* ========= END FLEX CLASSES ========= */
 
+/*  */
 .bg-light {
     background-color: var(--background-light);
 }
@@ -292,6 +295,8 @@ p > .text-large {
 .text-dark {
     color: var(--text-dark);
 }
+
+/*  */
 
 /* ------- CUSTOM ELEMENT STYLES ------ */
 .footer-logo {

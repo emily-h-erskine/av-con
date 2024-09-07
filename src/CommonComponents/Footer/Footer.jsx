@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SocialMediaLinks from "./SocialMediaLinks";
-import FooterBanner from "./footerBanner.jpeg";
+// import FooterBanner from "./footerBanner.jpeg";
 import "../../index.css";
 
 export default function Footer() {
