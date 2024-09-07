@@ -256,6 +256,7 @@ p > .text-large {
     display: flex;
 }
 .flex-col {
+    display: flex;
     flex-direction: column;
 }
 .flex-col-center {
@@ -276,6 +277,14 @@ p > .text-large {
     align-content: space-between;
 }
 
+.width-30 {
+    flex-basis: 30%;
+}
+
+.flex-1 {
+    flex-grow: 1;
+}
+
 .bg-light {
     background-color: var(--background-light);
 }
@@ -285,6 +294,17 @@ p > .text-large {
 }
 
 /* ------- CUSTOM ELEMENT STYLES ------ */
+.footer-logo {
+    width: 70%;
+    height: auto;
+}
+.vertical-rule {
+    width: 1px; /* Set a small width to make it appear like a line */
+    height: 100%; /* Set the desired height */
+    background-color: #ffffff; /* Set the color of the line */
+    border: none; /* Remove the default border */
+    margin: 0 20px; /* Adjust the horizontal margin as needed */
+}
 
 /* ------------- END CUSTOM ELEMENT STYLES ------------- */
 
