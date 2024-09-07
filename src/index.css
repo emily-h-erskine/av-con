@@ -37,6 +37,17 @@
     }
 }
 
+/* =========  COLOR STYLES  ========= */
+.bg-light {
+    background-color: var(--background-light);
+}
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+/* =========  END COLOR STYLES  ========= */
+
 /* ------ FONT STYLES ------ */
 body {
     font-family: "Inter", sans-serif;
@@ -99,6 +110,18 @@ p > .text-large {
 }
 .pb-1 {
     padding-bottom: 0.05rem;
+}
+.pb-2 {
+    padding-bottom: 0.15rem;
+}
+.pb-3 {
+    padding-bottom: 0.5rem;
+}
+.pb-4 {
+    padding-bottom: 1rem;
+}
+.pb-5 {
+    padding-bottom: 1.5rem;
 }
 
 .pl-1 {
@@ -278,37 +301,39 @@ p > .text-large {
 .space-between {
     align-content: space-between;
 }
+.space-between-col {
+    justify-content: space-between;
+}
+.align-start {
+    align-items: start;
+}
 .flex-1 {
     flex-grow: 1;
 }
 .width-30 {
     flex-basis: 30%;
 }
+.width-70 {
+    flex-basis: 70%;
+}
 
 /* ========= END FLEX CLASSES ========= */
 
-/*  */
-.bg-light {
-    background-color: var(--background-light);
-}
-
-.text-dark {
-    color: var(--text-dark);
-}
-
-/*  */
-
 /* ------- CUSTOM ELEMENT STYLES ------ */
 .footer-logo {
-    width: 70%;
+    width: 60%;
     height: auto;
 }
-.vertical-rule {
-    width: 1px; /* Set a small width to make it appear like a line */
-    height: 100%; /* Set the desired height */
-    background-color: #ffffff; /* Set the color of the line */
-    border: none; /* Remove the default border */
-    margin: 0 20px; /* Adjust the horizontal margin as needed */
+.footer-link {
+    font-size: 1.25rem;
+    padding-top: 0.75rem;
+}
+.footer-heading {
+    font-size: 0.9rem;
+    color: var(--light-grey);
+}
+.footer-text {
+    font-size: 1.1rem;
 }
 
 /* ------------- END CUSTOM ELEMENT STYLES ------------- */
