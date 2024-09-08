@@ -37,19 +37,8 @@ export const Header = () => {
     }, []);
 
     return (
-        <header
-            style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center", // align vertically
-                padding: "0% 2.5%", // top&bottom, right&left
-            }}>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center", // vertical alignment
-                }}>
+        <header className="flex-container space-between align-center pt-1 pb-1 mb-5">
+            <div style={{ display: "flex" }}>
                 <a href="/">
                     <img
                         src="./AVConLogoWhite.png"

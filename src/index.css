@@ -19,39 +19,217 @@
     --light-grey: #b3b9bd;
     --mid-grey: #98a1a6;
     --mid-blue: #0c2840;
+    --font-sans: "Inter", sans-serif;
 
-    /* font sizes - mobile */
-    .fs-medium {
-        font-size: 2rem;
-    }
-    .text-large {
-        font-size: 3rem;
-    }
-    .underline-link {
-        text-decoration: underline;
-    }
+    /* Default (Mobile-First) for small screens (up to 768px) */
 
-    .text-link.text-dark:hover {
-        /* if text is dark and is linnk */
-        color: var(--text-dark);
+    --padding-small: 0.25rem;
+    --padding-medium: 0.5rem;
+    --padding-large: 0.75rem;
+
+    --margin-small: 0.25rem;
+    --margin-medium: 0.5rem;
+    --margin-large: 0.75rem;
+}
+
+/* Padding Classes */
+
+/* USAGE: these classes are applied to small devices, 
+subsequent media queries chage increase the values for 
+to give more padding/margin on large devices */
+
+.pt-1 {
+    padding-top: var(--padding-small);
+}
+.pt-2 {
+    padding-top: var(--padding-medium);
+}
+.pt-3 {
+    padding-top: var(--padding-large);
+}
+.pb-1 {
+    padding-bottom: var(--padding-small);
+}
+.pb-2 {
+    padding-bottom: var(--padding-medium);
+}
+.pb-3 {
+    padding-bottom: var(--padding-large);
+}
+.pl-1 {
+    padding-left: var(--padding-small);
+}
+.pl-2 {
+    padding-left: var(--padding-medium);
+}
+.pl-3 {
+    padding-left: var(--padding-large);
+}
+.pr-1 {
+    padding-right: var(--padding-small);
+}
+.pr-2 {
+    padding-right: var(--padding-medium);
+}
+.pr-3 {
+    padding-right: var(--padding-large);
+}
+
+/* Margin Classes */
+.mb-1 {
+    margin-bottom: var(--margin-small);
+}
+.mb-2 {
+    margin-bottom: var(--margin-medium);
+}
+.mb-3 {
+    margin-bottom: var(--margin-large);
+}
+.mt-1 {
+    margin-top: var(--margin-small);
+}
+.mt-2 {
+    margin-top: var(--margin-medium);
+}
+.mt-3 {
+    margin-top: var(--margin-large);
+}
+.ml-1 {
+    margin-left: var(--padding-small);
+}
+.ml-2 {
+    margin-left: var(--padding-medium);
+}
+.ml-3 {
+    margin-left: var(--padding-large);
+}
+.mr-1 {
+    margin-right: var(--padding-small);
+}
+.mr-2 {
+    margin-right: var(--padding-medium);
+}
+.mr-3 {
+    margin-right: var(--padding-large);
+}
+
+/* Media Queries for Larger Screens */
+
+/* Tablets and small desktops (min-width: 768px) */
+@media (min-width: 768px) {
+    :root {
+        --padding-small: 0.5rem;
+        --padding-medium: 1rem;
+        --padding-large: 1.25rem;
+
+        --margin-small: 0.5rem;
+        --margin-medium: 1rem;
+        --margin-large: 1.25rem;
     }
+}
+
+/* Medium desktops (min-width: 992px) */
+@media (min-width: 992px) {
+    :root {
+        --padding-small: 0.75rem;
+        --padding-medium: 1.25rem;
+        --padding-large: 1.5rem;
+
+        --margin-small: 0.75rem;
+        --margin-medium: 1.25rem;
+        --margin-large: 1.5rem;
+    }
+}
+
+/* Large desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    :root {
+        --padding-small: 1rem;
+        --padding-medium: 1.5rem;
+        --padding-large: 2rem;
+
+        --margin-small: 1rem;
+        --margin-medium: 1.5rem;
+        --margin-large: 2rem;
+    }
+}
+
+/* Extra-large desktops (min-width: 1200px) */
+@media (min-width: 1200px) {
+    :root {
+        --padding-small: 1.25rem;
+        --padding-medium: 1.75rem;
+        --padding-large: 2.5rem;
+
+        --margin-small: 1.25rem;
+        --margin-medium: 1.75rem;
+        --margin-large: 2.5rem;
+    }
+}
+
+/* ========= MOBILE DEVICES ========= */
+/* font styles */
+h1 {
+    font-size: 2rem; /* Default font size for h1 */
+    line-height: 1.2; /* Adjust line height for better readability */
+}
+
+h2 {
+    font-size: 1.75rem; /* Default font size for h2 */
+    line-height: 1.3; /* Adjust line height for better readability */
+}
+
+h3 {
+    font-size: 1.5rem; /* Default font size for h3 */
+    line-height: 1.4; /* Adjust line height for better readability */
+}
+
+h4 {
+    font-size: 1.25rem; /* Default font size for h4 */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+h5 {
+    font-size: 1.1rem; /* Default font size for h5 */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+h6 {
+    font-size: 1rem; /* Default font size for h6 */
+    line-height: 1.7; /* Adjust line height for better readability */
+}
+
+p,
+.link-text {
+    font-size: 1rem; /* Default font size for paragraph */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+.underline-text {
+    text-decoration: underline;
+}
+
+.text-large {
+    font-size: 3rem;
+}
+
+.text-link.text-dark:hover {
+    /* if text is dark and is linnk */
+    color: var(--text-dark);
+}
+a {
+    color: var(--text-light); /* Set the link color to white */
+}
+a:hover {
+    color: var(--text-light); /* Set the link hover color to white */
 }
 
 /* =========  COLOR STYLES  ========= */
-.bg-light {
-    background-color: var(--background-light);
-}
-
-.text-dark {
-    color: var(--text-dark);
-}
 
 /* =========  END COLOR STYLES  ========= */
 
 /* ------ FONT STYLES ------ */
 body {
-    font-family: "Inter", sans-serif;
-    background: var(--background-dark);
+    font-family: var(--font-sans);
     color: var(--text-light);
 }
 
@@ -59,7 +237,7 @@ p,
 .link-text {
     font-size: 1.125rem;
 }
-s .text-right {
+.text-right {
     text-align: right;
 }
 .text-left {
@@ -99,179 +277,10 @@ p > .text-large {
     width: fit-content;
 }
 
-/* ======== Spacing ======== */
-
-.pt-1 {
-    padding-top: 0.05rem;
-}
-
-.pt-5 {
-    padding-top: 1.5rem;
-}
-.pb-1 {
-    padding-bottom: 0.05rem;
-}
-.pb-2 {
-    padding-bottom: 0.15rem;
-}
-.pb-3 {
-    padding-bottom: 0.5rem;
-}
-.pb-4 {
-    padding-bottom: 1rem;
-}
-.pb-5 {
-    padding-bottom: 1.5rem;
-}
-
-.pl-1 {
-    padding-left: 0.1rem;
-}
-.pl-2 {
-    padding-left: 0.3rem;
-}
-.pl-3 {
-    padding-left: 1rem;
-}
-.pl-4 {
-    padding-left: 1.5rem;
-}
-.pl-5 {
-    padding-left: 2.5rem;
-}
-
-.pr-1 {
-    padding-right: 0.1rem;
-}
-.pr-2 {
-    padding-right: 0.3rem;
-}
-.pr-3 {
-    padding-right: 1rem;
-}
-.pr-4 {
-    padding-right: 1.5rem;
-}
-.pr-5 {
-    padding-right: 2.5rem;
-}
-
-/* py: padding on the y-axis  
-    -  use to give padding inside of an element/container */
-.py-1 {
-    padding-top: 0.05rem;
-    padding-bottom: 0.05rem;
-}
-.py-2 {
-    padding-top: 0.15rem;
-    padding-bottom: 0.15rem;
-}
-.py-3 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-.py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-.py-5 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-.py-huge {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-/* px: padding on x-axis (left and right)
-    -  use to give padding inside of an element/container*/
-.px-1 {
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-}
-.px-2 {
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-}
-.px-3 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.px-4 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-.px-5 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-}
-
-.mb-1 {
-    margin-bottom: 1rem;
-}
-.mb-2 {
-    margin-bottom: 2.5rem;
-}
-.mb-3 {
-    margin-bottom: 5rem;
-}
-.mb-4 {
-    margin-bottom: 7.5rem;
-}
-.mb-5 {
-    margin-bottom: 10rem;
-}
-
-.mt-1 {
-    margin-top: 1rem;
-}
-.mt-2 {
-    margin-top: 2.5rem;
-}
-.mt-3 {
-    margin-top: 5rem;
-}
-.mt-4 {
-    margin-top: 7.5rem;
-}
-.mt-5 {
-    margin-top: 10rem;
-}
-
-/* margins on y-axis (top and btm)
-    - use to seperate sections and containers within a section*/
-.my-1 {
-    margin: 1rem 0;
-}
-.my-2 {
-    margin: 2.5rem 0;
-}
-.my-3 {
-    margin: 5rem 0;
-}
-.my-4 {
-    margin: 7.5rem 0;
-}
-.my-5 {
-    margin: 10rem 0;
-}
-
-/* margins on x-axis (left and right)
-    - use to seperate sections and containers within a section*/
-.mx-1 {
-    margin: 0 1rem;
-}
-.mx-2 {
-    margin: 0 2.5rem;
-}
-.mx-3 {
-    margin: 0 5rem;
-}
-.mx-4 {
-    margin: 0 7.5rem;
-}
-.mx-5 {
-    margin: 0 10rem;
+.custom-form-container {
+    width: 100%; /* Set width to fill viewport width on mobile */
+    margin: 0 auto; /* Center the form */
+    margin-top: 3rem;
 }
 
 /* ========= FLEX CLASSES ========= */
@@ -335,40 +344,13 @@ p > .text-large {
 .footer-text {
     font-size: 1.1rem;
 }
-
-/* ------------- END CUSTOM ELEMENT STYLES ------------- */
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .container header .header-nav-area #nav_container,
-    .custom-form-container {
-        width: 95%; /* Set width to 95 of viewport% */
-        margin: 0 auto; /* Center the form */
-        margin-top: 6rem;
-    }
-
-    /* Target the actual injected form */
-    .custom-form-container form {
-        width: 100%; /* Make sure the form inside takes the full width of the container */
-    }
-}
-
 .custom-form-container {
     width: 100%; /* Set width to fill viewport width on mobile */
     margin: 0 auto; /* Center the form */
     margin-top: 3rem;
 }
 
-header {
-    background-color: none;
-}
+/* ------------- END CUSTOM ELEMENT STYLES ------------- */
 
 /* ------  ------ */
 .AppHeader {
@@ -384,22 +366,6 @@ header {
 
 .App-link {
     color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-a {
-    color: var(--text-light); /* Set the link color to white */
-}
-a:hover {
-    color: var(--text-light); /* Set the link hover color to white */
 }
 
 /* ------ FORM STYLES ------ */
@@ -477,7 +443,7 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ------ END OF FROM STYLES  ------ */
+/* ------ END OF FORM STYLES  ------ */
 
 .event-container {
     padding: 2% 5%;
@@ -513,7 +479,8 @@ a:hover {
     margin-left: 20px;
 }
 
-@media (max-width: 768px) {
+/* ========= TABLET ========= */
+@media only screen and (max-width: 768px) {
     .event-container {
         padding: 2% 3%;
     }
@@ -530,48 +497,8 @@ a:hover {
     }
 }
 
-/* Default styles */
-h1 {
-    font-size: 2rem; /* Default font size for h1 */
-    line-height: 1.2; /* Adjust line height for better readability */
-}
-
-h2 {
-    font-size: 1.75rem; /* Default font size for h2 */
-    line-height: 1.3; /* Adjust line height for better readability */
-}
-
-h3 {
-    font-size: 1.5rem; /* Default font size for h3 */
-    line-height: 1.4; /* Adjust line height for better readability */
-}
-
-h4 {
-    font-size: 1.25rem; /* Default font size for h4 */
-    line-height: 1.5; /* Adjust line height for better readability */
-}
-
-h5 {
-    font-size: 1.1rem; /* Default font size for h5 */
-    line-height: 1.6; /* Adjust line height for better readability */
-}
-
-h6 {
-    font-size: 1rem; /* Default font size for h6 */
-    line-height: 1.7; /* Adjust line height for better readability */
-}
-
-p,
-.link-text {
-    font-size: 1rem; /* Default font size for paragraph */
-    line-height: 1.6; /* Adjust line height for better readability */
-}
-.underline-text {
-    text-decoration: underline;
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* ========= LARGE TABLET, NOTEBOOKS, SM LAPTOPS ========= */
+@media only screen and(min-width: 768px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -610,8 +537,8 @@ p,
     }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* ========= LARGE LAPTOPS  ========= */
+@media only screen and(min-width: 992px) {
     h1 {
         font-size: 3rem;
     }
@@ -649,9 +576,23 @@ p,
         margin-top: 5rem;
     }
 }
+/* ========= DESKTOPS, 992px and up ========= */
+@media only screen and (min-width: 1024px) {
+    .container header .header-nav-area #nav_container,
+    .custom-form-container {
+        width: 95%; /* Set width to 95 of viewport% */
+        margin: 0 auto; /* Center the form */
+        margin-top: 6rem;
+    }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+    /* Target the actual injected form */
+    .custom-form-container form {
+        width: 100%; /* Make sure the form inside takes the full width of the container */
+    }
+}
+
+/* ========= EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) ========= */
+@media only screen and(min-width: 1200px) {
     h1 {
         font-size: 3.5rem;
     }

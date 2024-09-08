@@ -5,10 +5,10 @@ import "../index.css";
 
 export default function MiddleBlockOfText() {
     return (
-        <Box className="bg-dark py-huge">
+        <Box className="bg-dark pt-3 pb-3">
             <hr />
             <Grid
-                className="flex-container align-vertical-middle py-huge px-5"
+                className="flex-container align-vertical-middle pt-3 pb-3 pr-3 pl-3"
                 container
                 spacing={2}>
                 <Grid item xs={12} sm={6}>
@@ -16,7 +16,7 @@ export default function MiddleBlockOfText() {
                         Secure your School Group tickets now for an
                         unforgettable adventure at AvCon 2024.<br></br>
                         <a
-                            className="text-light fs-medium text-link"
+                            className="text-light text-large text-link"
                             href="./BookTickets">
                             Book{" "}
                             <span className="text-large underline-text">
@@ -47,7 +47,7 @@ export default function MiddleBlockOfText() {
                                 className="btn-tertiary"
                                 name="Get directions Button">
                                 <a
-                                    className="py-1 pl-2 pr-3 flex-container"
+                                    className="pt-1 pb-1 pl-2 pr-3 flex-container"
                                     href="https://www.google.com/maps/search/?api=1&query=Irish+Air+Corps,+Casement+Aerodrome,+Baldonnel,+County+Dublin"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -89,7 +89,7 @@ export default function MiddleBlockOfText() {
                                 className="btn-secondary"
                                 name="Add to calendar Button">
                                 <a
-                                    className="py-1 pl-2 pr-3 flex-container"
+                                    className="pb-1 pt-1 pl-2 pr-3 flex-container"
                                     href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=AvCon+2024&dates=20241107T090000Z/20241107T170000Z&details=Join+us+at+the+Irish+Air+Corps,+Casement+Aerodrome,+Baldonnel,+County+Dublin&location=Irish+Air+Corps,+Casement+Aerodrome,+Baldonnel,+County+Dublin+for+AvCon+2024"
                                     target="_blank"
                                     rel="noopener noreferrer"

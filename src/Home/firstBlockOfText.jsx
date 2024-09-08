@@ -6,7 +6,7 @@ import "../index.css";
 
 export default function FirstImageAndText() {
     return (
-        <Box sx={{ padding: { xs: "0 2%", md: "7.5% 5%" } }}>
+        <Box sx={{ padding: { xs: "0 2%", md: "5% 5%" } }}>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={7}>
                     <div>
@@ -22,12 +22,12 @@ export default function FirstImageAndText() {
                     </div>
                 </Grid>
                 <Grid item xs={12} md={5}>
-                    <div className="flex-container-col space-between px-3">
-                        <h3 className="py-3">
+                    <div className="flex-container-col space-between">
+                        <h3 className="mb-1">
                             Soar into the future of aviation at AvCon 2024!
                         </h3>
                         <div className="flex-container-col space-between">
-                            <p className="text-right mt-3 mb-1">
+                            <p className="text-right mb-1">
                                 Calling all primary, secondary, and 3rd level
                                 students, to experience an electrifying journey
                                 through the skies of innovation.
