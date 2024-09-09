@@ -326,10 +326,15 @@ p > .text-large {
 /* ========= FLEX CLASSES ========= */
 .flex-container {
     display: flex;
+    flex-direction: row;
 }
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 .flex-col-center {
     display: flex;
@@ -484,6 +489,57 @@ p > .text-large {
 }
 
 /* ------ END OF FORM STYLES  ------ */
+
+/* ====== CARD STYLES ======= */
+/* Card styling */
+.card-container {
+    background-color: var(--background-dark);
+    /* border: 1px solid var(--mid-grey); */
+    border-radius: 0;
+    /* padding: var(--padding-small); */
+    max-width: 45%;
+    margin: var(--margin-medium);
+    transition: transform 0.2s; /* adds a short delay in effect */
+}
+
+.card-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.card-image {
+    max-width: 50%;
+    border-radius: 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-heading {
+    font-size: 1.7rem;
+    margin: var(--margin-small) 0 var(--margin-medium); /* top | right&left | btm */
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.card-description {
+    font-size: 1.4rem;
+    color: var(--text-light);
+    text-align: left;
+}
+
+/* Flex layout for the cards */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--padding-small);
+}
+
+/* ====== END CARD STYLES ======= */
 
 .event-container {
     padding: 2% 5%;
