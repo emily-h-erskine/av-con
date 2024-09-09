@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ imageSrc, heading, description }) => {
     return (
-        <div className="card pb-2">
+        <div className="card pb-3 mb-3">
             <img
                 src={imageSrc}
                 alt={heading} // this will be very poor alt text for the images will need a solution

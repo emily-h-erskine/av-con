@@ -260,6 +260,7 @@ p,
     font-size: 3rem;
 }
 
+/* =========  COLOR STYLES  ========= */
 .text-link.text-dark:hover {
     /* if text is dark and is linnk */
     color: var(--text-dark);
@@ -270,8 +271,6 @@ a {
 a:hover {
     color: var(--text-light); /* Set the link hover color to white */
 }
-
-/* =========  COLOR STYLES  ========= */
 
 /* =========  END COLOR STYLES  ========= */
 
@@ -383,12 +382,19 @@ p > .text-large {
 /* ========= END FLEX CLASSES ========= */
 
 /* ------- CUSTOM ELEMENT STYLES ------ */
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+}
 .footer-logo {
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 .footer-link {
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding-top: 0.75rem;
 }
 .footer-heading {
@@ -397,6 +403,15 @@ p > .text-large {
 }
 .footer-text {
     font-size: 1.1rem;
+}
+.footer-divider {
+    border-top: 1px solid var(--mid-grey);
+}
+.footer-col-1 {
+    flex-basis: fill;
+}
+.site-map {
+    flex-basis: fill;
 }
 .custom-form-container {
     width: 100%; /* Set width to fill viewport width on mobile */
@@ -508,7 +523,7 @@ p > .text-large {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
     transition: transform 0.2s; /* adds a short delay in effect */
 }
@@ -527,14 +542,13 @@ p > .text-large {
 
 .card-heading {
     font-size: 1.2rem;
-    line-height: 1.2rem;
-    margin: var(--margin-small) 0 var(--margin-medium); /* top | right&left | btm */
-    text-align: left;
+    line-height: inherit;
+    margin: var(--margin-small) 0 0 0;
     text-transform: uppercase;
 }
 
 .card-description {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--text-light);
     text-align: left;
 }
@@ -576,7 +590,7 @@ p > .text-large {
 }
 
 /* ========= TABLET ========= */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .event-container {
         padding: 2% 3%;
     }
@@ -641,6 +655,30 @@ p > .text-large {
     .card-heading {
         font-size: 1.5rem;
     }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row-reverse;
+        justify-content: start;
+    }
+    .footer-logo {
+        width: 65%;
+        height: auto;
+    }
+    .footer-divider {
+        border-right: 1px solid var(--mid-grey);
+        border-top: none;
+    }
+    .footer-col-1 {
+        flex-basis: 35%;
+    }
+    .site-map {
+        flex-basis: 65%;
+    }
+    .position {
+        order: 2;
+    }
 }
 
 /* ========= LARGE LAPTOPS  ========= */
@@ -687,6 +725,12 @@ p > .text-large {
         width: 85%; /* Set width to 50% */
         margin: 0 auto; /* Center the form */
         margin-top: 5rem;
+    }
+    .footer-col-1 {
+        flex-basis: 35%;
+    }
+    .site-map {
+        flex-basis: 65%;
     }
 }
 /* ========= DESKTOPS, 992px and up ========= */

@@ -5,12 +5,9 @@ import "../../index.css";
 
 export default function Footer() {
     return (
-        
         // NEW FOOTER - PROPOSAL ACCEPTED 07/09/2024
-        <footer className="flex-container mt-4 pr-3 pl-3 ">
-            <div
-                style={{ borderRight: "1px solid var(--mid-grey" }}
-                className="flex-col width-30 pb-3 pr-3">
+        <footer className="footer mt-3 ml-3 mr-3">
+            <div className="mb-3 pr-2 footer-col-1 footer-divider position">
                 <a href="/index.html">
                     <img
                         className="footer-logo mb-3"
@@ -34,8 +31,8 @@ export default function Footer() {
                 </a>
             </div>
 
-            <div className="flex-container space-between width-70 pl-3">
-                <div className="flex-col flex-1 pb-5 ">
+            <div className="flex-container site-map mb-3 mt-3 ml-3">
+                <div className="flex-col flex-1 pb-3 space-between">
                     <p className="mb-2 uppercase footer-heading">Events</p>
                     <div className="flex-col">
                         <a href="./Event" className="footer-link">
@@ -50,7 +47,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex-col flex-1 pb-5 ">
+                <div className="flex-col flex-1 pb-3 ">
                     <p className="mb-2 uppercase footer-heading">Company</p>
                     <div className="flex-col ">
                         <a href="/#" className="footer-link">
