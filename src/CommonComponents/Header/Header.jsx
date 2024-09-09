@@ -37,13 +37,13 @@ export const Header = () => {
     }, []);
 
     return (
-        <header className="flex-container space-between align-center pt-1 pb-1 mb-5">
+        <header className="flex-container space-between  align-vertical-middle pt-1 pr-2 pb-1 pl-2">
             <div style={{ display: "flex" }}>
                 <a href="/">
                     <img
-                        src="./AVConLogoWhite.png"
+                        src="./AVConLogoWhiteNoBG.png"
                         alt="AV Con"
-                        width={isMobile ? "20%" : "30%"}
+                        width={isMobile ? "20%" : "20%"}
                     />
                 </a>
             </div>
@@ -58,37 +58,106 @@ export const Header = () => {
                         onClick={handleMobileToggle}>
                         ☰
                         {showMobileMenu && (
-                            <p
+                            <div
                                 style={{
-                                    backgroundColor: "#07101D",
+                                    backgroundColor:
+                                        "var(--background-dark-98)",
                                     position: "fixed",
                                     top: 0,
                                     right: 0,
                                     bottom: 0,
                                     left: 0,
                                     zIndex: 100,
+                                    overflowY: "scroll", // Ensure scroll if content overflows
+                                    padding: "2rem", // Provide some padding for spacing
                                 }}>
-                                <ul style={{ listStyleType: "none" }}>
-                                    {/* Links inside the menu */}
-                                    <li style={{ padding: "2% 10%" }}>
-                                        <a href="./Event">EVENT INFO</a>
+                                <ul
+                                    className=""
+                                    style={{
+                                        listStyleType: "none",
+                                        padding: 0,
+                                    }}>
+                                    {/* EVENT INFO Link with Dropdown */}
+                                    <li style={{ padding: "1rem 0" }}>
+                                        <div>
+                                            <span>EVENT INFO</span>
+                                            <ul
+                                                className="dropdown-menu"
+                                                style={{
+                                                    listStyleType: "none",
+                                                    padding: "1rem",
+                                                }}>
+                                                {/* Add 'X' that closes menu 
+                                                - align left to avoid mis-taps*/}
+
+                                                <li>
+                                                    <a href="./EventSchedule">
+                                                        EVENT SCHEDULE
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./SpeakersPresenters">
+                                                        SPEAKERS &amp;
+                                                        PRESENTERS
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./FlightSim">
+                                                        AVCON XTRA: THE FLIGHT
+                                                        SIM CHALLENGE
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </li>
-                                    <li style={{ padding: "2% 10%" }}>
-                                        <a href="./EventSchedule">
-                                            EVENT SCHEDULE
+
+                                    {/* ABOUT AVCON Link with Dropdown */}
+                                    <li style={{ padding: "1rem 0" }}>
+                                        <div>
+                                            <span>ABOUT AVCON</span>
+                                            <ul
+                                                className="dropdown-menu"
+                                                style={{
+                                                    listStyleType: "none",
+                                                    padding: "1rem",
+                                                }}>
+                                                <li>
+                                                    <a href="./News">
+                                                        NEWS &amp; UPDATES
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./SponsorsPartners">
+                                                        SPONSORS &amp; PARTNERS
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./AviationPathwayPortal">
+                                                        AVIATION PATHWAY PORTAL
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    {/* Other Links */}
+                                    <li style={{ padding: "1rem 0" }}>
+                                        <a href="./Contact">CONTACT US</a>
+                                    </li>
+                                    <li style={{ padding: "1rem 0" }}>
+                                        <a href="./ExhibitorRegistration">
+                                            EXHIBITOR REGISTRATION
                                         </a>
                                     </li>
-                                    <li style={{ padding: "2% 10%" }}>
-                                        <a href="./SpeakersPresenters">
-                                            SPEAKERS &amp; PRESENTERS
-                                        </a>
+                                    <li style={{ padding: "1rem 0" }}>
+                                        <a href="./BookTickets">GET TICKETS</a>
                                     </li>
-                                    {/* Add remaining links here */}
                                 </ul>
-                            </p>
+                            </div>
                         )}
                     </div>
                 ) : (
+                    // Desktop view logic
                     <h6
                         style={{
                             display: "flex", // Change from grid to flex
@@ -125,7 +194,7 @@ export const Header = () => {
                                         top: "100%",
                                         left: 0,
                                         backgroundColor:
-                                            "var(--background-dark",
+                                            "var(--background-dark-98",
                                         padding: "10px",
                                         border: "1px white solid",
                                         textAlign: "left",
@@ -180,7 +249,7 @@ export const Header = () => {
                                         top: "100%",
                                         left: 0,
                                         backgroundColor:
-                                            "var(--background-dark-75)",
+                                            "var(--background-dark-85)",
                                         padding: "10px",
                                         border: "1px white solid",
                                         textAlign: "left",

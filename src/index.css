@@ -11,7 +11,8 @@
 
     /* color palette */
     --background-dark: #041326;
-    --background-dark-75: rgba(4, 19, 38, 0.75); /* bg-dark with 85% opacity */
+    --background-dark-98: rgba(4, 19, 38, 0.98);
+    --background-dark-80: S rgba(4, 19, 38, 0.8);
     --background-light: #ffffff;
     --text-light: #ffffff;
     --text-dark: #041326;
@@ -47,6 +48,7 @@ to give more padding/margin on large devices */
 .pt-3 {
     padding-top: var(--padding-large);
 }
+
 .pb-1 {
     padding-bottom: var(--padding-small);
 }
@@ -65,6 +67,7 @@ to give more padding/margin on large devices */
 .pl-3 {
     padding-left: var(--padding-large);
 }
+
 .pr-1 {
     padding-right: var(--padding-small);
 }
@@ -85,6 +88,7 @@ to give more padding/margin on large devices */
 .mb-3 {
     margin-bottom: var(--margin-large);
 }
+
 .mt-1 {
     margin-top: var(--margin-small);
 }
@@ -94,6 +98,7 @@ to give more padding/margin on large devices */
 .mt-3 {
     margin-top: var(--margin-large);
 }
+
 .ml-1 {
     margin-left: var(--padding-small);
 }
@@ -103,6 +108,7 @@ to give more padding/margin on large devices */
 .ml-3 {
     margin-left: var(--padding-large);
 }
+
 .mr-1 {
     margin-right: var(--padding-small);
 }
@@ -112,6 +118,40 @@ to give more padding/margin on large devices */
 .mr-3 {
     margin-right: var(--padding-large);
 }
+
+/* Hamburger menu styles */
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-menu li {
+    padding: var(--padding-large) 0;
+}
+
+.dropdown-menu li {
+    padding-top: var(--padding-medium);
+    padding-bottom: var(--padding-medium);
+}
+
+/* Dropdown styling for always-visible dropdowns */
+.mobile-menu li ul {
+    padding-left: 1rem; /* Indent dropdown items */
+}
+
+.mobile-menu li ul li {
+    padding: 0.5rem 0; /* Adjust padding for dropdown items */
+}
+
+/* Additional styling to ensure dropdown items look consistent */
+.mobile-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+/* ====== End hambuger styles ====== */
 
 /* Media Queries for Larger Screens */
 
@@ -261,7 +301,7 @@ p > .text-large {
     font-weight: 800; /* extra bold */
     /* border: 1px solid var(--text-light); */
     border-radius: 2px;
-    background-color: var(--background-dark-75);
+    background-color: var(--background-dark-80);
 }
 .btn-secondary {
     padding: 15px;

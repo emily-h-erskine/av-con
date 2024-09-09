@@ -6,20 +6,18 @@ import "../index.css";
 
 export default function FirstImageAndText() {
     return (
-        <Box sx={{ padding: { xs: "0 2%", md: "5% 5%" } }}>
+        <Box className="mb-3" sx={{ padding: { xs: "0 2%", md: "0% 5%" } }}>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={7}>
-                    <div>
-                        <img
-                            src={ApprenticePhoto}
-                            alt="Aviation apprentices learning about an aircraft engine"
-                            style={{
-                                width: "100%",
-                                maxWidth: "100%",
-                                mixBlendMode: "luminosity",
-                            }}
-                        />
-                    </div>
+                    <img
+                        src={ApprenticePhoto}
+                        alt="Aviation apprentices learning about an aircraft engine"
+                        style={{
+                            width: "100%",
+                            maxWidth: "100%",
+                            mixBlendMode: "luminosity",
+                        }}
+                    />
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <div className="flex-container-col space-between">
