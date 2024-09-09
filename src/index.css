@@ -305,13 +305,14 @@ p > .text-large {
 
 /* ------ BUTTON STYLES ------ */
 .btn-primary {
+    padding: 16px 32px;
     font-weight: 800; /* extra bold */
     /* border: 1px solid var(--text-light); */
     border-radius: 2px;
     background-color: var(--background-dark-80);
 }
 .btn-secondary {
-    padding: 15px;
+    padding: 16px 32px;
     border-radius: 2px;
     background-color: var(--light-grey);
     width: fit-content;
@@ -417,6 +418,26 @@ p > .text-large {
     width: 100%; /* Set width to fill viewport width on mobile */
     margin: 0 auto; /* Center the form */
     margin-top: 3rem;
+}
+
+.exhibitor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.exhibitor-inner-container {
+    display: flex;
+    flex-direction: column;
+}
+.exhibitor-container h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.exhibitor-container a {
+    color: var(--text-dark);
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 /* ------------- END CUSTOM ELEMENT STYLES ------------- */
@@ -637,9 +658,7 @@ p > .text-large {
     .link-text {
         font-size: 1rem;
     }
-    .underline-text {
-        text-decoration: underline;
-    }
+
     .custom-form-container {
         width: 100%; /* Set width to 50% */
         margin: 0 auto; /* Center the form */
@@ -678,6 +697,27 @@ p > .text-large {
     }
     .position {
         order: 2;
+    }
+
+    .exhibitor-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .exhibitor-inner-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .exhibitor-container h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        flex-basis: fill;
+    }
+
+    .exhibitor-container a {
+        /* color: var(--text-dark); */
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }
 

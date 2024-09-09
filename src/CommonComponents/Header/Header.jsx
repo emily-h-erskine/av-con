@@ -71,12 +71,7 @@ export const Header = () => {
                                     overflowY: "scroll", // Ensure scroll if content overflows
                                     padding: "2rem", // Provide some padding for spacing
                                 }}>
-                                <ul
-                                    className=""
-                                    style={{
-                                        listStyleType: "none",
-                                        padding: 0,
-                                    }}>
+                                <ul className="">
                                     {/* EVENT INFO Link with Dropdown */}
                                     <li style={{ padding: "1rem 0" }}>
                                         <div>

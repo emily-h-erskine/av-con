@@ -17,7 +17,7 @@ import "../index.css";
 
 export default function Highlights() {
     return (
-        <Box sx={{ padding: { xs: "0 5%", md: "0 10%" } }}>
+        <Box className="mt-3 " sx={{ padding: { xs: "0 5%", md: "0 10%" } }}>
             <Grid container spacing={2}>
                 <Grid>
                     <ul className="card-container">
@@ -63,30 +63,31 @@ export default function Highlights() {
                         />
                     </ul>
                 </Grid>
-                {/* <Grid item xs={12} sm={6}>
-                    <div style={{ textAlign: "center" }}>
-                        <img
-                            src={AircorpsImage}
-                            alt="Air Corps Hellicopter"
-                            style={{
-                                width: "100%",
-                                maxWidth: "100%",
-                                mixBlendMode: "luminosity",
-                            }}
-                        />
-                    </div>
-                </Grid> */}
             </Grid>
-            <hr />
-            <div style={{ padding: "0 5%" }}>
-                <h6>Exhibitor Inquiries:</h6>
-                <p>
-                    If you are interested in showcasing your products or
-                    services at AvCon:{" "}
-                    <u>
-                        <a href="./ExhibitorRegistration">click here</a>
-                    </u>
-                </p>
+            <hr className="mt-3 mb-3" />
+            <div className="exhibitor-container mb-3 mt-3 pb-3 pt-3">
+                <h3 className="exhibitor-heading mb-3">
+                    Connect with the next generation of Aviation Professionals
+                </h3>
+                <div className="exhibitor-inner-container mt-1">
+                    <h4 className="large-text uppercase mb-1">
+                        Become an exhibitor
+                    </h4>
+
+                    <p className="mb-3">
+                        Put your product in front of 6000 enthusiasts and the
+                        current industry experts, and future best and bright of
+                        the aviation industry.
+                    </p>
+                    <a
+                        role="button"
+                        className="btn-secondary mt-3"
+                        href="./ExhibitorRegistration">
+                        <span className="text-dark uppercase">
+                            Book my exhibit
+                        </span>
+                    </a>
+                </div>
             </div>
         </Box>
     );
