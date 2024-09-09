@@ -1,26 +1,26 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import Card from "../CommonComponents/Card/Card";
+
 // import AircorpsImage from "./HomePageImages/AirCorpsImage.jpg";
-import StudentsImg from "./HomePageImages/students_and_aerospace.jpg";
-import CuttingEdgeImg from "./HomePageImages/cutting-edge-tech.jpg";
-import HandsOnImg from "./HomePageImages/hands-on.jpg";
-import CareerImg from "./HomePageImages/fin-career.jpg";
-import PilotExpImg from "./HomePageImages/flight-sim.jpg";
-import InspirationImg from "./HomePageImages/be-inspired.jpg";
-import GlobalKnowledgeImg from "./HomePageImages/knowledge.jpg";
+import StudentsImg from "./HomePageImages/students_and_aerospace.png";
+import CuttingEdgeImg from "./HomePageImages/cutting-edge-tech.png";
+import HandsOnImg from "./HomePageImages/hands-on.png";
+import CareerImg from "./HomePageImages/fin-career.png";
+import PilotExpImg from "./HomePageImages/flight-sim.png";
+import InspirationImg from "./HomePageImages/be-inspired.png";
+import GlobalKnowledgeImg from "./HomePageImages/knowledge.png";
 import DesignChallengeImg from "./HomePageImages/design-challenge.png";
 
-import Card from "../CommonComponents/Card/Card";
+import "../index.css";
 
 export default function Highlights() {
     return (
         <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
             <Grid container spacing={2}>
                 <Grid>
-                    <h6>Highlights</h6>
-
-                    <ul className="flex-container wrap">
+                    <ul className="card-container">
                         <Card
                             imageSrc={StudentsImg}
                             heading="Students and Aerospace"
