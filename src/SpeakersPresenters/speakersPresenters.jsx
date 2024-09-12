@@ -24,6 +24,9 @@ import AnthonyAttoumani from "./PresenterSpeakerImages/Anthony Attoumani .jpg";
 import GerryHumphreys from "./PresenterSpeakerImages/GerryHumphreys.jpg";
 import PaulKennedy from "./PresenterSpeakerImages/PaulKennedy.jpg";
 import RuthBagnell from "./PresenterSpeakerImages/RuthBagnell.jpg";
+import JimGavin from "./PresenterSpeakerImages/JimGavin.jpg";
+import EndaWalsh from "./PresenterSpeakerImages/endawalsh.jpeg";
+import CaitrionaMurphy from "./PresenterSpeakerImages/CaitrionaMurphy.jpg";
 
 export default function SpeakersPresentors() {
     return (
@@ -360,6 +363,45 @@ export default function SpeakersPresentors() {
                                 SpeakerImage={RuthBagnell}
                                 SpeakerName="Ruth Bagnell"
                                 SpeakerBio="Ruth Bagnell is a key figure in Irish aviation, serving as an Airworthiness Inspector with the Irish Aviation Authority. With over two decades of experience, she began her career as an aeronautical engineer from the University of Limerick, contributing significantly to aviation engineering. Ruth's passion for aviation is evident in her obtaining a Private Pilot's License, offering her valuable insights into flight operations that enhance her role in aircraft safety and compliance. As an Airworthiness Inspector, she ensures that aircraft meet strict safety standards, a responsibility she approaches with the perspective of a pilot. In addition to her technical expertise, Ruth is skilled in Compliance and Safety Management Systems, ensuring that aviation operations adhere to rigorous regulations. Her deep knowledge of International Aviation Regulation is vital in a globally connected industry. Ruth remains active in the General Aviation community, promoting knowledge exchange and fostering industry relationships, solidifying her as a respected leader in Irish aviation."
+                            />
+                        </Grid>
+                        <Grid
+                            item
+                            xs={12}
+                            md={4}
+                            lg={4}
+                            xl={4}
+                            style={{ padding: "3%" }}>
+                            <Speaker
+                                SpeakerImage={JimGavin}
+                                SpeakerName="Jim Gavin"
+                                SpeakerBio="Jim Gavin is the Chief Operations Officer of the Irish Aviation Authority. A holder of an Airline Transport Pilots License, Jim joined the Irish aviation regulator in 2011 as a Flight Operations Inspector (Airlines Standards) with his last Type Rating on the Airbus A320 family of aircraft. Since then Jim has held various management positions and regulatory roles across flight operations, airworthiness, air traffic management/air navigation services, airspace, unmanned aircraft systems (drones) and aviation security. Jim has 30 years of experience in the aviation industry and is a former Commission Officer and military pilot with 20 years of service in Óglaigh na hÉireann | The Irish Defence Forces. Jim was awarded a Doctor of Philosophy (Honoris Causa) from Dublin City University and holds a BSc (Hons) in Management and Aeronautical Studies (with 1st Class Honours) and a Diploma in Management from Dublin Institute of Technology, a Diploma in Finance from City Colleges Ireland and a Diploma in Leadership from National University of Ireland, Maynooth. Jim was also awarded the Freedom of Dublin City by the Dublin City Council."
+                            />
+                        </Grid>
+                        <Grid
+                            item
+                            xs={12}
+                            md={4}
+                            lg={4}
+                            xl={4}
+                            style={{ padding: "3%" }}>
+                            <Speaker
+                                SpeakerImage={EndaWalsh}
+                                SpeakerName="Enda Walsh"
+                                SpeakerBio="Enda Walsh serves as the UAS (Unmanned Aircraft Systems) Manager at the Irish Aviation Authority (IAA), where he oversees the development and regulation of drone operations across Ireland. With a deep understanding of aviation safety and emerging technologies, Walsh plays a pivotal role in shaping the regulatory framework for UAS operations, ensuring they meet the highest safety standards while fostering innovation. In his position, Walsh is responsible for managing the safe integration of drones into Irish airspace, overseeing compliance with both national and European regulations. His work includes liaising with various stakeholders, from drone operators to commercial enterprises, to promote safe and efficient UAS usage in areas such as aerial surveying, delivery services, and emergency response. Walsh's leadership is key to navigating the fast-growing drone industry, ensuring that Ireland remains at the forefront of UAS advancements while maintaining a strong commitment to public safety and airspace management."
+                            />
+                        </Grid>
+                        <Grid
+                            item
+                            xs={12}
+                            md={4}
+                            lg={4}
+                            xl={4}
+                            style={{ padding: "3%" }}>
+                            <Speaker
+                                SpeakerImage={CaitrionaMurphy}
+                                SpeakerName="Caitriona Murphy"
+                                SpeakerBio="Caitriona Murphy is an accomplished aviation professional with over 23 years of experience. She reached a significant milestone early in her career, becoming a commander at just 24. Since 2001, Caitriona has held key positions at Aer Arann, Stobart Air, and Emerald Airlines, serving as First Officer, Captain, Line Training and Check Captain, TRI, TRE, and Chief Pilot. She has accumulated over 9,000 flight hours on ATR turboprops and Embraer jets, along with 2,000 hours instructing and examining commercial pilots. During her tenure, Caitriona successfully integrated Embraer aircraft onto the Stobart Air AOC and managed training for London City Steep Approach operations. As Chief Pilot and Fleet Manager, she led several operational improvements, including the introduction of Electronic Flight Bags (EFB) for the Embraer fleet. Most recently, Caitriona began her dream role as a Flight Operations Inspector with the Irish Aviation Authority, where she remains dedicated to advancing within the aviation sector, developing new skills, and embracing challenges in her field."
                             />
                         </Grid>
                     </Grid>
