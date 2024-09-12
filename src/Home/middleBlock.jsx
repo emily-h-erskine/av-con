@@ -39,15 +39,15 @@ export default function MiddleBlockOfText() {
                             <p className="text-light">
                                 <b>Location:</b>
                             </p>
-                            <p className="text-light">
+                            <p className="text-light text-center">
                                 Irish Air Corps, Casement Aerodrome, Baldonnel,
                                 County Dublin
                             </p>
                             <button
-                                className="btn-tertiary"
+                                className="btn-tertiary mb-2"
                                 name="Get directions Button">
                                 <a
-                                    className="pt-1 pb-1 pl-2 pr-3 flex-container"
+                                    className="pt-1 pb-1 pl-2 pr-3 flex-container align-center"
                                     href="https://www.google.com/maps/search/?api=1&query=Irish+Air+Corps,+Casement+Aerodrome,+Baldonnel,+County+Dublin"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export default function MiddleBlockOfText() {
                                 alignItems: "center", // Aligns items to the center horizontally
                                 gap: "10px", // Adds space between items
                             }}
-                            className="my-2 ">
+                            className="mb-3">
                             <p className="text-light">
                                 <b>Date:</b>
                             </p>
@@ -112,7 +112,9 @@ export default function MiddleBlockOfText() {
                                         />
                                     </svg>
 
-                                    <p className="text-dark">
+                                    <p
+                                        style={{ color: "var(--text-dark" }}
+                                        className="text-dark ">
                                         Add to Google Calendar
                                     </p>
                                 </a>

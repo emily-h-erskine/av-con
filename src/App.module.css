@@ -2,6 +2,21 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
+
+    /* color palette */
+    --background-dark: #041326;
+    --background-dark-98: rgba(4, 19, 38, 0.98);
+    --background-dark-80: rgba(4, 19, 38, 0.8);
+    --background-light: #ffffff;
+    --text-light: #ffffff;
+    --text-dark: #041326;
+    --submit-green: #4caf50;
+
+    /* the following should be renamed semantically when purpose of color is defined */
+    --light-grey: #b3b9bd;
+    --mid-grey: #98a1a6;
+    --mid-blue: #0c2840;
+    --font-sans: "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,44 +34,48 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    background: #07101d;
+    font-family: var(--font-sans);
+    background: var(--background-dark);
 }
 
 a {
-    color: #ffffff; /* Set the link color to white */
+    color: var(--text-light); /* Set the link color to white */
     text-decoration: none;
 }
 a:hover {
-    color: #ffffff; /* Set the link hover color to white */
+    color: var(--light-grey); /* Set the link hover color to white */
 }
 
 p {
-    color: #ffffff; /* Set the link color to white */
+    color: var(--text-light); /* Set the link color to white */
     text-decoration: none;
     font-size: small;
 }
 
+p > .text-dark {
+    color: var(--text-dark);
+}
+
 button {
-    background-color: #0d1e31;
+    background-color: var(--background-dark);
     border: none;
     border-radius: 10px;
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 .AppHeader {
-    background-color: #07101d;
+    background-color: var(--background-dark);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(5px + 2vmin);
-    color: white;
+    color: var(--text-light);
 }
 
 .App-link {
-    color: #61dafb;
+    color: var(--text-light);
 }
 
 @keyframes App-logo-spin {
@@ -105,8 +124,8 @@ button {
 .submit-button {
     padding: 15px;
     width: 100%;
-    background-color: #4caf50;
-    color: #fff;
+    background-color: var(--submit-green);
+    color: var(--text-light);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -114,7 +133,7 @@ button {
 }
 
 .submit-button:hover {
-    background-color: #45a049;
+    background-color: var(--submit-green);
 }
 
 .alert-message {

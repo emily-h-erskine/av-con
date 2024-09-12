@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeImageBanner() {
     return (
-        <div style={{ position: "relative" }}>
+        <div className="mb-3" style={{ position: "relative" }}>
             <img
                 src="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg"
                 alt="Aeroplanes in a hanger"

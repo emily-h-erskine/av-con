@@ -6,7 +6,9 @@ import "../index.css";
 
 export default function FirstImageAndText() {
     return (
-        <Box className="mb-3" sx={{ padding: { xs: "0 2%", md: "0% 5%" } }}>
+        <Box
+            className="mt-3 mb-3"
+            sx={{ padding: { xs: "0 2%", md: "0% 5%" } }}>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={7}>
                     <img
@@ -21,16 +23,16 @@ export default function FirstImageAndText() {
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <div className="flex-container-col space-between">
-                        <h3 className="mb-1">
+                        <h3 className="mb-2 ">
                             Soar into the future of aviation at AvCon 2024!
                         </h3>
                         <div className="flex-container-col space-between">
-                            <p className="text-right mb-1">
+                            <p className="text-left mb-1">
                                 Calling all primary, secondary, and 3rd level
                                 students, to experience an electrifying journey
                                 through the skies of innovation.
                             </p>
-                            <p className="text-right">
+                            <p className="text-left">
                                 <a
                                     href="./BookTickets"
                                     className="link-text underline-text"

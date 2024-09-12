@@ -7,7 +7,7 @@ import Card from "../CommonComponents/Card/Card";
 import StudentsImg from "./HomePageImages/students_and_aerospace.png";
 import CuttingEdgeImg from "./HomePageImages/cutting-edge-tech.png";
 import HandsOnImg from "./HomePageImages/hands-on.png";
-import CareerImg from "./HomePageImages/fin-career.png";
+import CareerImg from "./HomePageImages/career.png";
 import PilotExpImg from "./HomePageImages/flight-sim.png";
 import InspirationImg from "./HomePageImages/be-inspired.png";
 import GlobalKnowledgeImg from "./HomePageImages/knowledge.png";
@@ -17,8 +17,8 @@ import "../index.css";
 
 export default function Highlights() {
     return (
-        <Box className="mt-3 " sx={{ padding: { xs: "0 5%", md: "0 10%" } }}>
-            <Grid container spacing={2}>
+        <Box className="" sx={{ padding: { xs: "0 2%", md: "0 10%" } }}>
+            <Grid container spacing={0}>
                 <Grid>
                     <ul className="card-container">
                         <Card
@@ -64,12 +64,12 @@ export default function Highlights() {
                     </ul>
                 </Grid>
             </Grid>
-            <hr className="mt-3 mb-3" />
-            <div className="exhibitor-container mb-3 mt-3 pb-3 pt-3">
-                <h3 className="exhibitor-heading mb-3">
+            <hr className="mb-3" />
+            <div className="exhibitor-container mb-3 mt-3 ">
+                <h3 className="exhibitor-heading mb-2">
                     Connect with the next generation of Aviation Professionals
                 </h3>
-                <div className="exhibitor-inner-container mt-1">
+                <div className="exhibitor-inner-container">
                     <h4 className="large-text uppercase mb-1">
                         Become an exhibitor
                     </h4>

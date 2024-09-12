@@ -218,7 +218,7 @@ export const Header = () => {
                                     style={{
                                         position: "absolute", // ensures the dropdown does not affect page layout
                                         zIndex: "100", // ensures dorpdown appears on top of other page elements
-                                        top: "100%",
+                                        top: "0",
                                         left: 0,
                                         backgroundColor:
                                             "var(--background-dark-98",
@@ -300,35 +300,35 @@ export const Header = () => {
                                     </a>
                                 </p>
                             )}
+                            <a
+                                style={{
+                                    whiteSpace: "nowrap",
+                                    minWidth: "max-content",
+                                }}
+                                href="./Contact">
+                                CONTACT US
+                            </a>
+                            <a
+                                style={{
+                                    whiteSpace: "nowrap",
+                                    minWidth: "max-content",
+                                }}
+                                href="./ExhibitorRegistration">
+                                EXHIBITOR REGISTRATION
+                            </a>
+                            <a
+                                role="button"
+                                style={{
+                                    padding: "0.75rem",
+                                    // border: "1px solid var(--background-light",
+                                    borderRadius: "4px",
+                                    whiteSpace: "nowrap",
+                                    minWidth: "max-content",
+                                }}
+                                href="./BookTickets">
+                                GET TICKETS
+                            </a>
                         </div>
-                        <a
-                            style={{
-                                whiteSpace: "nowrap",
-                                minWidth: "max-content",
-                            }}
-                            href="./Contact">
-                            CONTACT US
-                        </a>
-                        <a
-                            style={{
-                                whiteSpace: "nowrap",
-                                minWidth: "max-content",
-                            }}
-                            href="./ExhibitorRegistration">
-                            EXHIBITOR REGISTRATION
-                        </a>
-                        <a
-                            role="button"
-                            style={{
-                                padding: "0.75rem",
-                                // border: "1px solid var(--background-light",
-                                borderRadius: "4px",
-                                whiteSpace: "nowrap",
-                                minWidth: "max-content",
-                            }}
-                            href="./BookTickets">
-                            GET TICKETS
-                        </a>
                     </h6>
                 )}
             </div>

@@ -21,17 +21,18 @@
     --light-grey: #b3b9bd;
     --mid-grey: #98a1a6;
     --mid-blue: #0c2840;
+
+    /* typefaces */
     --font-sans: "Inter", sans-serif;
 
-    /* Default (Mobile-First) for small screens (up to 768px) */
-
+    /* Spacing */
     --padding-small: 0.5rem;
     --padding-medium: 0.75rem;
     --padding-large: 1.25rem;
 
-    --margin-small: 0.5rem;
-    --margin-medium: 0.75rem;
-    --margin-large: 1rem;
+    --margin-small: 0.75rem;
+    --margin-medium: 1.25rem;
+    --margin-large: 2rem;
 }
 
 /* Padding Classes */
@@ -166,7 +167,7 @@ ul,
 
         --margin-small: 0.5rem;
         --margin-medium: 1rem;
-        --margin-large: 1.25rem;
+        --margin-large: 1.5rem;
     }
 
     /* resize card here */
@@ -259,7 +260,7 @@ p,
 }
 
 .text-large {
-    font-size: 3rem;
+    font-size: 2.1rem;
 }
 
 /* =========  COLOR STYLES  ========= */
@@ -292,7 +293,9 @@ p,
 .text-left {
     text-align: left;
 }
-
+.text-center {
+    text-align: center;
+}
 p > .text-large {
     font-size: 1.7rem;
 }
@@ -312,6 +315,7 @@ p > .text-large {
     /* border: 1px solid var(--text-light); */
     border-radius: 2px;
     background-color: var(--background-dark-80);
+    width: fit-content;
 }
 .btn-secondary {
     padding: 16px 32px;
@@ -325,6 +329,7 @@ p > .text-large {
     border-radius: 2px;
     background-color: var(--background-dark);
     width: fit-content;
+    text-align: center;
 }
 
 .custom-form-container {
@@ -355,7 +360,7 @@ p > .text-large {
 
 /* NOTE: following alignment classes to be applied to children of display:flex containers*/
 .align-center {
-    align-content: center;
+    justify-content: center;
 }
 .align-vertical-middle {
     align-items: center;
@@ -432,11 +437,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
 }
 .exhibitor-inner-container {
     display: flex;
     flex-direction: column;
+}
+.exhibitor-inner-container a {
+    align-self: center;
 }
 .exhibitor-container h3 {
     font-size: 1.75rem;
@@ -710,7 +717,7 @@ header {
     .exhibitor-container {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: start;
     }
     .exhibitor-inner-container {
         display: flex;
@@ -726,6 +733,7 @@ header {
         /* color: var(--text-dark); */
         font-size: 1.5rem;
         font-weight: 600;
+        align-self: start;
     }
 }
 
