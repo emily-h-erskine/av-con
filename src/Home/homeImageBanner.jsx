@@ -21,7 +21,7 @@ export default function HomeImageBanner() {
                     height: "100%",
                     mixBlendMode: "darken",
                     background:
-                        "linear-gradient(180deg, #var(--background-dark) 0%, rgba(7, 16, 29, 0) 100%)",
+                        "linear-gradient(180deg, var(--background-dark) 0%, rgba(7, 16, 29, 0) 100%)",
                 }}
             />
             <button

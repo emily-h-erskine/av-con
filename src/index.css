@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,7 +13,7 @@
     /* color palette */
     --background-dark: #041326;
     --background-dark-98: rgba(4, 19, 38, 0.98);
-    --background-dark-80: S rgba(4, 19, 38, 0.8);
+    --background-dark-80: rgba(4, 19, 38, 0.8);
     --background-light: #ffffff;
     --text-light: #ffffff;
     --text-dark: #041326;
@@ -120,6 +121,7 @@ to give more padding/margin on large devices */
 }
 
 /* Hamburger menu styles */
+ul,
 .mobile-menu ul {
     list-style-type: none;
     padding: 0;
@@ -269,7 +271,7 @@ a {
     color: var(--text-light); /* Set the link color to white */
 }
 a:hover {
-    color: var(--text-light); /* Set the link hover color to white */
+    color: var(--light-grey); /* Set the link hover color to white */
 }
 
 /* =========  END COLOR STYLES  ========= */
@@ -383,6 +385,12 @@ p > .text-large {
 /* ========= END FLEX CLASSES ========= */
 
 /* ------- CUSTOM ELEMENT STYLES ------ */
+header {
+    /* uncomment position and z-index for fixed nav */
+    /* position: fixed; */
+    /* z-index: 100; */
+    background-color: var(--background-dark);
+}
 .footer {
     display: flex;
     flex-direction: column;
