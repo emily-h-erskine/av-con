@@ -156,68 +156,6 @@ ul,
 
 /* ====== End hambuger styles ====== */
 
-/* Media Queries for Larger Screens */
-
-/* Tablets and small desktops (min-width: 768px) */
-@media (min-width: 768px) {
-    :root {
-        --padding-small: 0.5rem;
-        --padding-medium: 1rem;
-        --padding-large: 1.25rem;
-
-        --margin-small: 0.5rem;
-        --margin-medium: 1rem;
-        --margin-large: 1.5rem;
-    }
-
-    /* resize card here */
-    .card {
-        gap: 3rem;
-        flex-basis: calc(
-            40% - 0.5rem
-        ); /* Two cards per row, with space between */
-    }
-}
-
-/* Medium desktops (min-width: 992px) */
-@media (min-width: 992px) {
-    :root {
-        --padding-small: 0.75rem;
-        --padding-medium: 1.25rem;
-        --padding-large: 1.5rem;
-
-        --margin-small: 0.75rem;
-        --margin-medium: 1.25rem;
-        --margin-large: 1.5rem;
-    }
-}
-
-/* Large desktops (min-width: 1024px) */
-@media (min-width: 1024px) {
-    :root {
-        --padding-small: 1rem;
-        --padding-medium: 1.5rem;
-        --padding-large: 2rem;
-
-        --margin-small: 1rem;
-        --margin-medium: 1.5rem;
-        --margin-large: 2rem;
-    }
-}
-
-/* Extra-large desktops (min-width: 1200px) */
-@media (min-width: 1200px) {
-    :root {
-        --padding-small: 1.25rem;
-        --padding-medium: 1.75rem;
-        --padding-large: 2.5rem;
-
-        --margin-small: 1.25rem;
-        --margin-medium: 1.75rem;
-        --margin-large: 2.5rem;
-    }
-}
-
 /* ========= MOBILE DEVICES ========= */
 /* font styles */
 h1 {
@@ -455,6 +393,10 @@ header {
     font-weight: 600;
 }
 
+.card {
+    gap: 1rem;
+}
+
 /* ------------- END CUSTOM ELEMENT STYLES ------------- */
 
 /* ------  ------ */
@@ -645,6 +587,22 @@ header {
 
 /* ========= LARGE TABLET, NOTEBOOKS, SM LAPTOPS ========= */
 @media screen and (min-width: 768px) {
+    :root {
+        --padding-small: 0.5rem;
+        --padding-medium: 1rem;
+        --padding-large: 1.25rem;
+
+        --margin-small: 0.5rem;
+        --margin-medium: 1rem;
+        --margin-large: 1.5rem;
+    }
+
+    .card {
+        gap: 2.5rem;
+        flex-basis: calc(
+            40% - 1rem
+        ); /* Two cards per row, with space between */
+    }
     h1 {
         font-size: 2.5rem;
     }
@@ -739,6 +697,16 @@ header {
 
 /* ========= LARGE LAPTOPS  ========= */
 @media screen and(min-width: 992px) {
+    :root {
+        --padding-small: 0.75rem;
+        --padding-medium: 1.25rem;
+        --padding-large: 1.5rem;
+
+        --margin-small: 0.75rem;
+        --margin-medium: 1.25rem;
+        --margin-large: 1.5rem;
+    }
+
     .card-container {
         gap: 2rem;
     }
@@ -791,6 +759,16 @@ header {
 }
 /* ========= DESKTOPS, 992px and up ========= */
 @media screen and (min-width: 1024px) {
+    :root {
+        --padding-small: 1rem;
+        --padding-medium: 1.5rem;
+        --padding-large: 2rem;
+
+        --margin-small: 1rem;
+        --margin-medium: 1.5rem;
+        --margin-large: 2rem;
+    }
+
     .container header .header-nav-area #nav_container,
     .custom-form-container {
         width: 95%; /* Set width to 95 of viewport% */
@@ -813,7 +791,17 @@ header {
 }
 
 /* ========= EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) ========= */
-@media only screen and(min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+    :root {
+        --padding-small: 1.25rem;
+        --padding-medium: 1.75rem;
+        --padding-large: 2.5rem;
+
+        --margin-small: 1.25rem;
+        --margin-medium: 1.75rem;
+        --margin-large: 2.5rem;
+    }
+
     h1 {
         font-size: 3.5rem;
     }
@@ -823,7 +811,7 @@ header {
     }
 
     h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     h4 {
@@ -849,5 +837,19 @@ header {
         width: 95%;
         margin: 0 auto;
         margin-top: 6rem;
+    }
+    .btn-secondary,
+    .btn-tertiary {
+        padding: 4px 16px;
+    }
+    .card {
+        gap: 0rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .link-text {
+        font-size: 1.5rem;
+        font-weight: 400;
     }
 }

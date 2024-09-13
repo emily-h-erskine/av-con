@@ -185,7 +185,7 @@ export const Header = () => {
                     </div>
                 ) : (
                     // Desktop view logic
-                    <h6
+                    <div
                         style={{
                             display: "flex", // Change from grid to flex
                             gap: "4%", // Space between nav items
@@ -203,10 +203,13 @@ export const Header = () => {
                             }}
                             onMouseEnter={handleEventDropdownToggle}
                             onMouseLeave={handleEventDropdownToggle}>
-                            <a href="./Event">EVENT INFO</a>
+                            <a className=" link-text" href="./Event">
+                                EVENT INFO
+                            </a>
                             <img
                                 src={Dropdown}
                                 alt="Dropdown"
+                                className=" mr-2"
                                 style={{
                                     padding: "0 0 0 10px",
                                     width: "14px", // Set the width of the dropdown icon
@@ -217,30 +220,32 @@ export const Header = () => {
                                 <p
                                     style={{
                                         position: "absolute", // ensures the dropdown does not affect page layout
-                                        zIndex: "100", // ensures dorpdown appears on top of other page elements
-                                        top: "0",
+                                        zIndex: "1000", // ensures dorpdown appears on top of other page elements
+                                        top: "100%",
                                         left: 0,
                                         backgroundColor:
-                                            "var(--background-dark-98",
+                                            "var(--background-dark",
                                         padding: "10px",
                                         border: "1px white solid",
                                         textAlign: "left",
                                     }}>
                                     <a
-                                        className="uppercase"
+                                        className="uppercase link-text"
                                         href="./EventSchedule">
                                         EVENT SCHEDULE
                                     </a>
                                     <br />
                                     <br />
                                     <a
-                                        className="uppercase"
+                                        className="uppercase link-text"
                                         href="./SpeakersPresenters">
                                         SPEAKERS &amp; PRESENTERS
                                     </a>
                                     <br />
                                     <br />
-                                    <a className="uppercase" href="./FlightSim">
+                                    <a
+                                        className="uppercase link-text"
+                                        href="./FlightSim">
                                         AVCON XTRA: THE FLIGHT SIM CHALLENGE
                                     </a>
                                 </p>
@@ -256,12 +261,13 @@ export const Header = () => {
                             }}
                             onMouseEnter={handleAboutDropdownToggle}
                             onMouseLeave={handleAboutDropdownToggle}>
-                            <a className="uppercase" href="./About">
+                            <a className="uppercase link-text" href="./About">
                                 ABOUT AVCON
                             </a>
                             <img
                                 src={Dropdown}
                                 alt="Dropdown"
+                                className=" mr-2"
                                 style={{
                                     padding: "0 0 0 10px",
                                     width: "14px", // Set the width of the icon
@@ -276,25 +282,27 @@ export const Header = () => {
                                         top: "100%",
                                         left: 0,
                                         backgroundColor:
-                                            "var(--background-dark-85)",
+                                            "var(--background-dark)",
                                         padding: "10px",
                                         border: "1px white solid",
                                         textAlign: "left",
                                     }}>
-                                    <a className="uppercase" href="./News">
+                                    <a
+                                        className="uppercase link-text"
+                                        href="./News">
                                         NEWS &amp; UPDATES
                                     </a>
                                     <br />
                                     <br />
                                     <a
-                                        className="uppercase"
+                                        className="uppercase link-text"
                                         href="./SponsorsPartners">
                                         SPONSORS &amp; PARTNERS
                                     </a>
                                     <br />
                                     <br />
                                     <a
-                                        className="uppercase"
+                                        className="uppercase link-text mr-2"
                                         href="./AviationPathwayPortal">
                                         AVIATION PATHWAY PORTAL
                                     </a>
@@ -305,6 +313,7 @@ export const Header = () => {
                                     whiteSpace: "nowrap",
                                     minWidth: "max-content",
                                 }}
+                                className="link-text mr-2"
                                 href="./Contact">
                                 CONTACT US
                             </a>
@@ -313,6 +322,7 @@ export const Header = () => {
                                     whiteSpace: "nowrap",
                                     minWidth: "max-content",
                                 }}
+                                className="link-text mr-2"
                                 href="./ExhibitorRegistration">
                                 EXHIBITOR REGISTRATION
                             </a>
@@ -325,11 +335,12 @@ export const Header = () => {
                                     whiteSpace: "nowrap",
                                     minWidth: "max-content",
                                 }}
+                                className="link-text"
                                 href="./BookTickets">
                                 GET TICKETS
                             </a>
                         </div>
-                    </h6>
+                    </div>
                 )}
             </div>
         </header>
