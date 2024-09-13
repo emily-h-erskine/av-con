@@ -33,7 +33,7 @@ export default function Register() {
                         </div>
                         </Grid>
                     </Grid>
-                    <h5 style={{ textAlign: 'center' }}><b>Register here: https://streamyard.com/watch/4DN8GWpH2XCr</b></h5>
+                    <h5 style={{ textAlign: 'center' }}><b>Register here: <a href="https://streamyard.com/watch/4DN8GWpH2XCr">Click Here</a></b></h5>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
                             <div style={{ textAlign: 'center' }}>
@@ -51,7 +51,7 @@ export default function Register() {
                                     Don't miss this opportunity to engage with industry leaders and visionaries in aviation, space, tech and aerospace!
                                     If you have already registered your school or college to attend the event, you can register for the rest of your school to watch the event via our LIVE Stream.
                                     <br/><br/>
-                                    <b>For enquiries please email: hello@avcon.ie</b>
+                                    <b>For enquiries please email: <a href="mailto:hello@avcon.ie">hello@avcon.ie</a></b>
                                 </p>
                             </div>
                         </Grid>
