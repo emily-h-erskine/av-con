@@ -17,7 +17,7 @@ import "../index.css";
 
 export default function Highlights() {
     return (
-        <Box className="" sx={{ padding: { xs: "0 2%", md: "0 10%" } }}>
+        <Box sx={{ padding: { xs: "0 2%", md: "0 10%" } }}>
             <Grid container spacing={0}>
                 <Grid>
                     <ul className="card-container">

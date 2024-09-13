@@ -13,7 +13,7 @@
     /* color palette */
     --background-dark: #041326;
     --background-dark-98: rgba(4, 19, 38, 0.98);
-    --background-dark-80: rgba(4, 19, 38, 0.8);
+    --background-dark-90: rgba(4, 19, 38, 0.9);
     --background-light: #ffffff;
     --text-light: #ffffff;
     --text-dark: #041326;
@@ -35,6 +35,50 @@
     --margin-large: 2rem;
 }
 
+/* ========= MOBILE DEVICES ========= */
+/* font styles */
+h1 {
+    font-size: 2rem; /* Default font size for h1 */
+    line-height: 1.2; /* Adjust line height for better readability */
+}
+
+h2 {
+    font-size: 1.75rem; /* Default font size for h2 */
+    line-height: 1.3; /* Adjust line height for better readability */
+}
+
+h3 {
+    font-size: 1.5rem; /* Default font size for h3 */
+    line-height: 1.4; /* Adjust line height for better readability */
+}
+
+h4 {
+    font-size: 1.25rem; /* Default font size for h4 */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+h5 {
+    font-size: 1.1rem; /* Default font size for h5 */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+h6 {
+    font-size: 1rem; /* Default font size for h6 */
+    line-height: 1.7; /* Adjust line height for better readability */
+}
+
+p,
+.link-text {
+    font-size: 1rem; /* Default font size for paragraph */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+.underline-text {
+    text-decoration: underline;
+}
+
+.text-large {
+    font-size: 2.1rem;
+}
 /* Padding Classes */
 
 /* USAGE: these classes are applied to small devices, 
@@ -122,15 +166,14 @@ to give more padding/margin on large devices */
 }
 
 /* Hamburger menu styles */
-ul,
-.mobile-menu ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-.mobile-menu li {
+/* .mobile-menu li {
     padding: var(--padding-large) 0;
-}
+} */
 
 .dropdown-menu li {
     padding-top: var(--padding-medium);
@@ -154,114 +197,7 @@ ul,
     padding: 0.5rem 0;
 }
 
-/* ====== End hambuger styles ====== */
-
-/* Media Queries for Larger Screens */
-
-/* Tablets and small desktops (min-width: 768px) */
-@media (min-width: 768px) {
-    :root {
-        --padding-small: 0.5rem;
-        --padding-medium: 1rem;
-        --padding-large: 1.25rem;
-
-        --margin-small: 0.5rem;
-        --margin-medium: 1rem;
-        --margin-large: 1.5rem;
-    }
-
-    /* resize card here */
-    .card {
-        gap: 3rem;
-        flex-basis: calc(
-            40% - 0.5rem
-        ); /* Two cards per row, with space between */
-    }
-}
-
-/* Medium desktops (min-width: 992px) */
-@media (min-width: 992px) {
-    :root {
-        --padding-small: 0.75rem;
-        --padding-medium: 1.25rem;
-        --padding-large: 1.5rem;
-
-        --margin-small: 0.75rem;
-        --margin-medium: 1.25rem;
-        --margin-large: 1.5rem;
-    }
-}
-
-/* Large desktops (min-width: 1024px) */
-@media (min-width: 1024px) {
-    :root {
-        --padding-small: 1rem;
-        --padding-medium: 1.5rem;
-        --padding-large: 2rem;
-
-        --margin-small: 1rem;
-        --margin-medium: 1.5rem;
-        --margin-large: 2rem;
-    }
-}
-
-/* Extra-large desktops (min-width: 1200px) */
-@media (min-width: 1200px) {
-    :root {
-        --padding-small: 1.25rem;
-        --padding-medium: 1.75rem;
-        --padding-large: 2.5rem;
-
-        --margin-small: 1.25rem;
-        --margin-medium: 1.75rem;
-        --margin-large: 2.5rem;
-    }
-}
-
-/* ========= MOBILE DEVICES ========= */
-/* font styles */
-h1 {
-    font-size: 2rem; /* Default font size for h1 */
-    line-height: 1.2; /* Adjust line height for better readability */
-}
-
-h2 {
-    font-size: 1.75rem; /* Default font size for h2 */
-    line-height: 1.3; /* Adjust line height for better readability */
-}
-
-h3 {
-    font-size: 1.5rem; /* Default font size for h3 */
-    line-height: 1.4; /* Adjust line height for better readability */
-}
-
-h4 {
-    font-size: 1.25rem; /* Default font size for h4 */
-    line-height: 1.5; /* Adjust line height for better readability */
-}
-
-h5 {
-    font-size: 1.1rem; /* Default font size for h5 */
-    line-height: 1.6; /* Adjust line height for better readability */
-}
-
-h6 {
-    font-size: 1rem; /* Default font size for h6 */
-    line-height: 1.7; /* Adjust line height for better readability */
-}
-
-p,
-.link-text {
-    font-size: 1rem; /* Default font size for paragraph */
-    line-height: 1.6; /* Adjust line height for better readability */
-}
-.underline-text {
-    text-decoration: underline;
-}
-
-.text-large {
-    font-size: 2.1rem;
-}
+/* ====== End hamburger styles ====== */
 
 /* =========  COLOR STYLES  ========= */
 .text-link.text-dark:hover {
@@ -314,7 +250,7 @@ p > .text-large {
     font-weight: 800; /* extra bold */
     /* border: 1px solid var(--text-light); */
     border-radius: 2px;
-    background-color: var(--background-dark-80);
+    background-color: var(--background-dark-90);
     width: fit-content;
 }
 .btn-secondary {
@@ -386,7 +322,6 @@ p > .text-large {
 .width-70 {
     flex-basis: 70%;
 }
-
 /* ========= END FLEX CLASSES ========= */
 
 /* ------- CUSTOM ELEMENT STYLES ------ */
@@ -396,6 +331,15 @@ header {
     /* z-index: 100; */
     background-color: var(--background-dark);
 }
+
+.nav-link {
+    margin-right: 1.2rem;
+}
+
+.nav-link:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -643,104 +587,21 @@ header {
     }
 }
 
-/* ========= LARGE TABLET, NOTEBOOKS, SM LAPTOPS ========= */
 @media screen and (min-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 2.25rem;
-    }
-
-    h3 {
-        font-size: 1.125rem;
-    }
-
-    h4 {
-        font-size: 1.75rem;
-    }
-
-    h5 {
-        font-size: 1.5rem;
-    }
-
-    h6 {
+    p {
         font-size: 1.25rem;
     }
-
-    p,
     .link-text {
         font-size: 1rem;
     }
-
-    .custom-form-container {
-        width: 100%; /* Set width to 50% */
-        margin: 0 auto; /* Center the form */
-        margin-top: 5rem;
-    }
     .card-container {
-        gap: 1rem;
-    }
-    .card {
-        flex-basis: calc(50% - 0.5rem); /* Default for smaller screens */
-        flex-grow: 1;
-    }
-    .card-heading {
-        font-size: 1.5rem;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        flex-flow: row-reverse;
-        justify-content: start;
-    }
-    .footer-logo {
-        width: 65%;
-        height: auto;
-    }
-    .footer-divider {
-        border-right: 1px solid var(--mid-grey);
-        border-top: none;
-    }
-    .footer-col-1 {
-        flex-basis: 35%;
-    }
-    .site-map {
-        flex-basis: 65%;
-    }
-    .position {
-        order: 2;
-    }
-
-    .exhibitor-container {
-        display: flex;
-        flex-direction: row;
-        align-items: start;
-    }
-    .exhibitor-inner-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .exhibitor-container h3 {
-        font-size: 2rem;
-        font-weight: 500;
-        flex-basis: fill;
-    }
-
-    .exhibitor-container a {
-        /* color: var(--text-dark); */
-        font-size: 1.5rem;
-        font-weight: 600;
-        align-self: start;
+        gap: 3rem;
     }
 }
-
 /* ========= LARGE LAPTOPS  ========= */
 @media screen and(min-width: 992px) {
     .card-container {
-        gap: 2rem;
+        gap: 4rem;
     }
     .card {
         flex-basis: calc(50% - 1rem); /* Default for smaller screens */
@@ -770,9 +631,11 @@ header {
         font-size: 1.5rem;
     }
 
-    p,
-    .link-text {
+    p {
         font-size: 1.25rem;
+    }
+    .link-text {
+        font-size: 1rem;
     }
     .underline-text {
         text-decoration: underline;
