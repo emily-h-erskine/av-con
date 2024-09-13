@@ -27,6 +27,7 @@ import RuthBagnell from "./PresenterSpeakerImages/RuthBagnell.jpg";
 import JimGavin from "./PresenterSpeakerImages/JimGavin.jpg";
 import EndaWalsh from "./PresenterSpeakerImages/endawalsh.jpeg";
 import CaitrionaMurphy from "./PresenterSpeakerImages/CaitrionaMurphy.jpg";
+import Charlie from "./PresenterSpeakerImages/Charlie.jpg";
 
 export default function SpeakersPresentors() {
   return (
@@ -249,6 +250,13 @@ export default function SpeakersPresentors() {
                   SpeakerImage={CaitrionaMurphy}
                   SpeakerName="Caitriona Murphy"
                   SpeakerBio="Caitriona Murphy is an accomplished aviation professional with over 23 years of experience. She reached a significant milestone early in her career, becoming a commander at just 24. Since 2001, Caitriona has held key positions at Aer Arann, Stobart Air, and Emerald Airlines, serving as First Officer, Captain, Line Training and Check Captain, TRI, TRE, and Chief Pilot. She has accumulated over 9,000 flight hours on ATR turboprops and Embraer jets, along with 2,000 hours instructing and examining commercial pilots. During her tenure, Caitriona successfully integrated Embraer aircraft onto the Stobart Air AOC and managed training for London City Steep Approach operations. As Chief Pilot and Fleet Manager, she led several operational improvements, including the introduction of Electronic Flight Bags (EFB) for the Embraer fleet. Most recently, Caitriona began her dream role as a Flight Operations Inspector with the Irish Aviation Authority, where she remains dedicated to advancing within the aviation sector, developing new skills, and embracing challenges in her field."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={Charlie}
+                  SpeakerName="Charlie O'Neill"
+                  SpeakerBio="Charlie O'Neill is currently the Chairperson of the renowned Irish Aviation Students Association (IASA) and in her final year of studying Aviation Management at Dublin City University to graduate in 2025. The Irish Aviation Students' Association (IASA) is a non-profit organization aimed at supporting and connecting students and young professionals interested in the aviation and aerospace industries in Ireland. Founded by students for students, IASA provides a platform for networking, learning, and career development in these fields, and works to bridge the gap between education and employments in the flourishing Irish aviation industry."
                 />
               </Grid>
             </Grid>
