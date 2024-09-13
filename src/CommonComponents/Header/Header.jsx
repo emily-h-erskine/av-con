@@ -195,7 +195,9 @@ export const Header = () => {
                             onMouseEnter={handleEventDropdownToggle}
                             onMouseLeave={handleEventDropdownToggle}>
                             <div className="nav-link link-text">
-                                <a href="./Event">EVENT INFO</a>
+                                <a className="link-text" href="./Event">
+                                    EVENT INFO
+                                </a>
                                 <img
                                     src={Dropdown}
                                     alt="Dropdown icon"
@@ -214,7 +216,7 @@ export const Header = () => {
                                         top: "calc(100% + 10px)", // Adds 10px margin above the dropdown
                                         left: 0,
                                         backgroundColor:
-                                            "var(--background-dark-90)",
+                                            "var(--background-dark)",
                                         padding: "10px",
                                         border: "1px white solid",
                                         textAlign: "left",
@@ -227,13 +229,15 @@ export const Header = () => {
                                     <br />
                                     <br />
                                     <a
-                                        className="uppercase"
+                                        className="uppercase link-text"
                                         href="./SpeakersPresenters">
                                         SPEAKERS &amp; PRESENTERS
                                     </a>
                                     <br />
                                     <br />
-                                    <a className="uppercase" href="./FlightSim">
+                                    <a
+                                        className="uppercase link-text"
+                                        href="./FlightSim">
                                         AVCON XTRA: THE FLIGHT SIM CHALLENGE
                                     </a>
                                 </p>
@@ -273,7 +277,7 @@ export const Header = () => {
                                         zIndex: "1000", // ensures dorpdown appears on top of other page elements
                                         top: "calc(100% + 10px)", // Adds 10px margin above the dropdown                                        left: 0,
                                         backgroundColor:
-                                            "var(--background-dark-90)",
+                                            "var(--background-dark)",
                                         padding: "10px",
                                         border: "1px white solid",
                                         textAlign: "left",
