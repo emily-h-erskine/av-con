@@ -10,7 +10,7 @@ import HandsOnImg from "./HomePageImages/hands-on.png";
 import CareerImg from "./HomePageImages/career.png";
 import PilotExpImg from "./HomePageImages/flight-sim.png";
 import InspirationImg from "./HomePageImages/be-inspired.png";
-import GlobalKnowledgeImg from "./HomePageImages/knowledge.png";
+import GlobalKnowledgeImg from "./HomePageImages/BalSkyShot.webp";
 import DesignChallengeImg from "./HomePageImages/design-challenge.png";
 
 import "../index.css";
