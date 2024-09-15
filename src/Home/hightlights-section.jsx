@@ -91,4 +91,4 @@ export default function Highlights() {
             </div>
         </Box>
     );
-}
+};
