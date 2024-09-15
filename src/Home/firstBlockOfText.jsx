@@ -23,7 +23,7 @@ export default function FirstImageAndText() {
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <div className="flex-container-col space-between">
-                        <h3 className="mb-2 ">
+                        <h3 className="mb-2">
                             Soar into the future of aviation at AvCon 2024!
                         </h3>
                         <div className="flex-container-col space-between">
