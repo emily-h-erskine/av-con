@@ -1,16 +1,16 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 import Speaker from "./speaker";
-import KarlBoweImage from './PresenterSpeakerImages/KarlBowe.jpeg';
-import AllyGarvey from './PresenterSpeakerImages/Ally.JPG';
-import JulieGarland from './PresenterSpeakerImages/JudieGarland.jpeg';
-import JohnDrysdale from './PresenterSpeakerImages/JohnDrysdale.jpg';
-import Bobby from './PresenterSpeakerImages/Bobby.png';
-import KimMackenzieDoyle from './PresenterSpeakerImages/KimMackenzieDoyle.png';
-import IanKiely from './PresenterSpeakerImages/IanKiely.JPG';
-import ValentinaFitzpatrick from './PresenterSpeakerImages/ValentinaFitzpatrick.png';
-import GOC from './PresenterSpeakerImages/GOC.jpg'
+import KarlBoweImage from "./PresenterSpeakerImages/KarlBowe.jpeg";
+import AllyGarvey from "./PresenterSpeakerImages/Ally.JPG";
+import JulieGarland from "./PresenterSpeakerImages/JudieGarland.jpeg";
+import JohnDrysdale from "./PresenterSpeakerImages/JohnDrysdale.jpg";
+import Bobby from "./PresenterSpeakerImages/Bobby.png";
+import KimMackenzieDoyle from "./PresenterSpeakerImages/KimMackenzieDoyle.png";
+import IanKiely from "./PresenterSpeakerImages/IanKiely.JPG";
+import ValentinaFitzpatrick from "./PresenterSpeakerImages/ValentinaFitzpatrick.png";
+import GOC from "./PresenterSpeakerImages/GOC.jpg";
 import GOCHighlight from "./GOCHighlight";
 import LorcanGeraghty from "./PresenterSpeakerImages/LorcanGeraghty.jpeg";
 import NicolaNiRiada from "./PresenterSpeakerImages/NicolaNiRiada.jpg";
@@ -30,67 +30,94 @@ import CaitrionaMurphy from "./PresenterSpeakerImages/CaitrionaMurphy.jpg";
 import Charlie from "./PresenterSpeakerImages/Charlie.jpg";
 
 export default function SpeakersPresentors() {
-  return (
-    <main className="flex min-h-screen flex-col justify-between p-4 md:p-24">
-      <h3 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        Speakers and Presenters
-      </h3>
-      <br /><br />
-      <p style={{padding: '0 5%'}}>Get ready to soar into the future of aviation at AvCon 2024! We're thrilled to introduce our dynamic duo of presenters, Ally Garvey and Karl Bowe, who will be your guides through this exhilarating journey. From the warm welcome to riveting interviews and captivating talks with esteemed guests from the aviation world, Ally and Karl will ensure an unforgettable experience. Stay tuned for announcements on our line-up of guests and talks that will keep you at the edge of your seat. Trust us, you won't want to miss the electrifying show we have in store for you.
-      </p>
-      <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
-      <br/><br/>
-      <hr/>
-      <br/>
-      </Box>
-      <h5 style={{textAlign: 'center'}}>AvCon Presenters</h5>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '5%' }}>
-            <Speaker 
-              SpeakerImage={KarlBoweImage}
-              SpeakerName="Karl Bowe"
-              SpeakerBio="Karl Bowe has over 10 years experience within the entertainment industry that varies from acting, modelling, hosting and presenting.
+    return (
+        <main className="flex min-h-screen flex-col justify-between p-4 md:p-24">
+            <h3
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}>
+                Speakers and Presenters
+            </h3>
+            <br />
+            <br />
+            <p style={{ padding: "0 5%" }}>
+                Get ready to soar into the future of aviation at AvCon 2024!
+                We're thrilled to introduce our dynamic duo of presenters, Ally
+                Garvey and Karl Bowe, who will be your guides through this
+                exhilarating journey. From the warm welcome to riveting
+                interviews and captivating talks with esteemed guests from the
+                aviation world, Ally and Karl will ensure an unforgettable
+                experience. Stay tuned for announcements on our line-up of
+                guests and talks that will keep you at the edge of your seat.
+                Trust us, you won't want to miss the electrifying show we have
+                in store for you.
+            </p>
+            <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
+                <br />
+                <br />
+                <hr />
+                <br />
+            </Box>
+            <h5 style={{ textAlign: "center" }}>AvCon Presenters</h5>
+            <Box sx={{ flexGrow: 1 }}>
+                <Grid container spacing={2}>
+                    <Grid
+                        item
+                        xs={12}
+                        md={6}
+                        lg={6}
+                        xl={6}
+                        style={{ padding: "5%" }}>
+                        <Speaker
+                            SpeakerImage={KarlBoweImage}
+                            SpeakerName="Karl Bowe"
+                            SpeakerBio="Karl Bowe has over 10 years experience within the entertainment industry that varies from acting, modelling, hosting and presenting.
               Trained in Bull Alley, Liberties College to pursue an acting career from 2009-2013, Karl featured in some of their local productions before branching out into theatre and plays nationwide.
               In 2012, Karl joined a vocal harmony group called “Element” and made it to boot camp stages in X-Factor.
               In 2014, Karl was crowned Mr. Ireland and represented the country at that years Mr. World which was held in Torquay, England. 
               Over the years, he appeared in numerous pantos across the country as well as hosting some high profile events.
               Karl recently featured as the electrician in the “Giggly Bit” commercial for Eir broadband and is currently playing the role of “Andy” the barman in RTE's Fair City. He also does voice over work and provides the announcements on Dublin City FM."
-            />
-          </Grid>
-          <Grid item xs={12} md={6} lg={6} xl={6} style={{ padding: '5%' }}>
-            <Speaker 
-                SpeakerImage={AllyGarvey}
-                SpeakerName="Ally Garvey"
-                SpeakerBio="Working within the fashion and media industry for over 15 years, Ally Garvey thrives on delivering the latest showbiz news and the Hottest topics to a wide audience. Ally has worked on live tv for over a number of years now on a range of different broadcasting stations where quick thinking and wide range of conversational skills are a must. 
+                        />
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                        md={6}
+                        lg={6}
+                        xl={6}
+                        style={{ padding: "5%" }}>
+                        <Speaker
+                            SpeakerImage={AllyGarvey}
+                            SpeakerName="Ally Garvey"
+                            SpeakerBio="Working within the fashion and media industry for over 15 years, Ally Garvey thrives on delivering the latest showbiz news and the Hottest topics to a wide audience. Ally has worked on live tv for over a number of years now on a range of different broadcasting stations where quick thinking and wide range of conversational skills are a must. 
                 Ally's favourite environment to work in is a live audience, she loves to engage with co. presenters and the audience.
                 Check out  Ally's instagram page to get a glimpse of the many different events both on screen and off screen she has worked on."
-            />
-          </Grid>
-        </Grid>
-      </Box>
-      <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
-        <br/>
-        <hr/>
-        <br/>
-        </Box>
-        <div style={{textAlign: 'center'}}>
-          <h5>AvCon Speakers</h5>
-          <Box sx={{ flexGrow: 1 }}>
-            <Grid 
-              style={{ padding: '3%' }}
-            >
-              <Grid 
-                item 
-                xs={12} // Full-width on extra-small screens (mobile)
-                sm={12} // Full-width on small screens (tablet)
-                md={6}  // Half-width on medium screens (laptops)
-                lg={6}  // Half-width on large screens (desktops)
-              >
-                <GOCHighlight 
-                  SpeakerImage={GOC}
-                  SpeakerName="GOC, Brigadier General Rory O'Connor"
-                  SpeakerBio={`"A Welcome Note to AvCon - the Future of Aviation from the Air Corps
+                        />
+                    </Grid>
+                </Grid>
+            </Box>
+            <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
+                <br />
+                <hr />
+                <br />
+            </Box>
+            <div style={{ textAlign: "center" }}>
+                <h5>AvCon Speakers</h5>
+                <Box sx={{ flexGrow: 1 }}>
+                    <Grid style={{ padding: "3%" }}>
+                        <Grid
+                            item
+                            xs={12} // Full-width on extra-small screens (mobile)
+                            sm={12} // Full-width on small screens (tablet)
+                            md={6} // Half-width on medium screens (laptops)
+                            lg={6} // Half-width on large screens (desktops)
+                        >
+                            <GOCHighlight
+                                SpeakerImage={GOC}
+                                SpeakerName="GOC, Brigadier General Rory O'Connor"
+                                SpeakerBio={`"A Welcome Note to AvCon - the Future of Aviation from the Air Corps
                   As we look ahead to the upcoming Aviation Convention hosted by the Irish Air Corps this November, we envision a groundbreaking event that celebrates the dynamic world of aviation. This convention is a milestone for the Irish Air Corps, students, schools, and the wider community.
                   The Irish Air Corps, with its tradition of excellence, courage, and innovation, is excited to welcome everyone to our base. This event is more than a gathering; it's an inspiration for the next generation of aviators, engineers, and innovators.
                   We have a stellar lineup of guest speakers, including aero engineers, pilots, technicians, and Air Traffic Controllers from the Air Corps. Their insights and experiences highlight the importance of collaboration and mentorship in aviation.
@@ -99,6 +126,7 @@ export default function SpeakersPresentors() {
                   We extend our heartfelt gratitude to the organisers, sponsors, guest speakers, and participants. Your support makes this event possible. To the students, seize this opportunity to ask questions, explore, and dream big.
                   The sky is not the limit; it is just the beginning. Let this convention be the launchpad for your future in aviation.
                   Thank you, and enjoy the convention!" - GOC, Brigadier General Rory O'Connor`}
+
                 />
               </Grid>
             </Grid>
@@ -271,6 +299,6 @@ export default function SpeakersPresentors() {
           <br/> Register your education group <a href="/BookTickets"><u>HERE</u></a> and get ready for a flight of inspiration and innovation on November 7th at Casement Aerodrome, Baldonnel, co. Dublin.
         </p>
       </main>
+
     );
-  }
-  
+}
