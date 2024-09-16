@@ -339,6 +339,7 @@ p > .text-large {
 /* Custom Element Styles */
 header {
     background-color: var(--background-dark);
+    max-width: 100%;
 }
 
 .nav-link {
@@ -645,7 +646,7 @@ header {
 
     p,
     .link-text {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .custom-form-container {
@@ -759,7 +760,7 @@ header {
 
     p,
     .link-text {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .underline-text {
         text-decoration: underline;
