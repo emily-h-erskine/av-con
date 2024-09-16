@@ -342,7 +342,7 @@ header {
     align-items: center;
 }
 .footer-logo {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 .footer-link {
@@ -391,10 +391,6 @@ header {
     color: var(--text-dark);
     font-size: 1.25rem;
     font-weight: 600;
-}
-
-.card {
-    gap: 1rem;
 }
 
 /* ------------- END CUSTOM ELEMENT STYLES ------------- */
@@ -502,12 +498,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
 
     transition: transform 0.2s; /* adds a short delay in effect */
 }
 
 .card {
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: column; */
     flex-basis: 100%; /* Default for smaller screens */
     flex-grow: 1;
 }
@@ -599,9 +597,8 @@ header {
 
     .card {
         gap: 2.5rem;
-        flex-basis: calc(
-            40% - 1rem
-        ); /* Two cards per row, with space between */
+        flex-basis: calc(40% - 1rem);
+        /* Two cards per row, with space between */
     }
     h1 {
         font-size: 2.5rem;
@@ -638,7 +635,7 @@ header {
         margin-top: 5rem;
     }
     .card-container {
-        gap: 1rem;
+        gap: 3rem;
     }
     .card {
         flex-basis: calc(50% - 0.5rem); /* Default for smaller screens */
@@ -693,10 +690,13 @@ header {
         font-weight: 600;
         align-self: start;
     }
+    .site-map {
+        margin-left: var(--margin-large);
+    }
 }
 
 /* ========= LARGE LAPTOPS  ========= */
-@media screen and(min-width: 992px) {
+@media screen and (min-width: 992px) {
     :root {
         --padding-small: 0.75rem;
         --padding-medium: 1.25rem;
@@ -708,10 +708,10 @@ header {
     }
 
     .card-container {
-        gap: 2rem;
+        gap: 4rem;
     }
     .card {
-        flex-basis: calc(50% - 1rem); /* Default for smaller screens */
+        flex-basis: calc(30% - 1rem); /* Default for smaller screens */
         flex-grow: 1;
     }
     h1 {

@@ -31,7 +31,7 @@ export default function Footer() {
                 </a>
             </div>
 
-            <div className="flex-container site-map mb-3 mt-3 ml-3">
+            <div className="flex-container site-map mb-3 mt-3">
                 <div className="flex-col flex-1 pb-3 space-between">
                     <p className="mb-2 uppercase footer-heading">Events</p>
                     <div className="flex-col">
