@@ -12,7 +12,7 @@ import S7 from './SponsorImages/AvCon Supported By Banners -2.png';
 import S8 from './SponsorImages/AvCon Supported By Banners -3.png';
 import S9 from './SponsorImages/AvCon Supported By Banners -4.png';
 import S10 from './SponsorImages/AvCon Supported By Banners -5.png';
-import S11 from './SponsorImages/AvCon Supported By Banners -6.png';
+import S11 from './SponsorImages/AvCon Supported By Banners -7.png';
 import AirCorpLogo from './SponsorImages/AirCorpsLogo.jpeg';
 import TYHubLogo from './SponsorImages/TYHubLogo.jpg';
 import ODohertysLogo from './SponsorImages/ODohertysLogo.jpg';

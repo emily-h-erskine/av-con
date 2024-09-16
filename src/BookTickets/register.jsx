@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import BackgroundImage from "./SHAN5640.jfif";
 import Flight from "./SHAN6371.jfif";
-// import RegistrationForm from "./registrationForm";
 
 export default function Register() {
     return (
@@ -15,7 +14,7 @@ export default function Register() {
                     </h4>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
-                            <div className=" md:w-3/4 lg:w-2/3 xl:w-1/2">
+                            <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
                                 <p>
                                     Exciting news! Even though in-person
                                     registration for AvCon - The Future of
@@ -45,7 +44,7 @@ export default function Register() {
                             <div style={{ textAlign: "center" }}>
                                 <img
                                     src={BackgroundImage}
-                                    alt="Staff setting up sound for the event"
+                                    alt="Behind the Scenes"
                                     style={{
                                         width: "100%",
                                         maxWidth: "100%",
@@ -57,8 +56,10 @@ export default function Register() {
                     </Grid>
                     <h5 style={{ textAlign: "center" }}>
                         <b>
-                            Register here:
-                            https://streamyard.com/watch/4DN8GWpH2XCr
+                            Register here:{" "}
+                            <a href="https://streamyard.com/watch/4DN8GWpH2XCr">
+                                Click Here
+                            </a>
                         </b>
                     </h5>
                     <Grid container spacing={2}>
@@ -66,7 +67,7 @@ export default function Register() {
                             <div style={{ textAlign: "center" }}>
                                 <img
                                     src={Flight}
-                                    alt="A person in the cockpit of an aeroplane"
+                                    alt="Behind the Scenes"
                                     style={{
                                         width: "100%",
                                         maxWidth: "100%",
@@ -76,7 +77,7 @@ export default function Register() {
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <div className=" md:w-3/4 lg:w-2/3 xl:w-1/2">
+                            <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
                                 <p>
                                     The full event schedule will be announced on
                                     October 7th with some truly exciting topics
@@ -90,8 +91,10 @@ export default function Register() {
                                     <br />
                                     <br />
                                     <b>
-                                        For enquiries please email:
-                                        hello@avcon.ie
+                                        For enquiries please email:{" "}
+                                        <a href="mailto:hello@avcon.ie">
+                                            hello@avcon.ie
+                                        </a>
                                     </b>
                                 </p>
                             </div>

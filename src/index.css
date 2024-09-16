@@ -1,4 +1,4 @@
-/* reset all elements default padding and margin to zero */
+/* Reset all elements' default padding and margin to zero */
 * {
     margin: 0;
     padding: 0;
@@ -10,19 +10,18 @@
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
 
-    /* color palette */
+    /* Color palette */
     --background-dark: #041326;
     --background-dark-98: rgba(4, 19, 38, 0.98);
-    --background-dark-80: rgba(4, 19, 38, 0.8);
+    --background-dark-90: rgba(4, 19, 38, 0.9);
     --background-light: #ffffff;
     --text-light: #ffffff;
     --text-dark: #041326;
-    /* the following should be renamed semantically when purpose of color is defined */
     --light-grey: #b3b9bd;
     --mid-grey: #98a1a6;
     --mid-blue: #0c2840;
 
-    /* typefaces */
+    /* Typefaces */
     --font-sans: "Inter", sans-serif;
 
     /* Spacing */
@@ -35,164 +34,43 @@
     --margin-large: 2rem;
 }
 
-/* Padding Classes */
-
-/* USAGE: these classes are applied to small devices, 
-subsequent media queries chage increase the values for 
-to give more padding/margin on large devices */
-
-.pt-1 {
-    padding-top: var(--padding-small);
-}
-.pt-2 {
-    padding-top: var(--padding-medium);
-}
-.pt-3 {
-    padding-top: var(--padding-large);
-}
-
-.pb-1 {
-    padding-bottom: var(--padding-small);
-}
-.pb-2 {
-    padding-bottom: var(--padding-medium);
-}
-.pb-3 {
-    padding-bottom: var(--padding-large);
-}
-.pl-1 {
-    padding-left: var(--padding-small);
-}
-.pl-2 {
-    padding-left: var(--padding-medium);
-}
-.pl-3 {
-    padding-left: var(--padding-large);
-}
-
-.pr-1 {
-    padding-right: var(--padding-small);
-}
-.pr-2 {
-    padding-right: var(--padding-medium);
-}
-.pr-3 {
-    padding-right: var(--padding-large);
-}
-
-/* Margin Classes */
-.mb-1 {
-    margin-bottom: var(--margin-small);
-}
-.mb-2 {
-    margin-bottom: var(--margin-medium);
-}
-.mb-3 {
-    margin-bottom: var(--margin-large);
-}
-
-.mt-1 {
-    margin-top: var(--margin-small);
-}
-.mt-2 {
-    margin-top: var(--margin-medium);
-}
-.mt-3 {
-    margin-top: var(--margin-large);
-}
-
-.ml-1 {
-    margin-left: var(--padding-small);
-}
-.ml-2 {
-    margin-left: var(--padding-medium);
-}
-.ml-3 {
-    margin-left: var(--padding-large);
-}
-
-.mr-1 {
-    margin-right: var(--padding-small);
-}
-.mr-2 {
-    margin-right: var(--padding-medium);
-}
-.mr-3 {
-    margin-right: var(--padding-large);
-}
-
-/* Hamburger menu styles */
-ul,
-.mobile-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.mobile-menu li {
-    padding: var(--padding-large) 0;
-}
-
-.dropdown-menu li {
-    padding-top: var(--padding-medium);
-    padding-bottom: var(--padding-medium);
-}
-
-/* Dropdown styling for always-visible dropdowns */
-.mobile-menu li ul {
-    padding-left: 1rem; /* Indent dropdown items */
-}
-
-.mobile-menu li ul li {
-    padding: 0.5rem 0; /* Adjust padding for dropdown items */
-}
-
-/* Additional styling to ensure dropdown items look consistent */
-.mobile-menu a {
-    color: var(--text-color);
-    text-decoration: none;
-    display: block;
-    padding: 0.5rem 0;
-}
-
-/* ====== End hambuger styles ====== */
-
-/* ========= MOBILE DEVICES ========= */
-/* font styles */
+/* Font styles */
 h1 {
-    font-size: 2rem; /* Default font size for h1 */
-    line-height: 1.2; /* Adjust line height for better readability */
+    font-size: 2rem;
+    line-height: 1.2;
 }
 
 h2 {
-    font-size: 1.75rem; /* Default font size for h2 */
-    line-height: 1.3; /* Adjust line height for better readability */
+    font-size: 1.75rem;
+    line-height: 1.3;
 }
 
 h3 {
-    font-size: 1.5rem; /* Default font size for h3 */
-    line-height: 1.4; /* Adjust line height for better readability */
+    font-size: 1.5rem;
+    line-height: 1.4;
 }
 
 h4 {
-    font-size: 1.25rem; /* Default font size for h4 */
-    line-height: 1.5; /* Adjust line height for better readability */
+    font-size: 1.25rem;
+    line-height: 1.5;
 }
 
 h5 {
-    font-size: 1.1rem; /* Default font size for h5 */
-    line-height: 1.6; /* Adjust line height for better readability */
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 h6 {
-    font-size: 1rem; /* Default font size for h6 */
-    line-height: 1.7; /* Adjust line height for better readability */
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 p,
 .link-text {
-    font-size: 1rem; /* Default font size for paragraph */
-    line-height: 1.6; /* Adjust line height for better readability */
+    font-size: 1rem;
+    line-height: 1.6;
 }
+
 .underline-text {
     text-decoration: underline;
 }
@@ -201,42 +79,165 @@ p,
     font-size: 2.1rem;
 }
 
-/* =========  COLOR STYLES  ========= */
+/* Padding Classes */
+.pt-1 {
+    padding-top: var(--padding-small);
+}
+
+.pt-2 {
+    padding-top: var(--padding-medium);
+}
+
+.pt-3 {
+    padding-top: var(--padding-large);
+}
+
+.pb-1 {
+    padding-bottom: var(--padding-small);
+}
+
+.pb-2 {
+    padding-bottom: var(--padding-medium);
+}
+
+.pb-3 {
+    padding-bottom: var(--padding-large);
+}
+
+.pl-1 {
+    padding-left: var(--padding-small);
+}
+
+.pl-2 {
+    padding-left: var(--padding-medium);
+}
+
+.pl-3 {
+    padding-left: var(--padding-large);
+}
+
+.pr-1 {
+    padding-right: var(--padding-small);
+}
+
+.pr-2 {
+    padding-right: var(--padding-medium);
+}
+
+.pr-3 {
+    padding-right: var(--padding-large);
+}
+
+/* Margin Classes */
+.mb-1 {
+    margin-bottom: var(--margin-small);
+}
+
+.mb-2 {
+    margin-bottom: var(--margin-medium);
+}
+
+.mb-3 {
+    margin-bottom: var(--margin-large);
+}
+
+.mt-1 {
+    margin-top: var(--margin-small);
+}
+
+.mt-2 {
+    margin-top: var(--margin-medium);
+}
+
+.mt-3 {
+    margin-top: var(--margin-large);
+}
+
+.ml-1 {
+    margin-left: var(--margin-small);
+}
+
+.ml-2 {
+    margin-left: var(--margin-medium);
+}
+
+.ml-3 {
+    margin-left: var(--margin-large);
+}
+
+.mr-1 {
+    margin-right: var(--margin-small);
+}
+
+.mr-2 {
+    margin-right: var(--margin-medium);
+}
+
+.mr-3 {
+    margin-right: var(--margin-large);
+}
+
+/* Hamburger menu styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding-top: var(--padding-medium);
+    padding-bottom: var(--padding-medium);
+}
+
+.mobile-menu li ul {
+    padding-left: 1rem;
+}
+
+.mobile-menu li ul li {
+    padding: 0.5rem 0;
+}
+
+.mobile-menu a {
+    color: var(--text-light);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+/* Color Styles */
 .text-link.text-dark:hover {
-    /* if text is dark and is linnk */
     color: var(--text-dark);
 }
+
 a {
-    color: var(--text-light); /* Set the link color to white */
+    color: var(--text-light);
 }
+
 a:hover {
-    color: var(--light-grey); /* Set the link hover color to white */
+    color: var(--light-grey);
 }
 
-/* =========  END COLOR STYLES  ========= */
-
-/* ------ FONT STYLES ------ */
+/* Font Styles */
 body {
     font-family: var(--font-sans);
     color: var(--text-light);
 }
 
-p,
-.link-text {
-    font-size: 1.125rem;
-}
 .text-right {
     text-align: right;
 }
+
 .text-left {
     text-align: left;
 }
+
 .text-center {
     text-align: center;
 }
+
 p > .text-large {
     font-size: 1.7rem;
 }
+
 .copyright {
     font-size: 1.4rem;
     color: var(--mid-grey);
@@ -246,21 +247,22 @@ p > .text-large {
     text-transform: uppercase;
 }
 
-/* ------ BUTTON STYLES ------ */
+/* Button Styles */
 .btn-primary {
     padding: 16px 32px;
-    font-weight: 800; /* extra bold */
-    /* border: 1px solid var(--text-light); */
+    font-weight: 800;
     border-radius: 2px;
-    background-color: var(--background-dark-80);
+    background-color: var(--background-dark-90);
     width: fit-content;
 }
+
 .btn-secondary {
     padding: 16px 32px;
     border-radius: 2px;
     background-color: var(--light-grey);
     width: fit-content;
 }
+
 .btn-tertiary {
     padding: 15px;
     border: 1px solid var(--mid-grey);
@@ -270,17 +272,19 @@ p > .text-large {
     text-align: center;
 }
 
+/* Custom Form Container */
 .custom-form-container {
-    width: 100%; /* Set width to fill viewport width on mobile */
-    margin: 0 auto; /* Center the form */
+    width: 100%;
+    margin: 0 auto;
     margin-top: 3rem;
 }
 
-/* ========= FLEX STYLES ========= */
+/* Flex Styles */
 .flex-container {
     display: flex;
     flex-direction: row;
 }
+
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -296,44 +300,55 @@ p > .text-large {
     align-items: center;
 }
 
-/* NOTE: following alignment classes to be applied to children of display:flex containers*/
 .align-center {
     justify-content: center;
 }
+
 .align-vertical-middle {
     align-items: center;
 }
+
 .align-vertical-btm {
     align-items: end;
 }
+
 .space-between {
     align-content: space-between;
 }
+
 .space-between-col {
     justify-content: space-between;
 }
+
 .align-start {
     align-items: start;
 }
+
 .flex-1 {
     flex-grow: 1;
 }
+
 .width-30 {
     flex-basis: 30%;
 }
+
 .width-70 {
     flex-basis: 70%;
 }
 
-/* ========= END FLEX CLASSES ========= */
-
-/* ------- CUSTOM ELEMENT STYLES ------ */
+/* Custom Element Styles */
 header {
-    /* uncomment position and z-index for fixed nav */
-    /* position: fixed; */
-    /* z-index: 100; */
     background-color: var(--background-dark);
 }
+
+.nav-link {
+    margin-right: 1.2rem;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -341,34 +356,36 @@ header {
     flex-wrap: wrap;
     align-items: center;
 }
+
 .footer-logo {
     width: 80%;
     height: auto;
 }
+
 .footer-link {
     font-size: 1rem;
     padding-top: 0.75rem;
 }
+
 .footer-heading {
     font-size: 0.9rem;
     color: var(--light-grey);
 }
+
 .footer-text {
     font-size: 1.1rem;
 }
+
 .footer-divider {
     border-top: 1px solid var(--mid-grey);
 }
+
 .footer-col-1 {
     flex-basis: fill;
 }
+
 .site-map {
     flex-basis: fill;
-}
-.custom-form-container {
-    width: 100%; /* Set width to fill viewport width on mobile */
-    margin: 0 auto; /* Center the form */
-    margin-top: 3rem;
 }
 
 .exhibitor-container {
@@ -376,17 +393,21 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .exhibitor-inner-container {
     display: flex;
     flex-direction: column;
 }
+
 .exhibitor-inner-container a {
     align-self: center;
 }
+
 .exhibitor-container h3 {
     font-size: 1.75rem;
     font-weight: 500;
 }
+
 .exhibitor-container a {
     color: var(--text-dark);
     font-size: 1.25rem;
@@ -494,7 +515,6 @@ header {
     background-color: var(--background-dark);
     border-radius: 4px;
     margin: var(--margin-small);
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -529,8 +549,7 @@ header {
     text-align: left;
 }
 
-/* ====== END CARD STYLES ======= */
-
+/* Event Container */
 .event-container {
     padding: 2% 5%;
 }
