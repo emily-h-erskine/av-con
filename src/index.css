@@ -36,12 +36,14 @@
 
 /* Font styles */
 .title {
-    font-size: 56px;
+    font-size: 3rem;
     font-weight: 700;
+    max-width: 100%;
 }
 .sub-title {
-    font-size: 32px;
+    font-size: 1.2rem;
     font-weight: 500;
+    max-width: 100%;
 }
 
 h1 {
@@ -362,9 +364,8 @@ header {
 
 .hero-content-position {
     position: absolute;
-    top: 55%;
-    left: 10%;
-    width: 100%;
+    top: 45%;
+    left: 5%;
 }
 
 .footer {

@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         // NEW FOOTER - PROPOSAL ACCEPTED 07/09/2024
         <footer className="footer mt-3 ml-3 mr-3">
-            <div className="mb-3 pr-2 footer-col-1 footer-divider position">
+            <div className="mb-3 footer-col-1 footer-divider position">
                 <a href="/index.html">
                     <img
                         className="footer-logo mb-3"
@@ -47,7 +47,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex-col flex-1 pb-3 ">
+                <div className="flex-col flex-1 pb-3 mr-1">
                     <p className="mb-2 uppercase footer-heading">Company</p>
                     <div className="flex-col ">
                         <a href="/#" className="footer-link">

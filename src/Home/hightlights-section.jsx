@@ -17,7 +17,7 @@ import "../index.css";
 
 export default function Highlights() {
     return (
-        <Box className="" sx={{ padding: { xs: "0 2%", md: "5% 5%" } }}>
+        <Box className="" sx={{ padding: { xs: "2% 4%", md: "5% 5%" } }}>
             <Grid container spacing={0}>
                 <Grid className="card-container">
                     <Card
@@ -63,7 +63,7 @@ export default function Highlights() {
                 </Grid>
             </Grid>
             <hr className="mb-3" />
-            <div className="exhibitor-container mb-3 mt-3 ">
+            <div className="exhibitor-container mb-3 mt-3 ml-1 mr-1">
                 <h3 className="exhibitor-heading mb-2">
                     Connect with the next generation of Aviation Professionals
                 </h3>

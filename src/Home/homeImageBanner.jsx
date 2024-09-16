@@ -6,17 +6,22 @@ export default function HomeImageBanner() {
         <div className="mb-3" style={{ position: "relative" }}>
             <picture>
                 {/* This will display on screens 600px wide or smaller */}
-                <source media="(max-width: 768px)" srcSet={HeroMobile} />
+                <source
+                    media="(max-width: 600px)"
+                    srcSet={HeroMobile}
+                    className="img-fluid"
+                />
 
                 {/* This will display on screens larger than 600px */}
                 <source
-                    media="(min-width: 769px)"
+                    media="(min-width: 600px)"
                     srcSet="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg"
+                    className="img-fluid"
                 />
 
                 {/* Fallback image */}
                 <img
-                    src="./Hero-mobile.png"
+                    src="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg"
                     alt="Aeroplanes in a hanger"
                     style={{
                         width: "100%",
@@ -49,8 +54,10 @@ export default function HomeImageBanner() {
                     justifyContent: "end",
                     marginBottom: "var(--margin-large)",
                 }}>
-                <p className="title">AvCon 2024</p>
-                <p className="sub-title mb-3">
+                <p style={{ maxWidth: "100%" }} className="title">
+                    AvCon 2024
+                </p>
+                <p style={{ maxWidth: "100%" }} className="sub-title mb-3">
                     Welcome to the Future of Aviation!
                 </p>
                 <button
