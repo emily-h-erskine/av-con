@@ -525,8 +525,6 @@ header {
 }
 
 .card {
-    /* display: flex;
-    flex-direction: column; */
     flex-basis: 100%; /* Default for smaller screens */
     flex-grow: 1;
 }
@@ -618,6 +616,7 @@ header {
     .card {
         gap: 2.5rem;
         flex-basis: calc(40% - 1rem);
+        flex-grow: 1;
         /* Two cards per row, with space between */
     }
     h1 {
@@ -629,7 +628,7 @@ header {
     }
 
     h3 {
-        font-size: 1.125rem;
+        font-size: 2rem;
     }
 
     h4 {
@@ -657,10 +656,7 @@ header {
     .card-container {
         gap: 3rem;
     }
-    .card {
-        flex-basis: calc(50% - 0.5rem); /* Default for smaller screens */
-        flex-grow: 1;
-    }
+
     .card-heading {
         font-size: 1.5rem;
     }
@@ -699,11 +695,14 @@ header {
         flex-direction: column;
     }
     .exhibitor-container h3 {
-        font-size: 2rem;
-        font-weight: 500;
+        font-size: 2.2rem;
+        font-weight: 600;
         flex-basis: fill;
     }
-
+    .exhibitor-container h4 {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
     .exhibitor-container a {
         /* color: var(--text-dark); */
         font-size: 1.5rem;
@@ -728,10 +727,10 @@ header {
     }
 
     .card-container {
-        gap: 4rem;
+        gap: 3rem;
     }
     .card {
-        flex-basis: calc(30% - 1rem); /* Default for smaller screens */
+        flex-basis: calc(40% - 1rem);
         flex-grow: 1;
     }
     h1 {
@@ -801,8 +800,12 @@ header {
         width: 100%; /* Make sure the form inside takes the full width of the container */
     }
 
+    .card-container {
+        gap: 2rem;
+    }
+
     .card {
-        flex-basis: calc(33% - 0.5rem); /* Default for smaller screens */
+        flex-basis: calc(30% - 0.5rem); /* Default for smaller screens */
         flex-grow: 1;
     }
     .card-heading {
@@ -858,12 +861,9 @@ header {
         margin: 0 auto;
         margin-top: 6rem;
     }
-    .btn-secondary,
-    .btn-tertiary {
-        padding: 4px 16px;
-    }
+
     .card {
-        gap: 0rem;
+        flex-basis: calc(30% - 2rem);
     }
 }
 
