@@ -36,13 +36,13 @@ export default function Footer() {
                     <p className="mb-2 uppercase footer-heading">Events</p>
                     <div className="flex-col">
                         <a href="./Event" className="footer-link">
-                            AvCon 2024 info
+                            AvCon 2024 Info
                         </a>
-                        <a href="/#" className="footer-link">
-                            Get tickets
+                        <a href="./BookTickets" className="footer-link">
+                            Get Tickets
                         </a>
-                        <a href="/#" className="footer-link">
-                            Exhibitor registration
+                        <a href="./ExhibitorRegistration" className="footer-link">
+                            Exhibitor Registration
                         </a>
                     </div>
                 </div>
@@ -50,17 +50,17 @@ export default function Footer() {
                 <div className="flex-col flex-1 pb-3 mr-1">
                     <p className="mb-2 uppercase footer-heading">Company</p>
                     <div className="flex-col ">
-                        <a href="/#" className="footer-link">
-                            About us
+                        <a href="./About" className="footer-link">
+                            About Us
                         </a>
-                        <a href="/#" className="footer-link">
-                            Our partners
+                        <a href="./SponsorsPartners" className="footer-link">
+                            Our Partners
                         </a>
-                        <a href="/#" className="footer-link">
-                            Our sponsors
+                        <a href="./SponsorsPartners" className="footer-link">
+                            Our Sponsors
                         </a>
-                        <a href="/#" className="footer-link">
-                            Career pathways
+                        <a href="./AviationPathwayPortal" className="footer-link">
+                            Aviation Pathway Portal
                         </a>
                     </div>
                 </div>
