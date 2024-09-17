@@ -272,17 +272,17 @@ export const Header = () => {
                             />
                             {showAboutDropdown && (
                                 <p
-                                    style={{
-                                        position: "absolute", // ensures the dropdown does not affect page layout
-                                        zIndex: "1000", // ensures dorpdown appears on top of other page elements
-                                        top: "100%",
-                                        left: 0,
-                                        backgroundColor:
-                                            "var(--background-dark-85)",
-                                        padding: "10px",
-                                        border: "1px white solid",
-                                        textAlign: "left",
-                                    }}>
+                                style={{
+                                    position: "absolute", // ensures the dropdown does not affect page layout
+                                    zIndex: "100", // ensures dorpdown appears on top of other page elements
+                                    top: "100%",
+                                    left: 0,
+                                    backgroundColor:
+                                        "var(--background-dark-98",
+                                    padding: "10px",
+                                    border: "1px white solid",
+                                    textAlign: "left",
+                                }}>
                                     <a
                                         className="uppercase link-text"
                                         href="./News">
