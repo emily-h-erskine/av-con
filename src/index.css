@@ -35,6 +35,17 @@
 }
 
 /* Font styles */
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 100%;
+}
+.sub-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 100%;
+}
+
 h1 {
     font-size: 2rem;
     line-height: 1.2;
@@ -250,7 +261,8 @@ p > .text-large {
 /* Button Styles */
 .btn-primary {
     padding: 16px 32px;
-    font-weight: 800;
+    font-size: 28px;
+    font-weight: 700;
     border-radius: 2px;
     background-color: var(--background-dark-90);
     width: fit-content;
@@ -339,6 +351,7 @@ p > .text-large {
 /* Custom Element Styles */
 header {
     background-color: var(--background-dark);
+    max-width: 100%;
 }
 
 .nav-link {
@@ -347,6 +360,12 @@ header {
 
 .nav-link:last-child {
     margin-right: 0;
+}
+
+.hero-content-position {
+    position: absolute;
+    top: 45%;
+    left: 5%;
 }
 
 .footer {
@@ -358,7 +377,7 @@ header {
 }
 
 .footer-logo {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -414,11 +433,103 @@ header {
     font-weight: 600;
 }
 
-.card {
-    gap: 1rem;
+/* ------------- END CUSTOM ELEMENT STYLES ------------- */
+
+/* ------  ------ */
+.AppHeader {
+    background-color: var(--background-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+    color: white;
 }
 
-/* Card Styles */
+.App-link {
+    color: #61dafb;
+}
+
+/* ------ FORM STYLES ------ */
+.form {
+    padding: 20px;
+}
+
+.form-body {
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-body > * {
+    padding: 5px;
+}
+
+.form__label {
+    width: 40%;
+}
+
+.form_input {
+    width: 60%;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 15px;
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.alert-message {
+    margin-top: 20px;
+}
+
+.registration-form {
+    max-width: 95%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------ END OF FORM STYLES  ------ */
+
+/* ====== CARD STYLES ======= */
+/* Card styling */
 .card-container {
     background-color: var(--background-dark);
     border-radius: 4px;
@@ -426,12 +537,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    transition: transform 0.2s;
+    gap: 1rem;
+
+    transition: transform 0.2s; /* adds a short delay in effect */
 }
 
 .card {
-    flex-direction: row;
-    flex-basis: 100%;
+    flex-basis: 100%; /* Default for smaller screens */
     flex-grow: 1;
 }
 
@@ -481,4 +593,317 @@ header {
     transform: translateY(-50%);
     background-color: #041326;
     color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.timeline-content {
+    margin-left: 20px;
+}
+
+/* ========= TABLET ========= */
+@media screen and (max-width: 768px) {
+    .event-container {
+        padding: 2% 3%;
+    }
+
+    .timeline-date {
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .timeline-content {
+        margin-left: 0;
+    }
+}
+
+/* ========= LARGE TABLET, NOTEBOOKS, SM LAPTOPS ========= */
+@media screen and (min-width: 768px) {
+    :root {
+        --padding-small: 0.5rem;
+        --padding-medium: 1rem;
+        --padding-large: 1.25rem;
+
+        --margin-small: 0.5rem;
+        --margin-medium: 1rem;
+        --margin-large: 1.5rem;
+    }
+    .hero-content-position {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 100%;
+    }
+    .title {
+        font-size: 5rem;
+    }
+    .sub-title {
+        font-size: 1.8rem;
+    }
+    .card {
+        gap: 2.5rem;
+        flex-basis: calc(40% - 1rem);
+        flex-grow: 1;
+        /* Two cards per row, with space between */
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.75rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    p,
+    .link-text {
+        font-size: 0.9rem;
+    }
+
+    .custom-form-container {
+        width: 100%; /* Set width to 50% */
+        margin: 0 auto; /* Center the form */
+        margin-top: 5rem;
+    }
+    .card-container {
+        gap: 3rem;
+    }
+
+    .card-heading {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row-reverse;
+        justify-content: start;
+    }
+    .footer-logo {
+        width: 65%;
+        height: auto;
+    }
+    .footer-divider {
+        border-right: 1px solid var(--mid-grey);
+        border-top: none;
+    }
+    .footer-col-1 {
+        flex-basis: 35%;
+    }
+    .site-map {
+        flex-basis: 65%;
+    }
+    .position {
+        order: 2;
+    }
+
+    .exhibitor-container {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+    .exhibitor-inner-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .exhibitor-container h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        flex-basis: fill;
+    }
+    .exhibitor-container h4 {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .exhibitor-container a {
+        /* color: var(--text-dark); */
+        font-size: 1.5rem;
+        font-weight: 600;
+        align-self: start;
+    }
+    .site-map {
+        margin-left: var(--margin-large);
+    }
+}
+
+/* ========= LARGE LAPTOPS  ========= */
+@media screen and (min-width: 992px) {
+    :root {
+        --padding-small: 0.75rem;
+        --padding-medium: 1.25rem;
+        --padding-large: 1.5rem;
+
+        --margin-small: 0.75rem;
+        --margin-medium: 1.25rem;
+        --margin-large: 1.5rem;
+    }
+
+    .card-container {
+        gap: 3rem;
+    }
+    .card {
+        flex-basis: calc(40% - 1rem);
+        flex-grow: 1;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.75rem;
+    }
+
+    h6 {
+        font-size: 1.5rem;
+    }
+
+    p,
+    .link-text {
+        font-size: 1rem;
+    }
+    .underline-text {
+        text-decoration: underline;
+    }
+    .custom-form-container {
+        width: 85%; /* Set width to 50% */
+        margin: 0 auto; /* Center the form */
+        margin-top: 5rem;
+    }
+    .footer-col-1 {
+        flex-basis: 35%;
+    }
+    .site-map {
+        flex-basis: 65%;
+    }
+}
+/* ========= DESKTOPS, 992px and up ========= */
+@media screen and (min-width: 1024px) {
+    :root {
+        --padding-small: 1rem;
+        --padding-medium: 1.5rem;
+        --padding-large: 2rem;
+
+        --margin-small: 1rem;
+        --margin-medium: 1.5rem;
+        --margin-large: 2rem;
+    }
+
+    .container header .header-nav-area #nav_container,
+    .custom-form-container {
+        width: 95%; /* Set width to 95 of viewport% */
+        margin: 0 auto; /* Center the form */
+        margin-top: 6rem;
+    }
+
+    /* Target the actual injected form */
+    .custom-form-container form {
+        width: 100%; /* Make sure the form inside takes the full width of the container */
+    }
+
+    .card-container {
+        gap: 2rem;
+    }
+
+    .card {
+        flex-basis: calc(30% - 0.5rem); /* Default for smaller screens */
+        flex-grow: 1;
+    }
+    .card-heading {
+        line-height: 1.7rem;
+    }
+}
+
+/* ========= EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) ========= */
+@media screen and (min-width: 1200px) {
+    :root {
+        --padding-small: 1.25rem;
+        --padding-medium: 1.75rem;
+        --padding-large: 2.5rem;
+
+        --margin-small: 1.25rem;
+        --margin-medium: 1.75rem;
+        --margin-large: 2.5rem;
+    }
+    .title {
+        font-size: 8rem;
+    }
+    .sub-title {
+        font-size: 3rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 3.25rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2.25rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1.75rem;
+    }
+
+    p,
+    .link-text {
+        font-size: 1.375rem;
+    }
+    .underline-text {
+        text-decoration: underline;
+    }
+    .custom-form-container {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+
+    .card {
+        flex-basis: calc(30% - 2rem);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .link-text {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Dropdown from "./Dropdown.svg";
+// import "../../index.css";
 
 export const Header = () => {
     const [showEventDropdown, setShowEventDropdown] = useState(false);
@@ -7,10 +8,21 @@ export const Header = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-    const handleEventDropdownToggle = () => setShowEventDropdown(!showEventDropdown);
-    const handleAboutDropdownToggle = () => setShowAboutDropdown(!showAboutDropdown);
-    const handleMobileToggle = () => setShowMobileMenu(!showMobileMenu);
-    const closeMobileMenu = () => setShowMobileMenu(false);
+    const handleEventDropdownToggle = () => {
+        setShowEventDropdown(!showEventDropdown);
+    };
+
+    const handleAboutDropdownToggle = () => {
+        setShowAboutDropdown(!showAboutDropdown);
+    };
+
+    const handleMobileToggle = () => {
+        setShowMobileMenu(!showMobileMenu);
+    };
+
+    const closeMobileMenu = () => {
+        setShowMobileMenu(false);
+    };
 
     useEffect(() => {
         const handleResize = () => {
@@ -19,40 +31,11 @@ export const Header = () => {
         };
 
         window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
-
-    const dropdownIconStyle = {
-        padding: "0 0 0 10px",
-        width: "14px",
-        height: "14px",
-    };
-
-    const dropdownMenuStyle = {
-        position: "absolute",
-        zIndex: "1000",
-        top: "calc(100% + 10px)",
-        left: 0,
-        backgroundColor: "var(--background-dark)",
-        padding: "10px",
-        border: "1px white solid",
-        textAlign: "left",
-    };
-
-    const navItemStyle = {
-        display: "flex",
-        alignItems: "center",
-        position: "relative",
-        whiteSpace: "nowrap",
-        minWidth: "max-content",
-        marginRight: "var(--margin-small)",
-    };
-
-    const linkStyle = {
-        whiteSpace: "nowrap",
-        minWidth: "max-content",
-        marginRight: "2rem",
-    };
 
     return (
         <header className="flex-container align-vertical-middle pt-1 pr-2 pb-1 pl-2">
@@ -67,27 +50,27 @@ export const Header = () => {
                 </a>
             </div>
 
-            <div style={{ textAlign: "right" }}>
+            <div
+                style={{
+                    textAlign: "right",
+                }}>
                 {isMobile ? (
                     <div
                         style={{ cursor: "pointer" }}
-                        onClick={handleMobileToggle}
-                    >
+                        onClick={handleMobileToggle}>
                         ☰
                         {showMobileMenu && (
                             <div
                                 style={{
-                                    position: "fixed",
+                                    backgroundColor:
+                                        "var(--background-dark-98)",
                                     top: 0,
                                     right: 0,
                                     bottom: 0,
                                     left: 0,
-                                    zIndex: "1000",
-                                    overflowY: "scroll",
-                                    padding: "1rem 2rem 1rem 0",
-                                    backgroundColor: "var(--background-dark-98)",
-                                }}
-                            >
+                                    overflowY: "scroll", // Ensure scroll if content overflows
+                                    padding: "4rem 2rem 2rem 2rem", // Provide some padding for spacing
+                                }}>
                                 <div
                                     style={{
                                         display: "flex",
@@ -97,9 +80,8 @@ export const Header = () => {
                                         position: "absolute",
                                         top: 0,
                                         left: 0,
-                                        padding: "0",
-                                    }}
-                                >
+                                        padding: "1rem",
+                                    }}>
                                     <span
                                         style={{
                                             fontSize: "4rem",
@@ -107,95 +89,251 @@ export const Header = () => {
                                             padding: "var(--padding-small",
                                             cursor: "pointer",
                                         }}
-                                        onClick={handleMobileToggle}
-                                    >
-                                        &times;
+                                        onClick={handleMobileToggle}>
+                                        &times; {/* Close (X) icon */}
                                     </span>
                                 </div>
 
-                                {/* Dropdown Menu for Mobile */}
-                                <ul className="dropdown-menu">
-                                    <li><a href="./Event">EVENT INFO</a></li>
-                                    <li><a href="./EventSchedule">EVENT SCHEDULE</a></li>
-                                    <li><a href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a></li>
-                                    <li><a href="./FlightSim">AVCON XTRA: THE FLIGHT SIM CHALLENGE</a></li>
-                                </ul>
-
-                                <ul>
-                                    <li style={{ padding: "1rem 0" }}>
-                                        <div>
+                                <ul className="">
+                                    {/* EVENT INFO Link with Dropdown */}
+                                    <div>
+                                        <ul className="dropdown-menu">
                                             <li>
-                                                <a
-                                                    style={{ marginBottom: "6px" }}
-                                                    className="uppercase"
-                                                    href="./FlightSim"
-                                                >
-                                                    About AvCon
+                                                <a className="" href="./Event">
+                                                    EVENT INFO
                                                 </a>
                                             </li>
-                                            <ul className="dropdown-menu">
-                                                <li><a href="./News">NEWS &amp; UPDATES</a></li>
-                                                <li><a href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a></li>
-                                                <li><a href="./AviationPathwayPortal">AVIATION PATHWAY PORTAL</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
+                                            <li>
+                                                <a
+                                                    className=""
+                                                    href="./EventSchedule">
+                                                    EVENT SCHEDULE
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    className=""
+                                                    href="./SpeakersPresenters">
+                                                    SPEAKERS &amp; PRESENTERS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    className=""
+                                                    href="./FlightSim">
+                                                    AVCON XTRA: THE FLIGHT SIM
+                                                    CHALLENGE
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                                <ul>
-                                    <li style={{ padding: "1rem 0" }}><a href="./Contact">CONTACT US</a></li>
-                                    <li style={{ padding: "1rem 0" }}><a href="./ExhibitorRegistration">EXHIBITOR REGISTRATION</a></li>
-                                    <li style={{ padding: "1rem 0" }}><a href="./BookTickets">GET TICKETS</a></li>
+                                    {/* ABOUT AVCON Link with Dropdown */}
+                                    <ul>
+                                        <li style={{ padding: "1rem 0" }}>
+                                            <div>
+                                                <li>
+                                                    <a
+                                                        style={{
+                                                            marginBottom: "6px",
+                                                        }}
+                                                        className="uppercase"
+                                                        href="./FlightSim">
+                                                        About AvCon
+                                                    </a>
+                                                </li>
+                                                <ul className="dropdown-menu">
+                                                    <li>
+                                                        <a href="./News">
+                                                            NEWS &amp; UPDATES
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./SponsorsPartners">
+                                                            SPONSORS &amp;
+                                                            PARTNERS
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./AviationPathwayPortal">
+                                                            AVIATION PATHWAY
+                                                            PORTAL
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        {/* Other Links */}
+                                        <li style={{ padding: "1rem 0" }}>
+                                            <a href="./Contact">CONTACT US</a>
+                                        </li>
+                                        <li style={{ padding: "1rem 0" }}>
+                                            <a href="./ExhibitorRegistration">
+                                                EXHIBITOR REGISTRATION
+                                            </a>
+                                        </li>
+                                        <li style={{ padding: "1rem 0" }}>
+                                            <a href="./BookTickets">
+                                                GET TICKETS
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </ul>
                             </div>
                         )}
                     </div>
                 ) : (
-                    <div style={{ display: "flex", alignItems: "center" }}>
+                    // Desktop view logic
+                    <div
+                        style={{
+                            display: "flex", // Change from grid to flex
+                            gap: "4%", // Space between nav items
+                            justifyContent: "flex-end", // Align nav items to the right
+                            textAlign: "center",
+                            alignItems: "center", // Vertically center nav items
+                        }}>
                         <div
-                            style={navItemStyle}
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                position: "relative",
+                                whiteSpace: "nowrap", // Prevent text wrapping
+                                minWidth: "max-content", // Ensure min width matches content
+                            }}
                             onMouseEnter={handleEventDropdownToggle}
-                            onMouseLeave={handleEventDropdownToggle}
-                        >
-                            <a className="link-text" href="./Event">EVENT INFO</a>
-                            <img src={Dropdown} alt="Dropdown" className="mr-2" style={dropdownIconStyle} />
+                            onMouseLeave={handleEventDropdownToggle}>
+                            <a className="link-text" href="./Event">
+                                EVENT INFO
+                            </a>
+                            <img
+                                src={Dropdown}
+                                alt="Dropdown"
+                                style={{
+                                    padding: "0 0 0 10px",
+                                    width: "14px", // Set the width of the dropdown icon
+                                    height: "14px", // Set the height of the dropdown icon
+                                }}
+                            />
                             {showEventDropdown && (
-                                <p style={dropdownMenuStyle}>
-                                    <a className="uppercase link-text" href="./EventSchedule">EVENT SCHEDULE</a>
-                                    <br /><br />
-                                    <a className="uppercase link-text" href="./SpeakersPresenters">SPEAKERS &amp; PRESENTERS</a>
-                                    <br /><br />
-                                    <a className="uppercase link-text" href="./FlightSim">AVCON XTRA: THE FLIGHT SIM CHALLENGE</a>
+                                <p
+                                    style={{
+                                        position: "absolute", // ensures the dropdown does not affect page layout
+                                        zIndex: "100", // ensures dorpdown appears on top of other page elements
+                                        top: "100%",
+                                        left: 0,
+                                        backgroundColor:
+                                            "var(--background-dark-98",
+                                        padding: "10px",
+                                        border: "1px white solid",
+                                        textAlign: "left",
+                                    }}>
+                                    <a
+                                        className="uppercase link-text"
+                                        href="./EventSchedule">
+                                        EVENT SCHEDULE
+                                    </a>
+                                    <br />
+                                    <br />
+                                    <a
+                                        className="uppercase"
+                                        href="./SpeakersPresenters">
+                                        SPEAKERS &amp; PRESENTERS
+                                    </a>
+                                    <br />
+                                    <br />
+                                    <a className="uppercase" href="./FlightSim">
+                                        AVCON XTRA: THE FLIGHT SIM CHALLENGE
+                                    </a>
                                 </p>
                             )}
                         </div>
-
                         <div
-                            style={navItemStyle}
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                position: "relative",
+                                whiteSpace: "nowrap", // Prevent text wrapping
+                                minWidth: "max-content", // Ensure min width matches content
+                            }}
                             onMouseEnter={handleAboutDropdownToggle}
-                            onMouseLeave={handleAboutDropdownToggle}
-                        >
-                            <a className="uppercase link-text" href="./About">ABOUT AVCON</a>
-                            <img src={Dropdown} alt="Dropdown" className="mr-2" style={dropdownIconStyle} />
+                            onMouseLeave={handleAboutDropdownToggle}>
+                            <a className="uppercase link-text" href="./About">
+                                ABOUT AVCON
+                            </a>
+                            <img
+                                src={Dropdown}
+                                alt="Dropdown"
+                                style={{
+                                    padding: "0 0 0 10px",
+                                    width: "14px", // Set the width of the icon
+                                    height: "14px", // Set the height of the icon
+                                }}
+                            />
                             {showAboutDropdown && (
-                                <p style={dropdownMenuStyle}>
-                                    <a className="uppercase link-text" href="./News">NEWS &amp; UPDATES</a>
-                                    <br /><br />
-                                    <a className="uppercase link-text" href="./SponsorsPartners">SPONSORS &amp; PARTNERS</a>
-                                    <br /><br />
-                                    <a className="uppercase link-text" href="./AviationPathwayPortal">AVIATION PATHWAY PORTAL</a>
+                                <p
+                                    style={{
+                                        position: "absolute", // ensures the dropdown does not affect page layout
+                                        zIndex: "1000", // ensures dorpdown appears on top of other page elements
+                                        top: "100%",
+                                        left: 0,
+                                        backgroundColor:
+                                            "var(--background-dark-85)",
+                                        padding: "10px",
+                                        border: "1px white solid",
+                                        textAlign: "left",
+                                    }}>
+                                    <a
+                                        className="uppercase link-text"
+                                        href="./News">
+                                        NEWS &amp; UPDATES
+                                    </a>
+                                    <br />
+                                    <br />
+                                    <a
+                                        className="uppercase link-text"
+                                        href="./SponsorsPartners">
+                                        SPONSORS &amp; PARTNERS
+                                    </a>
+                                    <br />
+                                    <br />
+                                    <a
+                                        className="uppercase link-text"
+                                        href="./AviationPathwayPortal">
+                                        AVIATION PATHWAY PORTAL
+                                    </a>
                                 </p>
                             )}
                         </div>
-
-                        <a className="link-text" style={linkStyle} href="./Contact">CONTACT US</a>
-                        <a className="link-text" style={linkStyle} href="./ExhibitorRegistration">EXHIBITOR REGISTRATION</a>
+                        <a
+                            style={{
+                                whiteSpace: "nowrap",
+                                minWidth: "max-content",
+                            }}
+                            className="link-text"
+                            href="./Contact">
+                            CONTACT US
+                        </a>
+                        <a
+                            style={{
+                                whiteSpace: "nowrap",
+                                minWidth: "max-content",
+                            }}
+                            className="link-text"
+                            href="./ExhibitorRegistration">
+                            EXHIBITOR REGISTRATION
+                        </a>
                         <a
                             role="button"
+                            style={{
+                                padding: "0.75rem",
+                                border: "1px solid var(--background-light",
+                                borderRadius: "4px",
+                                whiteSpace: "nowrap",
+                                minWidth: "max-content",
+                            }}
                             className="link-text"
-                            style={{ ...linkStyle, padding: "0.75rem", borderRadius: "4px" }}
-                            href="./BookTickets"
-                        >
+                            href="./BookTickets">
                             GET TICKETS
                         </a>
                     </div>
