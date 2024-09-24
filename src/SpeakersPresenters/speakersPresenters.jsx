@@ -28,6 +28,7 @@ import JimGavin from "./PresenterSpeakerImages/JimGavin.jpg";
 import EndaWalsh from "./PresenterSpeakerImages/endawalsh.jpeg";
 import CaitrionaMurphy from "./PresenterSpeakerImages/CaitrionaMurphy.jpg";
 import Charlie from "./PresenterSpeakerImages/Charlie.jpg";
+import ShaneCrawte from "./PresenterSpeakerImages/ShaneCrawte.jpg";
 
 export default function SpeakersPresentors() {
     return (
@@ -285,6 +286,13 @@ export default function SpeakersPresentors() {
                   SpeakerImage={Charlie}
                   SpeakerName="Charlie O'Neill"
                   SpeakerBio="Charlie O'Neill is currently the Chairperson of the renowned Irish Aviation Students Association (IASA) and in her final year of studying Aviation Management at Dublin City University to graduate in 2025. The Irish Aviation Students' Association (IASA) is a non-profit organization aimed at supporting and connecting students and young professionals interested in the aviation and aerospace industries in Ireland. Founded by students for students, IASA provides a platform for networking, learning, and career development in these fields, and works to bridge the gap between education and employments in the flourishing Irish aviation industry."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={ShaneCrawte}
+                  SpeakerName="Shane Crawte"
+                  SpeakerBio="Shane, VP Technical Asset Management - Aviation Advisory Grant Thornton Ireland leads the technical department in Grant Thorntons dedicated advisory team. Grant Thorntons Aviation Lease Service department manage the leases for over 1000 MSN over several large lessors. Prior to Grant Thornton Shane had over a decade of experience in both military and civilian operations, working with rotary and fixed-wing aircraft. Before joining the Aviation Advisory team at Grant Thornton Ireland, he served as the technical team lead in a Powerplant overhaul shop, holding full Part 145 approval for various engine models."
                 />
               </Grid>
             </Grid>

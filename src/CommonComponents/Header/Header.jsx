@@ -69,7 +69,7 @@ export const Header = () => {
                                     bottom: 0,
                                     left: 0,
                                     overflowY: "scroll", // Ensure scroll if content overflows
-                                    padding: "4rem 2rem 2rem 2rem", // Provide some padding for spacing
+                                    padding: "2rem 1rem 1rem 1rem", // Provide some padding for spacing
                                 }}>
                                 <div
                                     style={{
@@ -84,8 +84,8 @@ export const Header = () => {
                                     }}>
                                     <span
                                         style={{
-                                            fontSize: "4rem",
-                                            fontWeight: "100",
+                                            fontSize: "2rem",
+                                            fontWeight: "50",
                                             padding: "var(--padding-small",
                                             cursor: "pointer",
                                         }}
@@ -211,8 +211,8 @@ export const Header = () => {
                                 alt="Dropdown"
                                 style={{
                                     padding: "0 0 0 10px",
-                                    width: "14px", // Set the width of the dropdown icon
-                                    height: "14px", // Set the height of the dropdown icon
+                                    width: "100%", // Set the width of the dropdown icon
+                                    height: "100%", // Set the height of the dropdown icon
                                 }}
                             />
                             {showEventDropdown && (
@@ -266,8 +266,8 @@ export const Header = () => {
                                 alt="Dropdown"
                                 style={{
                                     padding: "0 0 0 10px",
-                                    width: "14px", // Set the width of the icon
-                                    height: "14px", // Set the height of the icon
+                                    width: "100%", // Set the width of the dropdown icon
+                                    height: "100%", // Set the height of the icon
                                 }}
                             />
                             {showAboutDropdown && (
