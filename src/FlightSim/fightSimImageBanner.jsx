@@ -1,15 +1,16 @@
 import React from "react";
 export default function FlightSimImageBanner() {
     return (
-        <div style={{ position: "relative", padding: "0% 2% 5% 2%" }}>
+        <div style={{ position: "relative", padding: "0% 0% 5% 0%" }}>
             <img
                 src="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg"
-                alt="header image"
+                alt="aeroplanes in a hanger"
                 style={{
                     position: "relative",
                     zIndex: "-1",
                     width: "100%",
                     mixBlendMode: "luminosity",
+                    objectFit: "cover",
                 }}
             />
             <div
@@ -19,26 +20,20 @@ export default function FlightSimImageBanner() {
                     left: 0,
                     top: 0,
                     position: "absolute",
+                    zIndex: "0", // Higher z-index than the image
                     mixBlendMode: "darken",
                     background:
-                        "linear-gradient(180deg, #var(--background-dark) 0%, rgba(7, 16, 29, 0) 100%)",
-                }}
-            />
-
-            <div
-                style={{
-                    width: "80%",
-                    height: "auto",
-                    left: "5%",
-                    top: "1%",
-                    position: "absolute",
-                    fontSize: "4vw",
-                    fontWeight: "800",
-                    textAlign: "left",
-                    color: "white",
-                }}>
-                AvCon Xtra promises an unforgettable experience for aviation
-                enthusiasts and competitive gamers alike.
+                        "linear-gradient(180deg, var(--background-dark) 0%, rgba(7, 16, 29, 0) 100%)",
+                }}></div>
+            <div className="hero-content-container hero-content-position">
+                <h1 className="title">
+                    AN UNFORGETTABLE THRILL FOR GAMERS AND ENTHUSIASTS
+                </h1>
+                <h2 className="sub-title">
+                    Take the stick for an epic experience with AvCon Xtra's
+                    Flight Sim Challenge
+                </h2>
+                <button className="btn-primary uppercase">Book Now</button>
             </div>
         </div>
     );

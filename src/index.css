@@ -36,9 +36,11 @@
 
 /* Font styles */
 .title {
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: 700;
+    letter-spacing: 1.025rem;
     max-width: 100%;
+    color: var(--text-light);
 }
 .sub-title {
     font-size: 1.2rem;
@@ -366,6 +368,15 @@ header {
     position: absolute;
     top: 45%;
     left: 5%;
+    z-index: "1";
+}
+
+.hero-content-container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 1%;
 }
 
 .footer {
@@ -633,20 +644,29 @@ header {
     .hero-content-position {
         position: absolute;
         top: 20%;
-        left: 10%;
-        width: 100%;
+        width: 80%;
+    }
+    .hero-content-container {
+        width: 80%;
     }
     .title {
-        font-size: 5rem;
+        font-size: 1.6rem;
+        letter-spacing: 0.65rem;
+        margin-bottom: var(--margin-small);
     }
     .sub-title {
-        font-size: 1.8rem;
+        font-size: 1rem;
+        margin-bottom: var(--margin-large);
     }
     .card {
         gap: 2.5rem;
         flex-basis: calc(40% - 1rem);
         flex-grow: 1;
         /* Two cards per row, with space between */
+    }
+    .btn-primary {
+        padding: 16px 32px;
+        font-size: 1.2rem;
     }
     h1 {
         font-size: 2.5rem;
@@ -762,6 +782,13 @@ header {
         flex-basis: calc(40% - 1rem);
         flex-grow: 1;
     }
+    .title {
+        font-size: 1.7rem;
+        letter-spacing: 0.65rem;
+    }
+    .sub-title {
+        font-size: 1.1rem;
+    }
     h1 {
         font-size: 3rem;
     }
@@ -805,7 +832,7 @@ header {
         flex-basis: 65%;
     }
 }
-/* ========= DESKTOPS, 992px and up ========= */
+/* ========= DESKTOPS, 1024px and up ========= */
 @media screen and (min-width: 1024px) {
     :root {
         --padding-small: 1rem;
@@ -828,7 +855,16 @@ header {
     .custom-form-container form {
         width: 100%; /* Make sure the form inside takes the full width of the container */
     }
-
+    .hero-content-position {
+        width: 80%;
+    }
+    .title {
+        font-size: 1.8rem;
+        letter-spacing: 0.75rem;
+    }
+    .sub-title {
+        font-size: 1.2rem;
+    }
     .card-container {
         gap: 2rem;
     }
@@ -853,11 +889,19 @@ header {
         --margin-medium: 1.75rem;
         --margin-large: 2.5rem;
     }
+    .hero-content-container {
+        width: 75%;
+    }
     .title {
-        font-size: 8rem;
+        font-size: 2.2rem;
+        letter-spacing: 0.75rem;
     }
     .sub-title {
-        font-size: 3rem;
+        font-size: 1.4rem;
+    }
+    .btn-primary {
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem;
     }
     h1 {
         font-size: 3.5rem;
@@ -905,5 +949,15 @@ header {
     .link-text {
         font-size: 1.5rem;
         font-weight: 400;
+    }
+    .hero-content-position {
+        width: 90%;
+    }
+    .title {
+        font-size: 3rem;
+        letter-spacing: 0.85rem;
+    }
+    .sub-title {
+        font-size: 1.8rem;
     }
 }
