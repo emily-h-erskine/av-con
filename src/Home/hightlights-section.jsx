@@ -13,8 +13,6 @@ import InspirationImg from "./HomePageImages/be-inspired.png";
 import GlobalKnowledgeImg from "./HomePageImages/BalSkyShot.webp";
 import DesignChallengeImg from "./HomePageImages/design-challenge.png";
 
-import "../index.css";
-
 export default function Highlights() {
     return (
         <Box className="" sx={{ padding: { xs: "2% 4%", md: "5% 5%" } }}>
@@ -75,16 +73,16 @@ export default function Highlights() {
                         current industry experts, and future best and bright of
                         the aviation industry.
                     </p>
-                    <a
-                        role="button"
-                        className="btn-secondary mt-3"
-                        href="./ExhibitorRegistration">
-                        <span className="text-dark uppercase">
-                            Book my exhibit
-                        </span>
-                    </a>
+                    <div className="flex-container align-center">
+                        <button
+                            name="exhibitor registration button"
+                            className="btn-secondary mt-3"
+                            href="./ExhibitorRegistration">
+                            <span className="uppercase">Book my exhibit</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </Box>
     );
-};
+}

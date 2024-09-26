@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Dropdown from "./Dropdown.svg";
-// import "../../index.css";
 
 export const Header = () => {
     const [showEventDropdown, setShowEventDropdown] = useState(false);

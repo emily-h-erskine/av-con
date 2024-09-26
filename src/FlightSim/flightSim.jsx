@@ -3,36 +3,54 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import FlightSimImage from "./FlightSimImage.png";
 import InsideAirplaneImage from "./InsideAirplane.jpg";
-import FlightSimImageBanner from "./fightSimImageBanner";
+//import FlightSimImageBanner from "./fightSimImageBanner";
+import HeroSection from "../Home/HeroSection";
 
 export default function FlightSim() {
     return (
         <main className="flex min-h-screen flex-col justify-between p-4 md:p-8">
-            <FlightSimImageBanner />
-            <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={5}>
+            <HeroSection
+                title="Epic thrill of a Flight Sim"
+                subtitle="Experience the Ultimate Flight Sim Challenge"
+                buttonText="Register Now"
+                buttonLink="./Register"
+            />
+
+            <Box
+                className="mb-3 mt-3"
+                sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
+                <h4 className="mb-2">AvCon Xtra: The Flight Sim Challenge</h4>
+
+                <Grid className="flex-container mb-3" container spacing={2}>
+                    <Grid className="avconXtra-position" item xs={12} md={5}>
+                        {/* container for second set of features text */}
                         <Box sx={{ paddingRight: { xs: "0", md: "5%" } }}>
-                            <h3>AvCon Xtra: The Flight Sim Challenge</h3>
-                            <p>
-                                Get ready to soar to new heights with AvCon
-                                Xtra: The Flight Sim Challenge! This
-                                adrenaline-pumping event is set to take flight
-                                soon, promising an exhilarating 12-hour journey
-                                through the virtual skies.
-                                <br />
-                                <br />
-                                Prepare for non-stop action as participants dive
-                                into the world of flight simulation, embarking
-                                on an epic adventure that begins at 8 am and
-                                doesn't touch down until 8 pm. With multiple
-                                flight simulators ready to take flight, AvCon
-                                Xtra will bring together aviation enthusiasts
-                                from all corners of Ireland, uniting them in a
-                                shared passion for high-flying excitement.
-                            </p>
+                            <div className="flex-col-container">
+                                <h5>Experience the thrill</h5>
+                                <p className="text-thin mb-1">
+                                    Get ready to soar to new heights in this
+                                    adrenaline-pumping, aviation-inspired event!
+                                </p>
+                                <h5>Non-Stop Action</h5>
+                                <p className="text-thin mb-1">
+                                    A 12-hour journey through the virtual skies,
+                                    packed with excitement from 8am to 8pm.
+                                </p>
+                                <h5>Multiple Flight Simulators</h5>
+                                <p className="text-thin mb-1">
+                                    Test your piloting skills on a range of
+                                    cutting-edge flight simulators.
+                                </p>
+                                <h5>For Enthusiasts & Gamers</h5>
+                                <p className="text-thin mb-1">
+                                    Open to aviation fans and competitive gamers
+                                    alike, bringing together passionate flyers
+                                    from all over Ireland.
+                                </p>
+                            </div>
                         </Box>
                     </Grid>
+                    {/* container for second image */}
                     <Grid item xs={12} md={7}>
                         <Box
                             sx={{
@@ -41,8 +59,9 @@ export default function FlightSim() {
                                 alignItems: "center",
                             }}>
                             <img
+                                className="avcon-xtra-img-1"
                                 src={FlightSimImage}
-                                alt="FlightSim"
+                                alt="man in a flight simulator getting advice from a female instructor"
                                 style={{
                                     width: "100%",
                                     maxWidth: "100%",
@@ -53,8 +72,8 @@ export default function FlightSim() {
                     </Grid>
                 </Grid>
             </Box>
-            <br />
-            <br />
+
+            {/* container for second image */}
             <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={7}>
@@ -77,36 +96,42 @@ export default function FlightSim() {
                     </Grid>
                     <Grid item xs={12} md={5}>
                         <Box sx={{ paddingLeft: { xs: "0", md: "5%" } }}>
-                            <p>
-                                But AvCon Xtra isn't just about the thrill of
-                                the challenge—it's also about giving back. In
-                                support of the Shannon Aviation Museum, all
-                                proceeds from this competition will contribute
-                                to preserving Ireland's rich aviation heritage,
-                                ensuring that future generations can continue to
-                                be inspired by the wonders of flight.
-                                <br />
-                                <br />
-                                Teams of participants will compete head-to-head
-                                in flight simulators, charting courses around
-                                the globe with strategic stop-offs and
-                                encountering a series of thrilling and daring
-                                challenges along the way. From navigating
-                                through turbulent weather to executing precision
-                                landings, every twist and turn will test the
-                                skills and teamwork of each competing crew.
-                                <br />
-                                <br />
-                                To take part in this epic event, teams must meet
-                                a fundraising requirement, with every euro
-                                raised contributing to the success of the
-                                Shannon Aviation Museum and the continuation of
-                                its invaluable work.
-                            </p>
+                            {/* container for second set of features */}
+                            <div className="flex-col-container">
+                                <h5>Support aviation in Ireland</h5>
+                                <p className="text-thin mb-1">
+                                    AvCon Xtra isn’t just about the thrill—it’s
+                                    about giving back. All proceeds support the
+                                    Shannon Aviation Museum, preserving
+                                    Ireland’s rich aviation heritage.
+                                </p>
+                                <h5>Epic Team Competition</h5>
+                                <p className="text-thin mb-1">
+                                    Teams compete head-to-head in flight
+                                    simulators, navigating global courses with
+                                    strategic stop-offs and thrilling
+                                    challenges.
+                                </p>
+                                <h5>Exciting Challenges</h5>
+                                <p className="text-thin mb-1">
+                                    Face everything from turbulent weather to
+                                    precision landings, testing your skills and
+                                    teamwork every step of the way.
+                                </p>
+                                <h5>Fundraising for a Purpose</h5>
+                                <p className="text-thin mb-1">
+                                    To participate, teams must meet a
+                                    fundraising requirement. Every euro raised
+                                    helps ensure the Shannon Aviation Museum’s
+                                    invaluable work continues.
+                                </p>
+                            </div>
                         </Box>
                     </Grid>
                 </Grid>
             </Box>
+
+            {/* conainer for button and more info text */}
             <Box
                 sx={{
                     height: "auto",
@@ -116,12 +141,19 @@ export default function FlightSim() {
                     textAlign: "center",
                     color: "white",
                 }}>
-                <h6>
-                    Ready to take flight and join the adventure? For more
-                    information or to register your team, reach out to our
-                    Flight Sim Team at flightsim@avcon.ie. Don't miss your
-                    chance to be part of AvCon Xtra: The Flight Sim
-                    Challenge—where the sky is the limit!
+                <button className="btn-tertiary uppercase text-large mb-3">
+                    Register for the challenge
+                </button>
+                <h6 className="mt-3">
+                    For more information or to register your team, reach out to
+                    our Flight Sim Team at{" "}
+                    <a
+                        style={{ textDecoration: "underline" }}
+                        href="mailto:flightsim@avcon.ie?subject=Request for more AvCon Xtra details">
+                        flightsim@avcon.ie
+                    </a>
+                    . Don't miss your chance to be part of AvCon Xtra: The
+                    Flight Sim Challenge - where the sky is the limit!
                 </h6>
             </Box>
         </main>

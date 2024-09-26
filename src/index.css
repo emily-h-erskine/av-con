@@ -14,6 +14,7 @@
     --background-dark: #041326;
     --background-dark-98: rgba(4, 19, 38, 0.98);
     --background-dark-90: rgba(4, 19, 38, 0.9);
+    --background-dark-hover: hsl(214, 71%, 16%);
     --background-light: #ffffff;
     --text-light: #ffffff;
     --text-dark: #041326;
@@ -36,16 +37,16 @@
 
 /* Font styles */
 .title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    letter-spacing: 1.025rem;
-    max-width: 100%;
+    letter-spacing: 0.4rem;
     color: var(--text-light);
+    margin-bottom: 0.2rem;
 }
 .sub-title {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    max-width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -78,6 +79,14 @@ h6 {
     line-height: 1.7;
 }
 
+.title {
+    font-size: 3rem;
+}
+
+.sub-title {
+    font-size: 1.8rem;
+}
+
 p,
 .link-text {
     font-size: 1rem;
@@ -92,6 +101,11 @@ p,
     font-size: 2.1rem;
 }
 
+.text-thin {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: var(--light-grey);
+}
 /* Padding Classes */
 .pt-1 {
     padding-top: var(--padding-small);
@@ -262,28 +276,40 @@ p > .text-large {
 
 /* Button Styles */
 .btn-primary {
-    padding: 16px 32px;
-    font-size: 28px;
-    font-weight: 700;
+    padding: var(--padding-medium) var(--padding-large);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
     border-radius: 2px;
     background-color: var(--background-dark-90);
-    width: fit-content;
+    max-width: fit-content;
 }
-
+.btn-primary:hover {
+    background-color: var(--background-dark-hover);
+}
 .btn-secondary {
-    padding: 16px 32px;
+    padding: var(--padding-medium) var(--padding-large);
     border-radius: 2px;
     background-color: var(--light-grey);
     width: fit-content;
+    color: var(--text-dark);
 }
 
 .btn-tertiary {
-    padding: 15px;
+    padding: var(--padding-small) var(--padding-large);
+    font-size: 16px;
     border: 1px solid var(--mid-grey);
     border-radius: 2px;
     background-color: var(--background-dark);
     width: fit-content;
     text-align: center;
+}
+.btn-tertiary:hover {
+    background-color: var(--background-dark-hover);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /* Custom Form Container */
@@ -333,8 +359,7 @@ p > .text-large {
 .space-between-col {
     justify-content: space-between;
 }
-
-.align-start {
+.hero-content-container .align-start {
     align-items: start;
 }
 
@@ -366,13 +391,13 @@ header {
 
 .hero-content-position {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 5%;
-    z-index: "1";
+    z-index: 1;
+    max-width: 100%;
 }
 
 .hero-content-container {
-    width: 100%;
     height: auto;
     position: absolute;
     left: 5%;
@@ -441,12 +466,8 @@ header {
 .exhibitor-container a {
     color: var(--text-dark);
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
-
-/* ------------- END CUSTOM ELEMENT STYLES ------------- */
-
-/* ------  ------ */
 .AppHeader {
     background-color: var(--background-dark);
     min-height: 100vh;
@@ -612,6 +633,41 @@ header {
     margin-left: 20px;
 }
 
+/* Changes H1 depending on screen size */
+.short-text {
+    display: inline-block;
+}
+
+.full-text {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .btn-primary,
+    .btn-tertiary {
+        padding: var(--padding-medium) var(--padding-large);
+        font-size: 16px;
+    }
+    .hero-content-container {
+        width: 70%;
+    }
+    .title {
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem;
+    }
+    .sub-title {
+        font-size: 1rem;
+        margin-bottom: var(--margin-medium);
+    }
+    h4 {
+        font-size: rem;
+    }
+    .avconXtra-position {
+        order: 2;
+        margin-bottom: var(--margin-large);
+    }
+}
+
 /* ========= TABLET ========= */
 @media screen and (max-width: 768px) {
     .event-container {
@@ -641,22 +697,26 @@ header {
         --margin-medium: 1rem;
         --margin-large: 1.5rem;
     }
+    .full-text {
+        display: inline-block;
+    }
+    .short-text {
+        display: none;
+    }
     .hero-content-position {
         position: absolute;
-        top: 20%;
-        width: 80%;
+        top: 35%;
+        width: 90%;
     }
-    .hero-content-container {
-        width: 80%;
-    }
+
     .title {
-        font-size: 1.6rem;
-        letter-spacing: 0.65rem;
+        font-size: 2rem;
+        letter-spacing: 0.35rem;
         margin-bottom: var(--margin-small);
     }
     .sub-title {
-        font-size: 1rem;
-        margin-bottom: var(--margin-large);
+        font-size: 1.1rem;
+        margin-bottom: var(--margin-small);
     }
     .card {
         gap: 2.5rem;
@@ -665,9 +725,14 @@ header {
         /* Two cards per row, with space between */
     }
     .btn-primary {
-        padding: 16px 32px;
-        font-size: 1.2rem;
+        padding: var(--padding-medium) var(--padding-large);
+        font-size: 1rem;
     }
+    .btn-tertiary {
+        padding: var(--padding-medium) var(--padding-large);
+        font-size: 1rem;
+    }
+
     h1 {
         font-size: 2.5rem;
     }
@@ -694,7 +759,7 @@ header {
 
     p,
     .link-text {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
 
     .custom-form-container {
@@ -783,11 +848,18 @@ header {
         flex-grow: 1;
     }
     .title {
-        font-size: 1.7rem;
-        letter-spacing: 0.65rem;
+        letter-spacing: 0.5rem;
+    }
+    .full-text {
+        font-size: 2.2rem;
     }
     .sub-title {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
+        margin-bottom: var(--margin-small);
+    }
+    .btn-primary {
+        padding: var(--padding-medium) 4rem;
+        font-size: 1.4rem;
     }
     h1 {
         font-size: 3rem;
@@ -813,9 +885,11 @@ header {
         font-size: 1.5rem;
     }
 
-    p,
-    .link-text {
+    p {
         font-size: 1rem;
+    }
+    .link-text {
+        font-size: 0.8rem;
     }
     .underline-text {
         text-decoration: underline;
@@ -830,6 +904,9 @@ header {
     }
     .site-map {
         flex-basis: 65%;
+    }
+    .avconXtra-container .position {
+        order: 1;
     }
 }
 /* ========= DESKTOPS, 1024px and up ========= */
@@ -859,11 +936,11 @@ header {
         width: 80%;
     }
     .title {
-        font-size: 1.8rem;
-        letter-spacing: 0.75rem;
+        font-size: 2.4rem;
+        letter-spacing: 0.4rem;
     }
     .sub-title {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     .card-container {
         gap: 2rem;
@@ -875,6 +952,9 @@ header {
     }
     .card-heading {
         line-height: 1.7rem;
+    }
+    .btn-primary {
+        padding: var(--padding-small) var(--padding-large);
     }
 }
 
@@ -890,18 +970,23 @@ header {
         --margin-large: 2.5rem;
     }
     .hero-content-container {
-        width: 75%;
+        width: 80%;
     }
     .title {
-        font-size: 2.2rem;
-        letter-spacing: 0.75rem;
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
     }
     .sub-title {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     .btn-primary {
-        font-size: 1.8rem;
+        font-size: 1.6em;
         letter-spacing: 0.4rem;
+        padding: var(--padding-small) var(--padding-large);
+    }
+    .btn-tertiary {
+        padding: var(--padding-small) 3rem;
+        font-size: 2rem;
     }
     h1 {
         font-size: 3.5rem;
@@ -920,16 +1005,18 @@ header {
     }
 
     h5 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     h6 {
-        font-size: 1.75rem;
+        font-size: 1.2rem;
     }
 
-    p,
-    .link-text {
+    p {
         font-size: 1.375rem;
+    }
+    .link-text {
+        font-size: 1rem;
     }
     .underline-text {
         text-decoration: underline;
@@ -950,14 +1037,35 @@ header {
         font-size: 1.5rem;
         font-weight: 400;
     }
+
+    /* :has = will select the container if it is a long title and not a short title */
+    .hero-content-container:has(.title-long) {
+        max-width: 75%;
+    }
+
     .hero-content-position {
-        width: 90%;
+        width: 85%;
     }
     .title {
-        font-size: 3rem;
+        font-size: 6rem;
         letter-spacing: 0.85rem;
     }
+    .title-long {
+        font-size: 3.6rem;
+        letter-spacing: 0.5rem;
+    }
     .sub-title {
+        font-size: 2.2rem;
+        margin-bottom: var(--margin-large);
+    }
+    .link-text {
+        font-size: 1.2rem;
+    }
+    .btn-primary {
+        padding: 1.4rem 6rem;
         font-size: 1.8rem;
+    }
+    .btn-tertiary {
+        padding: var(--padding-small) 4rem;
     }
 }

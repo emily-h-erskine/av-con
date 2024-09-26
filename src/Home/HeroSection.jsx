@@ -1,7 +1,46 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeroMobile from "./Hero-mobile.png";
 
-export default function HomeImageBanner() {
+// IMPORTANT!!
+// Change to how component is called:
+//   - pass the vale of the title, subtitle, button text and button linkpath each time component is called on a page
+//   - this means the same component can be called and different values injected
+export default function HeroSection({
+    title: defaultTitle,
+    subtitle: defaultSubtitle,
+    buttonText,
+    buttonLink,
+}) {
+    // State variables to hold the dynamic title and subtitle, which will change based on screen width
+    const [title, setTitle] = useState(defaultTitle);
+    const [subtitle, setSubtitle] = useState(defaultSubtitle);
+
+    // useEffect to handle screen resizing logic
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.matchMedia("(max-width: 599px)").matches) {
+                /* For small screens (599px and smaller), 
+                if the screen is bigger it will render the values passed 
+                to the component in flightSim.jsx */
+                setTitle("AvCon Xtra");
+                setSubtitle("Experience the Ultimate Flight Sim Challenge");
+            } else {
+                // For larger screens
+                setTitle(defaultTitle);
+                setSubtitle(defaultSubtitle);
+            }
+        };
+
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+
+        // Run once to set the initial values based on screen size
+        handleResize();
+
+        // Clean up the event listener
+        return () => window.removeEventListener("resize", handleResize);
+    }, [defaultTitle, defaultSubtitle]);
+
     return (
         <div className="mb-3" style={{ position: "relative" }}>
             <picture>
@@ -55,26 +94,26 @@ export default function HomeImageBanner() {
                     marginBottom: "var(--margin-large)",
                 }}>
                 <p style={{ maxWidth: "100%" }} className="title">
-                    AvCon 2024
+                    {title}
                 </p>
                 <p style={{ maxWidth: "100%" }} className="sub-title mb-3">
-                    Welcome to the Future of Aviation!
+                    {subtitle}
                 </p>
                 <button
                     type="button"
                     name="Book Tickets Button"
-                    className="btn-primary">
+                    className="btn-primary mt-2">
                     <a
-                        href="./BookTickets"
+                        href={buttonLink}
                         className="uppercase"
                         style={{
                             textDecoration: "none",
                             color: "inherit",
                         }}>
-                        Get Tickets
+                        {buttonText}
                     </a>
                 </button>
             </div>
         </div>
     );
-};
+}
