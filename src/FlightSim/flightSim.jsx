@@ -144,9 +144,12 @@ export default function FlightSim() {
                     textAlign: "center",
                     color: "white",
                 }}>
-                <button className="btn-tertiary uppercase text-large mb-3">
-                    Register for the challenge
-                </button>
+                <a href="mailto:flightsim@avcon.ie?subject=Register request for the Flight Sim Challenge">
+                    <button className="btn-tertiary uppercase text-large mb-3">
+                        Register for the challenge
+                    </button>
+                </a>
+
                 <h6 className="mt-3">
                     For more information or to register your team, reach out to
                     our Flight Sim Team at{" "}

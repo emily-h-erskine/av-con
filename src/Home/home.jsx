@@ -17,7 +17,6 @@ export default function Home() {
                 buttonText="Register Now"
                 buttonLink="/bookTickets"
             />
-
             <FirstImageAndText />
             <MiddleBlockOfText />
             <Highlights />
