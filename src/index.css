@@ -288,7 +288,10 @@ p > .text-large {
     background-color: var(--background-dark-hover);
 }
 .btn-secondary {
-    padding: var(--padding-medium) var(--padding-large);
+    padding: 1.2rem 4rem;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
     border-radius: 2px;
     background-color: var(--light-grey);
     width: fit-content;
@@ -296,7 +299,7 @@ p > .text-large {
 }
 
 .btn-tertiary {
-    padding: var(--padding-small) var(--padding-large);
+    padding: 1.2rem 4rem;
     font-size: 16px;
     border: 1px solid var(--mid-grey);
     border-radius: 2px;
