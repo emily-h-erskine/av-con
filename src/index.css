@@ -276,7 +276,7 @@ p > .text-large {
 
 /* Button Styles */
 .btn-primary {
-    padding: 1.2rem 4rem;
+    padding: 1.2rem 3.6rem;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.2rem;
@@ -654,12 +654,18 @@ header {
         padding: 1.2rem 4rem;
         font-size: 18px;
     }
+    .hero-content-position {
+        top: 20%;
+    }
     .hero-content-container {
         width: 70%;
     }
+    .hero-image-container {
+        max-height: 100vh;
+    }
     .title {
         font-size: 3rem;
-        letter-spacing: 0.4rem;
+        letter-spacing: 0.25rem;
     }
     .sub-title {
         font-size: 1.6rem;
@@ -711,17 +717,17 @@ header {
     }
     .hero-content-position {
         position: absolute;
-        top: 35%;
+
         width: 90%;
     }
 
     .title {
-        font-size: 4rem;
-        letter-spacing: 0.5rem;
+        font-size: 2.8rem;
+        letter-spacing: 0.3rem;
         margin-bottom: var(--margin-small);
     }
     .sub-title {
-        font-size: 2.25rem;
+        font-size: 1.8rem;
         margin-bottom: var(--margin-small);
     }
     .card {
@@ -939,13 +945,14 @@ header {
     }
     .hero-content-position {
         width: 80%;
+        top: 15%;
     }
     .title {
-        font-size: 4rem;
-        letter-spacing: 0.6rem;
+        font-size: 3.6rem;
+        letter-spacing: 0.4rem;
     }
     .sub-title {
-        font-size: 2.4rem;
+        font-size: 2rem;
         margin-bottom: var(--margin-large);
     }
     .card-container {
@@ -976,11 +983,12 @@ header {
         width: 80%;
     }
     .title {
-        font-size: 4.5rem;
-        letter-spacing: 0.6rem;
+        font-size: 3.6rem;
+        letter-spacing: 0.4rem;
     }
     .sub-title {
-        font-size: 2.8rem;
+        font-size: 2rem;
+        margin-bottom: var(--margin-small);
     }
     .btn-primary {
         font-size: 1.6em;
@@ -1047,17 +1055,14 @@ header {
 
     .hero-content-position {
         width: 85%;
+        top: 20%;
     }
     .title {
-        font-size: 5.4rem;
-        letter-spacing: 0.75rem;
-    }
-    .title-long {
-        font-size: 3.6rem;
-        letter-spacing: 0.5rem;
+        font-size: 4rem;
+        letter-spacing: 0.4rem;
     }
     .sub-title {
-        font-size: 2.4rem;
+        font-size: 2rem;
         margin-bottom: var(--margin-large);
     }
     .link-text {

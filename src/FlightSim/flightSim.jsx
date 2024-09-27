@@ -9,11 +9,14 @@ import HeroSection from "../Home/HeroSection";
 export default function FlightSim() {
     return (
         <main className="flex min-h-screen flex-col justify-between p-4 md:p-8">
+            {/* we pass 2 titles and 2 subtitles to use on small and large devices */}
             <HeroSection
-                title="Epic thrill of a Flight Sim"
-                subtitle="Experience the Ultimate Flight Sim Challenge"
-                buttonText="Register Now"
-                buttonLink="./Register"
+                defaultTitle="AN UNFORGETTABLE THRILL FOR GAMERS AND ENTHUSIASTS"
+                defaultSubtitle="Take the stick for an epic experience with AvCon Xtra’s Flight Sim challenge"
+                smallScreenTitle="AvCon 2024"
+                smallScreenSubtitle="Take the stick for the Flight Sim Challenge"
+                buttonText="Book Now"
+                buttonLink="/bookTickets"
             />
 
             <Box

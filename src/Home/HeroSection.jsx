@@ -3,47 +3,52 @@ import HeroMobile from "./Hero-mobile.png";
 
 // IMPORTANT!!
 // Change to how component is called:
-//   - pass the vale of the title, subtitle, button text and button linkpath each time component is called on a page
+//   - pass the value of the title, subtitle, button text, and button link path each time the component is called on a page
 //   - this means the same component can be called and different values injected
 export default function HeroSection({
-    title: defaultTitle,
-    subtitle: defaultSubtitle,
+    defaultTitle, // default title from props passed to the component when called
+    defaultSubtitle, // default title from props passed to the component when called
+    smallScreenTitle,
+    smallScreenSubtitle,
     buttonText,
     buttonLink,
 }) {
     // State variables to hold the dynamic title and subtitle, which will change based on screen width
-    const [title, setTitle] = useState(defaultTitle);
-    const [subtitle, setSubtitle] = useState(defaultSubtitle);
+    const [title, setTitle] = useState(defaultTitle || ""); // Set a default empty string to prevent undefined issues
+    const [subtitle, setSubtitle] = useState(defaultSubtitle || "");
 
     // useEffect to handle screen resizing logic
     useEffect(() => {
         const handleResize = () => {
-            if (window.matchMedia("(max-width: 599px)").matches) {
-                /* For small screens (599px and smaller), 
-                if the screen is bigger it will render the values passed 
-                to the component in flightSim.jsx */
-                setTitle("AvCon Xtra");
-                setSubtitle("Experience the Ultimate Flight Sim Challenge");
+            const screenWidth = window.innerWidth;
+
+            console.log("Screen width: ", screenWidth); // Debugging: check screen size
+
+            if (screenWidth <= 600) {
+                // console.log("Setting small screen title and subtitle"); // Debugging: Log when small screen logic is triggered
+                // For small screens (599px and smaller), update the title and subtitle for small screens
+                setTitle("AvCon 2024");
+                setSubtitle("Welcome to the Future of Aviation!");
             } else {
-                // For larger screens
+                // Use the values passed when the component was called
                 setTitle(defaultTitle);
                 setSubtitle(defaultSubtitle);
             }
         };
 
-        // Add event listener
+        // Add event listener for resizing
         window.addEventListener("resize", handleResize);
 
-        // Run once to set the initial values based on screen size
+        // Run the resize logic once on initial load
         handleResize();
 
-        // Clean up the event listener
+        // Clean up the event listener when the component unmounts
         return () => window.removeEventListener("resize", handleResize);
-    }, [defaultTitle, defaultSubtitle]);
+    }, [defaultTitle, defaultSubtitle]); // Dependencies on the props
 
     return (
         <div className="mb-3" style={{ position: "relative" }}>
-            <picture>
+            <picture className="hero-image-container">
                 {/* This will display on screens 600px wide or smaller */}
                 <source
                     media="(max-width: 600px)"
@@ -93,11 +98,12 @@ export default function HeroSection({
                     justifyContent: "end",
                     marginBottom: "var(--margin-large)",
                 }}>
+                {/* Safeguard: Render titles only if defined */}
                 <p style={{ maxWidth: "100%" }} className="title">
-                    {title}
+                    {title || "Default Title"}
                 </p>
                 <p style={{ maxWidth: "100%" }} className="sub-title mb-3">
-                    {subtitle}
+                    {subtitle || "Default Subtitle"}
                 </p>
                 <button
                     type="button"
