@@ -84,7 +84,7 @@ h6 {
 }
 
 .sub-title {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
 }
 
 p,
@@ -276,8 +276,8 @@ p > .text-large {
 
 /* Button Styles */
 .btn-primary {
-    padding: var(--padding-medium) var(--padding-large);
-    font-size: 16px;
+    padding: 1.2rem 4rem;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.2rem;
     border-radius: 2px;
@@ -409,7 +409,7 @@ header {
     flex-direction: column;
     flex-flow: row-reverse;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: start;
 }
 
 .footer-logo {
@@ -440,7 +440,9 @@ header {
 }
 
 .site-map {
+    width: 100%;
     flex-basis: fill;
+    margin-left: 0;
 }
 
 .exhibitor-container {
@@ -644,19 +646,20 @@ header {
 
 @media screen and (min-width: 600px) {
     .btn-primary,
+    .btn-secondary,
     .btn-tertiary {
-        padding: var(--padding-medium) var(--padding-large);
-        font-size: 16px;
+        padding: 1.2rem 4rem;
+        font-size: 18px;
     }
     .hero-content-container {
         width: 70%;
     }
     .title {
-        font-size: 1.8rem;
+        font-size: 3rem;
         letter-spacing: 0.4rem;
     }
     .sub-title {
-        font-size: 1rem;
+        font-size: 1.6rem;
         margin-bottom: var(--margin-medium);
     }
     h4 {
@@ -710,12 +713,12 @@ header {
     }
 
     .title {
-        font-size: 2rem;
-        letter-spacing: 0.35rem;
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
         margin-bottom: var(--margin-small);
     }
     .sub-title {
-        font-size: 1.1rem;
+        font-size: 2.25rem;
         margin-bottom: var(--margin-small);
     }
     .card {
@@ -725,8 +728,7 @@ header {
         /* Two cards per row, with space between */
     }
     .btn-primary {
-        padding: var(--padding-medium) var(--padding-large);
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .btn-tertiary {
         padding: var(--padding-medium) var(--padding-large);
@@ -936,11 +938,12 @@ header {
         width: 80%;
     }
     .title {
-        font-size: 2.4rem;
-        letter-spacing: 0.4rem;
+        font-size: 4rem;
+        letter-spacing: 0.6rem;
     }
     .sub-title {
-        font-size: 1.6rem;
+        font-size: 2.4rem;
+        margin-bottom: var(--margin-large);
     }
     .card-container {
         gap: 2rem;
@@ -952,9 +955,6 @@ header {
     }
     .card-heading {
         line-height: 1.7rem;
-    }
-    .btn-primary {
-        padding: var(--padding-small) var(--padding-large);
     }
 }
 
@@ -973,16 +973,15 @@ header {
         width: 80%;
     }
     .title {
-        font-size: 3rem;
-        letter-spacing: 0.4rem;
+        font-size: 4.5rem;
+        letter-spacing: 0.6rem;
     }
     .sub-title {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
     }
     .btn-primary {
         font-size: 1.6em;
         letter-spacing: 0.4rem;
-        padding: var(--padding-small) var(--padding-large);
     }
     .btn-tertiary {
         padding: var(--padding-small) 3rem;
@@ -1047,25 +1046,23 @@ header {
         width: 85%;
     }
     .title {
-        font-size: 6rem;
-        letter-spacing: 0.85rem;
+        font-size: 5.4rem;
+        letter-spacing: 0.75rem;
     }
     .title-long {
         font-size: 3.6rem;
         letter-spacing: 0.5rem;
     }
     .sub-title {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         margin-bottom: var(--margin-large);
     }
     .link-text {
         font-size: 1.2rem;
     }
-    .btn-primary {
-        padding: 1.4rem 6rem;
-        font-size: 1.8rem;
-    }
+    .btn-primary,
     .btn-tertiary {
-        padding: var(--padding-small) 4rem;
+        padding: 1.8rem 6rem;
+        font-size: 1.8rem;
     }
 }

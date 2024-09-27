@@ -41,7 +41,9 @@ export default function Footer() {
                         <a href="./BookTickets" className="footer-link">
                             Get Tickets
                         </a>
-                        <a href="./ExhibitorRegistration" className="footer-link">
+                        <a
+                            href="./ExhibitorRegistration"
+                            className="footer-link">
                             Exhibitor Registration
                         </a>
                     </div>
@@ -59,7 +61,9 @@ export default function Footer() {
                         <a href="./SponsorsPartners" className="footer-link">
                             Our Sponsors
                         </a>
-                        <a href="./AviationPathwayPortal" className="footer-link">
+                        <a
+                            href="./AviationPathwayPortal"
+                            className="footer-link">
                             Aviation Pathway Portal
                         </a>
                     </div>

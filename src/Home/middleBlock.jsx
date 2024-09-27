@@ -33,6 +33,7 @@ export default function MiddleBlockOfText() {
                                 display: "flex",
                                 flexDirection: "column",
                                 alignItems: "center", // Aligns items to the center horizontally
+                                alignContent: "center",
                                 gap: "10px", // Adds space between items
                             }}
                             className="my-2">
@@ -126,4 +127,4 @@ export default function MiddleBlockOfText() {
             <hr />
         </Box>
     );
-};
+}
