@@ -347,7 +347,7 @@ button:hover {
     justify-content: center;
 }
 
-.align-vertical-middle {
+.align-vertical-middle.align-vertical-middle {
     align-items: center;
 }
 
@@ -406,7 +406,32 @@ header {
     left: 5%;
     top: 1%;
 }
-
+.sponsor-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 0.5rem;
+}
+.sponsor {
+    display: inline-block;
+    height: 32px;
+    width: auto;
+    margin: var(--margin-small) var(--margin-small);
+}
+.partner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+.partner {
+    display: inline-block;
+    height: 265px;
+    width: auto;
+}
 .footer {
     display: flex;
     flex-direction: column;
@@ -678,6 +703,9 @@ header {
         order: 2;
         margin-bottom: var(--margin-large);
     }
+    .sponsor {
+        height: 48px;
+    }
 }
 
 /* ========= TABLET ========= */
@@ -834,6 +862,9 @@ header {
         font-weight: 600;
         align-self: start;
     }
+    .sponsor {
+        height: 64px;
+    }
     .site-map {
         margin-left: var(--margin-large);
     }
@@ -850,7 +881,9 @@ header {
         --margin-medium: 1.25rem;
         --margin-large: 1.5rem;
     }
-
+    .sponsor {
+        height: 80px;
+    }
     .card-container {
         gap: 3rem;
     }
@@ -1036,7 +1069,9 @@ header {
         margin: 0 auto;
         margin-top: 6rem;
     }
-
+    .sponsor {
+        height: 88px;
+    }
     .card {
         flex-basis: calc(30% - 2rem);
     }
@@ -1047,7 +1082,9 @@ header {
         font-size: 1.5rem;
         font-weight: 400;
     }
-
+    .sponsor {
+        height: 128px;
+    }
     /* :has = will select the container if it is a long title and not a short title */
     .hero-content-container:has(.title-long) {
         max-width: 75%;

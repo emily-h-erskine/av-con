@@ -1,14 +1,11 @@
 import React from "react";
 
-export default function Sponsor({ logoUrl, sponsorName }) {
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-      <img
-        src={logoUrl}
-        alt="Sponsor Logo"
-        style={{ width: '50%'}}
-      />
-      <p>{sponsorName}</p>
-    </div>
-  );
+export default function Sponsor({ logoPath, linkURL, altText }) {
+    return (
+        <div className="sponsor">
+            <a href={linkURL} target="blank">
+                <img src={logoPath} alt={altText} className="sponsor" />
+            </a>
+        </div>
+    );
 }
