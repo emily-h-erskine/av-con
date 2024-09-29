@@ -426,10 +426,12 @@ header {
     align-items: center;
     align-content: center;
     gap: 1rem;
+
+    margin-top: var(--margin-large);
 }
 .partner {
     display: inline-block;
-    height: 265px;
+    height: 240px;
     width: auto;
 }
 .footer {
@@ -471,6 +473,35 @@ header {
     width: 100%;
     flex-basis: fill;
     margin-left: 0;
+}
+
+.para-container {
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.heading-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0 0 6rem 0;
+}
+
+.heading-img {
+    position: relative;
+    margin-left: 0;
+    z-index: 1;
+    height: 120px;
+    width: auto;
+}
+
+.h3-with-image {
+    position: relative;
+    z-index: 2;
+    margin-left: -2.5%;
+    padding-left: 0.5rem;
 }
 
 .exhibitor-container {

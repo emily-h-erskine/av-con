@@ -29,40 +29,44 @@ import aftaLogo from "./SponsorImages/aftaLogo.png";
 import aviationIrelandLogo from "./SponsorImages/aviationIrelandChallengeLogo.png";
 import logistycsLogo from "./SponsorImages/logistycsLogo.png";
 import rionnIomparLogo from "./SponsorImages/roinnIompairLogo 1.png";
+import headingImg from "./SponsorImages/heading_image-transparent.png";
 
 export default function SponsorsPartners() {
     return (
-        <main
-            className="flex min-h-screen flex-col justify-between p-4 md:p-24"
-            style={{ justifyContent: "center", alignItems: "center" }}>
-            <h3
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginBottom: "2rem",
-                }}>
-                Our Sponsors and Partners
-            </h3>
+        <main className="flex-col">
+            <div className="heading-container">
+                <img
+                    src={headingImg}
+                    className="heading-img"
+                    alt="a handshake between partners"
+                />
+                <h3 className="h3-with-image">Our Sponsors and Partners</h3>
+            </div>
 
-            <p
-                style={{
-                    textAlign: "center",
-                    padding: "2%",
-                    marginBottom: "4rem",
-                }}>
-                AvCon - The Future of Aviation is an unparalleled event made
-                possible through the generous support of our sponsors,
-                exhibitors, and partners. This collaboration, including a key
-                partnership with The Irish Air Corps, brings together leading
-                aviation professionals, innovative companies, and educational
-                institutions to create an inspiring experience. <br></br>AvCon
-                offers school and college groups free access to explore the
-                cutting-edge advancements in aviation, meet industry experts,
-                and engage with interactive exhibits, fostering the next
-                generation of aviation enthusiasts and professionals. Join us in
-                celebrating the future of flight and the minds shaping it.
-            </p>
+            <div className="para-container">
+                <p
+                    style={{
+                        marginBottom: "0.5rem",
+                    }}>
+                    AvCon - The Future of Aviation is an unparalleled event made
+                    possible through the generous support of our sponsors,
+                    exhibitors, and partners. This collaboration, including a
+                    key partnership with The Irish Air Corps, brings together
+                    leading aviation professionals, innovative companies, and
+                    educational institutions to create an inspiring experience.
+                </p>
+                <p
+                    style={{
+                        marginBottom: "4rem",
+                    }}>
+                    The event offers school and college groups free access to
+                    explore the cutting-edge advancements in aviation, meet
+                    industry experts, and engage with interactive exhibits,
+                    fostering the next generation of aviation enthusiasts and
+                    professionals. Join us in celebrating the future of flight
+                    and the minds shaping it.
+                </p>
+            </div>
             <div className="flex-container align-vertical-middle align-center space-between mb-3">
                 <img
                     src={avconLogo}
@@ -73,6 +77,7 @@ export default function SponsorsPartners() {
                 <h5>Proudly sponsered by</h5>
             </div>
 
+            {/* SPONSORS */}
             <div clasName="sponsor-container mb-3">
                 <Sponsor
                     logoPath={theBigIdeaLogo}
@@ -188,7 +193,9 @@ export default function SponsorsPartners() {
                     logoUrl="https://www.gov.ie/en/organisation/department-of-transport/"
                 />
             </div>
-            <div className="flex-col-container">
+
+            {/* PARTNERS */}
+            <div className="flex-col-container mt-3">
                 <h6>AvCon In Collaboration with:</h6>
             </div>
 
@@ -203,20 +210,29 @@ export default function SponsorsPartners() {
                 </Grid>
             </Grid>
 
+            {/* MEDIA PARTNERS */}
             <div>
                 <h6
                     style={{
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        marginBottom: "2rem",
+                        margin: "4rem 0 0",
                     }}>
                     AvCon Media Partner:
                 </h6>
-                <Sponsor
-                    logoUrl={ODohertysLogo}
-                    sponsorName="O'Doherty Media Group"
-                />
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        margin: "0 0 6rem 0",
+                    }}>
+                    <Sponsor
+                        logoPath={ODohertysLogo}
+                        sponsorName="O'Doherty Media Group"
+                    />
+                </div>
             </div>
         </main>
     );
