@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Dropdown from "./Dropdown.svg";
-// import "../../index.css";
 
 export const Header = () => {
     const [showEventDropdown, setShowEventDropdown] = useState(false);
@@ -44,8 +43,8 @@ export const Header = () => {
                 <a href="/">
                     <img
                         src="./AVConLogoWhiteNoBG.png"
-                        alt="AV Con logo"
-                        width={isMobile ? "20%" : "30%"}
+                        alt="ACon logo"
+                        width={isMobile ? "20%" : "35%"}
                     />
                 </a>
             </div>
@@ -272,17 +271,17 @@ export const Header = () => {
                             />
                             {showAboutDropdown && (
                                 <p
-                                style={{
-                                    position: "absolute", // ensures the dropdown does not affect page layout
-                                    zIndex: "100", // ensures dorpdown appears on top of other page elements
-                                    top: "100%",
-                                    left: 0,
-                                    backgroundColor:
-                                        "var(--background-dark-98",
-                                    padding: "10px",
-                                    border: "1px white solid",
-                                    textAlign: "left",
-                                }}>
+                                    style={{
+                                        position: "absolute", // ensures the dropdown does not affect page layout
+                                        zIndex: "100", // ensures dorpdown appears on top of other page elements
+                                        top: "100%",
+                                        left: 0,
+                                        backgroundColor:
+                                            "var(--background-dark-98",
+                                        padding: "10px",
+                                        border: "1px white solid",
+                                        textAlign: "left",
+                                    }}>
                                     <a
                                         className="uppercase link-text"
                                         href="./News">
