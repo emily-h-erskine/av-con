@@ -235,13 +235,13 @@ export const Header = () => {
                                     <br />
                                     <br />
                                     <a
-                                        className="uppercase"
+                                        className="uppercase link-text"
                                         href="./SpeakersPresenters">
                                         SPEAKERS &amp; PRESENTERS
                                     </a>
                                     <br />
                                     <br />
-                                    <a className="uppercase" href="./FlightSim">
+                                    <a className="uppercase link-text" href="./FlightSim">
                                         AVCON XTRA: THE FLIGHT SIM CHALLENGE
                                     </a>
                                 </p>
