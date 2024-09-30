@@ -112,10 +112,6 @@ export default function SponsorsPartners() {
                     linkURL="https://www.snnfacairportgroup.ie/"
                     altText="FAC company logo"></Sponsor>
                 <Sponsor
-                    logoPath={facLogo}
-                    linkURL="https://www.snnfacairportgroup.ie/"
-                    altText="Shannon Airport Group company logo"></Sponsor>
-                <Sponsor
                     logoPath={AirCorpLogo}
                     linkURL="https://www.military.ie/en/who-we-are/air-corps/"
                     altText="Irish Air Corps company logo"></Sponsor>
@@ -205,11 +201,15 @@ export default function SponsorsPartners() {
                 }}>
                 <Grid item>
                     <Partner
-                        linkURL={AirCorpLogo}
-                        partnerName="Irish Air Corps"></Partner>
+                        logoPath={AirCorpLogo}
+                        partnerName="Irish Air Corps"
+                        partnerURL="https://www.military.ie/en/who-we-are/air-corps/"></Partner>
                 </Grid>
                 <Grid>
-                    <Partner linkURL={TYHubLogo} partnerName="TY Hub"></Partner>
+                    <Partner
+                        logoPath={TYHubLogo}
+                        partnerName="TY Hub"
+                        partnerURL="http://tyhun.ie/"></Partner>
                 </Grid>
             </Grid>
 
