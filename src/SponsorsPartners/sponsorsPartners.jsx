@@ -1,148 +1,236 @@
 import React from "react";
-// import Box from '@mui/material/Box'; // unused
 import Grid from "@mui/material/Grid";
+
 import Sponsor from "./sponsor";
-import SponsoredBy from "./SponsorImages/1.png";
-// import S2 from "./SponsorImages/2.png"; // unused
-import S3 from "./SponsorImages/3.png";
-import S4 from "./SponsorImages/4.png";
-import S5 from "./SponsorImages/5.png";
-import S6 from "./SponsorImages/6.png";
-import S7 from "./SponsorImages/AvCon Supported By Banners -2.png";
-import S8 from "./SponsorImages/AvCon Supported By Banners -3.png";
-import S9 from "./SponsorImages/AvCon Supported By Banners -4.png";
-import S10 from "./SponsorImages/AvCon Supported By Banners -5.png";
-import S11 from "./SponsorImages/AvCon Supported By Banners -7.png";
-import S12 from "./SponsorImages/AvCon Supported By Banners -9.png";
+import Partner from "./partner";
+
+import theBigIdeaLogo from "./SponsorImages/theBigIdeaLogo.png";
+import wayneDennerLogo from "./SponsorImages/wayneDennerLogo.png";
+import shannonAviationLogo from "./SponsorImages/Shannon-Aviation-Museum-Logo 1.png";
+import aviationSkillnetLogo from "./SponsorImages/aviationSkillneLogo.png";
+import avtrainLogo from "./SponsorImages/avtrainLogo.png";
+import mannaLogo from "./SponsorImages/manna-logo 1.png";
+import shannonAirportGroupLogo from "./SponsorImages/shannonAirportGroupLogo.png";
+import facLogo from "./SponsorImages/fac-logo.png";
 import AirCorpLogo from "./SponsorImages/AirCorpsLogo.jpeg";
-import TYHubLogo from "./SponsorImages/TYHubLogo.jpg";
+import forHireLogo from "./SponsorImages/forHireLogo.png";
 import ODohertysLogo from "./SponsorImages/ODohertysLogo.jpg";
+import hireUpLogo from "./SponsorImages/hireUpLogo.png";
+import iaaLogo from "./SponsorImages/iaaLogo.png";
+import avconLogo from "./SponsorImages/avconLogo.png";
+import TYHubLogo from "./SponsorImages/TYHubLogo.jpg";
+import fwiaLogo from "./SponsorImages/fwia-logo-transparent (1).png";
+import eawcLogo from "./SponsorImages/eawcLogo.png";
+import droneSpaceLogo from "./SponsorImages/droneSpaceLogo.png";
+import eirSpace from "./SponsorImages/eirSpaceLogo.png";
+import easaLogo from "./SponsorImages/easaLogo.png";
+import augmentAeroLogo from "./SponsorImages/augmentAeroLogo (1).png";
+import aftaLogo from "./SponsorImages/aftaLogo.png";
+import aviationIrelandLogo from "./SponsorImages/aviationIrelandChallengeLogo.png";
+import logistycsLogo from "./SponsorImages/logistycsLogo.png";
+import rionnIomparLogo from "./SponsorImages/roinnIompairLogo 1.png";
+import headingImg from "./SponsorImages/heading_image-transparent.png";
 
 export default function SponsorsPartners() {
     return (
-        <main
-            className="flex min-h-screen flex-col justify-between p-4 md:p-24"
-            style={{ justifyContent: "center", alignItems: "center" }}>
-            <h3
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginBottom: "2rem",
-                }}>
-                Our Sponsors and Partners
-            </h3>
+        <main className="flex-col">
+            <h3 className="text-center mt-1 mb-3">Our Sponsors and Partners</h3>
 
-            <p style={{ textAlign: "center", padding: "2%" }}>
-                AvCon - The Future of Aviation is an unparalleled event made
-                possible through the generous support of our sponsors,
-                exhibitors, and partners. This collaboration, including a key
-                partnership with The Irish Air Corps, brings together leading
-                aviation professionals, innovative companies, and educational
-                institutions to create an inspiring experience. AvCon offers
-                school and college groups free access to explore the
-                cutting-edge advancements in aviation, meet industry experts,
-                and engage with interactive exhibits, fostering the next
-                generation of aviation enthusiasts and professionals. Join us in
-                celebrating the future of flight and the minds shaping it.
-            </p>
-
-            <div style={{ padding: "5%", textAlign: "center" }}>
+            <div className="para-container mt-3">
+                <p
+                    style={{
+                        marginBottom: "0.5rem",
+                    }}>
+                    AvCon - The Future of Aviation is an unparalleled event made
+                    possible through the generous support of our sponsors,
+                    exhibitors, and partners. This collaboration, including a
+                    key partnership with The Irish Air Corps, brings together
+                    leading aviation professionals, innovative companies, and
+                    educational institutions to create an inspiring experience.
+                </p>
+                <p
+                    style={{
+                        marginBottom: "4rem",
+                    }}>
+                    The event offers school and college groups free access to
+                    explore the cutting-edge advancements in aviation, meet
+                    industry experts, and engage with interactive exhibits,
+                    fostering the next generation of aviation enthusiasts and
+                    professionals. Join us in celebrating the future of flight
+                    and the minds shaping it.
+                </p>
+            </div>
+            <div className="flex-container align-vertical-middle align-center mb-1">
                 <img
-                    src={SponsoredBy}
+                    src={avconLogo}
                     alt="AvCon Sponsored By"
-                    style={{ width: "100%" }}
+                    style={{ width: "15%" }}
+                    className="mr-1"
                 />
-                <img
-                    src={S7}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
+                <h4>Proudly sponsered by</h4>
+            </div>
+
+            {/* SPONSORS */}
+            <div className="sponsor-container mb-3">
+                <Sponsor
+                    logoPath={theBigIdeaLogo}
+                    linkURL="https://thebigidea.ie/"
+                    altText="The Big Idea logo"></Sponsor>
+                <Sponsor
+                    logoPath={wayneDennerLogo}
+                    linkURL="https://www.waynedenner.com/"
+                    altText="Wayne Denner company logo"></Sponsor>
+                <Sponsor
+                    logoPath={shannonAviationLogo}
+                    linkURL="https://www.snnairportgroup.ie/"
+                    altText="hannon Aviation Museum company logo"></Sponsor>
+                <Sponsor
+                    logoPath={aviationSkillnetLogo}
+                    linkURL="https://www.skillnetireland.ie/skillnet-business-network/networks/aviation-skillnet"
+                    altText="Aviation Skillnet company logo"></Sponsor>
+                <Sponsor
+                    logoPath={avtrainLogo}
+                    linkURL="https://www.avtrain.aero/"
+                    altText="Avtrain company logo"></Sponsor>{" "}
+                <Sponsor
+                    logoPath={mannaLogo}
+                    linkURL="https://www.manna.aero/"
+                    altText="Manna company logo"></Sponsor>
+                <Sponsor
+                    logoPath={shannonAirportGroupLogo}
+                    linkURL="https://www.snnairportgroup.ie/"
+                    altText="Shannon Airport Group company logo"></Sponsor>{" "}
+                <Sponsor
+                    logoPath={facLogo}
+                    linkURL="https://www.snnfacairportgroup.ie/"
+                    altText="FAC company logo"></Sponsor>
+                <Sponsor
+                    logoPath={AirCorpLogo}
+                    linkURL="https://www.military.ie/en/who-we-are/air-corps/"
+                    altText="Irish Air Corps company logo"></Sponsor>
+                <Sponsor
+                    logoPath={forHireLogo}
+                    linkURL="https://www.for-hire.ie"
+                    altText="For Hire company logo"></Sponsor>
+                <Sponsor
+                    logoPath={ODohertysLogo}
+                    linkURL="https://www.odav.tv/"
+                    altText="O'Dohertys Audio Video company Logo"></Sponsor>
+                <Sponsor
+                    logoPath={hireUpLogo}
+                    linkURL="http://hireup.ie/"
+                    altText="Hire Up company logo"></Sponsor>
+                <Sponsor
+                    logoPath={iaaLogo}
+                    linkURL="http://iaa.ie/"
+                    altText="Irish Airport Authority logo"></Sponsor>
+                <Sponsor
+                    logoPath={avconLogo}
+                    linkURL="http://avcon.ie/"
+                    altText="AvCon logo"></Sponsor>
+                <Sponsor
+                    logoPath={TYHubLogo}
+                    linkURL="http://tyhun.ie/"
+                    altText="TY Hub logo"></Sponsor>
+                <Sponsor
+                    logoPath={fwiaLogo}
+                    altText="For Women in Avaition logo"
+                    linkURL="https://tyhub.ie/the-future-of-women-in-aviation/"></Sponsor>
+                <Sponsor
+                    logoPath={eawcLogo}
+                    altText="European Aviation Wellbeing Commitee logo"
+                    linkURL="https://twitter.com/eawc_official?lang=en"
                 />
-                <img
-                    src={S3}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
+                <Sponsor
+                    logoPath={droneSpaceLogo}
+                    alt="Drone Space company logo"
+                    linkURL="https://www.dronespace.ie/"
                 />
-                <img
-                    src={S4}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
+                <Sponsor
+                    logoPath={eirSpace}
+                    altText="Eirspace company logo"
+                    linkURL="https://www.eirspace.org/"
                 />
-                <img
-                    src={S5}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
+                <Sponsor
+                    logoPath={easaLogo}
+                    altText="European Aviation Safety Agency logo"
+                    linkURL="https://www.easa.europa.eu/en"
                 />
-                <img
-                    src={S6}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
+                <Sponsor
+                    logoPath={augmentAeroLogo}
+                    altText="Augment Aero company logo"
+                    linkURL="https://augmentaero.com/"
                 />
-                <img
-                    src={S8}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
+                <Sponsor
+                    logoPath={aftaLogo}
+                    altText="Atlantic Flight Training Academy logo"
+                    linkURL="https://afta.ie/"
                 />
-                <img
-                    src={S9}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
+                <Sponsor
+                    logoPath={aviationIrelandLogo}
+                    altText="Aviation Ireland Challenge company logo"
+                    linkURL="https://www.aviationireland.ie/"
                 />
-                <img
-                    src={S10}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
+                <Sponsor
+                    logoPath={logistycsLogo}
+                    altText="LogisTYcs Skills company logo"
+                    linkURL="https://www.gov.ie/en/publication/7433e-logistycs/"
                 />
-                <img
-                    src={S11}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S12}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
+                <Sponsor
+                    logoPath={rionnIomparLogo}
+                    altText="An Rionn Iompar (Department of Transport) logo"
+                    linkURL="https://www.gov.ie/en/organisation/department-of-transport/"
                 />
             </div>
 
-            <h6
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginBottom: "2rem",
+            {/* PARTNERS */}
+            <h4 className="mt-3 text-center">AvCon In Collaboration with:</h4>
+
+            <Grid
+                container
+                justifyContent="center"
+                padding={{
+                    xs: "0 2%",
                 }}>
-                AvCon In Collaboration with:
-            </h6>
-
-            <div>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={6}>
-                        <Sponsor
-                            logoUrl={AirCorpLogo}
-                            sponsorName="Irish Air Corps"
-                        />
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <Sponsor logoUrl={TYHubLogo} sponsorName="TY Hub" />
-                    </Grid>
+                <Grid item>
+                    <Partner
+                        logoPath={AirCorpLogo}
+                        partnerName="Irish Air Corps"
+                        partnerURL="https://www.military.ie/en/who-we-are/air-corps/"></Partner>
                 </Grid>
-            </div>
+                <Grid>
+                    <Partner
+                        logoPath={TYHubLogo}
+                        partnerName="TY Hub"
+                        partnerURL="http://tyhun.ie/"></Partner>
+                </Grid>
+            </Grid>
 
+            {/* MEDIA PARTNERS */}
             <div>
-                <h6
+                <h4
                     style={{
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        marginBottom: "2rem",
+                        margin: "4rem 0 0",
                     }}>
                     AvCon Media Partner:
-                </h6>
-                <Sponsor
-                    logoUrl={ODohertysLogo}
-                    sponsorName="O'Doherty Media Group"
-                />
+                </h4>
+                <div
+                    className="media-partner-container"
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        margin: "0 0 6rem 0",
+                    }}>
+                    <Sponsor
+                        logoPath={ODohertysLogo}
+                        altText="O'Doherty Media Group logo"
+                        linkURL="https://www.odav.tv/"
+                    />
+                </div>
             </div>
         </main>
     );

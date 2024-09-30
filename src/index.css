@@ -347,7 +347,7 @@ button:hover {
     justify-content: center;
 }
 
-.align-vertical-middle {
+.align-vertical-middle.align-vertical-middle {
     align-items: center;
 }
 
@@ -406,7 +406,43 @@ header {
     left: 5%;
     top: 1%;
 }
-
+.sponsor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.sponsor {
+    display: inline-block;
+    height: 32px;
+    width: auto;
+    margin: 0.75rem 0.25rem;
+}
+.partners-container {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.partner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: var(--margin-small);
+    width: fit-content;
+}
+.partner-logo {
+    display: inline-block;
+    height: 12rem;
+    width: auto;
+}
+.media-partner-container .sponsor {
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
 .footer {
     display: flex;
     flex-direction: column;
@@ -446,6 +482,12 @@ header {
     width: 100%;
     flex-basis: fill;
     margin-left: 0;
+}
+
+.para-container {
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
 }
 
 .exhibitor-container {
@@ -678,6 +720,12 @@ header {
         order: 2;
         margin-bottom: var(--margin-large);
     }
+    .sponsor {
+        height: 48px;
+    }
+    .partner {
+        height: 12rem;
+    }
 }
 
 /* ========= TABLET ========= */
@@ -834,6 +882,13 @@ header {
         font-weight: 600;
         align-self: start;
     }
+    .sponsor-container {
+        padding: 0 2%;
+    }
+    .sponsor {
+        height: 64px;
+        margin: 1rem 0.75rem;
+    }
     .site-map {
         margin-left: var(--margin-large);
     }
@@ -850,7 +905,10 @@ header {
         --margin-medium: 1.25rem;
         --margin-large: 1.5rem;
     }
-
+    .sponsor {
+        height: 80px;
+        margin: 1.25rem 0.75rem;
+    }
     .card-container {
         gap: 3rem;
     }
@@ -918,6 +976,9 @@ header {
     }
     .avconXtra-container .position {
         order: 1;
+    }
+    .sponsor-container {
+        padding: 0 4%;
     }
 }
 /* ========= DESKTOPS, 1024px and up ========= */
@@ -1036,9 +1097,15 @@ header {
         margin: 0 auto;
         margin-top: 6rem;
     }
-
+    .sponsor {
+        height: 88px;
+        margin: 1.25rem 1rem;
+    }
     .card {
         flex-basis: calc(30% - 2rem);
+    }
+    .sponsor-container {
+        padding: 0 6%;
     }
 }
 
@@ -1047,7 +1114,10 @@ header {
         font-size: 1.5rem;
         font-weight: 400;
     }
-
+    .sponsor {
+        height: 128px;
+        margin: 1.25rem 1.25rem;
+    }
     /* :has = will select the container if it is a long title and not a short title */
     .hero-content-container:has(.title-long) {
         max-width: 75%;
@@ -1072,5 +1142,15 @@ header {
     .btn-tertiary {
         padding: 1.8rem 6rem;
         font-size: 1.8rem;
+    }
+
+    .sponsor-container {
+        padding: 0 4%;
+    }
+    .sponsor {
+        margin: 2.5rem 1.25rem;
+    }
+    .partner-logo {
+        height: 400px;
     }
 }
