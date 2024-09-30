@@ -67,152 +67,155 @@ export default function SponsorsPartners() {
                     and the minds shaping it.
                 </p>
             </div>
-            <div className="flex-container align-vertical-middle align-center space-between mb-3">
+            <div className="flex-container align-vertical-middle align-center mb-1">
                 <img
                     src={avconLogo}
                     alt="AvCon Sponsored By"
                     style={{ width: "15%" }}
                     className="mr-1"
                 />
-                <h5>Proudly sponsered by</h5>
+                <h4>Proudly sponsered by</h4>
             </div>
 
             {/* SPONSORS */}
-            <div clasName="sponsor-container mb-3">
+            <div className="sponsor-container mb-3">
                 <Sponsor
                     logoPath={theBigIdeaLogo}
-                    logoUrl="https://thebigidea.ie/"
+                    linkURL="https://thebigidea.ie/"
                     altText="The Big Idea logo"></Sponsor>
                 <Sponsor
                     logoPath={wayneDennerLogo}
-                    logoUrl="https://www.waynedenner.com/"
+                    linkURL="https://www.waynedenner.com/"
                     altText="Wayne Denner company logo"></Sponsor>
                 <Sponsor
                     logoPath={shannonAviationLogo}
-                    logoUrl="https://www.snnairportgroup.ie/"
+                    linkURL="https://www.snnairportgroup.ie/"
                     altText="hannon Aviation Museum company logo"></Sponsor>
                 <Sponsor
                     logoPath={aviationSkillnetLogo}
-                    logoUrl="https://www.skillnetireland.ie/skillnet-business-network/networks/aviation-skillnet"
+                    linkURL="https://www.skillnetireland.ie/skillnet-business-network/networks/aviation-skillnet"
                     altText="Aviation Skillnet company logo"></Sponsor>
                 <Sponsor
                     logoPath={avtrainLogo}
-                    logoUrl="https://www.avtrain.aero/"
+                    linkURL="https://www.avtrain.aero/"
                     altText="Avtrain company logo"></Sponsor>{" "}
                 <Sponsor
                     logoPath={mannaLogo}
-                    logoUrl="https://www.manna.aero/"
+                    linkURL="https://www.manna.aero/"
                     altText="Manna company logo"></Sponsor>
                 <Sponsor
                     logoPath={shannonAirportGroupLogo}
-                    logoUrl="https://www.snnairportgroup.ie/"
+                    linkURL="https://www.snnairportgroup.ie/"
                     altText="Shannon Airport Group company logo"></Sponsor>{" "}
                 <Sponsor
                     logoPath={facLogo}
-                    logoUrl="https://www.snnfacairportgroup.ie/"
+                    linkURL="https://www.snnfacairportgroup.ie/"
                     altText="FAC company logo"></Sponsor>
                 <Sponsor
                     logoPath={facLogo}
-                    logoUrl="https://www.snnfacairportgroup.ie/"
+                    linkURL="https://www.snnfacairportgroup.ie/"
                     altText="Shannon Airport Group company logo"></Sponsor>
                 <Sponsor
                     logoPath={AirCorpLogo}
-                    logoUrl="https://www.military.ie/en/who-we-are/air-corps/"
+                    linkURL="https://www.military.ie/en/who-we-are/air-corps/"
                     altText="Irish Air Corps company logo"></Sponsor>
                 <Sponsor
                     logoPath={forHireLogo}
-                    logoUrl="https://www.for-hire.ie"
+                    linkURL="https://www.for-hire.ie"
                     altText="For Hire company logo"></Sponsor>
                 <Sponsor
                     logoPath={ODohertysLogo}
-                    logoUrl="https://www.odav.tv/"
+                    linkURL="https://www.odav.tv/"
                     altText="O'Dohertys Audio Video company Logo"></Sponsor>
                 <Sponsor
                     logoPath={hireUpLogo}
-                    logoUrl="http://hireup.ie/"
+                    linkURL="http://hireup.ie/"
                     altText="Hire Up company logo"></Sponsor>
                 <Sponsor
                     logoPath={iaaLogo}
-                    logoUrl="http://iaa.ie/"
+                    linkURL="http://iaa.ie/"
                     altText="Irish Airport Authority logo"></Sponsor>
                 <Sponsor
                     logoPath={avconLogo}
-                    logoUrl="http://avcon.ie/"
+                    linkURL="http://avcon.ie/"
                     altText="AvCon logo"></Sponsor>
                 <Sponsor
                     logoPath={TYHubLogo}
-                    logoUrl="http://tyhun.ie/"
+                    linkURL="http://tyhun.ie/"
                     altText="TY Hub logo"></Sponsor>
                 <Sponsor
                     logoPath={fwiaLogo}
                     altText="For Women in Avaition logo"
-                    logoUrl="https://tyhub.ie/the-future-of-women-in-aviation/"></Sponsor>
+                    linkURL="https://tyhub.ie/the-future-of-women-in-aviation/"></Sponsor>
                 <Sponsor
                     logoPath={eawcLogo}
                     altText="European Aviation Wellbeing Commitee logo"
-                    logoUrl="https://twitter.com/eawc_official?lang=en"
+                    linkURL="https://twitter.com/eawc_official?lang=en"
                 />
                 <Sponsor
                     logoPath={droneSpaceLogo}
                     alt="Drone Space company logo"
-                    logoUrl="https://www.dronespace.ie/"
+                    linkURL="https://www.dronespace.ie/"
                 />
                 <Sponsor
                     logoPath={eirSpace}
                     altText="Eirspace company logo"
-                    logoUrl="https://www.eirspace.org/"
+                    linkURL="https://www.eirspace.org/"
                 />
                 <Sponsor
                     logoPath={easaLogo}
                     altText="European Aviation Safety Agency logo"
-                    logoUrl="https://www.easa.europa.eu/en"
+                    linkURL="https://www.easa.europa.eu/en"
                 />
                 <Sponsor
                     logoPath={augmentAeroLogo}
                     altText="Augment Aero company logo"
-                    logoUrl="https://augmentaero.com/"
+                    linkURL="https://augmentaero.com/"
                 />
                 <Sponsor
                     logoPath={aftaLogo}
                     altText="Atlantic Flight Training Academy logo"
-                    logoUrl="https://afta.ie/"
+                    linkURL="https://afta.ie/"
                 />
                 <Sponsor
                     logoPath={aviationIrelandLogo}
                     altText="Aviation Ireland Challenge company logo"
-                    logoUrl="https://www.aviationireland.ie/"
+                    linkURL="https://www.aviationireland.ie/"
                 />
                 <Sponsor
                     logoPath={logistycsLogo}
                     altText="LogisTYcs Skills company logo"
-                    logoUrl="https://www.gov.ie/en/publication/7433e-logistycs/"
+                    linkURL="https://www.gov.ie/en/publication/7433e-logistycs/"
                 />
                 <Sponsor
                     logoPath={rionnIomparLogo}
                     altText="An Rionn Iompar (Department of Transport) logo"
-                    logoUrl="https://www.gov.ie/en/organisation/department-of-transport/"
+                    linkURL="https://www.gov.ie/en/organisation/department-of-transport/"
                 />
             </div>
 
             {/* PARTNERS */}
-            <div className="flex-col-container mt-3">
-                <h6>AvCon In Collaboration with:</h6>
-            </div>
+            <h4 className="mt-3 text-center">AvCon In Collaboration with:</h4>
 
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={6}>
+            <Grid
+                container
+                justifyContent="center"
+                padding={{
+                    xs: "0 2%",
+                }}>
+                <Grid item>
                     <Partner
-                        logoUrl={AirCorpLogo}
+                        linkURL={AirCorpLogo}
                         partnerName="Irish Air Corps"></Partner>
                 </Grid>
-                <Grid item xs={12} md={6}>
-                    <Partner logoUrl={TYHubLogo} partnerName="TY Hub"></Partner>
+                <Grid>
+                    <Partner linkURL={TYHubLogo} partnerName="TY Hub"></Partner>
                 </Grid>
             </Grid>
 
             {/* MEDIA PARTNERS */}
             <div>
-                <h6
+                <h4
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -220,8 +223,9 @@ export default function SponsorsPartners() {
                         margin: "4rem 0 0",
                     }}>
                     AvCon Media Partner:
-                </h6>
+                </h4>
                 <div
+                    className="media-partner-container"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -230,7 +234,8 @@ export default function SponsorsPartners() {
                     }}>
                     <Sponsor
                         logoPath={ODohertysLogo}
-                        sponsorName="O'Doherty Media Group"
+                        altText="O'Doherty Media Group logo"
+                        linkURL="https://www.odav.tv/"
                     />
                 </div>
             </div>

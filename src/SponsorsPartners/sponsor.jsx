@@ -2,10 +2,8 @@ import React from "react";
 
 export default function Sponsor({ logoPath, linkURL, altText }) {
     return (
-        <div className="sponsor">
-            <a href={linkURL} target="blank">
-                <img src={logoPath} alt={altText} className="sponsor" />
-            </a>
-        </div>
+        <a href={linkURL} target="blank" className="sponsor">
+            <img src={logoPath} alt={altText} className="sponsor" />
+        </a>
     );
 }

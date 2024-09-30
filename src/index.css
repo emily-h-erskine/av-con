@@ -408,31 +408,40 @@ header {
 }
 .sponsor-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 0.5rem;
 }
 .sponsor {
     display: inline-block;
     height: 32px;
     width: auto;
-    margin: var(--margin-small) var(--margin-small);
+    margin: 0.75rem 0.25rem;
 }
-.partner-container {
-    display: flex;
+.partners-container {
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     align-content: center;
-    gap: 1rem;
-
-    margin-top: var(--margin-large);
 }
-.partner {
+.partner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: var(--margin-small);
+    width: fit-content;
+}
+.partner-logo {
     display: inline-block;
-    height: 240px;
+    height: 12rem;
     width: auto;
+}
+.media-partner-container .sponsor {
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 .footer {
     display: flex;
@@ -736,6 +745,9 @@ header {
     }
     .sponsor {
         height: 48px;
+    }
+    .partner {
+        height: 12rem;
     }
 }
 
