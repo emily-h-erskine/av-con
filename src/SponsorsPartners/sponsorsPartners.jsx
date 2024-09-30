@@ -34,16 +34,9 @@ import headingImg from "./SponsorImages/heading_image-transparent.png";
 export default function SponsorsPartners() {
     return (
         <main className="flex-col">
-            <div className="heading-container">
-                <img
-                    src={headingImg}
-                    className="heading-img"
-                    alt="a handshake between partners"
-                />
-                <h3 className="h3-with-image">Our Sponsors and Partners</h3>
-            </div>
+            <h3 className="text-center mt-1 mb-3">Our Sponsors and Partners</h3>
 
-            <div className="para-container">
+            <div className="para-container mt-3">
                 <p
                     style={{
                         marginBottom: "0.5rem",
