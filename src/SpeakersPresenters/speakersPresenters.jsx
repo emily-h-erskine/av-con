@@ -29,6 +29,7 @@ import EndaWalsh from "./PresenterSpeakerImages/endawalsh.jpeg";
 import CaitrionaMurphy from "./PresenterSpeakerImages/CaitrionaMurphy.jpg";
 import Charlie from "./PresenterSpeakerImages/Charlie.jpg";
 import ShaneCrawte from "./PresenterSpeakerImages/ShaneCrawte.jpg";
+import MarkDuffy from "./PresenterSpeakerImages/MarkDuffy.jpg";
 
 export default function SpeakersPresentors() {
     return (
@@ -293,6 +294,13 @@ export default function SpeakersPresentors() {
                   SpeakerImage={ShaneCrawte}
                   SpeakerName="Shane Crawte"
                   SpeakerBio="Shane, VP Technical Asset Management - Aviation Advisory Grant Thornton Ireland leads the technical department in Grant Thorntons dedicated advisory team. Grant Thorntons Aviation Lease Service department manage the leases for over 1000 MSN over several large lessors. Prior to Grant Thornton Shane had over a decade of experience in both military and civilian operations, working with rotary and fixed-wing aircraft. Before joining the Aviation Advisory team at Grant Thornton Ireland, he served as the technical team lead in a Powerplant overhaul shop, holding full Part 145 approval for various engine models."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={MarkDuffy}
+                  SpeakerName="Mark Duffy"
+                  SpeakerBio="Mark Duffy is Ryanair's Director of Talent & is responsible for all things recruitment, talent, retention & communications.  Mark has been working at Ryanair since 2015 and during that time has seen the airline more than double in size from 90m passengers & a fleet of 295 aircraft to over 600 aircraft & 200m passangers!  Mark is lucky to have a fantastic team at Ryanair who are responsible for recruiting over 10,000 new employees each year covering all areas of the business!.  Mark is originally from Birmingham in the UK but Dublin is now his home."
                 />
               </Grid>
             </Grid>
