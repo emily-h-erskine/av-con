@@ -30,6 +30,7 @@ import CaitrionaMurphy from "./PresenterSpeakerImages/CaitrionaMurphy.jpg";
 import Charlie from "./PresenterSpeakerImages/Charlie.jpg";
 import ShaneCrawte from "./PresenterSpeakerImages/ShaneCrawte.jpg";
 import MarkDuffy from "./PresenterSpeakerImages/MarkDuffy.jpg";
+import JamesLawless from "./PresenterSpeakerImages/JamesLawless.jpg";
 
 export default function SpeakersPresentors() {
     return (
@@ -301,6 +302,20 @@ export default function SpeakersPresentors() {
                   SpeakerImage={MarkDuffy}
                   SpeakerName="Mark Duffy"
                   SpeakerBio="Mark Duffy is Ryanair's Director of Talent & is responsible for all things recruitment, talent, retention & communications.  Mark has been working at Ryanair since 2015 and during that time has seen the airline more than double in size from 90m passengers & a fleet of 295 aircraft to over 600 aircraft & 200m passangers!  Mark is lucky to have a fantastic team at Ryanair who are responsible for recruiting over 10,000 new employees each year covering all areas of the business!.  Mark is originally from Birmingham in the UK but Dublin is now his home."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={JamesLawless}
+                  SpeakerName="James Lawless"
+                  SpeakerBio="James was elected to the Dáil to represent Kildare North in 2016 and 2020 and prior to that was a
+                  member of Kildare County Council, serving as Mayor of Naas in 2015. James studied Maths and Computer Science at Trinity College and Law at Kings Inns where he
+                  qualified as a Barrister. He practiced with a speciality in maritime/freight law. James first got involved in politics as a commuter activist and remains a strong advocate for
+                  improving transport links, rail and bus services, better walking and cycling infrastructure including
+                  greenways. Within the Dáil he has become a strong voice on Technology and Digital Policy introducing ground-
+                  breaking legislation on Social Media Regulation and on Cyber Harms. He served as opposition
+                  spokesperson on Science & Technology from 2016-2020 and as Chair of the Justice Committee from
+                  2020-2024."
                 />
               </Grid>
             </Grid>

@@ -15,6 +15,9 @@ import S10 from "./SponsorImages/AvCon Supported By Banners -5.png";
 import S11 from "./SponsorImages/AvCon Supported By Banners -7.png";
 import S12 from "./SponsorImages/AvCon Supported By Banners -9.png";
 import S13 from "./SponsorImages/AvCon Supported By Banners -10.png";
+import S14 from "./SponsorImages/AvCon Supported By Banners -11.png";
+import S15 from "./SponsorImages/AvCon Supported By Banners -12.png";
+import S16 from "./SponsorImages/AvCon Supported By Banners -13.png";
 import AirCorpLogo from "./SponsorImages/AirCorpsLogo.jpeg";
 import TYHubLogo from "./SponsorImages/TYHubLogo.jpg";
 import ODohertysLogo from "./SponsorImages/ODohertysLogo.jpg";
@@ -106,6 +109,21 @@ export default function SponsorsPartners() {
                 />
                 <img
                     src={S12}
+                    alt="Sponsors Display"
+                    style={{ width: "100%" }}
+                />
+                <img
+                    src={S14}
+                    alt="Sponsors Display"
+                    style={{ width: "100%" }}
+                />
+                <img
+                    src={S15}
+                    alt="Sponsors Display"
+                    style={{ width: "100%" }}
+                />
+                <img
+                    src={S16}
                     alt="Sponsors Display"
                     style={{ width: "100%" }}
                 />
