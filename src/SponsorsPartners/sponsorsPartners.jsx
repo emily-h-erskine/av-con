@@ -113,17 +113,17 @@ export default function SponsorsPartners() {
                     style={{ width: "100%" }}
                 />
                 <img
+                    src={S16}
+                    alt="Sponsors Display"
+                    style={{ width: "100%" }}
+                />
+                <img
                     src={S14}
                     alt="Sponsors Display"
                     style={{ width: "100%" }}
                 />
                 <img
                     src={S15}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S16}
                     alt="Sponsors Display"
                     style={{ width: "100%" }}
                 />
