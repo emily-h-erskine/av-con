@@ -121,7 +121,7 @@ export const Header = () => {
                                                     className=""
                                                     href="./FlightSim">
                                                     AVCON XTRA: THE FLIGHT SIM
-                                                    CHALLENGE
+                                                    EVENT
                                                 </a>
                                             </li>
                                         </ul>
@@ -174,7 +174,7 @@ export const Header = () => {
                                         </li>
                                         <li style={{ padding: "1rem 0" }}>
                                             <a href="./BookTickets">
-                                                GET TICKETS
+                                                REGISTER TO VIEW
                                             </a>
                                         </li>
                                     </ul>
@@ -242,7 +242,7 @@ export const Header = () => {
                                     <br />
                                     <br />
                                     <a className="uppercase link-text" href="./FlightSim">
-                                        AVCON XTRA: THE FLIGHT SIM CHALLENGE
+                                        AVCON XTRA: THE FLIGHT SIM EVENT
                                     </a>
                                 </p>
                             )}
@@ -333,7 +333,7 @@ export const Header = () => {
                             }}
                             className="link-text"
                             href="./BookTickets">
-                            GET TICKETS
+                            REGISTER TO VIEW
                         </a>
                     </div>
                 )}

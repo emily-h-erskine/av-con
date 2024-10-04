@@ -22,7 +22,7 @@ export default function FlightSim() {
             <Box
                 className="mb-3 mt-3"
                 sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
-                <h4 className="mb-2">AvCon Xtra: The Flight Sim Challenge</h4>
+                <h4 className="mb-2">AvCon Xtra: The Flight Sim Event</h4>
 
                 <Grid className="flex-container mb-3" container spacing={2}>
                     <Grid className="avconXtra-position" item xs={12} md={5}>
@@ -146,7 +146,7 @@ export default function FlightSim() {
                 }}>
                 <a href="mailto:flightsim@avcon.ie?subject=Register request for the Flight Sim Challenge">
                     <button className="btn-tertiary uppercase text-large mb-3">
-                        Register for the challenge
+                        Register for the event
                     </button>
                 </a>
 
@@ -159,7 +159,7 @@ export default function FlightSim() {
                         flightsim@avcon.ie
                     </a>
                     . Don't miss your chance to be part of AvCon Xtra: The
-                    Flight Sim Challenge - where the sky is the limit!
+                    Flight Sim Event - where the sky is the limit!
                 </h6>
             </Box>
         </main>
