@@ -39,7 +39,7 @@ export default function Footer() {
                             AvCon 2024 Info
                         </a>
                         <a href="./BookTickets" className="footer-link">
-                            Get Tickets
+                            View the Event
                         </a>
                         <a
                             href="./ExhibitorRegistration"

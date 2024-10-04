@@ -174,7 +174,7 @@ export const Header = () => {
                                         </li>
                                         <li style={{ padding: "1rem 0" }}>
                                             <a href="./BookTickets">
-                                                REGISTER TO VIEW
+                                                REGISTER TO VIEW THE EVENT
                                             </a>
                                         </li>
                                     </ul>
@@ -333,7 +333,7 @@ export const Header = () => {
                             }}
                             className="link-text"
                             href="./BookTickets">
-                            REGISTER TO VIEW
+                            REGISTER TO VIEW THE EVENT
                         </a>
                     </div>
                 )}
