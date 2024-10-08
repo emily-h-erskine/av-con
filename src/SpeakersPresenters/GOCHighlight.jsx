@@ -1,15 +1,33 @@
-import React from "react";
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
+import React, { useState } from "react";
 
 export default function GOCHighlight({ SpeakerImage, SpeakerName, SpeakerBio }) {
-  return (
 
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+  const [isExpanded, setIsExpanded] = useState(false);
+  const maxBioLength = 100;
+
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  return (
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      textAlign: 'center',
+      border: '2px solid #007bff', // Border to highlight
+      borderRadius: '10px', // Rounded corners
+      padding: '20px', // Add padding for space
+      margin: '1rem',
+      transition: 'transform 0.3s',
+      '&:hover': {
+        transform: 'scale(1.05)' // Slightly scale on hover
+      }
+    }}>
       <div style={{
-        width: '350px', // Set a fixed width
-        height: '350px', // Set a fixed height
-        overflow: 'hidden', // Hide any overflow
+        width: '350px',
+        height: '350px',
+        overflow: 'hidden',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -19,15 +37,22 @@ export default function GOCHighlight({ SpeakerImage, SpeakerName, SpeakerBio }) 
           src={SpeakerImage}
           alt="Speaker Image"
           style={{
-            width: '100%', // Ensure the image covers the width of the container
-            height: '100%', // Ensure the image covers the height of the container
-            objectFit: 'cover', // Crop the image to cover the container
-            objectPosition: 'top' // Crop the image from the top
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'top'
           }}
         />
       </div>
       <h6>{SpeakerName}</h6>
-      <p>{SpeakerBio}</p>
+      <p style={{ maxHeight: isExpanded ? 'none' : '60px', overflow: 'hidden', transition: 'max-height 0.3s ease' }}>
+        {isExpanded ? SpeakerBio : `${SpeakerBio.substring(0, maxBioLength)}...`}
+      </p>
+      {SpeakerBio.length > maxBioLength && (
+        <button onClick={handleToggle} style={{ cursor: 'pointer', background: 'none', border: 'none', color: '#D3D3D3', textDecoration: 'underline', padding: '5%' }}>
+          {isExpanded ? 'Show Less' : 'Expand for More'}
+        </button>
+      )}
     </div>
   );
 }
