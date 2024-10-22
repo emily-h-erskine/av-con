@@ -31,6 +31,7 @@ import Charlie from "./PresenterSpeakerImages/Charlie.jpg";
 import ShaneCrawte from "./PresenterSpeakerImages/ShaneCrawte.jpg";
 import MarkDuffy from "./PresenterSpeakerImages/MarkDuffy.jpg";
 import JamesLawless from "./PresenterSpeakerImages/JamesLawless.jpg";
+import AntonioGonzalezGomez from "./PresenterSpeakerImages/AntonioGonzalezGomez.jpeg";
 
 export default function SpeakersPresentors() {
     return (
@@ -316,6 +317,13 @@ export default function SpeakersPresentors() {
                   breaking legislation on Social Media Regulation and on Cyber Harms. He served as opposition
                   spokesperson on Science & Technology from 2016-2020 and as Chair of the Justice Committee from
                   2020-2024."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={AntonioGonzalezGomez}
+                  SpeakerName="Antonio Gonzalez Gomez"
+                  SpeakerBio="Antonio Gonzalez Gomez is a citizen of the world. However his roots can be traced back to Galicia, in north west Spain. He currently works at the European Union Aviation Safety Agency (EASA) as a Safety Promotion Business Partner within the Communications department, leading the promotion campaign for Drones and Urban Air Mobility. Antonio has enjoyed 18 fulfilling years at EASA in Germany. Before that, he worked in banking and at British Airways, focusing on environmental issues. Passionate about aviation from a young age, he has dedicated the last three years to making aviation a more appealing career and life choice, especially for young people seeking a purpose and challenges that aviation can provide."
                 />
               </Grid>
             </Grid>
