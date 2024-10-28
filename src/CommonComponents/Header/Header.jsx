@@ -148,6 +148,11 @@ export const Header = () => {
                                                         </a>
                                                     </li>
                                                     <li>
+                                                        <a href="./AvConEzine">
+                                                            AVCON EZINE
+                                                        </a>
+                                                    </li>
+                                                    <li>
                                                         <a href="./SponsorsPartners">
                                                             SPONSORS &amp;
                                                             PARTNERS
@@ -286,6 +291,13 @@ export const Header = () => {
                                         className="uppercase link-text"
                                         href="./News">
                                         NEWS &amp; UPDATES
+                                    </a>
+                                    <br />
+                                    <br />
+                                    <a
+                                        className="uppercase link-text"
+                                        href="./AvConEzine">
+                                        AVCON EZINE
                                     </a>
                                     <br />
                                     <br />

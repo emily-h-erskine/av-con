@@ -15,6 +15,7 @@ import SpeakersPresenters from "./SpeakersPresenters/speakersPresenters";
 import SponsorsPartners from "./SponsorsPartners/sponsorsPartners";
 import ExhibitorRegistration from "./ExhibitorRegistration/exhibitor";
 import AviationPathwayPortal from "./AvconPathwayPortal/pathwayPortal";
+import AvConEzine from "./AvConEzine/AvConEzine";
 
 export default function App() {
     return (
@@ -44,6 +45,10 @@ export default function App() {
                     <Route
                         path="/aviationPathwayPortal"
                         element={<AviationPathwayPortal />}
+                    />
+                     <Route
+                        path="/avconEzine"
+                        element={<AvConEzine />}
                     />
                 </Routes>
             </RootLayout>
