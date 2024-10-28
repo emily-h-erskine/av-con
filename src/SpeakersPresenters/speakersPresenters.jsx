@@ -32,6 +32,7 @@ import ShaneCrawte from "./PresenterSpeakerImages/ShaneCrawte.jpg";
 import MarkDuffy from "./PresenterSpeakerImages/MarkDuffy.jpg";
 import JamesLawless from "./PresenterSpeakerImages/JamesLawless.jpg";
 import AntonioGonzalezGomez from "./PresenterSpeakerImages/AntonioGonzalezGomez.jpeg";
+import AlineDecadi from "./PresenterSpeakerImages/AlineDecadi.JPG";
 
 export default function SpeakersPresentors() {
     return (
@@ -324,6 +325,13 @@ export default function SpeakersPresentors() {
                   SpeakerImage={AntonioGonzalezGomez}
                   SpeakerName="Antonio Gonzalez Gomez"
                   SpeakerBio="Antonio Gonzalez Gomez is a citizen of the world. However his roots can be traced back to Galicia, in north west Spain. He currently works at the European Union Aviation Safety Agency (EASA) as a Safety Promotion Business Partner within the Communications department, leading the promotion campaign for Drones and Urban Air Mobility. Antonio has enjoyed 18 fulfilling years at EASA in Germany. Before that, he worked in banking and at British Airways, focusing on environmental issues. Passionate about aviation from a young age, he has dedicated the last three years to making aviation a more appealing career and life choice, especially for young people seeking a purpose and challenges that aviation can provide."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={AlineDecadi}
+                  SpeakerName="Aline Decadi"
+                  SpeakerBio="Aline Decadi is a rocket scientist from the European Space Agency. She is working on the Ariane 6 rocket, which successfully made its maiden flight on 9 July 2024. Her expertise covers the safety of those complex Ariane systems. Aline is also passionate about space exploration. She is taking part in Mars analogue missions and is actively contributing to the development of safety and transport systems in Europe. She'll be delighted to share her experiences with you, and her feedback from ESA career paths to answer your questions, and guide you in your choices."
                 />
               </Grid>
             </Grid>
