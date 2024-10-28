@@ -15,7 +15,7 @@ export default function FlightSim() {
                 defaultSubtitle="Take the stick for an epic experience with AvCon Xtra’s Flight Sim challenge"
                 smallScreenTitle="AvCon 2024"
                 smallScreenSubtitle="Take the stick for the Flight Sim Challenge"
-                buttonText="Book Now"
+                buttonText="Register for Live Stream Now!"
                 buttonLink="/bookTickets"
             />
 

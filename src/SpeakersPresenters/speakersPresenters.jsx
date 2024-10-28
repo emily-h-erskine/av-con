@@ -337,14 +337,6 @@ export default function SpeakersPresentors() {
             </Grid>
           </Box>
         </div>
-        <Box sx={{ padding: { xs: '0 2%', md: '0 5%' } }}>
-          <br/>
-          <hr/>
-          <br/>
-        </Box>
-        <p style={{padding: '0 5%', textAlign: 'center'}}>Calling all educators! Secure your school's free tickets now, as individual tickets are not available at this time.
-          <br/> Register your education group <a href="/BookTickets"><u>HERE</u></a> and get ready for a flight of inspiration and innovation on November 7th at Casement Aerodrome, Baldonnel, co. Dublin.
-        </p>
       </main>
 
     );

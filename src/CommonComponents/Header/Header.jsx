@@ -136,9 +136,9 @@ export const Header = () => {
                                                         style={{
                                                             marginBottom: "6px",
                                                         }}
-                                                        className="uppercase"
-                                                        href="./FlightSim">
-                                                        About AvCon
+                                                        className=""
+                                                        href="./About">
+                                                        ABOUT AVCON
                                                     </a>
                                                 </li>
                                                 <ul className="dropdown-menu">
@@ -179,7 +179,7 @@ export const Header = () => {
                                         </li>
                                         <li style={{ padding: "1rem 0" }}>
                                             <a href="./BookTickets">
-                                                REGISTER TO VIEW THE EVENT
+                                                REGISTER FOR LIVE STREAM NOW!
                                             </a>
                                         </li>
                                     </ul>
@@ -345,7 +345,7 @@ export const Header = () => {
                             }}
                             className="link-text"
                             href="./BookTickets">
-                            REGISTER TO VIEW THE EVENT
+                            REGISTER FOR LIVE STREAM NOW!
                         </a>
                     </div>
                 )}
