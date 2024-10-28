@@ -105,20 +105,22 @@ export default function HeroSection({
                 <p style={{ maxWidth: "100%" }} className="sub-title mb-3">
                     {subtitle || "Default Subtitle"}
                 </p>
-                <button
-                    type="button"
-                    name="Book Tickets Button"
-                    className="btn-primary mt-2">
-                    <a
-                        href={buttonLink}
-                        className="uppercase"
-                        style={{
-                            textDecoration: "none",
-                            color: "inherit",
-                        }}>
-                        {buttonText}
-                    </a>
-                </button>
+                {buttonText && buttonLink && (
+                    <button
+                        type="button"
+                        name="Book Tickets Button"
+                        className="btn-primary mt-2">
+                        <a
+                            href={buttonLink}
+                            className="uppercase"
+                            style={{
+                                textDecoration: "none",
+                                color: "inherit",
+                            }}>
+                            {buttonText}
+                        </a>
+                    </button>
+                )}
             </div>
         </div>
     );

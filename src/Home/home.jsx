@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "./HeroSection";
+import HeroSection from "../CommonComponents/HeroSection/HeroSection";
 import FirstImageAndText from "./firstBlockOfText";
 import MiddleBlockOfText from "./middleBlock";
 import MailchimpScript from "./mailChimpPopup";

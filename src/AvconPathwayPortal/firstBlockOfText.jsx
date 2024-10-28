@@ -1,27 +1,10 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import ApprenticePhoto from "../Home/HomePageImages/apprentices.jpg";
 
 export default function FirstImageAndText() {
     return (
         <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
-            <div style={{ textAlign: "center" }}>
-                <img
-                    src={ApprenticePhoto}
-                    alt="Aviation apprentices working on an engine"
-                    style={{
-                        width: "85%",
-                        maxWidth: "100%",
-                        mixBlendMode: "luminosity",
-                    }}
-                />
-            </div>
-            <br />
-            <br />
-            <hr />
-            <br />
-            <br />
             <Grid container spacing={4}>
                 <Grid item xs={12} md={6}>
                     <div>

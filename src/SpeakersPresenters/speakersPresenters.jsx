@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import HeroSection from "../CommonComponents/HeroSection/HeroSection";
 import Speaker from "./speaker";
 import KarlBoweImage from "./PresenterSpeakerImages/KarlBowe.jpeg";
 import AllyGarvey from "./PresenterSpeakerImages/Ally.JPG";
@@ -37,14 +38,12 @@ import AlineDecadi from "./PresenterSpeakerImages/AlineDecadi.JPG";
 export default function SpeakersPresentors() {
     return (
         <main className="flex min-h-screen flex-col justify-between p-4 md:p-24">
-            <h3
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}>
-                Speakers and Presenters
-            </h3>
+                <HeroSection
+                defaultTitle="Speakers and Presenters"
+                defaultSubtitle="We're thrilled to introduce our dynamic duo of presenters, Ally Garvey and Karl Bowe, who will be your guides through this exhilarating journey."
+                smallScreenTitle="Speakers and Presenters"
+                smallScreenSubtitle="AvCon presenting an event for all things aviation"
+                />
             <br />
             <br />
             <p style={{ padding: "0 5%" }}>

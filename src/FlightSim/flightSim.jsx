@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import FlightSimImage from "./FlightSimImage.png";
 import InsideAirplaneImage from "./InsideAirplane.jpg";
 //import FlightSimImageBanner from "./fightSimImageBanner";
-import HeroSection from "../Home/HeroSection";
+import HeroSection from "../CommonComponents/HeroSection/HeroSection";
 
 export default function FlightSim() {
     return (
@@ -16,7 +16,7 @@ export default function FlightSim() {
                 smallScreenTitle="AvCon 2024"
                 smallScreenSubtitle="Take the stick for the Flight Sim Challenge"
                 buttonText="Register for Live Stream Now!"
-                buttonLink="/bookTickets"
+                buttonLink="https://streamyard.com/watch/4DN8GWpH2XCr"
             />
 
             <Box

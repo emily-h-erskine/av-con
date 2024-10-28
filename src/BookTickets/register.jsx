@@ -3,15 +3,22 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import BackgroundImage from "./SHAN5640.jfif";
 import Flight from "./SHAN6371.jfif";
+import HeroSection from "../CommonComponents/HeroSection/HeroSection";
 
 export default function Register() {
     return (
         <main className="flex min-h-screen flex-col p-4 md:p-8 lg:p-12">
+            <HeroSection
+                defaultTitle="AvCon - The Future of Aviation: LIVE on TY Hub!"
+                defaultSubtitle="Even though in-person registration is now closed, you don't have to miss out on this groundbreaking event."
+                smallScreenTitle="AvCon: LIVE on TY Hub!"
+                smallScreenSubtitle="AvCon presenting an event for all things aviation"
+                buttonText="Register for Live Stream Now!"
+                buttonLink="https://streamyard.com/watch/4DN8GWpH2XCr"
+            />
+            
             <div className="event-container text-center">
                 <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
-                    <h4 style={{ textAlign: "center" }}>
-                        AvCon - The Future of Aviation: LIVE on TY Hub!
-                    </h4>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
                             <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
