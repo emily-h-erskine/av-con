@@ -18,6 +18,12 @@ import S13 from "./SponsorImages/AvCon Supported By Banners -10.png";
 import S14 from "./SponsorImages/AvCon Supported By Banners -11.png";
 import S15 from "./SponsorImages/AvCon Supported By Banners -12.png";
 import S16 from "./SponsorImages/AvCon Supported By Banners -13.png";
+import S17 from "./SponsorImages/AvCon 16.png";
+import S18 from "./SponsorImages/AvCon 17.png";
+import S19 from "./SponsorImages/AvCon 18.png";
+import S20 from "./SponsorImages/AvCon 19.png";
+import S21 from "./SponsorImages/AvCon 20.png";
+
 import AirCorpLogo from "./SponsorImages/AirCorpsLogo.jpeg";
 import TYHubLogo from "./SponsorImages/TYHubLogo.jpg";
 import ODohertysLogo from "./SponsorImages/ODohertysLogo.jpg";
@@ -51,82 +57,38 @@ export default function SponsorsPartners() {
                 celebrating the future of flight and the minds shaping it.
             </p>
 
-            <div style={{ padding: "5%", textAlign: "center" }}>
+            <div style={{
+                padding: "5%",
+                textAlign: "center",
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                gap: "20px"
+            }}>
                 <img
                     src={SponsoredBy}
                     alt="AvCon Sponsored By"
-                    style={{ width: "100%" }}
+                    style={{
+                        width: "80%",
+                        maxWidth: "400px",
+                        opacity: 0.8 
+                    }}
                 />
-                <img
-                    src={S7}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S3}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S4}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S5}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S6}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S8}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S9}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S10}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S11}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S13}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S12}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S16}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S14}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
-                <img
-                    src={S15}
-                    alt="Sponsors Display"
-                    style={{ width: "100%" }}
-                />
+                {[S7, S3, S4, S5, S6, S8, S9, S10, S11, S13, S12, S16, S14, S15, S17, S18, S19, S20, S21].map((sponsor, index) => (
+                    <img
+                        key={index}
+                        src={sponsor}
+                        alt="Sponsors Display"
+                        style={{
+                            width: "400px",
+                            maxWidth: "100%",
+                            opacity: 0.7,
+                            transition: "opacity 0.3s ease-in-out"
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.opacity = 1}
+                        onMouseLeave={(e) => e.currentTarget.style.opacity = 0.7}
+                    />
+                ))}
             </div>
 
             <h6
