@@ -34,6 +34,7 @@ import MarkDuffy from "./PresenterSpeakerImages/MarkDuffy.jpg";
 import JamesLawless from "./PresenterSpeakerImages/JamesLawless.jpg";
 import AntonioGonzalezGomez from "./PresenterSpeakerImages/AntonioGonzalezGomez.jpeg";
 import AlineDecadi from "./PresenterSpeakerImages/AlineDecadi.JPG";
+import YvonneElsorougi from "./PresenterSpeakerImages/YvonneElsorougi.JPG";
 
 export default function SpeakersPresentors() {
     return (
@@ -239,7 +240,7 @@ export default function SpeakersPresentors() {
                 <Speaker 
                   SpeakerImage={AnthonyAttoumani}
                   SpeakerName="Anthony Attoumani"
-                  SpeakerBio="Anthony is a passionate and senior aeronautical engineer with over 15 years of experience in the design, development, qualification and certification of aeronautical engineering solutions. After graduating a Master Degree in Aerospace Engineering, option Avionics and Mechatronics, he commenced his career in Airbus Group as Reliability Availability Maintainability and Safety Engineer. Subsequently, Anthony progressed to management roles including Head of Design Process, and Overall Cabin Design Chief Engineer in ATR. Also, he worked on a large number of Supplemental Type Certificates going from basic cabin reconfigurations for Airlines, to complex conversions into Maritime Patrol Aircraft for MoD's. Currently, he holds the Head of the Design Organisation position at Atlantic Aviation Group (EASA.21J.540)."
+                  SpeakerBio="Anthony is a passionate and senior aeronautical engineer with over 15 years of experience in the design, development, qualification and certification of aviation products. After graduating a Master Degree in Aerospace Engineering, option Avionics and Mechatronics, Anthony commenced my career in Airbus Group as Reliability Availability Maintainability and Safety Engineer. Subsequently, he progressed to management roles including Head of Design Process or Overall Cabin Design Chief Engineer in ATR, Vice President Engineering Business Development in Eirtech and Head of Design Organisation in Atlantic Aviation Group. This allowed him to deal with projects in more than 20 Countries including most European Countries, North America, Brazil, UAE, China, India, Japan, Australia. Throughout his career, Anthony had the opportunity to work on numerous Minor and Major Changes (Supplemental Type Certificates) going from basic cabin reconfigurations for Airlines, to complex conversions into Maritime Patrol Aircraft for MoD's. After dealing with both Technical and Commercial aspects of the Aviation Industry, and being able to rely on a large network of Aviation Partners, it made sense for him to set up his company: Infinity Aviation Support. As Chief Executive Officer, Anthony aims to support Aviation Stakeholders and ensure successful completeness of all their projects."
                 />
               </Grid>
               <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
@@ -331,6 +332,25 @@ export default function SpeakersPresentors() {
                   SpeakerImage={AlineDecadi}
                   SpeakerName="Aline Decadi"
                   SpeakerBio="Aline Decadi is a rocket scientist from the European Space Agency. She is working on the Ariane 6 rocket, which successfully made its maiden flight on 9 July 2024. Her expertise covers the safety of those complex Ariane systems. Aline is also passionate about space exploration. She is taking part in Mars analogue missions and is actively contributing to the development of safety and transport systems in Europe. She'll be delighted to share her experiences with you, and her feedback from ESA career paths to answer your questions, and guide you in your choices."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={YvonneElsorougi}
+                  SpeakerName="Yvonne Elsorougi"
+                  SpeakerBio="As a Fellow of the Royal Aeronautical Society (RAeS), Yvonne is an enthusiastic champion for a
+                  diverse and inclusive future generation of aviation, aerospace and space industry professionals,
+                  proactively contributing to the Society's Education & Skills Committee (ESC) and Women in Aviation,
+                  Aerospace & Space Committee (WAASC), as well as acting as an alta mentor.
+                  Building on an extensive 35-year career in aviation and aerospace, extending across industry,
+                  academia and government, Yvonne now provides independent strategic expertise to public sector
+                  clients to attract inward investment, stimulate economic development and drive innovation. Excited
+                  by emerging opportunities, Yvonne is a committed member of the ADS Advanced Air Mobility Group
+                  and the South West of England's Sustainable Aviation Programme Board. Yvonne has also played an
+                  instrumental role in the development of the West of England Space Strategy.
+                  Yvonne has an MSc in Aerospace Design, Manufacture and Management from the University of
+                  Bristol, an MA in European Integration from the University of Limerick and a Bachelor in Business
+                  Studies from Dublin City University."
                 />
               </Grid>
             </Grid>
