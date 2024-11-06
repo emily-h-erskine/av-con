@@ -35,6 +35,7 @@ import JamesLawless from "./PresenterSpeakerImages/JamesLawless.jpg";
 import AntonioGonzalezGomez from "./PresenterSpeakerImages/AntonioGonzalezGomez.jpeg";
 import AlineDecadi from "./PresenterSpeakerImages/AlineDecadi.JPG";
 import YvonneElsorougi from "./PresenterSpeakerImages/YvonneElsorougi.JPG";
+import LeonorGomes from "./PresenterSpeakerImages/LeonorGomes.png";
 
 export default function SpeakersPresentors() {
     return (
@@ -351,6 +352,13 @@ export default function SpeakersPresentors() {
                   Yvonne has an MSc in Aerospace Design, Manufacture and Management from the University of
                   Bristol, an MA in European Integration from the University of Limerick and a Bachelor in Business
                   Studies from Dublin City University."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
+                  SpeakerImage={LeonorGomes}
+                  SpeakerName="Leonor Gomes"
+                  SpeakerBio="Leonor Gomes has worked in education and outreach for over 9 years, starting at the United Nations and further developing programmes in both the private and public sectors, including charities and schools. She graduated from LSE with a MSc in Human Rights, and is currently the Education and Skills Manager at the Royal Aeronautical Society where she supports young people in their journey through the Aerospace and Aviation industry."
                 />
               </Grid>
             </Grid>
