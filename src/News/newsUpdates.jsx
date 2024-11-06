@@ -11,14 +11,25 @@ export default function News() {
       <h3 style={{ textAlign: 'center', marginBottom: '2rem' }}>Get the Latest Updates:</h3>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
-          {/* Facebook Live Feed Section */}
           <Grid item xs={12} md={6}>
             <Box sx={{ textAlign: 'center' }}>
+              <Box sx={{ textAlign: 'center', paddingBottom: '5%' }}>
+                <h6>LIVE STREAM on TY HUB YOUTUBE</h6>
+                <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/7_AYMtVLbhI?si=ulFkMd-tNUI6KD3z" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                />
+              </Box>
               <h6>Facebook Live Feed</h6>
               <FacebookNews />
             </Box>
           </Grid>
-          {/* Latest Press Release Section */}
           <Grid item xs={12} md={6}>
             <Box sx={{ textAlign: 'center' }}>
               <h6>Latest</h6>
@@ -29,7 +40,7 @@ export default function News() {
               <iframe src={PressRelease} width="100%" height="500px" style={{ border: 'none' }} title="Press Release"></iframe>
             </Box>
           </Grid>
-          </Grid>
+        </Grid>
       </Box>
     </main>
   );
