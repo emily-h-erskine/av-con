@@ -12,7 +12,7 @@ export default function AvConEzine() {
        />
       <div style={{padding: '0% 5%'}}>
         <iframe
-          src="https://issuu.com/tyhub/docs/avcon_ezine_2024-3"
+          src="https://e.issuu.com/embed.html?d=avcon_ezine_2024-3&u=tyhub"
           width="100%"
           height="800"
           frameBorder="0"
