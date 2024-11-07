@@ -10,6 +10,16 @@ export default function AvConEzine() {
                 smallScreenTitle="AvCon Ezine 2024"
                 smallScreenSubtitle="AvCon presenting an event for all things aviation"
        />
+      <div style={{padding: '0% 5%'}}>
+        <iframe
+          src="https://issuu.com/tyhub/docs/avcon_ezine_2024-3"
+          width="100%"
+          height="800"
+          frameBorder="0"
+          allow="fullscreen"
+          title="Avcon Ezine 2024-3"
+        ></iframe>
+      </div>
     </main>
   );
 }
