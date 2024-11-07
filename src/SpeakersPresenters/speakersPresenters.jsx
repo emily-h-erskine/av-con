@@ -356,6 +356,15 @@ export default function SpeakersPresentors() {
               </Grid>
               <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
                 <Speaker 
+                  SpeakerImage={null}
+                  SpeakerName="Allison Carty"
+                  SpeakerBio="Allison Carty has been a dedicated professional in the world of Air Traffic Control since 1990. Over the years, she has fulfilled various critical roles, including Air Traffic Control Officer (ATCO), Station Manager and Safety Manager. Her journey in this high-stakes field began with a passion for aviation and a commitment to ensuring the safety and efficiency of air travel.
+                  As a trailblazer in a predominantly male industry, she has also been a mentor and role model for aspiring female air traffic controllers, advocating for diversity and inclusion within the field. Her dedication to continuous learning and professional development has kept her at the forefront of technological advancements and regulatory changes in aviation.
+                  Her contributions have not only enhanced the safety of countless flights but have also paved the way for future generations of air traffic controllers. With over three decades of experience, she remains a vital asset to the aviation community, embodying the spirit of excellence and dedication."
+                />
+              </Grid>
+              <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                <Speaker 
                   SpeakerImage={LeonorGomes}
                   SpeakerName="Leonor Gomes"
                   SpeakerBio="Leonor Gomes has worked in education and outreach for over 9 years, starting at the United Nations and further developing programmes in both the private and public sectors, including charities and schools. She graduated from LSE with a MSc in Human Rights, and is currently the Education and Skills Manager at the Royal Aeronautical Society where she supports young people in their journey through the Aerospace and Aviation industry."
