@@ -1,5 +1,8 @@
 import React from "react";
 import AVConSchedule from "./AvConSpeakerSchedule.png";
+import Session1 from "./EventScheduleImages/Event1.png";
+import Session2 from "./EventScheduleImages/Event2.png";
+import Session3 from "./EventScheduleImages/Event3.png";
 
 export default function EventSchedule() {
     return (
@@ -8,11 +11,31 @@ export default function EventSchedule() {
                 <h3 style={{ textAlign: "center", marginBottom: "2rem" }}>Event Schedule</h3>
 
                 <div style={{ textAlign: "center", marginBottom: "2rem" }}>
-                    <img 
-                        src={AVConSchedule} 
-                        alt="AVCon Speaker Schedule" 
-                        style={{ width: "100%", height: "auto" }}
-                    />
+                    <div
+                        style={{
+                            display: "grid",
+                            gridTemplateColumns: "repeat(3, 1fr)",
+                            gap: "1rem",
+                            justifyItems: "center",
+                            margin: "0 auto",
+                        }}
+                    >
+                        <img
+                            src={Session1}
+                            alt="AVCon Speaker Schedule"
+                            style={{ width: "100%", height: "auto" }}
+                        />
+                        <img
+                            src={Session2}
+                            alt="AVCon Speaker Schedule"
+                            style={{ width: "100%", height: "auto" }}
+                        />
+                        <img
+                            src={Session3}
+                            alt="AVCon Speaker Schedule"
+                            style={{ width: "100%", height: "auto" }}
+                        />
+                    </div>
                 </div>
 
                 <div style={{ textAlign: "center" }}>
@@ -41,6 +64,21 @@ export default function EventSchedule() {
                     </div>
                 </div>
             </div>
+
+            {/* Media Queries for responsive images */}
+            <style jsx>{`
+                @media (max-width: 1024px) {
+                    div {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    div {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            `}</style>
         </main>
     );
 }
