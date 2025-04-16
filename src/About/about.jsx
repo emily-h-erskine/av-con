@@ -49,9 +49,7 @@ export default function About() {
                     </Grid>
                     <Grid item xs={12} md={5}>
                         <p>
-                            Welcome to AvCon - The Future of Aviation! Taking
-                            place on November 7th at The Irish Air Corps,
-                            Casement Aerodrome, Baldonnel, Co. Dublin, AvCon is
+                            Welcome to AvCon - The Future of Aviation! AvCon is
                             thrilled to present its signature event dedicated to
                             all things aviation. Designed to ignite the
                             imaginations of students from primary to tertiary
