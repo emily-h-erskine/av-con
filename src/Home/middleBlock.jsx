@@ -83,13 +83,13 @@ export default function MiddleBlockOfText() {
                             <p className="text-light">
                                 <b>Date:</b>
                             </p>
-                            <p className="text-light">November 7th, 2024</p>
+                            <p className="text-light">TBD 2025</p>
                             <button
                                 className="btn-secondary"
                                 name="Add to calendar Button">
                                 <a
                                     className="pb-1 pt-1 pl-2 pr-3 flex-container"
-                                    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=AvCon+2024&dates=20241107T090000Z/20241107T170000Z&details=Join+us+at+the+Irish+Air+Corps,+Casement+Aerodrome,+Baldonnel,+County+Dublin&location=Irish+Air+Corps,+Casement+Aerodrome,+Baldonnel,+County+Dublin+for+AvCon+2024"
+                                    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=AvCon+2025&dates=20241107T090000Z/20241107T170000Z&details=Join+us+at+the+Irish+Air+Corps,+Casement+Aerodrome,+Baldonnel,+County+Dublin&location=Irish+Air+Corps,+Casement+Aerodrome,+Baldonnel,+County+Dublin+for+AvCon+2024"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{

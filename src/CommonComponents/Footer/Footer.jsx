@@ -1,11 +1,9 @@
 import React from "react";
 import SocialMediaLinks from "./SocialMediaLinks";
-// import FooterBanner from "./footerBanner.jpeg";
 import "../../index.css";
 
 export default function Footer() {
     return (
-        // NEW FOOTER - PROPOSAL ACCEPTED 07/09/2024
         <footer className="footer mt-3 ml-3 mr-3">
             <div className="mb-3 footer-col-1 footer-divider position">
                 <a href="/index.html">
@@ -27,7 +25,7 @@ export default function Footer() {
                         fontSize: "14px",
                         textDecoration: "none",
                     }}>
-                    Copyright © 2024 Emily-Huong Erskine
+                    Copyright © 2025 Emily-Huong Erskine
                 </a>
             </div>
 
@@ -36,7 +34,7 @@ export default function Footer() {
                     <p className="mb-2 uppercase footer-heading">Events</p>
                     <div className="flex-col">
                         <a href="./Event" className="footer-link">
-                            AvCon 2024 Info
+                            AvCon 2025 Info
                         </a>
                         <a href="./BookTickets" className="footer-link">
                             Register for Live Stream Now!

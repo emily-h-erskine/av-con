@@ -12,7 +12,7 @@ export default function Home() {
             <HeroSection
                 defaultTitle="AN UNFORGETTABLE THRILL FOR GAMERS AND ENTHUSIASTS"
                 defaultSubtitle="Take the stick for an epic experience with AvCon Xtra’s Flight Sim challenge"
-                smallScreenTitle="AvCon 2024"
+                smallScreenTitle="AvCon 2025"
                 smallScreenSubtitle="Take the stick for the Flight Sim Challenge"
                 buttonText="Register for Live Stream Now!"
                 buttonLink="/bookTickets"

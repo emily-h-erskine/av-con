@@ -27,7 +27,7 @@ export default function HeroSection({
             if (screenWidth <= 600) {
                 // console.log("Setting small screen title and subtitle"); // Debugging: Log when small screen logic is triggered
                 // For small screens (599px and smaller), update the title and subtitle for small screens
-                setTitle("AvCon 2024");
+                setTitle("AvCon 2025");
                 setSubtitle("Welcome to the Future of Aviation!");
             } else {
                 // Use the values passed when the component was called

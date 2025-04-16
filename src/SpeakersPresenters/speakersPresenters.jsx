@@ -49,7 +49,7 @@ export default function SpeakersPresentors() {
             <br />
             <br />
             <p style={{ padding: "0 5%" }}>
-                Get ready to soar into the future of aviation at AvCon 2024!
+                Get ready to soar into the future of aviation at AvCon 2025!
                 We're thrilled to introduce our dynamic duo of presenters, Ally
                 Garvey and Karl Bowe, who will be your guides through this
                 exhilarating journey. From the warm welcome to riveting

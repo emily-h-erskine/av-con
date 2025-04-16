@@ -24,7 +24,7 @@ export default function FirstImageAndText() {
                 <Grid item xs={12} md={5}>
                     <div className="flex-container-col space-between ml-1 mr-1">
                         <h3 className="mb-2">
-                            Soar into the future of aviation at AvCon 2024!
+                            Soar into the future of aviation at AvCon 2025!
                         </h3>
                         <div className="flex-container-col space-between">
                             <p className="text-left mb-1">
