@@ -14,8 +14,8 @@ export default function Home() {
                 defaultSubtitle="Take the stick for an epic experience with AvCon Xtra’s Flight Sim challenge"
                 smallScreenTitle="AvCon 2025"
                 smallScreenSubtitle="Take the stick for the Flight Sim Challenge"
-                buttonText="Register for Live Stream Now!"
-                buttonLink="/bookTickets"
+                buttonText="Pre-Register Your School for AvCon 2025"
+                buttonLink="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZURUg1NktIQVBGTThPMUlSWE4xSDdQWDZMWi4u"
             />
             <FirstImageAndText />
             <MiddleBlockOfText />

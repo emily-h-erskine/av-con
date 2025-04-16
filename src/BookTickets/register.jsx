@@ -9,42 +9,24 @@ export default function Register() {
     return (
         <main className="flex min-h-screen flex-col p-4 md:p-8 lg:p-12">
             <HeroSection
-                defaultTitle="AvCon - The Future of Aviation: LIVE on TY Hub!"
-                defaultSubtitle="Even though in-person registration is now closed, you don't have to miss out on this groundbreaking event."
-                smallScreenTitle="AvCon: LIVE on TY Hub!"
-                smallScreenSubtitle="AvCon presenting an event for all things aviation"
-                buttonText="Register for Live Stream Now!"
-                buttonLink="https://streamyard.com/watch/4DN8GWpH2XCr"
+                defaultTitle="Schools! Pre-Register Now for AvCon 2025"
+                defaultSubtitle="Join us for an unforgettable aviation experience designed especially for students. Secure your school's place today!"
+                smallScreenTitle="Pre-Register Your School for AvCon 2025"
+                smallScreenSubtitle="A unique aviation event tailored for schools — don't miss out!"
+                buttonText="Pre-Register Your School for AvCon 2025"
+                buttonLink="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZURUg1NktIQVBGTThPMUlSWE4xSDdQWDZMWi4u"
             />
-            
             <div className="event-container text-center">
                 <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
                             <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
-                                <p>
-                                    Exciting news! Even though in-person
-                                    registration for AvCon - The Future of
-                                    Aviation is now closed, you don't have to
-                                    miss out on this groundbreaking event.
-                                    <br />
-                                    <br />
-                                    Join us virtually for AvCon Talks and live
-                                    snippets of the event, streamed directly via
-                                    TY Hub LIVE! AvCon Talks and event
-                                    highlights will be streamed LIVE on TY Hub!
-                                    This is your chance to experience the future
-                                    of aviation from wherever you are. Whether
-                                    you're a student or educator, schools,
-                                    colleges, and educational facilities from
-                                    around the globe can register to be part of
-                                    this inspiring event. Dive into the future
-                                    of aviation and explore innovations,
-                                    technologies, and ideas shaping the skies of
-                                    tomorrow.
-                                    <br />
-                                    <br />
-                                </p>
+                            <p>
+                                Exciting news! We're coming back — and your school can be among the first to pre-register for <strong>AvCon: The Future of Aviation 2025!</strong> Don't miss out on the second year of this groundbreaking event — secure your spot today.
+                                <br />
+                                <br />
+                                Whether you're a student, teacher, or school leader, educational institutions from across the globe are invited to be part of this inspiring event. Dive into the future of aviation and explore the innovations, technologies, and ideas that are shaping the skies of tomorrow.
+                            </p>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
@@ -63,8 +45,8 @@ export default function Register() {
                     </Grid>
                     <h5 style={{ textAlign: "center" }}>
                         <b>
-                            Register here:{" "}
-                            <a href="https://streamyard.com/watch/4DN8GWpH2XCr">
+                            Schools Pre-Register here:{" "}
+                            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZURUg1NktIQVBGTThPMUlSWE4xSDdQWDZMWi4u">
                                 Click Here
                             </a>
                         </b>
@@ -86,8 +68,7 @@ export default function Register() {
                         <Grid item xs={12} sm={6}>
                             <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
                                 <p>
-                                    The full event schedule will be announced on
-                                    October 7th with some truly exciting topics
+                                    The full event schedule will be announced soon with some truly exciting topics
                                     you won't want to miss! Don't miss this
                                     opportunity to engage with industry leaders
                                     and visionaries in aviation, space, tech and

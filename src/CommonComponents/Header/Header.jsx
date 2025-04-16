@@ -179,7 +179,7 @@ export const Header = () => {
                                         </li>
                                         <li style={{ padding: "1rem 0" }}>
                                             <a href="./BookTickets">
-                                                REGISTER FOR LIVE STREAM NOW!
+                                                SCHOOL'S PRE-REGISTER HERE!
                                             </a>
                                         </li>
                                     </ul>
@@ -345,7 +345,7 @@ export const Header = () => {
                             }}
                             className="link-text"
                             href="./BookTickets">
-                            REGISTER FOR LIVE STREAM NOW!
+                            SCHOOL'S PRE-REGISTER HERE!
                         </a>
                     </div>
                 )}

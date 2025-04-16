@@ -37,7 +37,7 @@ export default function Footer() {
                             AvCon 2025 Info
                         </a>
                         <a href="./BookTickets" className="footer-link">
-                            Register for Live Stream Now!
+                            Schools Pre-Register here!
                         </a>
                         <a
                             href="./ExhibitorRegistration"

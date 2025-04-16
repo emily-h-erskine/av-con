@@ -20,7 +20,7 @@ export default function MiddleBlockOfText() {
                         <a
                             className="text-light text-large text-link"
                             href="./BookTickets">
-                            Register for Live Stream Now!
+                            Pre-Register Your School for AvCon 2025
                         </a>
                     </h5>
                 </Grid>
