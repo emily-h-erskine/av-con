@@ -1,0 +1,49 @@
+/* Main container padding for different screen sizes */
+.main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Event container */
+  .event-container {
+    text-align: center;
+  }
+  
+  /* Style for the text content */
+  .text-container {
+    text-align: left;
+  }
+  
+  .text-center {
+    text-align: center;
+    padding: 5%;
+  }
+  
+  /* Style for images */
+  .event-image {
+    width: 100%;
+    max-width: 100%;
+    mix-blend-mode: luminosity;
+  }
+  
+  /* Grid container padding for responsive layouts */
+  .grid-container {
+    padding: 0 2%; /* Default for mobile */
+  }
+  
+  @media (min-width: 768px) {
+    .grid-container {
+      padding: 0 5%; /* Padding for medium screens */
+    }
+  }
+  
+  /* Links */
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

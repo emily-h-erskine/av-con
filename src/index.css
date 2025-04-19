@@ -9,6 +9,7 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
+    overflow-x: hidden;
 
     /* Color palette */
     --background-dark: #041326;
@@ -283,6 +284,7 @@ p > .text-large {
     border-radius: 2px;
     background-color: var(--background-dark-90);
     max-width: fit-content;
+    text-align: center;
 }
 .btn-primary:hover {
     background-color: var(--background-dark-hover);
@@ -296,6 +298,7 @@ p > .text-large {
     background-color: var(--light-grey);
     width: fit-content;
     color: var(--text-dark);
+    text-align: center;
 }
 
 .btn-tertiary {
@@ -378,20 +381,6 @@ button:hover {
     flex-basis: 70%;
 }
 
-/* Custom Element Styles */
-header {
-    background-color: var(--background-dark);
-    max-width: 100%;
-}
-
-.nav-link {
-    margin-right: 1.2rem;
-}
-
-.nav-link:last-child {
-    margin-right: 0;
-}
-
 .hero-content-position {
     position: absolute;
     top: 40%;
@@ -405,41 +394,6 @@ header {
     position: absolute;
     left: 5%;
     top: 1%;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    flex-flow: row-reverse;
-    flex-wrap: wrap;
-    justify-content: start;
-}
-
-.footer-logo {
-    width: 80%;
-    height: auto;
-}
-
-.footer-link {
-    font-size: 1rem;
-    padding-top: 0.75rem;
-}
-
-.footer-heading {
-    font-size: 0.9rem;
-    color: var(--light-grey);
-}
-
-.footer-text {
-    font-size: 1.1rem;
-}
-
-.footer-divider {
-    border-top: 1px solid var(--mid-grey);
-}
-
-.footer-col-1 {
-    flex-basis: fill;
 }
 
 .site-map {
@@ -653,6 +607,7 @@ header {
     .btn-tertiary {
         padding: 1.2rem 4rem;
         font-size: 18px;
+        text-align: center;
     }
     .hero-content-position {
         top: 20%;
@@ -678,7 +633,6 @@ header {
         order: 2;
         margin-bottom: var(--margin-large);
     }
-}
 
 /* ========= TABLET ========= */
 @media screen and (max-width: 768px) {
@@ -695,6 +649,7 @@ header {
 
     .timeline-content {
         margin-left: 0;
+    }
     }
 }
 
@@ -786,23 +741,6 @@ header {
         font-size: 1.5rem;
     }
 
-    .footer {
-        display: flex;
-        flex-direction: row;
-        flex-flow: row-reverse;
-        justify-content: start;
-    }
-    .footer-logo {
-        width: 65%;
-        height: auto;
-    }
-    .footer-divider {
-        border-right: 1px solid var(--mid-grey);
-        border-top: none;
-    }
-    .footer-col-1 {
-        flex-basis: 35%;
-    }
     .site-map {
         flex-basis: 65%;
     }
@@ -909,9 +847,6 @@ header {
         width: 85%; /* Set width to 50% */
         margin: 0 auto; /* Center the form */
         margin-top: 5rem;
-    }
-    .footer-col-1 {
-        flex-basis: 35%;
     }
     .site-map {
         flex-basis: 65%;

@@ -1,37 +1,33 @@
 import React from "react";
 import SocialMediaLinks from "./SocialMediaLinks";
-import "../../index.css";
+import "./Footer.css";
 
 export default function Footer() {
     return (
-        <footer className="footer mt-3 ml-3 mr-3">
-            <div className="mb-3 footer-col-1 footer-divider position">
+        <footer className="footer">
+            <div className="footer-col-1 footer-divider position">
                 <a href="/index.html">
                     <img
-                        className="footer-logo mb-3"
+                        className="footer-logo"
                         src="./AVConLogoWhite.png"
                         alt="AV Con logo"
                     />
                 </a>
-                <p className="mb-2 footer-text">
+                <p className="footer-text">
                     AvCon - The Future of Aviation: Inspiring and educating
                     future aviation professionals through a dynamic, interactive
                     event
                 </p>
                 <a
                     href="https://emily-h-erskine.github.io/portfolio/"
-                    className="copyright"
-                    style={{
-                        fontSize: "14px",
-                        textDecoration: "none",
-                    }}>
+                    className="copyright">
                     Copyright © 2025 Emily-Huong Erskine
                 </a>
             </div>
 
-            <div className="flex-container site-map mb-3 mt-3">
-                <div className="flex-col flex-1 pb-3 space-between">
-                    <p className="mb-2 uppercase footer-heading">Events</p>
+            <div className="flex-container site-map">
+                <div className="flex-col flex-1 space-between">
+                    <p className="uppercase footer-heading">Events</p>
                     <div className="flex-col">
                         <a href="./Event" className="footer-link">
                             AvCon 2025 Info
@@ -47,9 +43,9 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex-col flex-1 pb-3 mr-1">
-                    <p className="mb-2 uppercase footer-heading">Company</p>
-                    <div className="flex-col ">
+                <div className="flex-col flex-1">
+                    <p className="uppercase footer-heading">Company</p>
+                    <div className="flex-col">
                         <a href="./About" className="footer-link">
                             About Us
                         </a>
@@ -68,7 +64,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex-col flex-1 space-between-col">
-                    <p className="uppercase mb-2 footer-heading">Social</p>
+                    <p className="uppercase footer-heading">Social</p>
                     <SocialMediaLinks />
                 </div>
             </div>

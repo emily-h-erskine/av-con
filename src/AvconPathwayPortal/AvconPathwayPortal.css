@@ -1,0 +1,38 @@
+/* Main container padding for different screen sizes */
+.main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for the container in AdvertData */
+  .advert-container {
+    display: flex;
+    gap: 1%;
+  }
+  
+  /* Image and Text Section */
+  .image-text-container {
+    padding: 0 2%; /* Default for mobile */
+  }
+  
+  @media (max-width: 768px) {
+    .image-text-container {
+      padding: 0 5%; /* Padding for medium screens */
+    }
+    .advert-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+      }
+
+  }
+  
+  /* Event Container */
+  .event-container {
+    text-align: center;
+  }
+  
+  hr {
+    margin: 40px 0;
+  }
+  

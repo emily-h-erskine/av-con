@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './register.css';
 
 export default function RegistrationForm() {
     const [scriptLoaded, setScriptLoaded] = useState(false);

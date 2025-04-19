@@ -1,8 +1,7 @@
 import React from "react";
-import AboutTimeline from "./aboutTimeline.jsx";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
+import AboutTimeline from "./components/AboutTimeline/aboutTimeline.jsx";
 import AVConPromoVideo from "./The Future of aviation.mp4";
+import "./about.css";
 
 export default function About() {
     const aboutAVCon = [
@@ -25,29 +24,25 @@ export default function About() {
     ];
 
     return (
-        <main className="flex min-h-screen flex-col p-4 md:p-8 lg:p-12">
-            <div className="event-container text-center">
-                <h3 style={{ textAlign: "center" }}>About AvCon</h3>
+        <main className="about-main">
+            <div className="about-container">
+                <h3 className="about-heading">About AvCon</h3>
 
                 {/* Uncomment this when AboutTimeline is ready */}
                 {/* <AboutTimeline aboutAVCon={aboutAVCon} /> */}
             </div>
-
-            <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={7}>
+                <div container className="about-grid">
+                    <div item className="about-grid-item-video">
                         <iframe
-                            className="md:w-3/4 lg:w-2/3 xl:w-1/2"
-                            height="500"
-                            width="100%"
+                            className="about-video"
                             src={AVConPromoVideo}
                             title="AvCon Future of Aviation"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
                         />
-                    </Grid>
-                    <Grid item xs={12} md={5}>
+                    </div>
+                    <div item className="about-grid-item-text">
                         <p>
                             Welcome to AvCon - The Future of Aviation! AvCon is
                             thrilled to present its signature event dedicated to
@@ -83,9 +78,8 @@ export default function About() {
                             For all other queries please contact us at{" "}
                             <a href="mailto:hello@avcon.ie">hello@avcon.ie</a>
                         </p>
-                    </Grid>
-                </Grid>
-            </Box>
+                    </div>
+                </div>
         </main>
     );
 }

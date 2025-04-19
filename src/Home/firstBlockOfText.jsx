@@ -39,7 +39,7 @@ export default function FirstImageAndText() {
                                     target="_blank"
                                     rel="noopener noreferrer">
                                     Join us
-                                </a>{" "}
+                                </a>
                                 for an exhilarating event where you'll explore
                                 cutting-edge technology, witness thrilling
                                 demos, and engage with industry experts shaping

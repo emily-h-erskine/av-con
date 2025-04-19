@@ -1,16 +1,11 @@
 import React from 'react';
 import ImageInfoCard from './ImageInfoCard';
-import IAA from './AdvertImages/IAA.png'
+import IAA from '../AdvertImages/IAA.png';
+import '../AvconPathwayPortal.css';
 
 export default function AdvertData() {
-
-    const containerStyle = {
-        display: 'flex',
-        gap: '1%',
-      };
-
   return (
-    <div sx={{ padding: { xs: '0 2%', md: '0 5%' } }} style={containerStyle}>
+    <div className="advert-container">
       <ImageInfoCard
         imageUrl={IAA}
         title="The Irish Aviation Authority (IAA)"
@@ -34,4 +29,3 @@ export default function AdvertData() {
     </div>
   );
 }
-

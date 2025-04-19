@@ -1,0 +1,140 @@
+/* Base Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: var(--background-dark);
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Right side of header (nav area) */
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+/* Desktop Menu */
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Link Styling */
+.link-text {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Highlighted Button Link */
+.button-highlight {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--background-light);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--background-light);
+    transition: background-color 0.3s ease;
+}
+
+.button-highlight:hover {
+    background-color: var(--background-light);
+    color: var(--background-dark);
+}
+
+/* Dropdowns */
+.desktop-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--background-dark-98);
+    padding: 1rem;
+    border: 1px solid white;
+    z-index: 100;
+    min-width: 200px;
+}
+
+/* Mobile Specific */
+.mobile-menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--background-dark-98);
+    z-index: 1000;
+    overflow-y: hidden;
+    padding: 5%;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu-section {
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive: Mobile Only */
+@media (max-width: 425px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .mobile-menu {
+        display: block;
+        text-align: right;
+    }
+
+    .header-container {
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+
+    .header-right {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1rem;
+        padding: 5% 0;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+}

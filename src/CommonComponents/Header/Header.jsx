@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Dropdown from "./Dropdown.svg";
+import "./Header.css";
 
 export const Header = () => {
     const [showEventDropdown, setShowEventDropdown] = useState(false);
@@ -16,7 +17,7 @@ export const Header = () => {
     };
 
     const handleMobileToggle = () => {
-        setShowMobileMenu(!showMobileMenu);
+        setShowMobileMenu((prev) => !prev);
     };
 
     const closeMobileMenu = () => {
@@ -30,321 +31,184 @@ export const Header = () => {
         };
 
         window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     return (
-        <header className="flex-container align-vertical-middle pt-1 pr-2 pb-1 pl-2">
-            {/* LOGO */}
-            <div>
+        <header className="header-container">
                 <a href="/">
                     <img
                         src="./AVConLogoWhiteNoBG.png"
-                        alt="ACon logo"
-                        width={isMobile ? "20%" : "35%"}
+                        alt="AVCon logo"
+                        className="logo"
                     />
                 </a>
-            </div>
 
-            <div
-                style={{
-                    textAlign: "right",
-                }}>
+            <div className="header-right">
                 {isMobile ? (
-                    <div
-                        style={{ cursor: "pointer" }}
-                        onClick={handleMobileToggle}>
-                        ☰
-                        {showMobileMenu && (
-                            <div
-                                style={{
-                                    backgroundColor:
-                                        "var(--background-dark-98)",
-                                    top: 0,
-                                    right: 0,
-                                    bottom: 0,
-                                    left: 0,
-                                    overflowY: "scroll", // Ensure scroll if content overflows
-                                    padding: "2rem 1rem 1rem 1rem", // Provide some padding for spacing
-                                }}>
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        justifyContent: "space-between",
-                                        alignItems: "center",
-                                        width: "100%",
-                                        position: "absolute",
-                                        top: 0,
-                                        left: 0,
-                                        padding: "1rem",
-                                    }}>
-                                    <span
-                                        style={{
-                                            fontSize: "2rem",
-                                            fontWeight: "50",
-                                            padding: "var(--padding-small",
-                                            cursor: "pointer",
-                                        }}
-                                        onClick={handleMobileToggle}>
-                                        &times; {/* Close (X) icon */}
-                                    </span>
-                                </div>
+                    <div className="mobile-menu-toggle" onClick={handleMobileToggle}>
+                        <span className="menu-icon">
+                            {showMobileMenu ? "✕" : "☰"}
+                        </span>
 
-                                <ul className="">
-                                    {/* EVENT INFO Link with Dropdown */}
-                                    <div>
+                        {showMobileMenu && (
+                            <div className="mobile-menu">
+                                <ul>
+                                    <li className="mobile-menu-section">
+                                        <a href="./" onClick={closeMobileMenu}>
+                                            HOME
+                                        </a>
+                                        <a href="./Event" onClick={closeMobileMenu}>
+                                            EVENT INFO
+                                        </a>
                                         <ul className="dropdown-menu">
                                             <li>
-                                                <a className="" href="./Event">
-                                                    EVENT INFO
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    className=""
-                                                    href="./EventSchedule">
+                                                <a href="./EventSchedule" onClick={closeMobileMenu}>
                                                     EVENT SCHEDULE
                                                 </a>
                                             </li>
                                             <li>
-                                                <a
-                                                    className=""
-                                                    href="./SpeakersPresenters">
-                                                    SPEAKERS &amp; PRESENTERS
+                                                <a href="./SpeakersPresenters" onClick={closeMobileMenu}>
+                                                    SPEAKERS & PRESENTERS
                                                 </a>
                                             </li>
                                             <li>
-                                                <a
-                                                    className=""
-                                                    href="./FlightSim">
-                                                    AVCON XTRA: THE FLIGHT SIM
-                                                    EVENT
+                                                <a href="./FlightSim" onClick={closeMobileMenu}>
+                                                    AVCON XTRA: THE FLIGHT SIM EVENT
                                                 </a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </li>
 
-                                    {/* ABOUT AVCON Link with Dropdown */}
-                                    <ul>
-                                        <li style={{ padding: "1rem 0" }}>
-                                            <div>
-                                                <li>
-                                                    <a
-                                                        style={{
-                                                            marginBottom: "6px",
-                                                        }}
-                                                        className=""
-                                                        href="./About">
-                                                        ABOUT AVCON
-                                                    </a>
-                                                </li>
-                                                <ul className="dropdown-menu">
-                                                    <li>
-                                                        <a href="./News">
-                                                            NEWS &amp; UPDATES
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="./AvConEzine">
-                                                            AVCON EZINE
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="./SponsorsPartners">
-                                                            SPONSORS &amp;
-                                                            PARTNERS
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="./AviationPathwayPortal">
-                                                            AVIATION PATHWAY
-                                                            PORTAL
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
+                                    <li className="mobile-menu-section">
+                                        <a href="./About" onClick={closeMobileMenu}>
+                                            ABOUT AVCON
+                                        </a>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <a href="./News" onClick={closeMobileMenu}>
+                                                    NEWS & UPDATES
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="./AvConEzine" onClick={closeMobileMenu}>
+                                                    AVCON EZINE
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="./SponsorsPartners" onClick={closeMobileMenu}>
+                                                    SPONSORS & PARTNERS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="./AviationPathwayPortal" onClick={closeMobileMenu}>
+                                                    AVIATION PATHWAY PORTAL
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
 
-                                        {/* Other Links */}
-                                        <li style={{ padding: "1rem 0" }}>
-                                            <a href="./Contact">CONTACT US</a>
-                                        </li>
-                                        <li style={{ padding: "1rem 0" }}>
-                                            <a href="./ExhibitorRegistration">
-                                                EXHIBITOR REGISTRATION
-                                            </a>
-                                        </li>
-                                        <li style={{ padding: "1rem 0" }}>
-                                            <a href="./BookTickets">
-                                                SCHOOL'S PRE-REGISTER HERE!
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <li className="mobile-menu-section">
+                                        <a href="./Contact" onClick={closeMobileMenu}>
+                                            CONTACT US
+                                        </a>
+                                    </li>
+                                    <li className="mobile-menu-section">
+                                        <a href="./ExhibitorRegistration" onClick={closeMobileMenu}>
+                                            EXHIBITOR REGISTRATION
+                                        </a>
+                                    </li>
+                                    <li className="mobile-menu-section">
+                                        <a href="./BookTickets" onClick={closeMobileMenu}>
+                                            SCHOOL'S PRE-REGISTER HERE!
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         )}
                     </div>
                 ) : (
-                    // Desktop view logic
-                    <div
-                        style={{
-                            display: "flex", // Change from grid to flex
-                            gap: "4%", // Space between nav items
-                            justifyContent: "flex-end", // Align nav items to the right
-                            textAlign: "center",
-                            alignItems: "center", // Vertically center nav items
-                        }}>
+                    <div className="desktop-menu">
+                        <a className="link-text" href="./">
+                            HOME
+                        </a>
                         <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                position: "relative",
-                                whiteSpace: "nowrap", // Prevent text wrapping
-                                minWidth: "max-content", // Ensure min width matches content
-                            }}
+                            className="desktop-dropdown"
                             onMouseEnter={handleEventDropdownToggle}
-                            onMouseLeave={handleEventDropdownToggle}>
-                            <a className="link-text" href="./Event">
+                            onMouseLeave={handleEventDropdownToggle}
+                        >
+                            <a
+                                className="link-text"
+                                href="./Event"
+                                aria-haspopup="true"
+                                aria-expanded={showEventDropdown}
+                            >
                                 EVENT INFO
                             </a>
-                            <img
-                                src={Dropdown}
-                                alt="Dropdown"
-                                style={{
-                                    padding: "0 0 0 10px",
-                                    width: "100%", // Set the width of the dropdown icon
-                                    height: "100%", // Set the height of the dropdown icon
-                                }}
-                            />
+                            <img src={Dropdown} alt="Dropdown" className="dropdown-icon" />
                             {showEventDropdown && (
-                                <p
-                                    style={{
-                                        position: "absolute", // ensures the dropdown does not affect page layout
-                                        zIndex: "100", // ensures dorpdown appears on top of other page elements
-                                        top: "100%",
-                                        left: 0,
-                                        backgroundColor:
-                                            "var(--background-dark-98",
-                                        padding: "10px",
-                                        border: "1px white solid",
-                                        textAlign: "left",
-                                    }}>
-                                    <a
-                                        className="uppercase link-text"
-                                        href="./EventSchedule">
+                                <div className="dropdown-content">
+                                    <a className="uppercase link-text" href="./EventSchedule">
                                         EVENT SCHEDULE
                                     </a>
-                                    <br />
-                                    <br />
-                                    <a
-                                        className="uppercase link-text"
-                                        href="./SpeakersPresenters">
-                                        SPEAKERS &amp; PRESENTERS
+                                    <br /><br />
+                                    <a className="uppercase link-text" href="./SpeakersPresenters">
+                                        SPEAKERS & PRESENTERS
                                     </a>
-                                    <br />
-                                    <br />
+                                    <br /><br />
                                     <a className="uppercase link-text" href="./FlightSim">
                                         AVCON XTRA: THE FLIGHT SIM EVENT
                                     </a>
-                                </p>
+                                </div>
                             )}
                         </div>
+
                         <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                position: "relative",
-                                whiteSpace: "nowrap", // Prevent text wrapping
-                                minWidth: "max-content", // Ensure min width matches content
-                            }}
+                            className="desktop-dropdown"
                             onMouseEnter={handleAboutDropdownToggle}
-                            onMouseLeave={handleAboutDropdownToggle}>
-                            <a className="uppercase link-text" href="./About">
+                            onMouseLeave={handleAboutDropdownToggle}
+                        >
+                            <a
+                                className="uppercase link-text"
+                                href="./About"
+                                aria-haspopup="true"
+                                aria-expanded={showAboutDropdown}
+                            >
                                 ABOUT AVCON
                             </a>
-                            <img
-                                src={Dropdown}
-                                alt="Dropdown"
-                                style={{
-                                    padding: "0 0 0 10px",
-                                    width: "100%", // Set the width of the dropdown icon
-                                    height: "100%", // Set the height of the icon
-                                }}
-                            />
+                            <img src={Dropdown} alt="Dropdown" className="dropdown-icon" />
                             {showAboutDropdown && (
-                                <p
-                                    style={{
-                                        position: "absolute", // ensures the dropdown does not affect page layout
-                                        zIndex: "100", // ensures dorpdown appears on top of other page elements
-                                        top: "100%",
-                                        left: 0,
-                                        backgroundColor:
-                                            "var(--background-dark-98",
-                                        padding: "10px",
-                                        border: "1px white solid",
-                                        textAlign: "left",
-                                    }}>
-                                    <a
-                                        className="uppercase link-text"
-                                        href="./News">
-                                        NEWS &amp; UPDATES
+                                <div className="dropdown-content">
+                                    <a className="uppercase link-text" href="./News">
+                                        NEWS & UPDATES
                                     </a>
-                                    <br />
-                                    <br />
-                                    <a
-                                        className="uppercase link-text"
-                                        href="./AvConEzine">
+                                    <br /><br />
+                                    <a className="uppercase link-text" href="./AvConEzine">
                                         AVCON EZINE
                                     </a>
-                                    <br />
-                                    <br />
-                                    <a
-                                        className="uppercase link-text"
-                                        href="./SponsorsPartners">
-                                        SPONSORS &amp; PARTNERS
+                                    <br /><br />
+                                    <a className="uppercase link-text" href="./SponsorsPartners">
+                                        SPONSORS & PARTNERS
                                     </a>
-                                    <br />
-                                    <br />
-                                    <a
-                                        className="uppercase link-text"
-                                        href="./AviationPathwayPortal">
+                                    <br /><br />
+                                    <a className="uppercase link-text" href="./AviationPathwayPortal">
                                         AVIATION PATHWAY PORTAL
                                     </a>
-                                </p>
+                                </div>
                             )}
                         </div>
-                        <a
-                            style={{
-                                whiteSpace: "nowrap",
-                                minWidth: "max-content",
-                            }}
-                            className="link-text"
-                            href="./Contact">
+
+                        <a className="link-text" href="./Contact">
                             CONTACT US
                         </a>
-                        <a
-                            style={{
-                                whiteSpace: "nowrap",
-                                minWidth: "max-content",
-                            }}
-                            className="link-text"
-                            href="./ExhibitorRegistration">
+                        <a className="link-text" href="./ExhibitorRegistration">
                             EXHIBITOR REGISTRATION
                         </a>
                         <a
                             role="button"
-                            style={{
-                                padding: "0.75rem",
-                                border: "1px solid var(--background-light",
-                                borderRadius: "4px",
-                                whiteSpace: "nowrap",
-                                minWidth: "max-content",
-                            }}
-                            className="link-text"
-                            href="./BookTickets">
+                            className="link-text button-highlight"
+                            href="./BookTickets"
+                        >
                             SCHOOL'S PRE-REGISTER HERE!
                         </a>
                     </div>

@@ -1,0 +1,60 @@
+.hero-wrapper {
+    position: relative;
+    margin-bottom: var(--margin-medium);
+}
+
+.hero-image-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-background-img {
+    width: 100%;
+    height: 100vh;
+    mix-blend-mode: luminosity;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: darken;
+    background: linear-gradient(180deg, var(--background-dark) 0%, rgba(7, 16, 29, 0) 100%);
+    z-index: 1;
+}
+
+.hero-content-position {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+.sub-title {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: inherit;
+}

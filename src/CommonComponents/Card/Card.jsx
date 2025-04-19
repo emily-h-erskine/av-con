@@ -1,17 +1,14 @@
 import React from "react";
+import "./Card.css";
 
-const Card = ({ imageSrc, heading, description }) => {
+export default function Card({ imageSrc, heading, description }) {
     return (
-        <div className="card pb-3">
-            <img
-                src={imageSrc}
-                alt={heading} // this will be very poor alt text for the images will need a solution
-                className="img-fluid"
-            />
-            <h3 className="card-heading">{heading}</h3>
-            <p className="card-description">{description}</p>
+        <div className="card">
+            <img src={imageSrc} alt={heading} className="card-img" />
+            <div className="card-body">
+                <h3 className="card-title">{heading}</h3>
+                <p className="card-text">{description}</p>
+            </div>
         </div>
     );
-};
-
-export default Card;
+}

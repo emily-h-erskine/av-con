@@ -39,15 +39,15 @@ body {
 }
 
 a {
-    color: var(--text-light); /* Set the link color to white */
+    color: var(--text-light) !important;
     text-decoration: none;
 }
 a:hover {
-    color: var(--light-grey); /* Set the link hover color to white */
+    color: var(--mid-grey) !important;
 }
 
 p {
-    color: var(--text-light); /* Set the link color to white */
+    color: var(--text-light);
     text-decoration: none;
     font-size: small;
 }

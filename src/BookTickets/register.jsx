@@ -1,13 +1,14 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import BackgroundImage from "./SHAN5640.jfif";
-import Flight from "./SHAN6371.jfif";
+import BackgroundImage from "./BookTicketsImages/SHAN5640.jfif";
+import Flight from "./BookTicketsImages/SHAN6371.jfif";
 import HeroSection from "../CommonComponents/HeroSection/HeroSection";
+import './register.css';
 
 export default function Register() {
     return (
-        <main className="flex min-h-screen flex-col p-4 md:p-8 lg:p-12">
+        <main className="main-container">
             <HeroSection
                 defaultTitle="Schools! Pre-Register Now for AvCon 2025"
                 defaultSubtitle="Join us for an unforgettable aviation experience designed especially for students. Secure your school's place today!"
@@ -16,34 +17,30 @@ export default function Register() {
                 buttonText="Pre-Register Your School for AvCon 2025"
                 buttonLink="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZURUg1NktIQVBGTThPMUlSWE4xSDdQWDZMWi4u"
             />
-            <div className="event-container text-center">
-                <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
+            <div className="event-container">
+                <Box className="grid-container">
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
-                            <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
-                            <p>
-                                Exciting news! We're coming back — and your school can be among the first to pre-register for <strong>AvCon: The Future of Aviation 2025!</strong> Don't miss out on the second year of this groundbreaking event — secure your spot today.
-                                <br />
-                                <br />
-                                Whether you're a student, teacher, or school leader, educational institutions from across the globe are invited to be part of this inspiring event. Dive into the future of aviation and explore the innovations, technologies, and ideas that are shaping the skies of tomorrow.
-                            </p>
+                            <div className="text-container">
+                                <p>
+                                    Exciting news! We're coming back — and your school can be among the first to pre-register for <strong>AvCon: The Future of Aviation 2025!</strong> Don't miss out on the second year of this groundbreaking event — secure your spot today.
+                                    <br />
+                                    <br />
+                                    Whether you're a student, teacher, or school leader, educational institutions from across the globe are invited to be part of this inspiring event. Dive into the future of aviation and explore the innovations, technologies, and ideas that are shaping the skies of tomorrow.
+                                </p>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <div style={{ textAlign: "center" }}>
+                            <div className="text-center">
                                 <img
                                     src={BackgroundImage}
                                     alt="Behind the Scenes"
-                                    style={{
-                                        width: "100%",
-                                        maxWidth: "100%",
-                                        mixBlendMode: "luminosity",
-                                    }}
+                                    className="event-image"
                                 />
                             </div>
                         </Grid>
                     </Grid>
-                    <h5 style={{ textAlign: "center" }}>
+                    <h5 className="text-center">
                         <b>
                             Schools Pre-Register here:{" "}
                             <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZURUg1NktIQVBGTThPMUlSWE4xSDdQWDZMWi4u">
@@ -53,20 +50,16 @@ export default function Register() {
                     </h5>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
-                            <div style={{ textAlign: "center" }}>
+                            <div className="text-center">
                                 <img
                                     src={Flight}
                                     alt="Behind the Scenes"
-                                    style={{
-                                        width: "100%",
-                                        maxWidth: "100%",
-                                        mixBlendMode: "luminosity",
-                                    }}
+                                    className="event-image"
                                 />
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
+                            <div className="text-container">
                                 <p>
                                     The full event schedule will be announced soon with some truly exciting topics
                                     you won't want to miss! Don't miss this
