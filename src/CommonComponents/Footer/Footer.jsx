@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
 
             <div className="flex-container site-map">
-                <div className="flex-col flex-1 space-between">
+                <div className="flex-1 space-between">
                     <p className="uppercase footer-heading">Events</p>
                     <div className="flex-col">
                         <a href="./Event" className="footer-link">
@@ -43,7 +43,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex-col flex-1">
+                <div className="flex-1">
                     <p className="uppercase footer-heading">Company</p>
                     <div className="flex-col">
                         <a href="./About" className="footer-link">
@@ -63,7 +63,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex-col flex-1 space-between-col">
+                <div className="flex-1 space-between-col">
                     <p className="uppercase footer-heading">Social</p>
                     <SocialMediaLinks />
                 </div>

@@ -47,6 +47,14 @@ export default function Register() {
                                 Click Here
                             </a>
                         </b>
+                        <br />
+                        <br />
+                        <b>
+                            College Pre-Register here:{" "}
+                            <a href="https://forms.office.com/r/xwSzALCh3b">
+                                Click Here
+                            </a>
+                        </b>
                     </h5>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>

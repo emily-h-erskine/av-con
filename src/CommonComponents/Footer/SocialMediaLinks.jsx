@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SocialMediaLinks() {
     return (
-        <div className="flex-contaier flex-1">
+        <div className="flex-contaier">
             <div className="flex-col">
                 <a
                     href="./https://www.facebook.com/profile.php?id=61552633058659"

@@ -14,7 +14,7 @@ const cardData = [
     {
         imageSrc: StudentsImg,
         heading: "Students and Aerospace",
-        description: "AvCon 204: A thrilling journey into the future of aviation, aerospace, space & STEM for students."
+        description: "AvCon 2025: A thrilling journey into the future of aviation, aerospace, space & STEM for students."
     },
     {
         imageSrc: CuttingEdgeImg,
