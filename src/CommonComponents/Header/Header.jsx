@@ -72,11 +72,11 @@ export const Header = () => {
                                                     SPEAKERS & PRESENTERS
                                                 </a>
                                             </li>
-                                            <li>
+                                            {/* <li>
                                                 <a href="./FlightSim" onClick={closeMobileMenu}>
                                                     AVCON XTRA: THE FLIGHT SIM EVENT
                                                 </a>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </li>
 
@@ -155,10 +155,10 @@ export const Header = () => {
                                     <a className="uppercase link-text" href="./SpeakersPresenters">
                                         SPEAKERS & PRESENTERS
                                     </a>
-                                    <br /><br />
+                                    {/* <br /><br />
                                     <a className="uppercase link-text" href="./FlightSim">
                                         AVCON XTRA: THE FLIGHT SIM EVENT
-                                    </a>
+                                    </a> */}
                                 </div>
                             )}
                         </div>

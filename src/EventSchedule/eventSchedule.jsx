@@ -8,7 +8,8 @@ export default function EventSchedule() {
     return (
         <main>
             <div className="container">
-                <h3 className="title">Event Schedule</h3>
+                <h3 className="title">Event Schedule 2025 - TBD</h3>
+                <h6 className="live-stream-title">Event Schedule 2024</h6>
 
                 <div className="images-grid">
                     <img src={Session1} alt="AVCon Session 1" className="schedule-image" />
@@ -17,7 +18,7 @@ export default function EventSchedule() {
                 </div>
 
                 <div className="live-stream">
-                    <h6 className="live-stream-title">LIVE STREAM on TY HUB YOUTUBE</h6>
+                    <h6 className="live-stream-title">Take a look at the 2024 LIVE STREAM on YouTube</h6>
                     <div className="video-container">
                         <iframe
                             src="https://www.youtube.com/embed/7_AYMtVLbhI?si=ulFkMd-tNUI6KD3z"
