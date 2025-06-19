@@ -13,15 +13,16 @@ export default function MiddleBlockOfText() {
                 spacing={2}>
                 <Grid item xs={12} sm={6}>
                     <h5 className="text-light" style={{ textAlign: "center" }}>
-                        Exciting news! Even though in-person
-                        registration for AvCon - The Future of
-                        Aviation is now closed, you don't have to
-                        miss out on this groundbreaking event.
-                        <br></br><br></br>
+                        Can't make it to AvCon in person? No problem!
+                        <br />
+                        Wherever you are, you can still be part of AvCon - The Future of Aviation. 
+                        <br /><br />
+                        Join us online and experience this inspiring event from anywhere.
+                        <br /><br />
                         <a
                             className="text-light text-large text-link"
-                            href="./BookTickets">
-                            Pre-Register Your School for AvCon 2025
+                            href="https://forms.office.com/r/NHEwtgYMUc">
+                            Register for the Live Stream
                         </a>
                     </h5>
                 </Grid>

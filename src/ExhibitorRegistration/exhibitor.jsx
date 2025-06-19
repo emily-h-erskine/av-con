@@ -12,13 +12,12 @@ export default function ExhibitorRegistration() {
                 smallScreenSubtitle="AvCon presenting an event for all things aviation"
             />
             <div className="event-container text-center">
-                <div className="flex justify-center">
-                    <div className="custom-form-container">
-                        <div className=" md:w-3/4 lg:w-2/3 xl:w-1/2">
-                            <ExhibitorRegistrationForm />
-                        </div>
-                    </div>
-                </div>
+                <b>
+                    Sponsor/Exhibitor Sign-Up here:{" "}
+                    <a href="https://forms.office.com/r/L0KFq8UwSw">
+                        Click Here
+                    </a>
+                </b>
             </div>
         </main>
     );

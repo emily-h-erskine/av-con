@@ -24,13 +24,13 @@ export default function FirstImageAndText() {
                 <Grid item xs={12} md={5}>
                     <div className="flex-container-col space-between ml-1 mr-1">
                         <h3 className="mb-2">
-                            Soar into the future of aviation at AvCon 2025!
+                        AvCon 2025 - The Future of Aviation Is Landing
                         </h3>
                         <div className="flex-container-col space-between">
                             <p className="text-left mb-1">
-                                Calling all primary, secondary, and 3rd level
-                                students, to experience an electrifying journey
-                                through the skies of innovation.
+                            Where the next generation of talent meets the trailblazers of the skies.
+                            <br />
+                            Where careers take flight — and the industry connects with its future.
                             </p>
                             <p className="text-left">
                                 <a
@@ -40,10 +40,7 @@ export default function FirstImageAndText() {
                                     rel="noopener noreferrer">
                                     Join us
                                 </a>
-                                for an exhilarating event where you'll explore
-                                cutting-edge technology, witness thrilling
-                                demos, and engage with industry experts shaping
-                                the future of flight.
+                                &nbsp; for Ireland's leading aviation and aerospace careers event, built to engage 15-25-year-olds with real-world pathways in aviation, aerospace, space tech, UAS, simulation, sustainability, air traffic, engineering, and more.
                             </p>
                         </div>
                     </div>

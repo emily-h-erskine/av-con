@@ -120,7 +120,7 @@ export const Header = () => {
                                     </li>
                                     <li className="mobile-menu-section">
                                         <a href="./BookTickets" onClick={closeMobileMenu}>
-                                            SCHOOL'S PRE-REGISTER HERE!
+                                            AVCON REGISTER HERE!
                                         </a>
                                     </li>
                                 </ul>
@@ -209,7 +209,7 @@ export const Header = () => {
                             className="link-text button-highlight"
                             href="./BookTickets"
                         >
-                            SCHOOL'S PRE-REGISTER HERE!
+                            AVCON REGISTER HERE!
                         </a>
                     </div>
                 )}

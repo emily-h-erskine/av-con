@@ -44,41 +44,30 @@ export default function About() {
                     </div>
                     <div item className="about-grid-item-text">
                         <p>
-                            Welcome to AvCon - The Future of Aviation! AvCon is
-                            thrilled to present its signature event dedicated to
-                            all things aviation. Designed to ignite the
-                            imaginations of students from primary to tertiary
-                            education levels, AvCon offers a dynamic platform to
-                            explore career opportunities and delve into the
-                            exciting world of flight. Whether you're a curious
-                            primary schooler, a discerning secondary school
-                            student, especially in Transition Year, or a
-                            tertiary education enthusiast, AvCon promises an
-                            immersive experience like no other.
-                            <br />
-                            <br />
-                            Dubbed as the Comic Con of Aviation, AvCon brings
-                            together aviation enthusiasts, industry experts, and
-                            educational institutions to showcase the
-                            cutting-edge advancements and endless possibilities
-                            within the aviation sector. Join us at AvCon and let
-                            your dreams take flight!
-                            <br />
-                            <br />
-                            Please note: AvCon is only facilitating education
-                            group bookings at the moment.
-                            <br />
-                            <br />
-                            <a href="/BookTickets">
-                                Register through our registration and ticket
-                                page.
-                            </a>
+                        AvCon 2025 - The Future of Aviation Is Landing
+                        <br/>
+                        Where the next generation of talent meets the trailblazers of the skies. Where careers take flight — and the industry connects with its future.
+                        On October 2nd, AvCon returns live from Casement Aerodrome, Baldonnel, hosted by the Irish Air Corps — bringing together over 8,000 registered students, 300+ schools and colleges, and a powerful lineup of industry leaders, innovators, and educators.
                             <br />
                             <br />
                             For all other queries please contact us at{" "}
                             <a href="mailto:hello@avcon.ie">hello@avcon.ie</a>
                         </p>
                     </div>
+                </div>
+                <div className="about-grid-item-text">
+                    <br />
+                    This is Ireland's leading aviation and aerospace careers event, built to engage 15-25-year-olds with real-world pathways in aviation, aerospace, space tech, UAS, simulation, sustainability, air traffic, engineering, and more.
+                    <br />
+                    <br />
+                    🚀 For Industry: Showcase your brand, your tech, and your opportunities — in person and via our high-impact Live Stream (TYHub.ie & YouTube). Network with future-ready students, build talent pipelines, and connect with a growing community of educators shaping Ireland's workforce.
+                    <br/>
+                    🎓 For Students & Colleges: Step inside a hangar full of aircraft, innovation zones, flight simulators, and inspiring speakers. Hear from drone pilots, aerospace engineers, Air Corps leaders, space entrepreneurs — and imagine yourself in their shoes.
+                    <br/>
+                    AvCon isn't just about the future of aviation. It's about the future of your organisation. Be seen. Be heard. Be part of the movement.
+                    <br/>
+                    🛫 AvCon 2025 - Now boarding.
+                    <br />
                 </div>
         </main>
     );

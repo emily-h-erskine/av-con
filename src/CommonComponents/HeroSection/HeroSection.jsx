@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HeroMobile from "./Hero-mobile.png";
+import HeroImage from "./HeroImage.jpeg";
 import "./HeroSection.css";
 
 export default function HeroSection({
@@ -36,10 +37,10 @@ export default function HeroSection({
         <div className="hero-wrapper">
             <picture className="hero-image-container">
                 <source media="(max-width: 600px)" srcSet={HeroMobile} />
-                <source media="(min-width: 600px)" srcSet="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg" />
+                <source media="(min-width: 600px)" srcSet={HeroImage} />
                 <img
-                    src="https://www.aviationpress.co.uk/wp-content/uploads/2022/04/PC-12-Banner-scaled.jpg"
-                    alt="Aeroplanes in a hangar"
+                    src={HeroImage}
+                    alt="AvCon24 PC-9"
                     className="hero-background-img"
                 />
             </picture>

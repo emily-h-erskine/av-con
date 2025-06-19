@@ -10,12 +10,12 @@ export default function Register() {
     return (
         <main className="main-container">
             <HeroSection
-                defaultTitle="Schools! Pre-Register Now for AvCon 2025"
+                defaultTitle="Schools! Colleges! Pre-Register Now for AvCon 2025"
                 defaultSubtitle="Join us for an unforgettable aviation experience designed especially for students. Secure your school's place today!"
-                smallScreenTitle="Pre-Register Your School for AvCon 2025"
-                smallScreenSubtitle="A unique aviation event tailored for schools — don't miss out!"
-                buttonText="Pre-Register Your School for AvCon 2025"
-                buttonLink="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZURUg1NktIQVBGTThPMUlSWE4xSDdQWDZMWi4u"
+                smallScreenTitle="Register for AvCon 2025"
+                smallScreenSubtitle="A unique aviation event tailored for aviation enthusiasts — don't miss out!"
+                buttonText="Register for AvCon 2025"
+                buttonLink="https://avcon.ie/BookTickets"
             />
             <div className="event-container">
                 <Box className="grid-container">
@@ -42,15 +42,15 @@ export default function Register() {
                     </Grid>
                     <h5 className="text-center">
                         <b>
-                            Schools Pre-Register here:{" "}
-                            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZURUg1NktIQVBGTThPMUlSWE4xSDdQWDZMWi4u">
+                            Schools Register here:{" "}
+                            <a href="https://forms.office.com/r/07XtkSzr47">
                                 Click Here
                             </a>
                         </b>
                         <br />
                         <br />
                         <b>
-                            College Pre-Register here:{" "}
+                            College Register here:{" "}
                             <a href="https://forms.office.com/r/xwSzALCh3b">
                                 Click Here
                             </a>

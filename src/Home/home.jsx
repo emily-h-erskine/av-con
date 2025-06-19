@@ -10,12 +10,12 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col justify-between p-24">
             <HeroSection
-                defaultTitle="AN UNFORGETTABLE THRILL FOR GAMERS AND ENTHUSIASTS"
-                defaultSubtitle="Take the stick for an epic experience with AvCon Xtra’s Flight Sim challenge"
+                defaultTitle="AN UNFORGETTABLE THRILL FOR AVIATION ENTHUSIASTS"
+                defaultSubtitle="Schools and Colleges Pre-Register for AvCon 2025"
                 smallScreenTitle="AvCon 2025"
-                smallScreenSubtitle="Take the stick for the Flight Sim Challenge"
-                buttonText="Pre-Register Your School for AvCon 2025"
-                buttonLink="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZURUg1NktIQVBGTThPMUlSWE4xSDdQWDZMWi4u"
+                smallScreenSubtitle="The Sky Isn't the Limit — It's Only the Beginning."
+                buttonText="Register for AvCon 2025"
+                buttonLink="https://avcon.ie/BookTickets"
             />
             <FirstImageAndText />
             <MiddleBlockOfText />
