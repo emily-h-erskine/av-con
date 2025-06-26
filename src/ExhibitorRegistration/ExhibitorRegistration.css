@@ -1,0 +1,93 @@
+ 
+.exhibitor-content {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 5%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .exhibitor-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .exhibitor-paragraph {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+  
+  .exhibitor-subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin: 2rem 0 1rem;
+  }
+  
+  .exhibitor-list {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .exhibitor-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .exhibitor-cta {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    border: 1px solid white;
+  }
+  
+  .exhibitor-cta a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    border: 1px solid white;
+    transition: background 0.3s ease;
+  }
+  
+  .exhibitor-cta a:hover {
+    background-color: #0056b3;
+  }
+  
+  .exhibitor-contact {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .exhibitor-contact a {
+    color: #007bff;
+    text-decoration: underline;
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .exhibitor-two-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.exhibitor-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Responsive stack on smaller screens */
+@media screen and (max-width: 768px) {
+    .exhibitor-two-column {
+        flex-direction: column;
+    }
+}
+
+  

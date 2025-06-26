@@ -23,6 +23,9 @@ import S18 from "./SponsorImages/AvCon 17.png";
 import S19 from "./SponsorImages/AvCon 18.png";
 import S20 from "./SponsorImages/AvCon 19.png";
 import S21 from "./SponsorImages/AvCon 20.png";
+import S22 from "./SponsorImages/S22.png";
+import S23 from "./SponsorImages/S23.png";
+import S24 from "./SponsorImages/S24.jpeg";
 
 import AirCorpLogo from "./SponsorImages/AirCorpsLogo.jpeg";
 import TYHubLogo from "./SponsorImages/TYHubLogo.jpg";
@@ -74,7 +77,7 @@ export default function SponsorsPartners() {
                         opacity: 0.8 
                     }}
                 />
-                {[S7, S3, S4, S5, S6, S8, S9, S10, S11, S13, S12, S16, S14, S15, S17, S18, S19, S20, S21].map((sponsor, index) => (
+                {[S7, S3, S4, S5, S6, S8, S9, S10, S11, S13, S12, S16, S14, S15, S17, S18, S19, S20, S21, S22, S23, S24].map((sponsor, index) => (
                     <img
                         key={index}
                         src={sponsor}
@@ -113,22 +116,6 @@ export default function SponsorsPartners() {
                         <Sponsor logoUrl={TYHubLogo} sponsorName="TY Hub" />
                     </Grid>
                 </Grid>
-            </div>
-
-            <div>
-                <h6
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        marginBottom: "2rem",
-                    }}>
-                    AvCon Media Partner:
-                </h6>
-                <Sponsor
-                    logoUrl={ODohertysLogo}
-                    sponsorName="O'Doherty Media Group"
-                />
             </div>
         </main>
     );

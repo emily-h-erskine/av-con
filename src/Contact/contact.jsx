@@ -13,10 +13,8 @@ export default function Contact() {
             />
             <div className="event-container text-center">
                 <div className="flex justify-center">
-                    <div className="custom-form-container">
-                        <div className="w-1/2 md:w-3/4 lg:w-2/3 xl:w-1/2">
-                            <ContactUsForm />
-                        </div>
+                    <div className="w-1/2 md:w-3/4 lg:w-2/3 xl:w-1/2">
+                        <ContactUsForm />
                     </div>
                 </div>
             </div>

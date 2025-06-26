@@ -1,5 +1,5 @@
 import React from "react";
-import AVConSchedule from "./AvConSpeakerSchedule.png";
+import AVConSchedule from "./EventScheduleImages/AVConEventSchedule2025.png";
 import Session1 from "./EventScheduleImages/Event1.png";
 import Session2 from "./EventScheduleImages/Event2.png";
 import Session3 from "./EventScheduleImages/Event3.png";
@@ -8,7 +8,19 @@ export default function EventSchedule() {
     return (
         <main>
             <div className="container">
-                <h3 className="title">Event Schedule 2025 - TBD</h3>
+                <h1 className="title">AvCon Event Schedule</h1>
+                <div className="images-grid" style={{textAlign: 'center'}}>
+                    <div>
+                        <h3>The 2025 AvCon schedule is currently being finalised — stay tuned for updates!</h3>
+                    </div>
+                    <img src={AVConSchedule} alt="AVCon Event Schedule 2025" className="schedule-image" />
+                    <div>
+                        <h6>We're preparing another exciting line-up of speakers, workshops, and interactive experiences designed to inspire the next generation of aviation and aerospace talent.</h6>
+                        <br/><br/>
+                        <h6>In the meantime, take a look at the 2024 Event Schedule to see the incredible range of sessions and experiences from last year's event — including talks from industry leaders, tech demos, aircraft displays, and student spotlights.</h6>
+                    </div>
+                </div>
+
                 <h6 className="live-stream-title">Event Schedule 2024</h6>
 
                 <div className="images-grid">

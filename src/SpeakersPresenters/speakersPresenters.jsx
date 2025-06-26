@@ -5,6 +5,8 @@ import HeroSection from "../CommonComponents/HeroSection/HeroSection";
 import Speaker from "./speaker";
 import AllyGarvey from "./PresenterSpeakerImages2024/Ally.JPG";
 import PaulButlerLennox from "./PresenterSpeakerImages/PaulButlerLennox.jpeg";
+import IanKiely from "./PresenterSpeakerImages2024/IanKiely.JPG";
+import SevenJacobs from "./PresenterSpeakerImages/SevenJacobs.jpg";
 import QuestionMark from "./QuestionMark.jpg";
 
 export default function SpeakersPresentors2024() {
@@ -69,6 +71,46 @@ export default function SpeakersPresentors2024() {
                             SpeakerBio="Working within the fashion and media industry for over 15 years, Ally Garvey thrives on delivering the latest showbiz news and the Hottest topics to a wide audience. Ally has worked on live tv for over a number of years now on a range of different broadcasting stations where quick thinking and wide range of conversational skills are a must. 
                             Ally's favourite environment to work in is a live audience, she loves to engage with co. presenters and the audience.
                             Check out  Ally's instagram page to get a glimpse of the many different events both on screen and off screen she has worked on."
+                        />
+                    </Grid>
+                </Grid>
+            </Box>
+            <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
+                <br />
+                <hr />
+                <br />
+            </Box>
+            <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
+            <h5 style={{ textAlign: "center" }}>Fireside Chat Hosts</h5>
+            <Grid container spacing={2}>
+                    <Grid
+                        item
+                        xs={12}
+                        md={6}
+                        lg={6}
+                        xl={6}
+                        style={{ padding: "5%" }}>
+                        <Speaker
+                            SpeakerImage={IanKiely}
+                            SpeakerName="Ian Kiely"
+                            SpeakerBio="Ian is CEO of Drone Space Ltd (Formerly Drone Consultants Ireland), a full time drone specialist with thousands of hours flying experience, developing new concepts and sensor applications. Ian and his colleagues have won many awards including The European Space Masters, received substantial research grants while working with emergency services, military organisations, government entities and The European Space Agency. Ian has been providing advice and mentoring for many years, he loves weird and wonderful ideas that challenge the norm and is a staunch advocate of protecting the planet."
+                        />
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                        md={6}
+                        lg={6}
+                        xl={6}
+                        style={{ padding: "5%" }}>
+                        <Speaker
+                            SpeakerImage={SevenJacobs}
+                            SpeakerName="Seven Jacobs"
+                            SpeakerBio="Seven Jacobs is a speaker, educator, podcast host, and coach who helps high-performers reclaim clarity, confidence, and calm — so they can lead with purpose and power. His work blends practical tools, emotional intelligence, and deeper questions of what it truly means to lead well. 
+                            His podcast, Lost and Searching, explores the inner challenges of leadership and life. His training programs and events for ambitious professionals bring out the lifechanging energy we need to get the greatest results available to us. He also writes weekly on Substack to explore development in life from this perspective.
+                            As a TEDx speaker, NLP-trained coach, and previous co-founder of 4 small businesses, Seven brings lived experience to his work. From helping scale companies and communities, to building and leading award-winning accelerator programs. He has worked with global brands like Nike and Meta, supported hundreds of leaders, and built communities ranging from 1,000 to 6,000 members.                            
+                            Whether working 1:1, leading workshops, or hosting conversations, Seven’s mission is to help us discover and cultivate our greatest self-leader.
+                            He fundamentally believes that conscious leadership, rooted in courageous action, is how we shape a better future — and that joy and discovery are serious tools for transformation."
                         />
                     </Grid>
                 </Grid>

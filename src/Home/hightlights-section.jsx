@@ -1,14 +1,14 @@
 import React from "react";
 import Card from "../CommonComponents/Card/Card";
 
-import StudentsImg from "./HomePageImages/students_and_aerospace.png";
-import CuttingEdgeImg from "./HomePageImages/cutting-edge-tech.png";
-import HandsOnImg from "./HomePageImages/hands-on.png";
-import CareerImg from "./HomePageImages/career.png";
-import PilotExpImg from "./HomePageImages/flight-sim.png";
-import InspirationImg from "./HomePageImages/be-inspired.png";
-import GlobalKnowledgeImg from "./HomePageImages/BalSkyShot.webp";
-import DesignChallengeImg from "./HomePageImages/design-challenge.png";
+import StudentsImg from "./HomePageImages/_HAN6084.JPG";
+import CuttingEdgeImg from "./HomePageImages/_HAN6110.JPG";
+import HandsOnImg from "./HomePageImages/_HAN6318(1).JPG";
+import CareerImg from "./HomePageImages/_HAN6449.JPG";
+import PilotExpImg from "./HomePageImages/_HAN6730.JPG";
+import InspirationImg from "./HomePageImages/_HAN7086.JPG";
+import GlobalKnowledgeImg from "./HomePageImages/_HAN7459.JPG";
+import DesignChallengeImg from "./HomePageImages/_HAN7087.JPG";
 
 const cardData = [
     {
@@ -61,7 +61,7 @@ export default function Highlights() {
                 style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-                    gap: '2%',
+                    gap: '1%',
                 }}
             >
                 {cardData.map((card, index) => (

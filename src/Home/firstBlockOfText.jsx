@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import ApprenticePhoto from "./HomePageImages/apprentices.jpg";
+import PiletPhoto from "./HomePageImages/_HAN7008.JPG";
 import "../index.css";
 
 export default function FirstImageAndText() {
@@ -12,8 +12,8 @@ export default function FirstImageAndText() {
             <Grid container spacing={2}>
                 <Grid item xs={12} md={7}>
                     <img
-                        src={ApprenticePhoto}
-                        alt="Aviation apprentices learning about an aircraft engine"
+                        src={PiletPhoto}
+                        alt="Pilet Photo"
                         style={{
                             width: "100%",
                             maxWidth: "100%",

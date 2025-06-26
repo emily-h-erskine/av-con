@@ -11,7 +11,7 @@ export default function Home() {
         <main className="flex min-h-screen flex-col justify-between p-24">
             <HeroSection
                 defaultTitle="AN UNFORGETTABLE THRILL FOR AVIATION ENTHUSIASTS"
-                defaultSubtitle="Schools and Colleges Pre-Register for AvCon 2025"
+                defaultSubtitle="Register Now for AvCon 2025"
                 smallScreenTitle="AvCon 2025"
                 smallScreenSubtitle="The Sky Isn't the Limit — It's Only the Beginning."
                 buttonText="Register for AvCon 2025"
