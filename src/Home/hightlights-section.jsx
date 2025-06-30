@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "../CommonComponents/Card/Card";
 
-import StudentsImg from "./HomePageImages/_HAN6084.JPG";
+import StudentsImg from "./HomePageImages/_HAN6084.jpeg";
 import CuttingEdgeImg from "./HomePageImages/_HAN6110.JPG";
-import HandsOnImg from "./HomePageImages/_HAN6318(1).JPG";
+import HandsOnImg from "./HomePageImages/_HAN7138 (1).png";
 import CareerImg from "./HomePageImages/_HAN6449.JPG";
 import PilotExpImg from "./HomePageImages/_HAN6730.JPG";
 import InspirationImg from "./HomePageImages/_HAN7086.JPG";

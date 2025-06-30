@@ -1,9 +1,9 @@
 import React from "react";
-// import Box from '@mui/material/Box'; // unused
 import Grid from "@mui/material/Grid";
 import Sponsor from "./sponsor";
+
+// Sponsor images
 import SponsoredBy from "./SponsorImages/1.png";
-// import S2 from "./SponsorImages/2.png"; // unused
 import S3 from "./SponsorImages/3.png";
 import S4 from "./SponsorImages/4.png";
 import S5 from "./SponsorImages/5.png";
@@ -26,97 +26,107 @@ import S21 from "./SponsorImages/AvCon 20.png";
 import S22 from "./SponsorImages/S22.png";
 import S23 from "./SponsorImages/S23.png";
 import S24 from "./SponsorImages/S24.jpeg";
-
 import AirCorpLogo from "./SponsorImages/AirCorpsLogo.jpeg";
 import TYHubLogo from "./SponsorImages/TYHubLogo.jpg";
 import ODohertysLogo from "./SponsorImages/ODohertysLogo.jpg";
 
+// 🧩 Reusable Image Component
+const SponsorImage = ({ src, alt }) => (
+  <img
+    src={src}
+    alt={alt}
+    style={{
+      width: "100%",
+      maxWidth: "400px",
+      opacity: 0.7,
+      transition: "opacity 0.3s ease-in-out",
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.opacity = 1)}
+    onMouseLeave={(e) => (e.currentTarget.style.opacity = 0.7)}
+  />
+);
+
 export default function SponsorsPartners() {
-    return (
-        <main
-            className="flex min-h-screen flex-col justify-between p-4 md:p-24"
-            style={{ justifyContent: "center", alignItems: "center" }}>
-            <h3
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginBottom: "2rem",
-                }}>
-                Our Sponsors and Partners
-            </h3>
+  const generalSponsors = [
+    S7, S3, S4, S5, S6, S8, S9, S10,
+    S11, S13, S12, S16, S14, S15,
+    S17, S18, S19, S20, S21,
+  ];
 
-            <p style={{ textAlign: "center", padding: "2%" }}>
-                AvCon - The Future of Aviation is an unparalleled event made
-                possible through the generous support of our sponsors,
-                exhibitors, and partners. This collaboration, including a key
-                partnership with The Irish Air Corps, brings together leading
-                aviation professionals, innovative companies, and educational
-                institutions to create an inspiring experience. AvCon offers
-                school and college groups free access to explore the
-                cutting-edge advancements in aviation, meet industry experts,
-                and engage with interactive exhibits, fostering the next
-                generation of aviation enthusiasts and professionals. Join us in
-                celebrating the future of flight and the minds shaping it.
-            </p>
+  const exhibitionPartners = [S23];
+  const mainStagePartners = [S24];
+  const liveStreamPartners = [S22, TYHubLogo, ODohertysLogo];
 
-            <div style={{
-                padding: "5%",
-                textAlign: "center",
-                display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "center",
-                gap: "20px"
-            }}>
-                <img
-                    src={SponsoredBy}
-                    alt="AvCon Sponsored By"
-                    style={{
-                        width: "80%",
-                        maxWidth: "400px",
-                        opacity: 0.8 
-                    }}
-                />
-                {[S7, S3, S4, S5, S6, S8, S9, S10, S11, S13, S12, S16, S14, S15, S17, S18, S19, S20, S21, S22, S23, S24].map((sponsor, index) => (
-                    <img
-                        key={index}
-                        src={sponsor}
-                        alt="Sponsors Display"
-                        style={{
-                            width: "400px",
-                            maxWidth: "100%",
-                            opacity: 0.7,
-                            transition: "opacity 0.3s ease-in-out"
-                        }}
-                        onMouseEnter={(e) => e.currentTarget.style.opacity = 1}
-                        onMouseLeave={(e) => e.currentTarget.style.opacity = 0.7}
-                    />
-                ))}
-            </div>
+  return (
+    <main className="flex min-h-screen flex-col justify-between p-4 md:p-24">
+      {/* Main Header */}
+      <h3 style={{ textAlign: "center", marginBottom: "2rem" }}>
+        Our Sponsors and Partners
+      </h3>
 
-            <h6
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginBottom: "2rem",
-                }}>
-                AvCon In Collaboration with:
-            </h6>
+      {/* Description */}
+      <p style={{ textAlign: "center", padding: "2%" }}>
+        AvCon - The Future of Aviation is an unparalleled event made possible through the generous support of our sponsors,
+        exhibitors, and partners. This collaboration, including a key partnership with The Irish Air Corps, brings together
+        leading aviation professionals, innovative companies, and educational institutions to create an inspiring experience...
+      </p>
 
-            <div>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={6}>
-                        <Sponsor
-                            logoUrl={AirCorpLogo}
-                            sponsorName="Irish Air Corps"
-                        />
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <Sponsor logoUrl={TYHubLogo} sponsorName="TY Hub" />
-                    </Grid>
-                </Grid>
-            </div>
-        </main>
-    );
+      {/* Sponsored By Image */}
+      <Grid container justifyContent="center" sx={{ mb: 4 }}>
+        <SponsorImage src={SponsoredBy} alt="AvCon Sponsored By" />
+      </Grid>
+
+      {/* General Sponsors */}
+      <Grid container spacing={2} justifyContent="center">
+        {generalSponsors.map((img, index) => (
+          <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+            <SponsorImage src={img} alt={`General Sponsor ${index + 1}`} />
+          </Grid>
+        ))}
+      </Grid>
+
+      {/* Exhibition Partners */}
+      <h6 style={{ textAlign: "center", padding:"2rem" }}>Exhibition Partners:</h6>
+      <Grid container spacing={2} justifyContent="center" padding="2rem">
+        {exhibitionPartners.map((img, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <SponsorImage src={img} alt={`Exhibition Partner ${index + 1}`} />
+          </Grid>
+        ))}
+      </Grid>
+
+      {/* Main Stage Partners */}
+      <h6 style={{ textAlign: "center", marginBottom: "2rem" }}>Main Stage Partners:</h6>
+      <Grid container spacing={2} justifyContent="center" padding="2rem">
+        {mainStagePartners.map((img, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <SponsorImage src={img} alt={`Main Stage Partner ${index + 1}`} />
+          </Grid>
+        ))}
+      </Grid>
+
+      {/* Live Stream Partners */}
+      <h6 style={{ textAlign: "center", marginBottom: "2rem" }}>Live Stream Partners:</h6>
+      <Grid container spacing={2} justifyContent="center" padding="2rem" alignItems="center">
+        {liveStreamPartners.map((img, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <SponsorImage src={img} alt={`Live Stream Partner ${index + 1}`} />
+          </Grid>
+        ))}
+      </Grid>
+
+      {/* Collaboration */}
+      <h6 style={{ textAlign: "center", marginBottom: "2rem" }}>
+        AvCon In Collaboration with:
+      </h6>
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={6}>
+          <Sponsor logoUrl={AirCorpLogo} sponsorName="Irish Air Corps" />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Sponsor logoUrl={TYHubLogo} sponsorName="TY Hub" />
+        </Grid>
+      </Grid>
+    </main>
+  );
 }
