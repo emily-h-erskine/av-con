@@ -1,49 +1,61 @@
-/* Main container padding for different screen sizes */
 .main-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Event container */
-  .event-container {
-    text-align: center;
-  }
-  
-  /* Style for the text content */
-  .text-container {
-    text-align: left;
-  }
-  
-  .text-center {
-    text-align: center;
-    padding: 5%;
-  }
-  
-  /* Style for images */
-  .event-image {
-    width: 100%;
-    max-width: 100%;
-    mix-blend-mode: luminosity;
-  }
-  
-  /* Grid container padding for responsive layouts */
+  display: flex;
+  flex-direction: column;
+}
+
+.event-container {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.text-container {
+  text-align: left;
+  padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
+  padding: 5%;
+}
+
+.event-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid-container {
+  padding: 0 2%;
+}
+
+@media (min-width: 768px) {
   .grid-container {
-    padding: 0 2%; /* Default for mobile */
+    padding: 0 5%;
   }
-  
-  @media (min-width: 768px) {
-    .grid-container {
-      padding: 0 5%; /* Padding for medium screens */
-    }
-  }
-  
-  /* Links */
-  a {
-    color: #0066cc;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.registration-section,
+.corporate-section,
+.stream-section {
+  margin: 3rem 0;
+}
+
+.registration-section h3,
+.corporate-section h3,
+.stream-section h3 {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  font-weight: bold;
+}
