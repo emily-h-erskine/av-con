@@ -12,7 +12,7 @@ export default function FlightSim() {
             {/* we pass 2 titles and 2 subtitles to use on small and large devices */}
             <HeroSection
                 defaultTitle="AN UNFORGETTABLE THRILL FOR AVIATION ENTHUSIASTS"
-                defaultSubtitle="Schools and Colleges Pre-Register for AvCon 2025"
+                defaultSubtitle="Schools and Colleges Register for AvCon 2025"
                 smallScreenTitle="AvCon 2025"
                 smallScreenSubtitle="The Sky Isn't the Limit — It's Only the Beginning."
                 buttonText="Register for AvCon 2025"
