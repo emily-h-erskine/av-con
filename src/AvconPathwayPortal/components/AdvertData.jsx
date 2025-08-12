@@ -1,31 +1,62 @@
 import React from 'react';
 import ImageInfoCard from './ImageInfoCard';
 import IAA from '../AdvertImages/IAA.png';
+import UCD from '../AdvertImages/UCD.png'
 import '../AvconPathwayPortal.css';
 
 export default function AdvertData() {
   return (
-    <div className="advert-container">
-      <ImageInfoCard
-        imageUrl={IAA}
-        title="The Irish Aviation Authority (IAA)"
-        description="The Irish Aviation Authority (IAA) is a commercial semi-state company and the single
-        civil aviation regulator for Ireland. The IAA is responsible for the regulation of safety,
-        security and consumer interests. The company's responsibilities are set out in the
-        framework of applicable global, European and national legislation/regulation."
-        webURL="For Upcoming Career Opportunities, please refer to our Careers Section on the IAA
-        website. https://www.iaa.ie/careers"
-      />
-      <ImageInfoCard
-        imageUrl={IAA}
-        title="The Irish Aviation Authority (IAA)"
-        description="The Irish Aviation Authority is committed to safety promotion and high-quality
-        training. We do this through online and in-class learning with industry experts and
-        third-party specialists to provide world-class knowledge in aviation and safety-related
-        subject areas."
-        webURL="For upcoming training and courses, please refer to our Training Section on the IAA
-        website. https://www.iaa.ie/training"
-      />
-    </div>
+    <section className="advert-container" aria-labelledby="opportunities-heading">
+      <h2 id="opportunities-heading" className="section-title">Career & Training Opportunities</h2>
+
+      {/* Wrap all cards in a container */}
+      <div className="card-grid">
+        <ImageInfoCard
+          imageUrl={IAA}
+          title="Irish Aviation Authority – Careers"
+          description="The IAA is responsible for safety, security, and consumer interest regulation in civil aviation in Ireland."
+          webURL="https://www.iaa.ie/careers"
+          linkLabel="Visit Careers Section"
+        />
+        <ImageInfoCard
+          imageUrl={IAA}
+          title="Irish Aviation Authority – Training"
+          description="IAA offers world-class training through online and in-class programs with industry experts."
+          webURL="https://www.iaa.ie/training"
+          linkLabel="Visit Training Section"
+        />
+        <ImageInfoCard
+          imageUrl={UCD}
+          title="SAR & InSAR Remote Sensing Micro-credential"
+          description="5 ECTS | 12 Weeks | Online | Start Date: September 2025. Learn about SAR (Synthetic Aperture Radar) and InSAR (Interferometric SAR) techniques in remote sensing."
+          webURL="https://www.ucd.ie/microcredentials/explorecourses/physics/sar-insar-remote-sensing/"
+          linkLabel="Explore SAR & InSAR Course"
+        />
+        <ImageInfoCard
+          imageUrl={UCD}
+          title="Engaging with ESA Micro-credential"
+          description="Level 9 | 5 ECTS | 6 Weeks | Online | Start Date: 23rd October, 2025. Engage with ESA's space missions, explore aerospace technologies, and more."
+          webURL="https://www.ucd.ie/microcredentials/explorecourses/physics/engaging-with-esa/"
+          linkLabel="Explore ESA Course"
+        />
+      </div>
+
+      {/* Application Links */}
+      <div className="application-links">
+        <h3>Application Links:</h3>
+        <ul>
+          <li>
+            <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=DEEP&MAJOR=F293&TYPE=OCCA&TERM=202500" target="_blank" rel="noopener noreferrer">
+              Apply for SAR & InSAR Micro-credential
+            </a>
+          </li>
+          <li>
+            <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=DEEP&MAJOR=F273&TYPE=OCCA&TERM=202500" target="_blank" rel="noopener noreferrer">
+              Apply for Engaging with ESA Micro-credential
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   );
 }

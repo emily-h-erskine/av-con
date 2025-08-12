@@ -9,7 +9,8 @@ import IanKiely from "./PresenterSpeakerImages2024/IanKiely.JPG";
 import SevenJacobs from "./PresenterSpeakerImages/SevenJacobs.jpg";
 import RobertConwayKenny from "./PresenterSpeakerImages/RobertConwayKenny.png";
 import MelvinKelly from "./PresenterSpeakerImages/MelvinKelly.png";
-import DiarmuidORiordan from "./PresenterSpeakerImages/DiarmuidO’Riordan.jpg"
+import DiarmuidORiordan from "./PresenterSpeakerImages/DiarmuidO’Riordan.jpg";
+import GerryCreighton from "./PresenterSpeakerImages/GerryCreighton.jpeg";
 
 export default function SpeakersPresentors2024() {
     return (
@@ -156,6 +157,13 @@ export default function SpeakersPresentors2024() {
                             Taking time away from this role, he pursued a position abroad, where he assumed senior responsibilities in a complex and high-stakes operational setting. There, he oversaw advanced training delivery and worked within a multinational context, contributing to an organisation managing a high volume of activity across challenging conditions. 
                             Despite a demanding schedule, he continued to stay active in his original profession, working across a wide range of missions and collaborating with a diverse list of partners. This included operations under extreme environmental conditions and in areas requiring careful coordination and adaptability. His assignments took him across multiple continents, involving both people-focused and logistics-based tasks that often pushed the boundaries of traditional expectations. 
                             In parallel, Diarmuid established a successful enterprise focused on high-end professional development and consultancy. His organisation has since become a recognised name in its field, offering tailored solutions to a wide array of clients across both the public and private sectors."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={GerryCreighton}
+                            SpeakerName="Gerry Creighton"
+                            SpeakerBio="Founder of Global Elephant Care and former Operations Manager at Dublin Zoo, Gerry Creighton brings over 40 years of expertise in zoo animal care, welfare, and logistics. Renowned globally for his work in elephant wellness and habitat design, Gerry has advised leading zoos across Europe, the US, Australia, the Middle East, and Asia. He has been featured in the award-winning TV series The Zoo, delivered a TEDx talk, and authored the best-selling autobiography Raised by the Zoo. At AvCon, Gerry will share fascinating insights in 'The Wild Logistics of Moving Giants and Other Animals', offering a rare behind-the-scenes look at the complex, global operations involved in transporting and caring for some of the world's most extraordinary species."
                             />
                         </Grid>
                     </Grid>
