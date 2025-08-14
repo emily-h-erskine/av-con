@@ -5,7 +5,6 @@ export default function FirstImageAndText() {
   return (
     <section className="intro-text-block" aria-labelledby="intro-heading">
       <h2 id="intro-heading" className="section-title">Welcome to A.P.P.</h2>
-      <div className="intro-columns">
         <div className="column">
           <p>
             Welcome to the Aviation Pathways Portal (A.P.P), AvCon's innovative platform designed to connect
@@ -18,12 +17,10 @@ export default function FirstImageAndText() {
         <div className="column">
           <p>
             Explore bridging courses, college programs, and upskilling resources tailored to the evolving job market.
-            <br /><br />
-            Are you an industry professional with a course or opportunity? Email us at <a href="mailto:hello@avcon.ie">hello@avcon.ie</a> to share your listing for free. Together, were shaping the future of aviation—one pathway at a time.
+            Are you an industry professional with a course or opportunity? Email us at{' '}
+            <a href="mailto:hello@avcon.ie">hello@avcon.ie</a> to share your listing for free. Together, <strong>we're</strong> shaping the future of aviation—one pathway at a time.
           </p>
         </div>
-      </div>
-      <hr />
     </section>
   );
 }
