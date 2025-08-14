@@ -1,47 +1,59 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
+import Grid from "@mui/material/Grid";
 import FacebookNews from "./facebookNews.jsx";
-import PressRelease from "./AvConPressRelease-May7th.pdf";
 import NewsContent from "./newsContent.jsx";
+import "./newsUpdates.css";
 
 export default function News() {
   return (
-    <main className="flex min-h-screen flex-col justify-between p-24" style={{padding: "4%"}}>
-      <h3 style={{ textAlign: 'center', marginBottom: '2rem' }}>Get the Latest Updates:</h3>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
-            <Box sx={{ textAlign: 'center' }}>
-              <Box sx={{ textAlign: 'center', paddingBottom: '5%' }}>
-                <h6>LIVE STREAM on TY HUB YOUTUBE</h6>
-                <iframe 
-                  width="560" 
-                  height="315" 
-                  src="https://www.youtube.com/embed/7_AYMtVLbhI?si=ulFkMd-tNUI6KD3z" 
-                  title="YouTube video player" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  allowFullScreen
-                />
-              </Box>
-              <h6>Facebook Live Feed</h6>
-              <FacebookNews />
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Box sx={{ textAlign: 'center' }}>
-              <h6>Latest</h6>
-              <Grid item xs={12}>
-                <NewsContent />
-              </Grid>
-              <p>-------- May 7th 2024 --------</p>
-              <iframe src={PressRelease} width="100%" height="500px" style={{ border: 'none' }} title="Press Release"></iframe>
-            </Box>
-          </Grid>
+    <main className="news-main" aria-labelledby="news-and-updates">
+      <h2 id="news-and-updates" className="news-title">
+        📰 Get the Latest News & Updates
+      </h2>
+
+      <Grid container spacing={4} className="news-grid">
+        {/* Left Column: Social Media */}
+        <Grid item xs={12} md={6}>
+          <section
+            aria-labelledby="social-media-updates"
+            className="social-section"
+          >
+            <h3 id="social-media-updates" className="section-heading">
+              📺 TY Hub YouTube Live Stream
+            </h3>
+            <div className="video-container" role="region" aria-label="YouTube Live Stream">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/7_AYMtVLbhI?si=ulFkMd-tNUI6KD3z"
+                title="TY Hub YouTube Livestream"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div>
+
+            <h3 className="section-heading" style={{ marginTop: "2rem" }}>
+              📘 Facebook Feed
+            </h3>
+            <FacebookNews />
+          </section>
         </Grid>
-      </Box>
+
+        {/* Right Column: News & Press */}
+        <Grid item xs={12} md={6}>
+          <section
+            aria-labelledby="latest-news"
+            className="press-section"
+          >
+            <h3 id="latest-news" className="section-heading">
+              🗞️ Latest News & Press
+            </h3>
+            <NewsContent />
+          </section>
+        </Grid>
+      </Grid>
     </main>
   );
 }

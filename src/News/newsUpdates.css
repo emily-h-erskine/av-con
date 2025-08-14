@@ -1,0 +1,78 @@
+.news-main {
+    padding: 4%;
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .news-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  
+  .news-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .subsection-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  
+  .video-container iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 315px;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .facebook-iframe-container iframe {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .press-release-container {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .news-title {
+      font-size: 1.8rem;
+    }
+  
+    .section-heading {
+      font-size: 1.2rem;
+    }
+  
+    .subsection-heading {
+      font-size: 1rem;
+    }
+  
+    .video-container iframe,
+    .facebook-iframe-container iframe {
+      height: 250px;
+    }
+  }  
