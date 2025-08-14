@@ -5,6 +5,7 @@ import MiddleBlockOfText from "./middleBlock";
 import MailchimpScript from "./mailChimpPopup";
 import Highlights from "./hightlights-section";
 import LastBlockOfText from "./lastBlackOfText";
+import AVConBanner from "./HomePageImages/AVConBanner.jpg";
 
 export default function Home() {
     return (
@@ -18,6 +19,14 @@ export default function Home() {
                 buttonLink="https://avcon.ie/BookTickets"
             />
             <FirstImageAndText />
+            <img
+                src={AVConBanner}
+                alt="AVCon Banner"
+                style={{
+                    width: "100%",
+                    maxWidth: "100%",
+                }}
+            />
             <MiddleBlockOfText />
             <Highlights />
             <LastBlockOfText />
