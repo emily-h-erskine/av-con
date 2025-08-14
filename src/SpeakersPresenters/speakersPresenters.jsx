@@ -3,6 +3,8 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import HeroSection from "../CommonComponents/HeroSection/HeroSection";
 import Speaker from "./speaker";
+import GOC from "./PresenterSpeakerImages2024/GOC.jpg";
+import GOCHighlight from "./KeyNoteSpeaker/GOCHighlight";
 import AllyGarvey from "./PresenterSpeakerImages2024/Ally.JPG";
 import PaulButlerLennox from "./PresenterSpeakerImages/PaulButlerLennox.jpeg";
 import IanKiely from "./PresenterSpeakerImages2024/IanKiely.JPG";
@@ -11,6 +13,9 @@ import RobertConwayKenny from "./PresenterSpeakerImages/RobertConwayKenny.png";
 import MelvinKelly from "./PresenterSpeakerImages/MelvinKelly.png";
 import DiarmuidORiordan from "./PresenterSpeakerImages/DiarmuidO’Riordan.jpg";
 import GerryCreighton from "./PresenterSpeakerImages/GerryCreighton.jpeg";
+import PaulKennedy from "./PresenterSpeakerImages/PaulKennedy.jpg";
+import AlanCorr from "./PresenterSpeakerImages/AlanCorr.png";
+import MuireannBagley from "./PresenterSpeakerImages/MuireannBagley.jpg";
 
 export default function SpeakersPresentors2024() {
     return (
@@ -128,6 +133,32 @@ export default function SpeakersPresentors2024() {
             </Box>
             <div style={{ textAlign: "center" }}>
                 <h5>AvCon Speakers</h5>
+                <Box sx={{ flexGrow: 1 }}>
+                            <Grid style={{ padding: "3%" }}>
+                                <Grid
+                                    item
+                                    xs={12} // Full-width on extra-small screens (mobile)
+                                    sm={12} // Full-width on small screens (tablet)
+                                    md={6} // Half-width on medium screens (laptops)
+                                    lg={6} // Half-width on large screens (desktops)
+                                >
+                                    <GOCHighlight
+                                        SpeakerImage={GOC}
+                                        SpeakerName="GOC, Brigadier General Rory O'Connor"
+                                        SpeakerBio={`"A Welcome Note to AvCon - the Future of Aviation from the Air Corps
+                        As we look ahead to the upcoming Aviation Convention hosted by the Irish Air Corps this November, we envision a groundbreaking event that celebrates the dynamic world of aviation. This convention is a milestone for the Irish Air Corps, students, schools, and the wider community.
+                        The Irish Air Corps, with its tradition of excellence, courage, and innovation, is excited to welcome everyone to our base. This event is more than a gathering; it's an inspiration for the next generation of aviators, engineers, and innovators.
+                        We have a stellar lineup of guest speakers, including aero engineers, pilots, technicians, and Air Traffic Controllers from the Air Corps. Their insights and experiences highlight the importance of collaboration and mentorship in aviation.
+                        For students and schools, this convention offers an unparalleled opportunity to learn from the best, engage with cutting-edge technology, and envision a future where their dreams take flight. Hands-on workshops, interactive exhibits, and panel discussions are designed to ignite curiosity and foster a passion for aviation.
+                        Participants will explore various aspects of aviation, from piloting and navigation to aerospace engineering and air traffic control, gaining firsthand experience and inspiration. This event also underscores the importance of STEM education in achieving their goals.
+                        We extend our heartfelt gratitude to the organisers, sponsors, guest speakers, and participants. Your support makes this event possible. To the students, seize this opportunity to ask questions, explore, and dream big.
+                        The sky is not the limit; it is just the beginning. Let this convention be the launchpad for your future in aviation.
+                        Thank you, and enjoy the convention!" - GOC, Brigadier General Rory O'Connor`}
+
+                        />
+                    </Grid>
+                    </Grid>
+                </Box>
                 <Box sx={{ flexGrow: 1 }}> 
                     <Grid container spacing={1}>
                         <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
@@ -164,6 +195,41 @@ export default function SpeakersPresentors2024() {
                             SpeakerImage={GerryCreighton}
                             SpeakerName="Gerry Creighton"
                             SpeakerBio="Founder of Global Elephant Care and former Operations Manager at Dublin Zoo, Gerry Creighton brings over 40 years of expertise in zoo animal care, welfare, and logistics. Renowned globally for his work in elephant wellness and habitat design, Gerry has advised leading zoos across Europe, the US, Australia, the Middle East, and Asia. He has been featured in the award-winning TV series The Zoo, delivered a TEDx talk, and authored the best-selling autobiography Raised by the Zoo. At AvCon, Gerry will share fascinating insights in 'The Wild Logistics of Moving Giants and Other Animals', offering a rare behind-the-scenes look at the complex, global operations involved in transporting and caring for some of the world's most extraordinary species."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={AlanCorr}
+                            SpeakerName="Alan Corr"
+                            SpeakerBio="Alan Corr is a highly experienced aviation professional with over 30 years of technical and leadership expertise. He's currently the Vice President, Technical at Jackson Square Aviation (JSA). At JSA, Alan manages complex aircraft transitions, including lease returns, repossessions, sales, and acquisitions. He is key in reviewing letters of intent (LOIs), managing redelivery obligations, and leading global teams through commercial negotiations.
+                            Beginning his career as an aircraft mechanic apprentice with the Irish Air Corps, Alan's hands-on engineering experience spans prominent facilities worldwide. This foundational knowledge, coupled with a Specialist Diploma in Aviation Leasing & Finance and a licensed B1.1 & C engineer certification, gives him a holistic view of the aviation lifecycle. 
+                            Alan's career journey reflects a deep understanding of aviation's technical landscape, his background includes significant roles at Elix Aviation Capital and consultancy for major lessors like GECAS, SMBC, and NAC.
+                            Alan Corr offers a unique blend of technical mastery, operational leadership, and sharp commercial acumen, making him an invaluable voice on the evolving dynamics and strategic challenges within the aircraft leasing sector."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={PaulKennedy}
+                            SpeakerName="Paul Kennedy"
+                            SpeakerBio="Paul Kennedy is a globally recognised authority in composite materials and aerospace structures, with 35 years of experience spanning industry, education, and national
+                            policy development. As Director of Worldwide Composite Services (WCS), Paul leads a cutting-edge EASA
+                            Part 145 FAA Repair Station, approved facility, specialising in the repair and recovery
+                            of advanced composite components for global airline operators, lessors, and MROs. Under his leadership, WCS has become a centre of excellence for cost-e*ective, OEM-alternative repairs, collaborative Part 21J design solutions, and sustainable composite refurbishment practices.
+                            Beyond the hangar, Paul has a global network of key stakeholders and influencers,
+                            across multiple sectors. Paul has successfully led international benchmarking
+                            exercises and has leveraged this information to develop Ireland's National Policy
+                            Document for Composites, thereby, enabling the strategic direction of the industry to
+                            align with innovation, sustainability, and international competitiveness.
+                            He is a passionate educator, having lectured at several leading universities on subjects
+                            ranging from advanced composites and aerospace structures to regulatory compliance and innovation strategy. His work bridges academic insight with real-
+                            world application, helping develop the next generation of aviation professionals and engineers."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={MuireannBagley}
+                            SpeakerName="Muireann Bagley"
+                            SpeakerBio="Muireann Bagley is a 5th-year student with her sights firmly set on a career in the skies. After her first flying lesson at just 11 years of age, she set herself the goal of earning her Private Pilot’s Licence during her TY year. She passed all written exams on the first attempt with a 95% average grade and completed her PPL flight test at Navan Airfield on her 17th birthday, the earliest possible date, becoming one of Ireland’s youngest private pilots. She earned a Delta Air Lines scholarship to the National Flight Academy Summer Camp in Florida, and during TY she graduated from DCU’s Early University Entrance Engineering programme. She also attended the Centre for Talented Youth Ireland in DCU and explored courses from aeronautical engineering to advanced maths. When not in the cockpit, Muireann can usually be found on the golf course — though she admits her landings are better than her putting. At Avcon, Muireann will share her journey from the classroom to the cockpit, and her top tips for aspiring young aviators."
                             />
                         </Grid>
                     </Grid>

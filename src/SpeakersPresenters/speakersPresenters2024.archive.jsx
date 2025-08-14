@@ -12,7 +12,7 @@ import KimMackenzieDoyle from "./PresenterSpeakerImages2024/KimMackenzieDoyle.pn
 import IanKiely from "./PresenterSpeakerImages2024/IanKiely.JPG";
 import ValentinaFitzpatrick from "./PresenterSpeakerImages2024/ValentinaFitzpatrick.png";
 import GOC from "./PresenterSpeakerImages2024/GOC.jpg";
-import GOCHighlight from "./GOCHighlight";
+import GOCHighlight from "./KeyNoteSpeaker/GOCHighlight";
 import LorcanGeraghty from "./PresenterSpeakerImages2024/LorcanGeraghty.jpeg";
 import NicolaNiRiada from "./PresenterSpeakerImages2024/NicolaNiRiada.jpg";
 import JaneMagill from "./PresenterSpeakerImages2024/JM.jpg";
