@@ -52,11 +52,9 @@ export default function HeroSection({
                 {subtitle && <p className="sub-title">{subtitle}</p>}
 
                 {buttonText && buttonLink && (
-                    <button type="button" name="Book Tickets Button" className="btn-primary mt-2">
-                        <a href={buttonLink} className="uppercase btn-link">
-                            {buttonText}
-                        </a>
-                    </button>
+                    <a href={buttonLink} className="uppercase btn-link">
+                        {buttonText}
+                    </a>
                 )}
             </div>
         </div>
