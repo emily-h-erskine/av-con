@@ -1,10 +1,10 @@
 import React from "react";
 import HeroSection from "../CommonComponents/HeroSection/HeroSection";
-import FirstImageAndText from "./firstBlockOfText";
-import MiddleBlockOfText from "./middleBlock";
+import FirstImageAndText from "./FirstImageAndText/firstBlockOfText";
+import MiddleBlockOfText from "./MiddleBlockOfText/middleBlock";
 import MailchimpScript from "./mailChimpPopup";
 import Highlights from "./hightlights-section";
-import LastBlockOfText from "./lastBlackOfText";
+import LastBlockOfText from "./LastBlockOfText/lastBlackOfText";
 import AVConBanner from "./HomePageImages/AVConBanner.jpg";
 
 export default function Home() {

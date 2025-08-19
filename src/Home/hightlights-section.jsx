@@ -60,8 +60,8 @@ export default function Highlights() {
                 className="card-container"
                 style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-                    gap: '1%',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                    padding: '1.5%',
                 }}
             >
                 {cardData.map((card, index) => (

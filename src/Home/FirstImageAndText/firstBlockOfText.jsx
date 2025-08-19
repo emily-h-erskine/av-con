@@ -1,36 +1,31 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import PiletPhoto from "./HomePageImages/_HAN7008.JPG";
-import "../index.css";
+import PiletPhoto from "../HomePageImages/_HAN7008.JPG";
+import "../../index.css";
+import "./FirstImageAndText.css";
 
 export default function FirstImageAndText() {
     return (
-        <Box
-            className="mt-3 mb-3"
-            sx={{ padding: { xs: "0 2%", md: "0% 5%" } }}>
+        <Box className="mt-3 mb-3 box-padding">
             <Grid container spacing={2}>
                 <Grid item xs={12} md={7}>
                     <img
                         src={PiletPhoto}
                         alt="Pilet Photo"
-                        style={{
-                            width: "100%",
-                            maxWidth: "100%",
-                            mixBlendMode: "luminosity",
-                        }}
+                        className="pilet-photo"
                     />
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <div className="flex-container-col space-between ml-1 mr-1">
                         <h3 className="mb-2">
-                        AvCon 2025 - The Future of Aviation Is Landing
+                            AvCon 2025 - The Future of Aviation Is Landing
                         </h3>
                         <div className="flex-container-col space-between">
                             <p className="text-left mb-1">
-                            Where the next generation of talent meets the trailblazers of the skies.
-                            <br />
-                            Where careers take flight — and the industry connects with its future.
+                                Where the next generation of talent meets the trailblazers of the skies.
+                                <br />
+                                Where careers take flight — and the industry connects with its future.
                             </p>
                             <p className="text-left">
                                 <a
