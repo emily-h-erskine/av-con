@@ -16,6 +16,7 @@ import GerryCreighton from "./PresenterSpeakerImages/GerryCreighton.jpeg";
 import PaulKennedy from "./PresenterSpeakerImages/PaulKennedy.jpg";
 import AlanCorr from "./PresenterSpeakerImages/AlanCorr.png";
 import MuireannBagley from "./PresenterSpeakerImages/MuireannBagley.jpg";
+import ShaneCrawte from "./PresenterSpeakerImages/ShaneCrawte.jpg";
 
 export default function SpeakersPresentors2024() {
     return (
@@ -230,6 +231,13 @@ export default function SpeakersPresentors2024() {
                             SpeakerImage={MuireannBagley}
                             SpeakerName="Muireann Bagley"
                             SpeakerBio="Muireann Bagley is a 5th-year student with her sights firmly set on a career in the skies. After her first flying lesson at just 11 years of age, she set herself the goal of earning her Private Pilot’s Licence during her TY year. She passed all written exams on the first attempt with a 95% average grade and completed her PPL flight test at Navan Airfield on her 17th birthday, the earliest possible date, becoming one of Ireland’s youngest private pilots. She earned a Delta Air Lines scholarship to the National Flight Academy Summer Camp in Florida, and during TY she graduated from DCU’s Early University Entrance Engineering programme. She also attended the Centre for Talented Youth Ireland in DCU and explored courses from aeronautical engineering to advanced maths. When not in the cockpit, Muireann can usually be found on the golf course — though she admits her landings are better than her putting. At Avcon, Muireann will share her journey from the classroom to the cockpit, and her top tips for aspiring young aviators."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={ShaneCrawte}
+                            SpeakerName="Shane Crawte"
+                            SpeakerBio="Shane Crawte is a Director in EY’s Aviation Finance practice, bringing over a decade of technical experience combined with financial insight to deliver solutions that professional services firms don’t traditionally offer in aviation. His background spans military and civilian operations, with hands on expertise in rotary and fixed‑wing aircraft and a proven record of building and scaling technical teams and operations. Before joining EY, Shane led Technical Asset Management at another leading professional services firm, managing back-office support for a portfolio of more than 1,000 aircraft (MSNs). He built the team from the ground up into a high‑performing unit of 15 specialists, setting rigorous training standards including General Familiarisation on Boeing 737 and Airbus A320 platforms. Earlier, he served as Technical Team Lead at a Part‑145 approved powerplant overhaul shop, helping grow operations from inception to a 16‑bay capability across multiple engine types. Shane has worked in multiple MROs worldwide and delivered complex projects such as back to source documentation reviews, records audits, shop visit oversight, and lease transitions. His ability to combine technical consulting with financial acumen gives clients a perspective that drives smarter decisions, reduces risk, and unlocks value across the asset lifecycle. An ACA candidate with Chartered Accountants Ireland, Shane combines technical depth with financial insight to deliver practical, commercially focused solutions. Based in Dublin, he brings a unique perspective to aviation finance helping clients optimise asset performance, manage risk, and unlock value in a rapidly evolving market."
                             />
                         </Grid>
                     </Grid>
