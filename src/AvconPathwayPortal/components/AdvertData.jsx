@@ -83,7 +83,7 @@ export default function AdvertData() {
               rel="noopener noreferrer"
               className="application-link"
             >
-              Apply for Aviation Courses on the ICBE Site
+              Apply for Aviation Courses on the ICBE Site, funding available via Aviation Skillnet. T&C's Apply
             </a>
           </li>
         </ul>
