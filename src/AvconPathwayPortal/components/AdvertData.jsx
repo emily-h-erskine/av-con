@@ -76,6 +76,16 @@ export default function AdvertData() {
               Apply for Engaging with ESA Micro-credential
             </a>
           </li>
+          <li>
+            <a
+              href="https://icbe.ie/training-programmes/aviation-skillnet/ "
+              target="_blank"
+              rel="noopener noreferrer"
+              className="application-link"
+            >
+              Apply for Aviation Courses on the ICBE Site
+            </a>
+          </li>
         </ul>
       </div>
     </section>
