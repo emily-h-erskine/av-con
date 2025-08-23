@@ -17,6 +17,9 @@ import PaulKennedy from "./PresenterSpeakerImages/PaulKennedy.jpg";
 import AlanCorr from "./PresenterSpeakerImages/AlanCorr.png";
 import MuireannBagley from "./PresenterSpeakerImages/MuireannBagley.jpg";
 import ShaneCrawte from "./PresenterSpeakerImages/ShaneCrawte.jpg";
+import PhilipSmythe from "./PresenterSpeakerImages/PhilipSmythe.jpg";
+import DanPepper from "./PresenterSpeakerImages/DanPepper.jpg";
+import AlexJoyce from "./PresenterSpeakerImages/AlexJoyce.jpeg";
 
 export default function SpeakersPresentors2024() {
     return (
@@ -238,6 +241,30 @@ export default function SpeakersPresentors2024() {
                             SpeakerImage={ShaneCrawte}
                             SpeakerName="Shane Crawte"
                             SpeakerBio="Shane Crawte is a Director in EY’s Aviation Finance practice, bringing over a decade of technical experience combined with financial insight to deliver solutions that professional services firms don’t traditionally offer in aviation. His background spans military and civilian operations, with hands on expertise in rotary and fixed‑wing aircraft and a proven record of building and scaling technical teams and operations. Before joining EY, Shane led Technical Asset Management at another leading professional services firm, managing back-office support for a portfolio of more than 1,000 aircraft (MSNs). He built the team from the ground up into a high‑performing unit of 15 specialists, setting rigorous training standards including General Familiarisation on Boeing 737 and Airbus A320 platforms. Earlier, he served as Technical Team Lead at a Part‑145 approved powerplant overhaul shop, helping grow operations from inception to a 16‑bay capability across multiple engine types. Shane has worked in multiple MROs worldwide and delivered complex projects such as back to source documentation reviews, records audits, shop visit oversight, and lease transitions. His ability to combine technical consulting with financial acumen gives clients a perspective that drives smarter decisions, reduces risk, and unlocks value across the asset lifecycle. An ACA candidate with Chartered Accountants Ireland, Shane combines technical depth with financial insight to deliver practical, commercially focused solutions. Based in Dublin, he brings a unique perspective to aviation finance helping clients optimise asset performance, manage risk, and unlock value in a rapidly evolving market."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={AlexJoyce}
+                            SpeakerName="Alex Joyce"
+                            SpeakerBio="Alex Joyce is a dedicated and highly capable Senior First Officer and Type Rating Instructor at Ryanair. Despite her young age, she brings a wealth of experience and professionalism to the role.
+                            After completing her integrated flight training at Atlantic Flight Training Academy in just 15 months, Alex began her career with Ryanair shortly thereafter. Over the past seven years, she has built an impressive track record, spending the last five years flying for Ryanair and being based in both Dublin and Málaga.
+                            In addition to her role as a line pilot, Alex has taken on significant instructional responsibilities. She has played a key role in training cadets during their MCC phase, guiding First Officers through their command upgrades, and delivering both refresher and recurrent simulator training for current Ryanair crews.
+                            Alex completed her Leaving Certificate in 2017 before relocating to Cork to begin her aviation journey. Her passion for flying and continuous drive to expand her knowledge make her a valuable asset to any team and a respected mentor within the training community."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={DanPepper}
+                            SpeakerName="Dan Pepper"
+                            SpeakerBio="Vistajet First Officer and Senior Flight Instructor at AFTA. Hobby flyer since 2006 turned commercial pilot in 2019, prior to commercial flying, Dan worked as a self employed Painter and Decorator, built a solid client base over 10 years, working with both the private sector and governmental departments through long and short term contracts, now 6 years as flight Instructor teaching Single and Multi engine IR flight training including Advanced UPRT. Currently working closely with Afta as an aerial survey captain on some noticeable contracts. He gets to travel the globe with Vistajet on the Embraer Legacy, and still enjoys to teach back home in Cork for 2 weeks every month. As it stands, over 3,000 hours and 10 types."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={PhilipSmythe}
+                            SpeakerName="Philip Smythe"
+                            SpeakerBio="Philip has a life long interest in aviation a former commercial and corporate pilot, Philip has been a flight instructor for over 40 years. Captain Smythe has been with AFTA since its inception in 1995, training pilots at all levels from Private Pilots Licence (PPL) to Commercial Pilots Licence (CPL) and Multi-Engine Instrument Rating qualifications. As Safety Manager, Philip conducts internal safety audits and promotes, maintains and oversees flight safety and best practices on a daily basis. Philip is an Irish Aviation Authority (IAA) certified Flight Examiner. He has witnessed a growing focus on environmental sustainability in the aviation industry over his time with the business."
                             />
                         </Grid>
                     </Grid>
