@@ -273,6 +273,13 @@ export default function SpeakersPresentors2024() {
                         </Grid>
                         <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
                             <Speaker 
+                            SpeakerImage={GerryHumphreys}
+                            SpeakerName="Gerry Humphreys"
+                            SpeakerBio="Gerry is an accomplished aviator with over 40 years of experience, 14,000 flying hours logged on more than 120 different aircraft types. After completing a degree in Aeronautical Engineering at Queen's University Gerry spent 20 years in the RAF, where he primarily flew single-seat fast jets such as the Hunter, Hawk, and Harrier. After leaving the RAF, Gerry transitioned to corporate aviation for 10 years, during which time he also constructed a runway at his home, built an aircraft, performed in air displays, and became a certified flying instructor. Currently, Gerry serves as the Deputy Head of Training, where he is responsible for upholding the highest standards in all aspects of pilot training. He also leads instruction in aerobatics, tailwheel conversions, and Upset Recovery and is an EASA flight examiner. Additionally, Gerry is a board member of the Foynes Flying Boat and Maritime Museum and serves as the Chairman of the General Aviation Safety Council of Ireland."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
                             SpeakerImage={LisaMcNamee}
                             SpeakerName="Lisa McNamee"
                             SpeakerBio="Dr Lisa McNamee is a practicing doctor, qualified aviation medicine examiner and an aerospace medicine researcher. She completed the European Space Agency's Space Physician training programme and the Principles of Aviation and Space Medicine short course at the University of Texas Medical Branch. She sits on the United Nations Office for Outer Space Affairs' Space & Global Health Taskforce. She is an honorary research fellow at Royal College of Surgeons in Ireland. She holds degrees from Trinity College Dublin, Royal College of Surgeons in Ireland and University College Dublin."
@@ -293,13 +300,6 @@ export default function SpeakersPresentors2024() {
                             As founder of BKMSURVEYING, Jonathan combines industry expertise with academic research, focusing on the application of AI, autonomous systems, LiDAR, and hyperspectral imaging. His work explores how advanced drone technologies can transform construction workflows, environmental monitoring, and sustainable land management. He is particularly interested in the use of UAS for habitat assessment and agri-environment schemes, helping reduce observer error, enhance accuracy, and support carbon sequestration and biodiversity goals.
                             Jonathan has a strong track record of industry engagement and knowledge transfer, regularly contributing to professional networks, conferences, and collaborative projects. He actively promotes sustainable practices and nature-friendly farming, positioning drone-based geospatial solutions as tools for both commercial efficiency and environmental stewardship.
                             With dual expertise as a practitioner and educator, Jonathan’s mission is to advance the responsible adoption of drone and geospatial technologies across construction, environmental management, and research sectors. He is committed to training the next generation of professionals to embrace innovation while maintaining ethical and sustainable practices."
-                            />
-                        </Grid>
-                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
-                            <Speaker 
-                            SpeakerImage={GerryHumphreys}
-                            SpeakerName="Gerry Humphreys"
-                            SpeakerBio="Gerry is an accomplished aviator with over 40 years of experience, 14,000 flying hours logged on more than 120 different aircraft types. After completing a degree in Aeronautical Engineering at Queen's University Gerry spent 20 years in the RAF, where he primarily flew single-seat fast jets such as the Hunter, Hawk, and Harrier. After leaving the RAF, Gerry transitioned to corporate aviation for 10 years, during which time he also constructed a runway at his home, built an aircraft, performed in air displays, and became a certified flying instructor. Currently, Gerry serves as the Deputy Head of Training, where he is responsible for upholding the highest standards in all aspects of pilot training. He also leads instruction in aerobatics, tailwheel conversions, and Upset Recovery and is an EASA flight examiner. Additionally, Gerry is a board member of the Foynes Flying Boat and Maritime Museum and serves as the Chairman of the General Aviation Safety Council of Ireland."
                             />
                         </Grid>
                     </Grid>
