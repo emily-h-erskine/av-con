@@ -20,6 +20,10 @@ import ShaneCrawte from "./PresenterSpeakerImages/ShaneCrawte.jpg";
 import PhilipSmythe from "./PresenterSpeakerImages/PhilipSmythe.jpg";
 import DanPepper from "./PresenterSpeakerImages/DanPepper.jpg";
 import AlexJoyce from "./PresenterSpeakerImages/AlexJoyce.jpeg";
+import LisaMcNamee from "./PresenterSpeakerImages/LisaMcNamee.jpg";
+import PatriciaMoore from "./PresenterSpeakerImages/PatriciaMoore.jpg";
+import JonathanBlackmore from "./PresenterSpeakerImages/JonathanBlackmore.png";
+import GerryHumphreys from "./PresenterSpeakerImages2024/GerryHumphreys.jpg";
 
 export default function SpeakersPresentors2024() {
     return (
@@ -265,6 +269,37 @@ export default function SpeakersPresentors2024() {
                             SpeakerImage={PhilipSmythe}
                             SpeakerName="Philip Smythe"
                             SpeakerBio="Philip has a life long interest in aviation a former commercial and corporate pilot, Philip has been a flight instructor for over 40 years. Captain Smythe has been with AFTA since its inception in 1995, training pilots at all levels from Private Pilots Licence (PPL) to Commercial Pilots Licence (CPL) and Multi-Engine Instrument Rating qualifications. As Safety Manager, Philip conducts internal safety audits and promotes, maintains and oversees flight safety and best practices on a daily basis. Philip is an Irish Aviation Authority (IAA) certified Flight Examiner. He has witnessed a growing focus on environmental sustainability in the aviation industry over his time with the business."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={LisaMcNamee}
+                            SpeakerName="Lisa McNamee"
+                            SpeakerBio="Dr Lisa McNamee is a practicing doctor, qualified aviation medicine examiner and an aerospace medicine researcher. She completed the European Space Agency's Space Physician training programme and the Principles of Aviation and Space Medicine short course at the University of Texas Medical Branch. She sits on the United Nations Office for Outer Space Affairs' Space & Global Health Taskforce. She is an honorary research fellow at Royal College of Surgeons in Ireland. She holds degrees from Trinity College Dublin, Royal College of Surgeons in Ireland and University College Dublin."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={PatriciaMoore}
+                            SpeakerName="Patricia Moore"
+                            SpeakerBio="Dr Patricia Moore is Co-founder and Director of the Irish Space Association (ISA), an industry-led cluster advancing the development of Ireland’s rapidly growing space sector. She is also Managing Director of Promethio, a Dublin-based technology and consultancy company that works with clients and partners in emerging and deep-tech sectors, with a focus on organisations developing or applying space-based systems and services. Patricia’s career spans both industry and academia. She has previously served as CTO of the space technology and business development consultancy Mindseed, and as an Assistant Professor in the School of Electronic Engineering at Dublin City University (DCU). She holds both a PhD and a BEng in Engineering from DCU."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={JonathanBlackmore}
+                            SpeakerName="Jonathan Blackmore"
+                            SpeakerBio="Jonathan Blackmore MSCSI MRICS is a Chartered Surveyor, lecturer, and researcher specialising in drone technologies, construction surveying, and geospatial analysis. He is a lecturer at the Technological University of the Shannon (TUS), where he developed and leads Ireland’s first Level 7 Certificate in Drones in Construction—a pioneering programme integrating unmanned aerial systems (UAS) into professional surveying and construction practice.
+                            As founder of BKMSURVEYING, Jonathan combines industry expertise with academic research, focusing on the application of AI, autonomous systems, LiDAR, and hyperspectral imaging. His work explores how advanced drone technologies can transform construction workflows, environmental monitoring, and sustainable land management. He is particularly interested in the use of UAS for habitat assessment and agri-environment schemes, helping reduce observer error, enhance accuracy, and support carbon sequestration and biodiversity goals.
+                            Jonathan has a strong track record of industry engagement and knowledge transfer, regularly contributing to professional networks, conferences, and collaborative projects. He actively promotes sustainable practices and nature-friendly farming, positioning drone-based geospatial solutions as tools for both commercial efficiency and environmental stewardship.
+                            With dual expertise as a practitioner and educator, Jonathan’s mission is to advance the responsible adoption of drone and geospatial technologies across construction, environmental management, and research sectors. He is committed to training the next generation of professionals to embrace innovation while maintaining ethical and sustainable practices."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={GerryHumphreys}
+                            SpeakerName="Gerry Humphreys"
+                            SpeakerBio="Gerry is an accomplished aviator with over 40 years of experience, 14,000 flying hours logged on more than 120 different aircraft types. After completing a degree in Aeronautical Engineering at Queen's University Gerry spent 20 years in the RAF, where he primarily flew single-seat fast jets such as the Hunter, Hawk, and Harrier. After leaving the RAF, Gerry transitioned to corporate aviation for 10 years, during which time he also constructed a runway at his home, built an aircraft, performed in air displays, and became a certified flying instructor. Currently, Gerry serves as the Deputy Head of Training, where he is responsible for upholding the highest standards in all aspects of pilot training. He also leads instruction in aerobatics, tailwheel conversions, and Upset Recovery and is an EASA flight examiner. Additionally, Gerry is a board member of the Foynes Flying Boat and Maritime Museum and serves as the Chairman of the General Aviation Safety Council of Ireland."
                             />
                         </Grid>
                     </Grid>
