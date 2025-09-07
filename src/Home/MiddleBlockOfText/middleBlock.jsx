@@ -24,7 +24,7 @@ export default function MiddleBlockOfText() {
                             Join us online and experience this inspiring event from anywhere.
                         </Typography>
                         <a
-                            href="https://forms.office.com/r/NHEwtgYMUc"
+                            href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZUOUVBNTU0MlM2RUVYNlhaVlE1NzU1N01GOS4u&route=shorturl"
                             className="btn-link"
                             target="_blank"
                             rel="noopener noreferrer"

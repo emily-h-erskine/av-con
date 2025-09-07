@@ -30,7 +30,10 @@ import SteveConnolly from "./PresenterSpeakerImages/SteveConnolly.jpeg";
 import MariaFrost from "./PresenterSpeakerImages/MariaFrost.jpeg";
 import AndrewMaher from "./PresenterSpeakerImages/AndrewMaher.jpg";
 import LindaByrne from "./PresenterSpeakerImages/LindaByrne.png";
+import NiallColeman from "./PresenterSpeakerImages/NiallColeman.jpg";
 import PeterAkers from "./PresenterSpeakerImages/PeterAkers.jpg";
+import JasonPhelan from "./PresenterSpeakerImages/JasonPhelan.jpeg";
+import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddyLucky.jpeg";
 
 export default function SpeakersPresentors2024() {
     return (
@@ -372,6 +375,20 @@ export default function SpeakersPresentors2024() {
                             SpeakerBio="Peter Akers is an aircraft mechanic who began his career training with Rolls-Royce PLC before moving into aircraft maintenance. That early experience gave him a solid technical foundation and an appreciation for the standards of precision and safety that define aviation engineering. Building on this, he is now working toward full licensure while continuing to develop his skills through hands-on maintenance.
                             Alongside this, Peter runs his own aviation maintenance contracting business, Akers Avia, which has broadened his perspective on both the technical and operational sides of the industry. This venture reflects his determination to keep learning and to engage with aviation from multiple angles.
                             Aviation has always been Peter's passion. From his early fascination with aircraft to his long-term goal of becoming a pilot, he has been driven by curiosity and a desire to grow within the field. At AvCon.ie, he looks forward to sharing his journey and encouraging the next generation to pursue careers in aviation, showing that progress is built not only on expertise but also on enthusiasm and a commitment to learning."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={JasonPhelan}
+                            SpeakerName="Jason Phelan"
+                            SpeakerBio="Jason's love for aviation ignited when he experienced his first Airshow at Biggin Hill, London at the tender age of 3. Beginning a career in aviation in 2004 with the UK Civil Aviation Authority (CAA) as an aircraft registration administrator, he transitioned to the Flight Operations General Aviation division. Relocating to Ireland in 2012, his background paved the way for a career in aviation in Ireland and he continues to be aligned with the industry professionally and passionately as a hobby. In December 2022 he created The Adventures of Capt Paddy & Lucky. This initiative involves two teddy bears embarking on flying adventures across Ireland and beyond to support two prominent Irish charities, LauraLynn  Ireland's Children's Hospice and Dogs Trust Ireland"
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={CaptPaddyLucky}
+                            SpeakerName="Capt Paddy & Lucky"
+                            SpeakerBio="After three unforgettable years of adventure, laughter, and countless cuddles, Capt Paddy and Lucky will be parting ways in January 2026. These much-loved globetrotting teddy bears have brought joy to so many, and now they're embarking on one final mission: raising funds for LauraLynn Children's Hospice and Dogs Trust Ireland. Together, they've already helped raise €12,000 for these two incredible charities—and the journey isn't over just yet."
                             />
                         </Grid>
                     </Grid>

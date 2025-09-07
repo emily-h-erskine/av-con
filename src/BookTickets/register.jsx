@@ -40,6 +40,9 @@ export default function Register() {
                             </div>
                         </Grid>
                     </Grid>
+                    <div>
+                        <h5>School Registration is Now Closed — But Don't Worry! You can still be part of the excitement — Live Stream Registration is now OPEN! Join us online and experience all the action from wherever you are!</h5>
+                    </div>
 
                     <div className="registration-section">
                         <h3 className="text-center">Register Your Institution</h3>
@@ -48,11 +51,11 @@ export default function Register() {
                                 <Button
                                     variant="contained"
                                     color="primary"
-                                    href="https://forms.office.com/r/07XtkSzr47"
+                                    href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__WNhaCZUOUVBNTU0MlM2RUVYNlhaVlE1NzU1N01GOS4u&route=shorturl"
                                     target="_blank"
                                     rel="noopener"
                                 >
-                                    School Registration
+                                    Live Stream Registration
                                 </Button>
                             </Grid>
                             <Grid item>
