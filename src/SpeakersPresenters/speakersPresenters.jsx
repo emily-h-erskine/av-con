@@ -24,6 +24,13 @@ import LisaMcNamee from "./PresenterSpeakerImages/LisaMcNamee.jpg";
 import PatriciaMoore from "./PresenterSpeakerImages/PatriciaMoore.jpg";
 import JonathanBlackmore from "./PresenterSpeakerImages/JonathanBlackmore.png";
 import GerryHumphreys from "./PresenterSpeakerImages2024/GerryHumphreys.jpg";
+import KarlONeill from "./PresenterSpeakerImages/KarlONeill.png";
+import BarkanÇilek from "./PresenterSpeakerImages/BarkanÇilek.png";
+import SteveConnolly from "./PresenterSpeakerImages/SteveConnolly.jpeg";
+import MariaFrost from "./PresenterSpeakerImages/MariaFrost.jpeg";
+import AndrewMaher from "./PresenterSpeakerImages/AndrewMaher.jpg";
+import LindaByrne from "./PresenterSpeakerImages/LindaByrne.png";
+import PeterAkers from "./PresenterSpeakerImages/PeterAkers.jpg";
 
 export default function SpeakersPresentors2024() {
     return (
@@ -280,6 +287,24 @@ export default function SpeakersPresentors2024() {
                         </Grid>
                         <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
                             <Speaker 
+                            SpeakerImage={KarlONeill}
+                            SpeakerName="Karl O'Neill"
+                            SpeakerBio="Karl is an aviation professional with over 25 years in the airline industry. He studied Business Law at UCD and subsequently completed a MSc in Business Management at the UCD Smurfit Business School, Dublin.
+                            He completed his Flight Training at British Aerospace Flight Training in Jerez, Spain where he was awarded the Best Pilot Award for 1999.
+                            Karl has flown several commercial aircraft and is currently rated on the Airbus A320 and Airbus A330. He has held several airline management and post holder positions.
+                            He presently is Chief Instructor with Aer Lingus in Dublin. In his operational capacity, he is a Senior Type Rating Examiner. He has been involved in many innovative projects and was Vice -Chair of the European ATPG - an expert body providing opinion to the EU on Air Crew regulation. In May 2024 he received the Flight Training Europe Award for Excellence in Flight Training.
+                            He is a keen cyclist and avid sports fan. He spends his free time coaching as a certified GAA coach with Kilmacud Crokes and Rugby coach with Blackrock College RFC."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={SteveConnolly}
+                            SpeakerName="Steve Connolly"
+                            SpeakerBio="Steve is a professional pilot with over 18 years of military and commercial aviation experience. He is currently flying the Airbus A320/1 on both short and long haul networks with Aer Lingus. During his service in the Air Corps he flew a variety of aircraft including the Pilatus PC-9m, Cessna 172H, and Britton-Norman Defender. Steve qualified as an aircraft commander on the CASA CN235MPA and was a member of the board selected to replace that fleet. He was part of the introductory team for the Pilatus PC-12NG, and flew it for two years prior to leaving the military. He has extensive experience in SAR, air ambulance and logistics operations. Steve holds a BSc in Management and Aeronautical Studies, as well as a Post Graduate Diploma in Adult Guidance and Counselling. He was a qualified Crew Resource Management Instructor during his time in the military, and currently instructs on PPL, ATPL and Flight Operations courses for ASG."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
                             SpeakerImage={LisaMcNamee}
                             SpeakerName="Lisa McNamee"
                             SpeakerBio="Dr Lisa McNamee is a practicing doctor, qualified aviation medicine examiner and an aerospace medicine researcher. She completed the European Space Agency's Space Physician training programme and the Principles of Aviation and Space Medicine short course at the University of Texas Medical Branch. She sits on the United Nations Office for Outer Space Affairs' Space & Global Health Taskforce. She is an honorary research fellow at Royal College of Surgeons in Ireland. She holds degrees from Trinity College Dublin, Royal College of Surgeons in Ireland and University College Dublin."
@@ -300,6 +325,53 @@ export default function SpeakersPresentors2024() {
                             As founder of BKMSURVEYING, Jonathan combines industry expertise with academic research, focusing on the application of AI, autonomous systems, LiDAR, and hyperspectral imaging. His work explores how advanced drone technologies can transform construction workflows, environmental monitoring, and sustainable land management. He is particularly interested in the use of UAS for habitat assessment and agri-environment schemes, helping reduce observer error, enhance accuracy, and support carbon sequestration and biodiversity goals.
                             Jonathan has a strong track record of industry engagement and knowledge transfer, regularly contributing to professional networks, conferences, and collaborative projects. He actively promotes sustainable practices and nature-friendly farming, positioning drone-based geospatial solutions as tools for both commercial efficiency and environmental stewardship.
                             With dual expertise as a practitioner and educator, Jonathan’s mission is to advance the responsible adoption of drone and geospatial technologies across construction, environmental management, and research sectors. He is committed to training the next generation of professionals to embrace innovation while maintaining ethical and sustainable practices."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={BarkanÇilek}
+                            SpeakerName="Barkan Çilek"
+                            SpeakerBio="Mr. Barkan Çilek earned his Bachelor of Science (2011) and Master of Science (2014) degrees in Aerospace Engineering from Middle East Technical University (METU), Türkiye. He began his career at ASELSAN, Türkiye’s leading defense and aerospace company, where he contributed to multiple national defense projects as a Guidance, Navigation & Control (GNC) and Mathematical Modeling & Simulation Engineer. Following this, he transitioned into the aerial logistics sector. He has worked for a last-mile aerial logistics company in Ireland and a middle-mile aerial logistics company in the US. He is now back in the defence industry to work in a company in New Zealand as a GNC Engineer. Mr. Çilek is a native Turkish speaker, fluent in English, and proficient in Russian at an intermediate level."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={MariaFrost}
+                            SpeakerName="Maria Frost"
+                            SpeakerBio="Ms. Frost is the Senior Vice President of Human Resources for elfc. Maria joined elfc in 2012 and oversees the global HR function across locations in Shannon, London, Boston, and Singapore. Maria leads strategic HR initiatives focused on organisational development, talent management, employee engagement, and leadership development. 
+                            Maria is a Chartered Member of the CIPD, Chairperson of the ICBE Aviation Skillnet Steering Committee, and a Steering Group Member of the Shannon Chamber Skillnet Group. She is committed to advancing industry skills, training, and development, promoting HR best practices, and driving impactful organisational change. Maria holds a Business Degree from the University of Limerick, a Master of Science in Human Resource Management, and a Specialist Diploma in Aviation Leasing & Finance."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={AndrewMaher}
+                            SpeakerName="Andrew Maher"
+                            SpeakerBio="Drone Clean is proud to be Ireland's first company to offer revolutionary drone powered cleaning services, specialising in safe and efficient high-rise window and facade cleaning. Founded by Andrew Maher whose Poshwash LTD boasts of nearly 30 years of experience in high-rise window cleaning. Drone Clean leverages cutting-edge technology to achieve unparalleled results."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={LindaByrne}
+                            SpeakerName="Linda Byrne"
+                            SpeakerBio="Linda Byrne is a seasoned aviation professional with over 25 years of experience in the airline industry.
+                            She holds a Master's degree in Human Resources Management from the National College of Ireland, where she cultivated a deep interest in recruitment and talent development. She began her career at the Aer Lingus Customer Contact Centre, assisting customers with flight bookings and inquiries. She quickly progressed to a role as a HR advisor, where her passion for human resources began to take shape. This led her to pursue formal studies in HRM, laying the foundation for a successful career in talent acquisition. This academic foundation supported her transition into a talent acquisition career, starting as a Resource Optimisation Advisor. Over the years, Linda has built extensive expertise in all facets of aviation recruitment, having successfully recruited for roles across all levels within the airline. She brings particular strength in psychometric testing and assessment, ensuring a robust and data-driven approach to candidate selection.
+                            In her current role as Senior Talent Acquisition Specialist at Aer Lingus, Linda leads the pilot recruitment and selection process for pilots. She plays a key role in shaping the airline's future talent pipeline through strategic talent planning. Outside of her professional responsibilities, Linda is passionate about travel, fitness, and community engagement. She is a strong advocate for gender diversity in aviation and is committed to narrowing the gender gap in the industry by encouraging and mentoring women to explore careers in aviation. She also dedicates her spare time to volunteering and has served on the Board of Directors of Aviate Credit Union for the past seven years."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={NiallColeman}
+                            SpeakerName="Niall Coleman"
+                            SpeakerBio="Niall Coleman has worked for Aer Lingus for the past 46 years mainly in Ground Operations. His current role is as a Senior Station Controller based in the HCC ( Hub Control Centre in T2) where he is responsible for keeping the Aer Lingus Operation on time in a safe and secure way dealing with many departments within the airline. His role operates on a 24/7 roster. He has worked in many frontline roles over the years which allowed him to gain the experience to carry out his duties in his current role effectively."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={PeterAkers}
+                            SpeakerName="Peter Akers"
+                            SpeakerBio="Peter Akers is an aircraft mechanic who began his career training with Rolls-Royce PLC before moving into aircraft maintenance. That early experience gave him a solid technical foundation and an appreciation for the standards of precision and safety that define aviation engineering. Building on this, he is now working toward full licensure while continuing to develop his skills through hands-on maintenance.
+                            Alongside this, Peter runs his own aviation maintenance contracting business, Akers Avia, which has broadened his perspective on both the technical and operational sides of the industry. This venture reflects his determination to keep learning and to engage with aviation from multiple angles.
+                            Aviation has always been Peter's passion. From his early fascination with aircraft to his long-term goal of becoming a pilot, he has been driven by curiosity and a desire to grow within the field. At AvCon.ie, he looks forward to sharing his journey and encouraging the next generation to pursue careers in aviation, showing that progress is built not only on expertise but also on enthusiasm and a commitment to learning."
                             />
                         </Grid>
                     </Grid>
