@@ -14,9 +14,7 @@ export default function Footer() {
                     />
                 </a>
                 <p className="footer-text">
-                    AvCon - The Future of Aviation: Inspiring and educating
-                    future aviation professionals through a dynamic, interactive
-                    event
+                    AvCon - The Future of Aviation & Aerospace: Inspiring and educating future aviation & aerospace professionals through a dynamic, interactive event on October 2nd,  Casement Aerodrome, Baldonnel, Co Dublin & online via TYHub.ie
                 </p>
                 <a
                     href="https://emily-h-erskine.github.io/portfolio/"
