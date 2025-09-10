@@ -50,10 +50,10 @@ export default function SpeakersPresentors2024() {
             <p style={{ padding: "0 5%" }}>
                 Get ready to soar into the future of aviation at AvCon 2025!
                 We're thrilled to introduce our dynamic duo of presenters, Ally
-                Garvey and Karl Bowe, who will be your guides through this
+                Garvey and Paul Butler Lennox, who will be your guides through this
                 exhilarating journey. From the warm welcome to riveting
                 interviews and captivating talks with esteemed guests from the
-                aviation world, Ally and TBD will ensure an unforgettable
+                aviation world, Ally and Paul will ensure an unforgettable
                 experience. Stay tuned for announcements on our line-up of
                 guests and talks that will keep you at the edge of your seat.
                 Trust us, you won't want to miss the electrifying show we have
