@@ -6,6 +6,7 @@ import BackgroundImage from "./BookTicketsImages/SHAN5640.jfif";
 import Flight from "./BookTicketsImages/SHAN6371.jfif";
 import HeroSection from "../CommonComponents/HeroSection/HeroSection";
 import './register.css';
+import MiddleBlockOfText from "../Home/MiddleBlockOfText/middleBlock";
 
 export default function Register() {
     return (
@@ -40,6 +41,8 @@ export default function Register() {
                             </div>
                         </Grid>
                     </Grid>
+                    <MiddleBlockOfText />
+                    <br/><br/>
                     <div>
                         <h5>School Registration is Now Closed — But Don't Worry! You can still be part of the excitement — Live Stream Registration is now OPEN! Join us online and experience all the action from wherever you are!</h5>
                     </div>
@@ -62,6 +65,17 @@ export default function Register() {
                                 <Button
                                     variant="contained"
                                     color="secondary"
+                                    href="https://forms.office.com/r/jC8Laygn90"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    In-Person Registration
+                                </Button>
+                            </Grid>
+                            <Grid item>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
                                     href="https://forms.office.com/r/xwSzALCh3b"
                                     target="_blank"
                                     rel="noopener"
@@ -70,6 +84,8 @@ export default function Register() {
                                 </Button>
                             </Grid>
                         </Grid>
+                        <br /><br />
+                        <b>For individual please email, email:</b> <a href="mailto:booking@avcon.ie">booking@avcon.ie</a>
                     </div>
 
                     <div className="corporate-section">
@@ -77,7 +93,7 @@ export default function Register() {
                         <p className="text-container">
                             While AvCon is not open to the general public, we offer a limited number of <strong>Afterburner Corporate Access Passes</strong> for business leaders, sponsors, and partners.
                             <br /><br />
-                            These passes provide exclusive event access, valuable networking, and branding opportunities – all while supporting the <strong>SkyBound Fund</strong> to keep the event free for students.
+                            These passes provide exclusive event access, valuable networking, and branding opportunities - all while supporting the <strong>SkyBound Fund</strong> to keep the event free for students.
                             <br /><br />
                             <b>To secure your pass, email:</b> <a href="mailto:hello@avcon.ie">hello@avcon.ie</a>
                         </p>
@@ -95,7 +111,7 @@ export default function Register() {
                                 <p>
                                     If your school or college is already registered, you can still involve more students by registering to access our <strong>Live Stream</strong> of the event.
                                     <br /><br />
-                                    Stay tuned for the full schedule – exciting panels, tech showcases, and guest speakers are on the way!
+                                    Stay tuned for the full schedule - exciting panels, tech showcases, and guest speakers are on the way!
                                     <br /><br />
                                     <b>Questions?</b> Email us at: <a href="mailto:hello@avcon.ie">hello@avcon.ie</a>
                                 </p>

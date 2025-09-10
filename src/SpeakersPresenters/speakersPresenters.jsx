@@ -34,6 +34,7 @@ import NiallColeman from "./PresenterSpeakerImages/NiallColeman.jpg";
 import PeterAkers from "./PresenterSpeakerImages/PeterAkers.jpg";
 import JasonPhelan from "./PresenterSpeakerImages/JasonPhelan.jpeg";
 import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddyLucky.jpeg";
+import AntonioGonzalezGomez from "./PresenterSpeakerImages2024/AntonioGonzalezGomez.jpeg";
 
 export default function SpeakersPresentors2024() {
     return (
@@ -389,6 +390,13 @@ export default function SpeakersPresentors2024() {
                             SpeakerImage={CaptPaddyLucky}
                             SpeakerName="Capt Paddy & Lucky"
                             SpeakerBio="After three unforgettable years of adventure, laughter, and countless cuddles, Capt Paddy and Lucky will be parting ways in January 2026. These much-loved globetrotting teddy bears have brought joy to so many, and now they're embarking on one final mission: raising funds for LauraLynn Children's Hospice and Dogs Trust Ireland. Together, they've already helped raise €12,000 for these two incredible charities—and the journey isn't over just yet."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={AntonioGonzalezGomez}
+                            SpeakerName="Antonio Gonzalez Gomez"
+                            SpeakerBio="Antonio Gonzalez Gomez is a citizen of the world. However his roots can be traced back to Galicia, in north west Spain. He currently works at the European Union Aviation Safety Agency (EASA) as a Safety Promotion Business Partner within the Communications department, leading the promotion campaign for Drones and Urban Air Mobility. Antonio has enjoyed 18 fulfilling years at EASA in Germany. Before that, he worked in banking and at British Airways, focusing on environmental issues. Passionate about aviation from a young age, he has dedicated the last three years to making aviation a more appealing career and life choice, especially for young people seeking a purpose and challenges that aviation can provide."
                             />
                         </Grid>
                     </Grid>

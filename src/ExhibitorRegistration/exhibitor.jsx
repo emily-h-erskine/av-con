@@ -9,6 +9,7 @@ import img4 from "./CarouselImages/3x2_Shell Run Angle.png";
 import img5 from "./CarouselImages/3x2_Shell Run.png";
 import img6 from "./CarouselImages/3x3 Stand Side View.png";
 import FloorPlan from "./CarouselImages/FloorPlan2025.png";
+import MiddleBlockOfText from "../Home/MiddleBlockOfText/middleBlock";
 
 const imageList = [FloorPlan, img1, img2, img3, img4, img5, img6];
 
@@ -45,6 +46,9 @@ export default function ExhibitorRegistration() {
                         </p>
                     </div>
                 </div>
+
+                <MiddleBlockOfText />
+                <br/><br/>
 
                 <h3 className="exhibitor-subheading">Why Exhibit or Sponsor?</h3>
                 <ul className="exhibitor-list">
