@@ -34,8 +34,9 @@ import PeterAkers from "./PresenterSpeakerImages/PeterAkers.jpg";
 import JasonPhelan from "./PresenterSpeakerImages/JasonPhelan.jpeg";
 import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddyLucky.jpeg";
 import AntonioGonzalezGomez from "./PresenterSpeakerImages2024/AntonioGonzalezGomez.jpeg";
+import LiamCoyle from "./PresenterSpeakerImages/LiamCoyle.jpeg";
 
-export default function SpeakersPresentors2024() {
+export default function SpeakersPresentors() {
     return (
         <main className="flex min-h-screen flex-col justify-between p-4 md:p-24">
                 <HeroSection
@@ -386,6 +387,13 @@ export default function SpeakersPresentors2024() {
                             SpeakerImage={AntonioGonzalezGomez}
                             SpeakerName="Antonio Gonzalez Gomez"
                             SpeakerBio="Antonio Gonzalez Gomez is a citizen of the world. However his roots can be traced back to Galicia, in north west Spain. He currently works at the European Union Aviation Safety Agency (EASA) as a Safety Promotion Business Partner within the Communications department, leading the promotion campaign for Drones and Urban Air Mobility. Antonio has enjoyed 18 fulfilling years at EASA in Germany. Before that, he worked in banking and at British Airways, focusing on environmental issues. Passionate about aviation from a young age, he has dedicated the last three years to making aviation a more appealing career and life choice, especially for young people seeking a purpose and challenges that aviation can provide."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={LiamCoyle}
+                            SpeakerName="Liam Coyle"
+                            SpeakerBio="Liam J. Coyle is a Strategy Consultant at KPMG Ireland, advising corporates, public agencies, investors, and education leaders on navigating complexity and delivering lasting impact. He joined KPMG from the UCD Smurfit School, where he led research on strategy and innovation excellence. A recognised voice on sustainability, Liam was appointed an EU Climate Ambassador by the European Commission in 2025, in a voluntary capacity. He previously served as a national Climate Ambassador with Ireland's National Trust, championing climate literacy and action."
                             />
                         </Grid>
                     </Grid>
