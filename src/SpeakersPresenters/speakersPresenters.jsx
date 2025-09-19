@@ -37,6 +37,8 @@ import LiamCoyle from "./PresenterSpeakerImages/LiamCoyle.jpeg";
 import PaulKennedyIAA from "./PresenterSpeakerImages2024/PaulKennedy.jpg";
 import RuthBagnell from "./PresenterSpeakerImages2024/RuthBagnell.jpg";
 import NoelFay from "./PresenterSpeakerImages/NoelFay.jpg";
+import SeanCronin from "./PresenterSpeakerImages/SeanCronin.jpg";
+import CraigLancaster from "./PresenterSpeakerImages/CraigLancaster.jpg";
 
 export default function SpeakersPresentors() {
     return (
@@ -396,6 +398,20 @@ export default function SpeakersPresentors() {
                             SpeakerImage={NoelFay}
                             SpeakerName="Noel Fay"
                             SpeakerBio="Noel Fay is a 3rd year aircraft maintenance and engineering apprentice for Aer Lingus. He's spent the last year of the apprenticeship working on the a330 hanger crew going between all the maintenance stations such as engines, landing gear, avionics, etc. He's now in the college phase studying towards a B2 engineering licence."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={SeanCronin}
+                            SpeakerName="Sean Cronin"
+                            SpeakerBio="Sean Cronin is the Pilot Engagement Manager at Pilot Path, where he works directly with students, guiding them through the challenges of flight training and helping them avoid the financial pitfalls often associated with modular pilot training. A graduate of Aviation Management at DCU, Sean went on to become a European Base Manager with Ryanair for three years before joining Pilot Path. He is passionate about aviation and equally enthusiastic about opening the doors of the industry to people who may never have considered flying as a career. Based primarily in Ireland, Pilot Path also supports UK based Pilot Path and offers international opportunities, including fast-track all-inclusive courses in the USA. Outside of aviation, Sean is a keen sports fan with a lifelong love of football."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={CraigLancaster}
+                            SpeakerName="Craig Lancaster"
+                            SpeakerBio="Craig Lancaster is the Founder and Managing Director of Pilot Path, and the driving force behind its mission to transform how pilots are trained. Having served as Head of Inflight at Ryanair, Craig brings deep industry experience, but his vision for Pilot Path came from a personal journey — he once began training for his Private Pilot Licence, only to fall away due to lack of support and structure. Determined to prevent others from facing the same pitfalls, Craig created Pilot Path as a student-first pathway into aviation. Today, the company operates internationally in Ireland, the UK, and the USA, offering structured training solutions that make aviation careers more accessible. Craig combines his passion for flying with a keen interest in politics and big-picture strategy."
                             />
                         </Grid>
                     </Grid>
