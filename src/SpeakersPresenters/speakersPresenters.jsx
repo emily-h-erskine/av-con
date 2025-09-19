@@ -8,7 +8,6 @@ import GOCHighlight from "./KeyNoteSpeaker/GOCHighlight";
 import AllyGarvey from "./PresenterSpeakerImages2024/Ally.JPG";
 import PaulButlerLennox from "./PresenterSpeakerImages/PaulButlerLennox.jpeg";
 import IanKiely from "./PresenterSpeakerImages2024/IanKiely.JPG";
-import SevenJacobs from "./PresenterSpeakerImages/SevenJacobs.jpg";
 import RobertConwayKenny from "./PresenterSpeakerImages/RobertConwayKenny.png";
 import MelvinKelly from "./PresenterSpeakerImages/MelvinKelly.png";
 import DiarmuidORiordan from "./PresenterSpeakerImages/DiarmuidO’Riordan.jpg";
@@ -35,6 +34,9 @@ import JasonPhelan from "./PresenterSpeakerImages/JasonPhelan.jpeg";
 import CaptPaddyLucky from "./PresenterSpeakerImages/CaptPaddyLucky.jpeg";
 import AntonioGonzalezGomez from "./PresenterSpeakerImages2024/AntonioGonzalezGomez.jpeg";
 import LiamCoyle from "./PresenterSpeakerImages/LiamCoyle.jpeg";
+import PaulKennedyIAA from "./PresenterSpeakerImages2024/PaulKennedy.jpg";
+import RuthBagnell from "./PresenterSpeakerImages2024/RuthBagnell.jpg";
+import NoelFay from "./PresenterSpeakerImages/NoelFay.jpg";
 
 export default function SpeakersPresentors() {
     return (
@@ -107,44 +109,23 @@ export default function SpeakersPresentors() {
                 <hr />
                 <br />
             </Box>
-            <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
-            <h5 style={{ textAlign: "center" }}>Fireside Chat Hosts</h5>
-            <Grid container spacing={2}>
-                    <Grid
-                        item
-                        xs={12}
-                        md={6}
-                        lg={6}
-                        xl={6}
-                        style={{ padding: "5%" }}>
-                        <Speaker
-                            SpeakerImage={IanKiely}
-                            SpeakerName="Ian Kiely"
-                            SpeakerBio="Ian Kiely is the Founder of Drone Space Ltd, a Dublin-based consultancy at the forefront of UAV innovation. With deep expertise in Unmanned Traffic Management (UTM), Counter-UAS (C-UAS), aerial surveying, and urban air mobility, Ian leads Drone Space in delivering advanced drone services and regulatory solutions across Europe
-                            He is a recognized international moderator and speaker, having hosted flagship events like the Air Taxi World Congress and Airport Drone Protection Summit in London and Paris . Ian also founded and organised Drone & Tech Expo Ireland at the RDS in Dublin (2015-2016), and remains a frequent contributor to industry panels, podcasts, and publications 
-                            Ian's background includes winning the European Space Masters competition for satellite navigation and later judging its finals in 2020/21 . He also develops professional drone training with Engineers Ireland, including CPD-accredited courses.
-                            Whether moderating high-profile summits or delivering focused technical talks, Ian brings hands-on UAV project experience, regulatory insight, and a vision."
-                        />
-                    </Grid>
-                    <Grid
-                        item
-                        xs={12}
-                        md={6}
-                        lg={6}
-                        xl={6}
-                        style={{ padding: "5%" }}>
-                        <Speaker
-                            SpeakerImage={SevenJacobs}
-                            SpeakerName="Seven Jacobs"
-                            SpeakerBio="Seven Jacobs is a speaker, educator, podcast host, and coach who helps high-performers reclaim clarity, confidence, and calm — so they can lead with purpose and power. His work blends practical tools, emotional intelligence, and deeper questions of what it truly means to lead well. 
-                            His podcast, Lost and Searching, explores the inner challenges of leadership and life. His training programs and events for ambitious professionals bring out the lifechanging energy we need to get the greatest results available to us. He also writes weekly on Substack to explore development in life from this perspective.
-                            As a TEDx speaker, NLP-trained coach, and previous co-founder of 4 small businesses, Seven brings lived experience to his work. From helping scale companies and communities, to building and leading award-winning accelerator programs. He has worked with global brands like Nike and Meta, supported hundreds of leaders, and built communities ranging from 1,000 to 6,000 members.                            
-                            Whether working 1:1, leading workshops, or hosting conversations, Seven’s mission is to help us discover and cultivate our greatest self-leader.
-                            He fundamentally believes that conscious leadership, rooted in courageous action, is how we shape a better future — and that joy and discovery are serious tools for transformation."
-                        />
-                    </Grid>
-                </Grid>
-            </Box>
+            <h5 style={{ textAlign: "center" }}>Fireside Chat Host</h5>
+            <Grid
+                item
+                xs={12}
+                md={6}
+                lg={6}
+                xl={6}
+                style={{ padding: "5%" }}>
+                <Speaker
+                    SpeakerImage={IanKiely}
+                    SpeakerName="Ian Kiely"
+                    SpeakerBio="Ian Kiely is the Founder of Drone Space Ltd, a Dublin-based consultancy at the forefront of UAV innovation. With deep expertise in Unmanned Traffic Management (UTM), Counter-UAS (C-UAS), aerial surveying, and urban air mobility, Ian leads Drone Space in delivering advanced drone services and regulatory solutions across Europe
+                    He is a recognized international moderator and speaker, having hosted flagship events like the Air Taxi World Congress and Airport Drone Protection Summit in London and Paris . Ian also founded and organised Drone & Tech Expo Ireland at the RDS in Dublin (2015-2016), and remains a frequent contributor to industry panels, podcasts, and publications 
+                    Ian's background includes winning the European Space Masters competition for satellite navigation and later judging its finals in 2020/21 . He also develops professional drone training with Engineers Ireland, including CPD-accredited courses.
+                    Whether moderating high-profile summits or delivering focused technical talks, Ian brings hands-on UAV project experience, regulatory insight, and a vision."
+                />
+            </Grid>
             <Box sx={{ padding: { xs: "0 2%", md: "0 5%" } }}>
                 <br />
                 <hr />
@@ -394,6 +375,27 @@ export default function SpeakersPresentors() {
                             SpeakerImage={LiamCoyle}
                             SpeakerName="Liam Coyle"
                             SpeakerBio="Liam J. Coyle is a Strategy Consultant at KPMG Ireland, advising corporates, public agencies, investors, and education leaders on navigating complexity and delivering lasting impact. He joined KPMG from the UCD Smurfit School, where he led research on strategy and innovation excellence. A recognised voice on sustainability, Liam was appointed an EU Climate Ambassador by the European Commission in 2025, in a voluntary capacity. He previously served as a national Climate Ambassador with Ireland's National Trust, championing climate literacy and action."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={PaulKennedyIAA}
+                            SpeakerName="Paul Kennedy"
+                            SpeakerBio="Paul Kennedy is the Head of Aviation Infrastructure for the Irish Aviation Authority, with 30 years of aviation experience. He holds an air traffic controller's license, commercial pilot's license, and an MSc in Human Factors and Safety Assessment in Aeronautics from Cranfield University. Starting with the Irish Aviation Authority in 1994, Paul gained extensive expertise in Air Traffic Control (ATC), serving as an officer, instructor, and investigator. In 2009, he transitioned to regulation, becoming an air traffic services inspector and later managing the Air Navigation Services Division. In 2023, he was appointed Head of Aviation Infrastructure, overseeing the regulation of Air Traffic Management, Air Navigation Services, and Aerodromes. Paul chairs the ICAO European Region Aerodrome Operations Working Group and the EU National Supervisor Committee Coordination Platform. He is also Vice Chair of the ICAO North Atlantic Safety Oversight Group and has participated in EASA ATM/ANS Standardisation Inspections since 2012."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={RuthBagnell}
+                            SpeakerName="Ruth Bagnell"
+                            SpeakerBio="Ruth Bagnell is a key figure in Irish aviation, serving as an Airworthiness Inspector with the Irish Aviation Authority. With over two decades of experience, she began her career as an aeronautical engineer from the University of Limerick, contributing significantly to aviation engineering. Ruth's passion for aviation is evident in her obtaining a Private Pilot's License, offering her valuable insights into flight operations that enhance her role in aircraft safety and compliance. As an Airworthiness Inspector, she ensures that aircraft meet strict safety standards, a responsibility she approaches with the perspective of a pilot. In addition to her technical expertise, Ruth is skilled in Compliance and Safety Management Systems, ensuring that aviation operations adhere to rigorous regulations. Her deep knowledge of International Aviation Regulation is vital in a globally connected industry. Ruth remains active in the General Aviation community, promoting knowledge exchange and fostering industry relationships, solidifying her as a respected leader in Irish aviation."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={NoelFay}
+                            SpeakerName="Noel Fay"
+                            SpeakerBio="Noel Fay is a 3rd year aircraft maintenance and engineering apprentice for Aer Lingus. He's spent the last year of the apprenticeship working on the a330 hanger crew going between all the maintenance stations such as engines, landing gear, avionics, etc. He's now in the college phase studying towards a B2 engineering licence."
                             />
                         </Grid>
                     </Grid>
