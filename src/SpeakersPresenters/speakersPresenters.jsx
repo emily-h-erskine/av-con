@@ -39,6 +39,8 @@ import RuthBagnell from "./PresenterSpeakerImages2024/RuthBagnell.jpg";
 import NoelFay from "./PresenterSpeakerImages/NoelFay.jpg";
 import SeanCronin from "./PresenterSpeakerImages/SeanCronin.jpg";
 import CraigLancaster from "./PresenterSpeakerImages/CraigLancaster.jpg";
+import StephenMoreau from "./PresenterSpeakerImages/StephenMoreau.png";
+import ConorKeeling from "./PresenterSpeakerImages/ConorKeeling.png";
 
 export default function SpeakersPresentors() {
     return (
@@ -266,11 +268,10 @@ export default function SpeakersPresentors() {
                             <Speaker 
                             SpeakerImage={KarlONeill}
                             SpeakerName="Karl O'Neill"
-                            SpeakerBio="Karl is an aviation professional with over 25 years in the airline industry. He studied Business Law at UCD and subsequently completed a MSc in Business Management at the UCD Smurfit Business School, Dublin.
-                            He completed his Flight Training at British Aerospace Flight Training in Jerez, Spain where he was awarded the Best Pilot Award for 1999.
-                            Karl has flown several commercial aircraft and is currently rated on the Airbus A320 and Airbus A330. He has held several airline management and post holder positions.
-                            He presently is Chief Instructor with Aer Lingus in Dublin. In his operational capacity, he is a Senior Type Rating Examiner. He has been involved in many innovative projects and was Vice -Chair of the European ATPG - an expert body providing opinion to the EU on Air Crew regulation. In May 2024 he received the Flight Training Europe Award for Excellence in Flight Training.
-                            He is a keen cyclist and avid sports fan. He spends his free time coaching as a certified GAA coach with Kilmacud Crokes and Rugby coach with Blackrock College RFC."
+                            SpeakerBio="Karl is an aviation professional with over 25 years in the airline industry. Hailing from Dublin, he was educated at Blackrock College graduating in 1993. He studied Business Law at UCD and subsequently completed a MSc in Business Management at the UCD Smurfit Business School, Dublin.
+                            He completed his Flight Training at British Aerospace Flight Training in Jerez, Spain where he was awarded the Best Pilot Award for 1999. Karl has flown several commercial aircraft and is currently rated on the Airbus A320 and Airbus A330. He has held several airline management and post holder positions.
+                            He presently is Chief Instructor with Aer Lingus in Dublin. In his operational capacity, he holds the highest qualification in aviation as a Senior Type Rating Examiner - awarded by the Irish Aviation Authority. He has been involved in many innovative projects and was Vice -Chair of the European ATPG - an expert body providing opinion to the EU on Air Crew regulation.
+                            In May 2024 he received the Flight Training Europe Award for Excellence in Flight Training. He is a keen cyclist and avid sports fan. He spends his free time coaching as a certified GAA coach with Kilmacud Crokes and Rugby coach with Blackrock College RFC."
                             />
                         </Grid>
                         <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
@@ -383,14 +384,17 @@ export default function SpeakersPresentors() {
                             <Speaker 
                             SpeakerImage={PaulKennedyIAA}
                             SpeakerName="Paul Kennedy"
-                            SpeakerBio="Paul Kennedy is the Head of Aviation Infrastructure for the Irish Aviation Authority, with 30 years of aviation experience. He holds an air traffic controller's license, commercial pilot's license, and an MSc in Human Factors and Safety Assessment in Aeronautics from Cranfield University. Starting with the Irish Aviation Authority in 1994, Paul gained extensive expertise in Air Traffic Control (ATC), serving as an officer, instructor, and investigator. In 2009, he transitioned to regulation, becoming an air traffic services inspector and later managing the Air Navigation Services Division. In 2023, he was appointed Head of Aviation Infrastructure, overseeing the regulation of Air Traffic Management, Air Navigation Services, and Aerodromes. Paul chairs the ICAO European Region Aerodrome Operations Working Group and the EU National Supervisor Committee Coordination Platform. He is also Vice Chair of the ICAO North Atlantic Safety Oversight Group and has participated in EASA ATM/ANS Standardisation Inspections since 2012."
+                            SpeakerBio="Paul Kennedy is the Head of Aviation Infrastructure for the Irish Aviation Authority, and has 30 years' experience in the aviation industry, holding an air traffic controller's licence, commercial pilot's licence and a Master of Science Degree in Human Factors and Safety Assessment in Aeronautics from Cranfield University.
+                            Paul started with the Irish Aviation Authority in 1994 as an Air Traffic Control Officer, gaining Area & Approach Control Surveillance, and Aerodrome Instrument Ratings. He has also held roles as an instructor, competency assessor, and Occurrence Investigator.
+                            In 2009 he moved from ATC service provision to regulation, taking up a post as an air traffic services inspector, subsequently becoming the manager of the Air Navigation Services Division in 2014. In 2023 he was appointed the Head of Aviation Infrastructure with responsibility for the regulation and oversight of Air Traffic Management, Air Navigation Services, Airspace, Aerodromes and U-space. He has led the regulatory review teams for a number of strategic projects including the introduction of a new air traffic control tower and runway at Dublin airport.
+                            He currently the Chairs the ICAO European Region Aerodrome Operations Working Group (RWGAO), and is also vice Chair of the ICAO North Atlantic Safety Oversight Group. Since 2012, he has also participated in EASA ATM/ANS Standardisation Inspections of EU Member States as a Team member."
                             />
                         </Grid>
                         <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
                             <Speaker 
                             SpeakerImage={RuthBagnell}
                             SpeakerName="Ruth Bagnell"
-                            SpeakerBio="Ruth Bagnell is a key figure in Irish aviation, serving as an Airworthiness Inspector with the Irish Aviation Authority. With over two decades of experience, she began her career as an aeronautical engineer from the University of Limerick, contributing significantly to aviation engineering. Ruth's passion for aviation is evident in her obtaining a Private Pilot's License, offering her valuable insights into flight operations that enhance her role in aircraft safety and compliance. As an Airworthiness Inspector, she ensures that aircraft meet strict safety standards, a responsibility she approaches with the perspective of a pilot. In addition to her technical expertise, Ruth is skilled in Compliance and Safety Management Systems, ensuring that aviation operations adhere to rigorous regulations. Her deep knowledge of International Aviation Regulation is vital in a globally connected industry. Ruth remains active in the General Aviation community, promoting knowledge exchange and fostering industry relationships, solidifying her as a respected leader in Irish aviation."
+                            SpeakerBio="Ruth Bagnell is a prominent figure in the Irish aviation industry, respected for her role as Manager Continuing Airworthiness with the Irish Aviation Authority. With a career spanning two decades, Ruth's expertise and dedication are reflected in the breadth of her experiences and the depth of her knowledge. Ruth began her journey in the aviation industry as an aeronautical engineer from University of Limerick. A testament to her passion for aviation, Ruth also obtained a Private Pilot's Licence."
                             />
                         </Grid>
                         <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
@@ -412,6 +416,20 @@ export default function SpeakersPresentors() {
                             SpeakerImage={CraigLancaster}
                             SpeakerName="Craig Lancaster"
                             SpeakerBio="Craig Lancaster is the Founder and Managing Director of Pilot Path, and the driving force behind its mission to transform how pilots are trained. Having served as Head of Inflight at Ryanair, Craig brings deep industry experience, but his vision for Pilot Path came from a personal journey — he once began training for his Private Pilot Licence, only to fall away due to lack of support and structure. Determined to prevent others from facing the same pitfalls, Craig created Pilot Path as a student-first pathway into aviation. Today, the company operates internationally in Ireland, the UK, and the USA, offering structured training solutions that make aviation careers more accessible. Craig combines his passion for flying with a keen interest in politics and big-picture strategy."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={StephenMoreau}
+                            SpeakerName="Stephen Moreau"
+                            SpeakerBio="Stephen Moreau started his flying career with Leinster Gliding Centre in 2014 at the age of 12. He went on to solo at 16 before commencing his commercial flight training after school. Now 23, Stephen is First Officer for one of Europe's leading airlines flying Boeing 737 aircraft."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={ConorKeeling}
+                            SpeakerName="Conor Keeling"
+                            SpeakerBio="Conor has been involved in aviation since 1981. He was fortunate enough to be selected at 17 to join the Aer Lingus Aircraft Mechanic Apprenticeship, which provided him with expert training to complement his passion for aviation. After completing his apprenticeship and a stint as a Technical Buyer, Conor was selected as a Cadet with Aer Lingus and went on to complete his flight training in Vero Beach, Florida. Throughout his career, Conor enjoyed flying various aircraft, including the Shorts 360, Saab 340, and 737. He was also fortunate to be part of the A330 ETOPS proving program in 1994. Conor received his command on the Fokker 50 in 1999 and later flew the A320 family before retiring from Aer Lingus in 2022, having spent his final years flying the iconic A330. As part of his career coaching journey, Conor completed his Diploma with the Irish Management Institute in Sandyford, Dublin. Over the past seven years, he has assisted numerous aviation professionals in reaching their dream jobs. He is excited to be exhibiting Professional Pilot Coaching for the first time at AvConn 2025, where he will share practical skills for securing ideal flying positions with the next generation of professional pilots."
                             />
                         </Grid>
                     </Grid>
