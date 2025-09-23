@@ -41,6 +41,7 @@ import SeanCronin from "./PresenterSpeakerImages/SeanCronin.jpg";
 import CraigLancaster from "./PresenterSpeakerImages/CraigLancaster.jpg";
 import StephenMoreau from "./PresenterSpeakerImages/StephenMoreau.png";
 import ConorKeeling from "./PresenterSpeakerImages/ConorKeeling.png";
+import DamienMolloy from "./PresenterSpeakerImages/DamienMolloy.png";
 
 export default function SpeakersPresentors() {
     return (
@@ -430,6 +431,16 @@ export default function SpeakersPresentors() {
                             SpeakerImage={ConorKeeling}
                             SpeakerName="Conor Keeling"
                             SpeakerBio="Conor has been involved in aviation since 1981. He was fortunate enough to be selected at 17 to join the Aer Lingus Aircraft Mechanic Apprenticeship, which provided him with expert training to complement his passion for aviation. After completing his apprenticeship and a stint as a Technical Buyer, Conor was selected as a Cadet with Aer Lingus and went on to complete his flight training in Vero Beach, Florida. Throughout his career, Conor enjoyed flying various aircraft, including the Shorts 360, Saab 340, and 737. He was also fortunate to be part of the A330 ETOPS proving program in 1994. Conor received his command on the Fokker 50 in 1999 and later flew the A320 family before retiring from Aer Lingus in 2022, having spent his final years flying the iconic A330. As part of his career coaching journey, Conor completed his Diploma with the Irish Management Institute in Sandyford, Dublin. Over the past seven years, he has assisted numerous aviation professionals in reaching their dream jobs. He is excited to be exhibiting Professional Pilot Coaching for the first time at AvConn 2025, where he will share practical skills for securing ideal flying positions with the next generation of professional pilots."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4} xl={4} style={{ padding: '3%' }}>
+                            <Speaker 
+                            SpeakerImage={DamienMolloy}
+                            SpeakerName="Damien Molloy"
+                            SpeakerBio="Damien has been flying gliders since 1994 and has held the role of Chair and more recently Technical Officer of Leinster Gliding Centre. 
+                            He has flown in the UK, Australia, South Africa and has recently returned from Hungary where he flew over 540km in three flights. Damien holds an EASA SPL along with an instructor rating, cross country privilege and aerobatic privilege and is an FAI Silver Badge holder. 
+                            Damien was instrumental in introducing the Air Cadet Scheme in 2014 which saw 36 Transition Year Students embark on their aviation careers through gliding. 
+                            He has also given talks to secondary students during Science Week at the Explorium science museum in South Dublin."
                             />
                         </Grid>
                     </Grid>
