@@ -15,7 +15,7 @@ export default function FlightSim() {
                 defaultSubtitle="Schools and Colleges Register for AvCon 2025"
                 smallScreenTitle="AvCon 2025"
                 smallScreenSubtitle="The Sky Isn't the Limit — It's Only the Beginning."
-                buttonText="Register for AvCon 2025"
+                buttonText="Register for AvCon 2025 Live Stream"
                 buttonLink="https://avcon.ie/BookTickets"
             />
 

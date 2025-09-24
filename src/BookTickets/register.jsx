@@ -16,7 +16,7 @@ export default function Register() {
                 defaultSubtitle="An immersive aviation experience built for the next generation of leaders. Reserve your place today."
                 smallScreenTitle="Register for AvCon 2025"
                 smallScreenSubtitle="For students, educators, and institutions – don’t miss this aviation event!"
-                buttonText="Register for AvCon 2025"
+                buttonText="Register for AvCon 2025 Live Stream"
                 buttonLink="https://avcon.ie/BookTickets"
             />
 
@@ -48,7 +48,7 @@ export default function Register() {
                     </div>
 
                     <div className="registration-section">
-                        <h3 className="text-center">Register Your Institution</h3>
+                        <h3 className="text-center">Register For The Live Stream</h3>
                         <Grid container spacing={2} justifyContent="center">
                             <Grid item>
                                 <Button
@@ -61,7 +61,7 @@ export default function Register() {
                                     Live Stream Registration
                                 </Button>
                             </Grid>
-                            <Grid item>
+                            {/* <Grid item>
                                 <Button
                                     variant="contained"
                                     color="secondary"
@@ -82,10 +82,10 @@ export default function Register() {
                                 >
                                     College Registration
                                 </Button>
-                            </Grid>
+                            </Grid> */}
                         </Grid>
                         <br /><br />
-                        <b>For individual please email, email:</b> <a href="mailto:booking@avcon.ie">booking@avcon.ie</a>
+                        <b>Important Notice: School and college registration for AvCon is now closed. Only Live Stream registration remains open. Please note this event is not open to the public. Entry will only be granted to those who have registered in advance and received official passes. For enquiries, please contact </b><a href="mailto:hello@avcon.ie">hello@avcon.ie</a>
                     </div>
 
                     <div className="corporate-section">
